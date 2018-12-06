@@ -33,7 +33,28 @@ class Entry extends Component {
               </View>
               <View style={{
                 flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
               }}>
+                <TouchableOpacity onPress={() => {
+                  this.props.navigation.navigate('Year')
+                }}>
+                  <View style={{
+                    backgroundColor: 'white',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: 16,
+                    borderRadius: 16
+                  }}>
+                    <Text style={{
+                      fontFamily: 'Avenir Next',
+                      fontSize: 15,
+                      fontWeight: '500'
+                    }}>
+                      Let's Explore
+                    </Text>
+                  </View>
+                </TouchableOpacity>
               </View>
             </SafeAreaView>
           </ImageBackground>
