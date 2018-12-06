@@ -10,6 +10,8 @@
     "react": "16.6.1",
     "react-native": "0.57.7",
     "react-native-gesture-handler": "^1.0.10",
+    "react-native-linear-gradient": "^2.5.3",
+    "react-native-parallax-scroll-view": "^0.21.3",
     "react-navigation": "^3.0.5"
   },
   "devDependencies": {
