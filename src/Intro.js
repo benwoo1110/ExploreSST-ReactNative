@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Image, SafeAreaView, ImageBackground } from 'react-native'
+import { View, Text, Image, SafeAreaView, ImageBackground, TouchableOpacity } from 'react-native'
 
 class Intro extends Component {
   static navigationOptions = {
@@ -46,8 +46,42 @@ class Intro extends Component {
                 </Image>
               </View>
               <View style={{
-                flex: 0.5
+                flex: 0.5,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 8
               }}>
+                <Text style={{
+                  fontSize: 20,
+                  fontFamily: 'Avenir Next',
+                  color: 'white'
+                }}>
+                  Hello, I’m Rachel! I’m a year one SST student this year and I’m excited to share my new secondary school life with you!
+                </Text>
+                <View style={{
+                  flex: 1,
+                  justifyContent: 'flex-end'
+                }}>
+                  <TouchableOpacity style={{
+                    marginBottom: 32
+                  }} onPress={() => {
+                    this.props.navigation.navigate("Explore")
+                  }}>
+                    <View style={{
+                      backgroundColor: 'white',
+                      padding: 8,
+                      borderRadius: 8
+                    }}>
+                      <Text style={{
+                        fontFamily: 'Avenir Next',
+                        fontSize: 20,
+                        fontWeight: '600'
+                      }}>
+                        Begin
+                    </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
               </View>
             </SafeAreaView>
           </ImageBackground>
