@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity, FlatList} from 'react-native'
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
-import LinearGradient from 'react-native-linear-gradient';
 
 class Year extends Component {
   static navigationOptions = {
@@ -18,7 +17,7 @@ class Year extends Component {
               parallaxHeaderHeight={300}
               renderBackground={() => {
                 return (
-                    <ImageBackground source={require('../assets/images/background2.jpg')} style={{
+                    <ImageBackground source={{uri: 'http://localhost:3000/background2.jpg'}} style={{
                       height: 300,
                       width: '100%',
                       alignItems: 'center',
@@ -40,6 +39,8 @@ class Year extends Component {
             <TouchableOpacity style={{
               alignItems: 'center',
               margin: 16
+            }} onPress={() => {
+              this.props.navigation.navigate('Intro', {item: 1})
             }}>
               <ImageBackground style={{
                 height: 200,
@@ -53,7 +54,7 @@ class Year extends Component {
                 },
                 shadowOpacity: 1,
                 borderRadius: 5,
-              }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
+              }} source={{uri: 'http://localhost:3000/Rachel_Waving.png'}} resizeMode={'contain'}>
                 <Text style={{
                   margin: 8,
                   fontFamily: 'Avenir Next',
@@ -70,6 +71,8 @@ class Year extends Component {
             <TouchableOpacity style={{
               alignItems: 'center',
               margin: 16
+            }} onPress={() => {
+              this.props.navigation.navigate('Intro', {item: 2})
             }}>
               <ImageBackground style={{
                 height: 200,
@@ -83,7 +86,7 @@ class Year extends Component {
                 },
                 shadowOpacity: 1,
                 borderRadius: 5,
-              }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
+              }} source={{uri: 'http://localhost:3000/Rachel_Waving.png'}} resizeMode={'contain'}>
                 <Text style={{
                   margin: 8,
                   fontFamily: 'Avenir Next',
@@ -100,6 +103,8 @@ class Year extends Component {
             <TouchableOpacity style={{
               alignItems: 'center',
               margin: 16
+            }} onPress={() => {
+              this.props.navigation.navigate('Intro', {item: 3})
             }}>
               <ImageBackground style={{
                 height: 200,
@@ -113,7 +118,7 @@ class Year extends Component {
                 },
                 shadowOpacity: 1,
                 borderRadius: 5,
-              }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
+              }} source={{uri: 'http://localhost:3000/Rachel_Waving.png'}} resizeMode={'contain'}>
                 <Text style={{
                   margin: 8,
                   fontFamily: 'Avenir Next',
@@ -131,6 +136,8 @@ class Year extends Component {
               <TouchableOpacity style={{
                 alignItems: 'center',
                 margin: 16
+              }} onPress={() => {
+                this.props.navigation.navigate('Intro', {item: 4})
               }}>
                 <ImageBackground style={{
                   height: 200,
@@ -144,7 +151,7 @@ class Year extends Component {
                   },
                   shadowOpacity: 1,
                   borderRadius: 5,
-                }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
+                }} source={{uri: 'http://localhost:3000/Rachel_Waving.png'}} resizeMode={'contain'}>
                   <Text style={{
                     margin: 8,
                     fontFamily: 'Avenir Next',
