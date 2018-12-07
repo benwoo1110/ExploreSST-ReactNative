@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity } from 'react-native'
+import {FILE_URL} from './constants'
 
 class Entry extends Component {
   static navigationOptions = {
@@ -12,7 +13,7 @@ class Entry extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: 'http://localhost:3000/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
+        <ImageBackground source={{ uri: FILE_URL + '/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
             flex: 1
           }}>

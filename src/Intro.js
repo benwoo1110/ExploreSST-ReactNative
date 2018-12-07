@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, Image, SafeAreaView, ImageBackground, TouchableOpacity } from 'react-native'
+import { FILE_URL } from './constants'
 
 class Intro extends Component {
   static navigationOptions = {
@@ -14,7 +15,7 @@ class Intro extends Component {
           flex: 1,
           backgroundColor: 'black'
         }}>
-          <ImageBackground source={{ uri: 'http://localhost:3000/IMG_1725.JPG' }} style={{
+          <ImageBackground source={{ uri: FILE_URL + '/IMG_1725.JPG' }} style={{
             flex: 1
           }} imageStyle={{
             opacity: 0.5
@@ -24,7 +25,7 @@ class Intro extends Component {
             }}>
               <View style={{
                 flex: 1,
-              }} source={{ uri: 'http://localhost:3000/IMG_1725.JPG' }}>
+              }} source={{ uri: FILE_URL + '/IMG_1725.JPG' }}>
                 <Text style={{
                   alignSelf: 'center',
                   fontFamily: 'Avenir Next',
@@ -34,7 +35,7 @@ class Intro extends Component {
                 }}>
                   Rachel
               </Text>
-                <Image source={{ uri: 'http://localhost:3000/Rachel_Waving.png' }} style={{
+                <Image source={{ uri: FILE_URL + '/Rachel_Waving.png' }} style={{
                   flex: 1,
                   shadowColor: 'gray',
                   shadowOffset: {
