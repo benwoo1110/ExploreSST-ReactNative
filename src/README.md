@@ -4,7 +4,7 @@
 - Clone repo
 - install any file serve server u wish (preferably http-server)
 ```
-npm i -h http-server
+npm i -g http-serverhttp-server
 ```
 - Dependencies
 ```npm i```
