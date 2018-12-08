@@ -27,7 +27,7 @@ class Explore extends Component {
                 <Icon name={'keyboard-arrow-left'} color={'white'} size={40}/>
               </TouchableOpacity>
               <View style={{
-                // flex: 1,
+                flex: 1,
                 alignItems: 'center',
                 justifyContent: 'center',
                 alignSelf: 'center',
