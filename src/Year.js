@@ -40,7 +40,7 @@ class Year extends Component {
             <TouchableOpacity onPress={() => {
                 this.props.navigation.navigate('Explore')}}
               style={{
-              alignItems: 'center',
+              alignItems: 'center', 
               margin: 16
             }}>
               <ImageBackground style={{
