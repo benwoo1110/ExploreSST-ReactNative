@@ -5,7 +5,7 @@ import Entry from "./Entry";
 import Year from "./Year";
 import Intro from "./Intro";
 import Explore from './Explore';
-import Orientation1 from "./Orientation1";
+
 
 
 YellowBox.ignoreWarnings(['Importing the stack'])

@@ -1,12 +1,27 @@
 import React, { Component } from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, ImageBackground } from 'react-native'
 
-// DO WHATEVER YOU WANT HERE CUZ IDK IF U WANT TO KEEP THE CHAT DESIGN OR GET A DESIGN HONESTLY IT LOOKS LIKE TRASH
 
 class Explore extends Component {
-  render() {
+  static navigationOptions = ({navigation}) => {
+     return {
+      headerTitle: null,left: , headerTransparent: true, headerStyle: { borderBottomWidth: 0, 
+      } 
+    } 
+  }
+
+    render() {
     return (
-      <View>
+      <View style={{
+        flex: 1,
+        backgroundColor: 'black'
+      }}>
+        <ImageBackground source={require("../assets/images/background.png")}
+          style={{
+          flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
+        </ImageBackground>
+
+
       </View>
     )
   }

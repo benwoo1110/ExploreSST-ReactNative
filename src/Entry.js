@@ -13,7 +13,7 @@ class Entry extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
+        <ImageBackground source={require("../assets/images/background.png")} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
             flex: 1
           }}>
