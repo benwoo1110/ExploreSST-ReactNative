@@ -15,6 +15,5 @@ const MainStack = createStackNavigator({
   Year: { screen: Year },
   Intro: { screen: Intro },
   Explore: { screen: Explore }
-
 })
 export default createAppContainer(MainStack)
