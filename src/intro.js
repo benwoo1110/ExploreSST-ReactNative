@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { View, Text, TouchableOpacity, ImageBackground, SafeAreaView, Image } from 'react-native'
+import { Text, View, StyleSheet, ImageBackground, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { FILE_URL } from './constants'
+import Swiper from 'react-native-swiper';
 
-class Explore extends Component {
+class intro extends Component {
   static navigationOptions = {
     header: null,
   }
-
   render() {
     return (
       <View style={{
@@ -19,16 +19,30 @@ class Explore extends Component {
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
-            flex: 1,
+            flex:1,
             margin: 16
           }}>
+
             <Text style={{
               fontFamily: 'Avenir Next',
               textAlign: 'center',
               fontSize: 30,
               fontWeight: '600',
-              color: 'white'
+              color: 'white',
+
+              flex:1
             }}>Orientation</Text>
+
+
+            <Image style={{
+              alignSelf: 'center',
+              flex: 1,
+              justifyContent: 'center',
+              width: "75%",
+              height: "85%",
+              resizeMode: 'contain'
+            }} source={{ uri: FILE_URL + '/psblogo.png' }} />
+
             <View style={{
               width: '100%',
               backgroundColor: 'white',
@@ -42,24 +56,42 @@ class Explore extends Component {
               borderRadius: 5,
               justifyContent: "center",
               alignItems: "center",
-              marginTop: 16
+
             }}><Text style={{
               padding: 8,
               fontSize: 18,
               fontFamily: 'Avenir Next',
 
-            }}>Hello, I’m Rachel! I’m a year one SST student this year and I’m excited to share my new secondary school life with you! </Text>
+
+            }}>Hello! Welcome to SST! We are the Peer Support
+                        Board and we are here to bring you on board before
+            the start of your SST Journey! Let’s go!</Text>
             </View>
-            <View style={{ flex: 1 }}>
-              <Image style={{
-                alignSelf: 'center',
-                marginLeft: '10%',
-                marginTop: '20%',
-                width: "35%",
-                height: "85%",
-                resizeMode: 'contain'
-              }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} />
+
+            <View>
+              <Swiper>
+                <View style={{
+                  backgroundColor: "#e6e6e6", flex: 1, alignItems: "center", justifyContent: "center", height: 200, width: '100%'
+                }}>
+                  <Text>insert Video here</Text>
+                </View>
+
+                <View style={{ backgroundColor: "e6e6e6", flex: 1 }}>
+                  <Text>The annual SST orientation programme serves as the
+                    platform for the induction of new student entrants into
+                    the SST family.
+
+                    Orientation seeks to prepare the new entrants for learning
+                    in a uniquely SST environment. The camp component aims
+                    to imbue the values of SST and build the foundation of
+                    teamwork and discipline amongst students through a series
+                    of activities over a period of 2 days and 1 night.</Text>
+
+                </View>
+              </Swiper>
             </View>
+
+
 
             <View style={{
 
@@ -67,7 +99,7 @@ class Explore extends Component {
               justifyContent: 'center'
             }}>
               <TouchableOpacity onPress={() => {
-                this.props.navigation.navigate('intro')
+                this.props.navigation.navigate('Orientation')
               }}>
                 <View style={{
                   backgroundColor: 'white',
@@ -90,6 +122,9 @@ class Explore extends Component {
 
 
 
+
+
+
           <SafeAreaView style={{
             marginLeft: 8,
             position: 'absolute',
@@ -107,4 +142,4 @@ class Explore extends Component {
   }
 }
 
-export default Explore
+export default intro

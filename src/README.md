@@ -12,7 +12,7 @@ npm i -g http-server
 #### Running app
 - Start server at /assets/images on port 3000
 ```
-cd asstes/images; http-server . -p 3000
+cd assets/images; http-server . -p 3000
 ```
 - Run app
 ```
