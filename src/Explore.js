@@ -62,8 +62,11 @@ class Explore extends Component {
             </View>
 
             <View style={{
-
-              alignItems: 'center',
+              position: 'absolute',
+              bottom: 0,
+              right: 0,
+              margin: 16,
+              alignItems: 'flex-end',
               justifyContent: 'center'
             }}>
               <TouchableOpacity onPress={() => {

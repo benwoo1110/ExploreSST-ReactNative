@@ -22,28 +22,25 @@ class intro extends Component {
             flex:1,
             margin: 16
           }}>
-
+            <View>
             <Text style={{
               fontFamily: 'Avenir Next',
               textAlign: 'center',
               fontSize: 30,
               fontWeight: '600',
               color: 'white',
-
-              flex:1
             }}>Orientation</Text>
-
-
             <Image style={{
-              alignSelf: 'center',
-              flex: 1,
-              justifyContent: 'center',
-              width: "75%",
-              height: "85%",
-              resizeMode: 'contain'
-            }} source={{ uri: FILE_URL + '/psblogo.png' }} />
 
-            <View style={{
+              alignSelf: 'center',
+              justifyContent: 'center',
+              height: 100,
+              width: '75%',
+              resizeMode: 'contain',
+            }} source={{ uri: FILE_URL + '/psblogo.png' }} />
+            </View>
+           <View style={{
+             marginTop: 16,
               width: '100%',
               backgroundColor: 'white',
               shadowColor: 'gray',
@@ -68,15 +65,21 @@ class intro extends Component {
             the start of your SST Journey! Let’s go!</Text>
             </View>
 
-            <View>
+            <View style={{
+              marginTop: 16,
+              width: '100%',
+              height: '35%',
+              backgroundColor: 'white',
+              borderRadius: 5
+
+
+            }}>
               <Swiper>
-                <View style={{
-                  backgroundColor: "#e6e6e6", flex: 1, alignItems: "center", justifyContent: "center", height: 200, width: '100%'
-                }}>
+                <View>
                   <Text>insert Video here</Text>
                 </View>
 
-                <View style={{ backgroundColor: "e6e6e6", flex: 1 }}>
+                <View>
                   <Text>The annual SST orientation programme serves as the
                     platform for the induction of new student entrants into
                     the SST family.
@@ -93,9 +96,12 @@ class intro extends Component {
 
 
 
-            <View style={{
-
-              alignItems: 'center',
+             <View style={{
+              position: 'absolute',
+              bottom: 0,
+              right: 0,
+              margin: 16,
+              alignItems: 'flex-end',
               justifyContent: 'center'
             }}>
               <TouchableOpacity onPress={() => {
