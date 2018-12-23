@@ -3,7 +3,6 @@ import { Text, View, StyleSheet, SafeAreaView, Image, ImageBackground, Touchable
 import { FILE_URL } from './constants'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-
 class Orientation extends Component {
     static navigationOptions = {
         header: null
@@ -59,14 +58,19 @@ class Orientation extends Component {
                             }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} />
                         </View>
 
-                        <ScrollView>
-                            <View style={styles.nextB}><TouchableOpacity onPress={() => {this.props.navigation.navigate("knowingSST")}}><View><Text>How did you get to know SST?</Text></View></TouchableOpacity></View>
-                            <View style={styles.nextB}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
-                            <View style={styles.nextB}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text>Move on to badge night</Text></View></TouchableOpacity></View>
-                            <View style={styles.nextB}><TouchableOpacity onPress={() => {this.props.navigation.navigate("cyberWellness")}}><View><Text>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
-                            <View style={styles.nextB}><TouchableOpacity onPress={() => {this.props.navigation.navigate("settlingIn")}}><View><Text>How else did you settle in?</Text></View></TouchableOpacity></View>
-                            <View style={styles.nextB}><TouchableOpacity><View><Text>Student Experiences in SST</Text></View></TouchableOpacity></View>
+                        <ScrollView style={{
+                            borderRadius: 5,
 
+                            alignSelf: "flex-end",
+                            width: '60%',
+                            backgroundColor: "white"
+                        }}>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("KnowingSST")}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text style={styles.buttonText}>Move on to badge night</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("cyberWellness")}}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("settlingIn")}}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("studentExperiences")}}><View><Text style={styles.buttonText}>Student Experiences in SST</Text ></View></TouchableOpacity></View>
                         </ScrollView>
                     </SafeAreaView>
 
@@ -90,11 +94,13 @@ class Orientation extends Component {
 
 
 const styles=StyleSheet.create({
-    nextB: {
-        paddingTop: 10,
-        alignSelf: "flex-end",
-        width: '60%'
+    buttonView: {
+        padding: 8
       },
+      buttonText:{
+          fontSize: 18
+      }
+   
     
-})
+});
 export default Orientation

@@ -7,9 +7,9 @@ import Explore from './Explore';
 import intro from './intro';
 import Orientation from './Orientation';
 import makingFriends from './makingFriends';
-import knowingSST from './knowingSST';
+import KnowingSST from './KnowingSST';
 import badgeNight from './badgeNight';
-import cyberWellness from './badgeNight';
+import cyberWellness from './cyberWellness';
 import settlingIn from './settlingIn';
 import studentExperiences from './studentExperiences';
 
@@ -22,7 +22,7 @@ const MainStack = createStackNavigator({
   intro: {screen: intro},
   Orientation: {screen: Orientation},
   makingFriends: {screen: makingFriends},
-  knowingSST: {screen: knowingSST},
+  KnowingSST: {screen: KnowingSST},
   badgeNight: {screen: badgeNight},
   cyberWellness: {screen: cyberWellness},
   settlingIn: {screen: settlingIn},
