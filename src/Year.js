@@ -4,6 +4,7 @@ import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import LinearGradient from 'react-native-linear-gradient';
 import { FILE_URL } from './constants'
 
+
 class Year extends Component {
   static navigationOptions = {
     header: null
