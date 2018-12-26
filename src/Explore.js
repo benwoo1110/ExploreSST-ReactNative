@@ -14,7 +14,7 @@ class Explore extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/go.png' }}
+        <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -58,7 +58,7 @@ class Explore extends Component {
                 width: "35%",
                 height: "85%",
                 resizeMode: 'contain'
-              }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} />
+              }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
             </View>
 
             <View style={{

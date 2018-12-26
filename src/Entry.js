@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity } from 'react-native'
+import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity , StatusBar} from 'react-native'
 import { FILE_URL } from './constants'
 
 class Entry extends Component {
@@ -9,12 +9,17 @@ class Entry extends Component {
 
   render() {
     return (
+      
       <View style={{
         flex: 1,
 
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
+      <StatusBar
+     backgroundColor="white"
+     barStyle="light-content"
+   />
+        <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
             flex: 1
           }}>

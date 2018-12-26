@@ -14,7 +14,7 @@ class Orientation extends Component {
                 flex: 1,
                 backgroundColor: 'black'
             }}>
-                <ImageBackground source={{ uri: FILE_URL + '/go.png' }}
+                <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
                     style={{
                         flex: 1, resizeMode: 'contain'
                     }} imageStyle={{ opacity: 0.5 }}>
@@ -59,15 +59,26 @@ class Orientation extends Component {
                         </View>
 
                         <ScrollView style={{
-                            borderRadius: 5,
 
+                            width: '100%',
+                            backgroundColor: 'white',
+                            shadowColor: 'gray',
+                            shadowBlur: 10,
+                            shadowOffset: {
+                                width: 2,
+                                height: 2
+                            },
+                            shadowOpacity: 1,
+                            borderRadius: 5,
+                          
+                            marginTop: 16,
                             alignSelf: "flex-end",
                             width: '60%',
                             backgroundColor: "white"
                         }}>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("KnowingSST")}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text style={styles.buttonText}>Move on to badge night</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("cyberWellness")}}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("settlingIn")}}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("studentExperiences")}}><View><Text style={styles.buttonText}>Student Experiences in SST</Text ></View></TouchableOpacity></View>

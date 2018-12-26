@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, ImageBackground, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { FILE_URL } from './constants'
-import Swiper from 'react-native-swiper';
+import Swiper from 'react-native-swiper'
+import Video from 'react-native-video'
 
 class intro extends Component {
   static navigationOptions = {
@@ -70,25 +71,44 @@ class intro extends Component {
               width: '100%',
               height: '35%',
               backgroundColor: 'white',
-              borderRadius: 5
+              borderRadius: 5,
+              shadowColor: 'gray',
+              shadowBlur: 10,
+              shadowOffset: {
+                width: 2,
+                height: 2
+              },
+              shadowOpacity: 1,
 
 
             }}>
-              <Swiper>
+              <Swiper index={0}>
                 <View>
-                  <Text>insert Video here</Text>
-                </View>
-
-                <View>
-                  <Text>The annual SST orientation programme serves as the
+                  <Text style={{
+                    padding: 8,
+                    fontSize: 18,
+                    fontFamily: 'Avenir Next',
+                  }}>The annual SST orientation programme serves as the
                     platform for the induction of new student entrants into
                     the SST family.
 
                     Orientation seeks to prepare the new entrants for learning
-                    in a uniquely SST environment. The camp component aims
+                    in a uniquely SST environment.</Text>
+                </View>
+                <View>
+                  <Text style={{
+                    padding: 8,
+                    fontSize: 18,
+                    fontFamily: 'Avenir Next',}}> The camp component aims
                     to imbue the values of SST and build the foundation of
                     teamwork and discipline amongst students through a series
                     of activities over a period of 2 days and 1 night.</Text>
+                
+
+                </View>
+
+                <View>
+                  <Text>inserting vid here when.</Text>
 
                 </View>
               </Swiper>

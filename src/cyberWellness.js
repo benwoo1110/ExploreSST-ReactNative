@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Text, View, Image, ImageBackground, TouchableOpacity, SafeAreaView } from 'react-native'
+import { FILE_URL } from './constants'
+import Icon from 'react-native-vector-icons/MaterialIcons'
+
 
 class cyberWellness extends Component {
   static navigationOptions = {
@@ -11,7 +14,7 @@ class cyberWellness extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/background.png' }}
+        <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
