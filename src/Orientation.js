@@ -55,7 +55,7 @@ class Orientation extends Component {
                                 width: 300,
                                 height: 300,
                                 resizeMode: 'contain'
-                            }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} />
+                            }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
                         </View>
 
                         <ScrollView style={{
@@ -70,11 +70,11 @@ class Orientation extends Component {
                             },
                             shadowOpacity: 1,
                             borderRadius: 5,
-                          
+
                             marginTop: 16,
                             alignSelf: "flex-end",
                             width: '60%',
-                            backgroundColor: "white"
+                            backgroundColor: 'rgba(255, 255, 255, 0.5)'
                         }}>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("KnowingSST")}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
@@ -106,7 +106,10 @@ class Orientation extends Component {
 
 const styles=StyleSheet.create({
     buttonView: {
-        padding: 8
+        padding: 8,
+        margin: 8,
+        backgroundColor: 'white',
+        borderRadius: 5
       },
       buttonText:{
           fontSize: 18

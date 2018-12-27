@@ -15,7 +15,7 @@ class intro extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/go.png' }}
+        <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -38,7 +38,7 @@ class intro extends Component {
               height: 100,
               width: '75%',
               resizeMode: 'contain',
-            }} source={{ uri: FILE_URL + '/psblogo.png' }} />
+            }} source={{ uri: FILE_URL + '/images/psblogo.png' }} />
             </View>
            <View style={{
              marginTop: 16,
@@ -108,7 +108,7 @@ class intro extends Component {
                 </View>
 
                 <View>
-                  <Text>inserting vid here when.</Text>
+                  <Text>inserting vid here</Text>
 
                 </View>
               </Swiper>

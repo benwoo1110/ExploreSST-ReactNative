@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native'
+import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet} from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { FILE_URL } from './constants'
 
@@ -14,7 +14,7 @@ class CCAMenu extends Component {
                 flex: 1,
                 backgroundColor: 'black'
             }}>
-                <ImageBackground source={{ uri: FILE_URL + '/image/background.png' }}
+                <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }}
                     style={{
                         flex: 1, resizeMode: 'contain'
                     }} imageStyle={{ opacity: 0.5 }}>
@@ -55,7 +55,7 @@ class CCAMenu extends Component {
                                 width: 300,
                                 height: 300,
                                 resizeMode: 'contain'
-                            }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} />
+                            }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
                         </View>
 
                         <ScrollView style={{
@@ -76,10 +76,9 @@ class CCAMenu extends Component {
                             width: '60%',
                             backgroundColor: "white"
                         }}>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("") }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("") }}><View><Text style={styles.buttonText}>I would like to find out more about a specific CCA.</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("") }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("") }}><View><Text style={styles.buttonText}>What are the CCAs in SST?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ShowChoir") }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("InterestingExperiences") }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("CCA1") }}><View><Text style={styles.buttonText}>What are the CCAs in SST?</Text></View></TouchableOpacity></View>
 
                         </ScrollView>
                     </SafeAreaView>
@@ -97,14 +96,20 @@ class CCAMenu extends Component {
 
                     </SafeAreaView>
 
-
-
-
                 </ImageBackground>
             </View>
 
         )
     }
 }
+const styles = StyleSheet.create({
+    buttonView: {
+        padding: 8
+      },
+      buttonText:{
+          fontSize: 18
+      }
+
+})
 
 export default CCAMenu

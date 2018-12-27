@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, TouchableOpacity, SafeAreaView } from 'react-native'
+import { Text, View, Image, ImageBackground, TouchableOpacity, SafeAreaView ,StyleSheet, ScrollView} from 'react-native'
 import { FILE_URL } from './constants'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
@@ -34,31 +34,46 @@ class cyberWellness extends Component {
                 color: 'white'
               }}>Rachel</Text>
             </View>
-            <View style={{
 
-              width: '100%',
-              backgroundColor: 'white',
-              shadowColor: 'gray',
-              shadowBlur: 10,
-              shadowOffset: {
-                width: 2,
-                height: 2
-              },
-              shadowOpacity: 1,
-              borderRadius: 5,
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: 16
-            }}><Text style={{
-              padding: 8,
-              fontSize: 18,
-              fontFamily: 'Avenir Next',
-            }}>Ever wondered how parents of SST manage their children’s use of macbook in a 1-1 school? For starters, all macbooks are termed as learning devices to emphasise the intent of harnessing ICT to optimise learning.
+            <ScrollView>
+
+
+            <View style={{
+                width: '75%',
+                backgroundColor: 'darkgrey',
+                shadowColor: 'gray',
+
+                shadowOffset: {
+                  width: 2,
+                  height: 2
+                },
+                shadowOpacity: 1,
+                borderRadius: 5,
+                justifyContent: "center",
+                alignItems: "center",
+                alignSelf: "flex-end",
+
+                marginTop: 16
+
+              }}><Text style={{
+                padding: 8,
+                fontSize: 18,
+                fontFamily: 'Avenir Next',
+                color: "white"
+
+              }}>How did you get to know SST?
+              </Text></View>
+            <View style={
+              styles.ChatViewStyle
+            }><Text style={
+              styles.ChatTextStyle
+            }>Ever wondered how parents of SST manage their children’s use of macbook in a 1-1 school? For starters, all macbooks are termed as learning devices to emphasise the intent of harnessing ICT to optimise learning.
                 SST holds a series of Parents Engagement Programmes for our Secondary 1 parents, led by our student Cyber Wellness Ambassadors (CWSA).
                 The CWSAs plan,organise and conduct sharing sessions on areas such as improving security and productivity when using a learning device.
                 As a 1-1 school, cyberwellness is an essential component of student learning.
                 Our students go beyond imbibing the tenets of digital citizenship to advocate core values to peers, juniors from other schools, parents of SST and even educators at various platforms.  
             </Text></View>
+            </ScrollView>
           </SafeAreaView>
 
 
@@ -81,5 +96,31 @@ class cyberWellness extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  ChatTextStyle: {
+    padding: 8,
+    fontSize: 18,
+    fontFamily: 'Avenir Next',
+  },
+  ChatViewStyle: {
+    width: '75%',
+    backgroundColor: 'white',
+    shadowColor: 'gray',
+
+    shadowOffset: {
+      width: 2,
+      height: 2
+    },
+    shadowOpacity: 1,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+
+    marginTop: 16
+
+  }
+
+})
 
 export default cyberWellness

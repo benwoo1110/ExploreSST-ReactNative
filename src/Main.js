@@ -7,18 +7,21 @@ import Year from "./Year";
 
 
 
-//SEC 1 --------------------------------------------------
-import Explore from './Explore';                       //-
-import intro from './intro';                           //-
-import Orientation from './Orientation';               //-
-import makingFriends from './makingFriends';           //-
-import KnowingSST from './KnowingSST';                 //-
-import badgeNight from './badgeNight';                 //-
-import cyberWellness from './cyberWellness';           //-
-import settlingIn from './settlingIn';                 //-
-import studentExperiences from './studentExperiences'; //-
-import CCAMenu from './CCAMenu';                       //-
-//SEC 1 --------------------------------------------------
+//SEC 1 ----------------------------------------------------------
+import Explore from './Explore';                               //-
+import intro from './intro';                                   //-
+import Orientation from './Orientation';                       //-
+import makingFriends from './makingFriends';                   //-
+import KnowingSST from './KnowingSST';                         //-
+import badgeNight from './badgeNight';                         //-
+import cyberWellness from './cyberWellness';                   //-
+import settlingIn from './settlingIn';                         //-
+import studentExperiences from './studentExperiences';         //-
+import CCAMenu from './CCAMenu';                               //-
+import CCA1 from './CCA1';                                     //-
+import InterestingExperiences from "./InterestingExperiences"; //-
+import ShowChoir from './ShowChoir';                           //-
+//SEC 1 ----------------------------------------------------------
 
 //SEC 2
 //SEC 2
@@ -44,6 +47,9 @@ const MainStack = createStackNavigator({
   cyberWellness: {screen: cyberWellness},
   settlingIn: {screen: settlingIn},
   studentExperiences: {screen: studentExperiences},
-  CCAMenu: {screen: CCAMenu}
+  CCAMenu: {screen: CCAMenu},
+  CCA1: {screen: CCA1},
+  InterestingExperiences: {screen: InterestingExperiences},
+  ShowChoir: {screen: ShowChoir}
 })
 export default createAppContainer(MainStack)
