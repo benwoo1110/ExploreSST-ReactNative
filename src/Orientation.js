@@ -60,7 +60,7 @@ class Orientation extends Component {
 
                         <ScrollView style={{
 
-                            width: '100%',
+                            width: '60%',  
                             backgroundColor: 'white',
                             shadowColor: 'gray',
                             shadowBlur: 10,
@@ -73,7 +73,7 @@ class Orientation extends Component {
 
                             marginTop: 16,
                             alignSelf: "flex-end",
-                            width: '60%',
+                       
                             backgroundColor: 'rgba(255, 255, 255, 0.5)'
                         }}>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("KnowingSST")}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 

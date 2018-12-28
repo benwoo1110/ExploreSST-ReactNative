@@ -106,11 +106,22 @@ class intro extends Component {
                 
 
                 </View>
+                    <View style={{padding: 8}}>
+                <Video source={{ uri: FILE_URL + '/videos/idk.mp4' }}
+                ref={(ref) => {
+                  this.player = ref
+                }}
+                controls = {true}
+                paused = {true}
+                onBuffer={this.onBuffer}
+                onError={this.onError}
+                style={{width: '100%', height: '100%', resizeMode: 'contain', alignSelf: 'center', borderRadius: 5}}/>
+</View>
 
-                <View>
-                  <Text>inserting vid here</Text>
+                
+                  
 
-                </View>
+
               </Swiper>
             </View>
 

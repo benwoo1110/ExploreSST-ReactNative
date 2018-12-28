@@ -38,7 +38,7 @@ class KnowingSST extends Component {
                 resizeMode: "cover",
                 alignItems: 'flex-start',
 
-                }} source={{ uri: FILE_URL + '/images/JenniferAniston.png' }}/>
+                }} source={{ uri: FILE_URL + '/images/Rachel_Face.png' }}/>
 
               <Text style={{
                 fontFamily: 'Avenir Next',

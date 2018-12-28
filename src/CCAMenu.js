@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet} from 'react-native'
+import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { FILE_URL } from './constants'
 
@@ -59,8 +59,6 @@ class CCAMenu extends Component {
                         </View>
 
                         <ScrollView style={{
-
-                            width: '100%',
                             backgroundColor: 'white',
                             shadowColor: 'gray',
                             shadowBlur: 10,
@@ -74,7 +72,7 @@ class CCAMenu extends Component {
                             marginTop: 16,
                             alignSelf: "flex-end",
                             width: '60%',
-                            backgroundColor: "white"
+                            backgroundColor: 'rgba(255, 255, 255, 0.5)'
                         }}>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ShowChoir") }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("InterestingExperiences") }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
@@ -104,11 +102,14 @@ class CCAMenu extends Component {
 }
 const styles = StyleSheet.create({
     buttonView: {
-        padding: 8
+        padding: 8,
+        margin: 8,
+        backgroundColor: 'white',
+        borderRadius: 5
       },
-      buttonText:{
-          fontSize: 18
-      }
+    buttonText: {
+        fontSize: 18
+    }
 
 })
 

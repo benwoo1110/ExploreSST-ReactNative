@@ -23,18 +23,30 @@ class badgeNight extends Component {
             margin: 16
           }}>
            
+           <View style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              paddingBottom: 8
+            }}>
 
+              <Image style={{
+                width: 50, 
+                height: 50,
+                borderRadius: 25,
+                resizeMode: "cover",
+                alignItems: 'flex-start',
 
-              <View>
-                <Image />
-                <Text style={{
-                  fontFamily: 'Avenir Next',
-                  textAlign: 'center',
-                  fontSize: 30,
-                  fontWeight: '600',
-                  color: 'white'
-                }}>Rachel</Text>
-              </View>
+                }} source={{ uri: FILE_URL + '/images/Rachel_Face.png' }}/>
+
+              <Text style={{
+                fontFamily: 'Avenir Next',
+                textAlign: 'center',
+                fontSize: 30,
+                fontWeight: '600',
+                color: 'white',
+                paddingLeft: 16
+              }}>Rachel</Text>
+            </View>
               <ScrollView>
 
 
