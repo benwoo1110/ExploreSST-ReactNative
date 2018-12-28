@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity , StatusBar} from 'react-native'
 import { FILE_URL } from './constants'
 
+
 class Entry extends Component {
   static navigationOptions = {
     header: null
@@ -16,10 +17,12 @@ class Entry extends Component {
         backgroundColor: 'black'
       }}>
       <StatusBar
-     backgroundColor="white"
+     backgroundColor="rgba(0, 0, 0, 0)"
      barStyle="light-content"
+     translucent ={true}
+
    />
-        <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
+        <ImageBackground source={require('../assets/images/background.png')} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
             flex: 1
           }}>

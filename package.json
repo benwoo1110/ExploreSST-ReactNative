@@ -12,6 +12,7 @@
     "react-native-fast-image": "^5.1.1",
     "react-native-gesture-handler": "^1.0.10",
     "react-native-linear-gradient": "^2.5.3",
+    "react-native-navigation-bar-color": "0.0.8",
     "react-native-parallax-scroll-view": "^0.21.3",
     "react-native-speech-bubble": "^0.4.1",
     "react-native-swiper": "^1.5.14",
