@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, ImageBackground, SafeAreaView, TouchableOpacity, Image, ScrollView, StyleSheet } from 'react-native'
 import { FILE_URL } from './constants'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import SpeechBubble from 'react-native-speech-bubble';
+// import SpeechBubble from 'react-native-speech-bubble';
 
 
 class KnowingSST extends Component {

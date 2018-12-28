@@ -20,6 +20,40 @@ class CCA1 extends Component {
           }} imageStyle={{ opacity: 0.5 }}>
 
           <SafeAreaView>
+            <ScrollView>
+            <View style={{
+                width: '75%',
+                backgroundColor: 'darkgrey',
+                shadowColor: 'gray',
+
+                shadowOffset: {
+                  width: 2,
+                  height: 2
+                },
+                shadowOpacity: 1,
+                borderRadius: 5,
+                justifyContent: "center",
+                alignItems: "center",
+                alignSelf: "flex-end",
+
+                marginTop: 16
+
+              }}><Text style={{
+                padding: 8,
+                fontSize: 18,
+                fontFamily: 'Avenir Next',
+                color: "white"
+
+              }}>What are the CCAs in SST?
+              </Text></View>
+               
+              <View style={
+               styles.ChatViewStyle
+            }><Text style={
+             styles.ChatTextStyle
+            }>There are
+            </Text></View>
+            </ScrollView>
 
           </SafeAreaView>
 
@@ -50,5 +84,40 @@ class CCA1 extends Component {
     )
   }
 }
+
+
+
+const styles=StyleSheet.create({
+  buttonView: {
+      padding: 8
+    },
+    buttonText:{
+        fontSize: 18
+    },
+    ChatTextStyle: {
+      padding: 8,
+      fontSize: 18,
+      fontFamily: 'Avenir Next',
+    },
+    ChatViewStyle: {
+      width: '75%',
+      backgroundColor: 'white',
+      shadowColor: 'gray',
+  
+      shadowOffset: {
+        width: 2,
+        height: 2
+      },
+      shadowOpacity: 1,
+      borderRadius: 5,
+      justifyContent: "center",
+      alignItems: "center",
+  
+      marginTop: 16
+  
+    }
+ 
+  
+});
 
 export default CCA1
