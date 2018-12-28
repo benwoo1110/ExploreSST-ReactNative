@@ -33,8 +33,6 @@ allprojects {
     }
 }
 
-
-
 // task wrapper(type: Wrapper) {
 //     gradleVersion = '5.0'
 //     distributionUrl = distributionUrl.replace("bin", "all")

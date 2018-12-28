@@ -121,6 +121,11 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+
+    compileOptions{
+        sourceCompatibility 1.8
+        targerCompatibility 1.8
+    }
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
@@ -151,9 +156,4 @@ dependencies {
 task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
-}
-
-compileOptions{
-    sourceCompatibility 1.8
-    targetCompatibility 1.8
 }
