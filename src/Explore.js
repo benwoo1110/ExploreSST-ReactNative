@@ -14,7 +14,7 @@ class Explore extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
+        <ImageBackground source={require('../assets/images/go.jpeg')}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -58,7 +58,7 @@ class Explore extends Component {
                 width: "35%",
                 height: "85%",
                 resizeMode: 'contain'
-              }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
+              }} source={require('../assets/images/Rachel_Waving.png')} />
             </View>
 
             <View style={{
@@ -94,6 +94,7 @@ class Explore extends Component {
 
 
           <SafeAreaView style={{
+            marginTop: 16,
             marginLeft: 8,
             position: 'absolute',
           }}>

@@ -1,8 +1,10 @@
-package com.exploresst;
+package org.sstinc.amalgam.explore;
 
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
+import io.invertase.firebase.RNFirebasePackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.thebylito.navigationbarcolor.NavigationBarColorPackage;
@@ -33,14 +35,14 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeYouTube(),
+            new RNFirebasePackage(),
             new ReactVideoPackage(),
             new VectorIconsPackage(),
             new NavigationBarColorPackage(),
             new LinearGradientPackage(),
-            new RNGestureHandlerPackage(),
             new FastImageViewPackage(),
             new ReactVideoPackage(),
-            new VectorIconsPackage(),
             new LinearGradientPackage(),
             new RNGestureHandlerPackage()
       );

@@ -1,4 +1,4 @@
-package com.exploresst;
+package org.sstinc.amalgam.explore;
 
 import com.facebook.react.ReactActivity;
 

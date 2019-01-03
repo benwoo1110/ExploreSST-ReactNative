@@ -21,6 +21,8 @@ import CCAMenu from './CCAMenu';                               //-
 import CCA1 from './CCA1';                                     //-
 import InterestingExperiences from "./InterestingExperiences"; //-
 import ShowChoir from './ShowChoir';                           //-
+import CCA2 from './CCA2';                                     //-
+import ChatView from './ChatView';                             //-
 //SEC 1 ----------------------------------------------------------
 
 //SEC 2
@@ -50,6 +52,8 @@ const MainStack = createStackNavigator({
   CCAMenu: {screen: CCAMenu},
   CCA1: {screen: CCA1},
   InterestingExperiences: {screen: InterestingExperiences},
-  ShowChoir: {screen: ShowChoir}
-})
+  ShowChoir: {screen: ShowChoir},
+  CCA2: {screen: CCA2},
+  ChatView: {screen: ChatView}
+});
 export default createAppContainer(MainStack)

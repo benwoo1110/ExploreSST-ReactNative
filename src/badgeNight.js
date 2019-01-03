@@ -3,6 +3,8 @@ import { Text, View, ImageBackground, TouchableOpacity, SafeAreaView, Image, Sty
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { FILE_URL } from './constants'
 
+
+
 class badgeNight extends Component {
   static navigationOptions = {
     header: null
@@ -36,7 +38,7 @@ class badgeNight extends Component {
                 resizeMode: "cover",
                 alignItems: 'flex-start',
 
-                }} source={{ uri: FILE_URL + '/images/Rachel_Face.png' }}/>
+                }} source={require('../assets/images/Rachel_Face.png')}/>
 
               <Text style={{
                 fontFamily: 'Avenir Next',
@@ -50,31 +52,7 @@ class badgeNight extends Component {
               <ScrollView>
 
 
-              <View style={{
-                width: '75%',
-                backgroundColor: 'darkgrey',
-                shadowColor: 'gray',
-
-                shadowOffset: {
-                  width: 2,
-                  height: 2
-                },
-                shadowOpacity: 1,
-                borderRadius: 5,
-                justifyContent: "center",
-                alignItems: "center",
-                alignSelf: "flex-end",
-
-                marginTop: 16
-
-              }}><Text style={{
-                padding: 8,
-                fontSize: 18,
-                fontFamily: 'Avenir Next',
-                color: "white"
-
-              }}>How did you get to know SST?
-              </Text></View>
+              
               <View style={
                 styles.ChatViewStyle
               }><Text style={
@@ -113,6 +91,7 @@ class badgeNight extends Component {
 
 
           <SafeAreaView style={{
+            marginTop: 16,
             marginLeft: 8,
             position: 'absolute',
           }}>

@@ -19,7 +19,34 @@ class CCA1 extends Component {
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
 
-          <SafeAreaView>
+          <SafeAreaView style={{
+            flex: 1,
+            margin: 16
+          }}>
+          <View style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              paddingBottom: 8
+            }}>
+
+              <Image style={{
+                width: 50, 
+                height: 50,
+                borderRadius: 25,
+                resizeMode: "cover",
+                alignItems: 'flex-start',
+
+                }} source={{ uri: FILE_URL + '/images/Rachel_Face.png' }}/>
+
+              <Text style={{
+                fontFamily: 'Avenir Next',
+                textAlign: 'center',
+                fontSize: 30,
+                fontWeight: '600',
+                color: 'white',
+                paddingLeft: 16
+              }}>Rachel</Text>
+            </View>
             <ScrollView>
             <View style={{
                 width: '75%',
@@ -51,8 +78,85 @@ class CCA1 extends Component {
                styles.ChatViewStyle
             }><Text style={
              styles.ChatTextStyle
-            }>There are
+            }>There are...
             </Text></View>
+
+            <View style={
+               styles.ChatViewStyle
+            }><Text style={
+             styles.ChatTextStyle
+            }>Sports and Games which includes:                                     
+                                                                                                  
+            Athletics                                                                                  
+            Badminton                                                                                           
+            Basketball                                                                                                            
+            Fencing                                                                                           
+            Floorball                                                                                            
+            Taekwondo                                                                                        
+            
+            </Text></View>
+
+            <View style={
+               styles.ChatViewStyle
+            }><Text style={
+             styles.ChatTextStyle
+            }>We also have the Performing Arts CCAs such as:                                                                                                  
+                                                                                                  
+            English Drama Club                                                                                  
+            Guitar Ensemble                                                                                          
+            Show Choir                                                                                    
+                                                                                                
+            
+            </Text></View>
+            <View style={
+               styles.ChatViewStyle
+            }><Text style={
+             styles.ChatTextStyle
+            }>There are Clubs and Societies:                                                                                                  
+                                                                                                  
+            Astronomy                                                                                  
+            Media Club                                                                                          
+            Robotics@APEX                                                                                                             
+            Singapore Youth Flying Club                                                                                    
+                                                                                
+            
+            </Text></View>
+            <View style={
+               styles.ChatViewStyle
+            }><Text style={
+             styles.ChatTextStyle
+            }>Lastly, we have 1 uniform group which is Air Scouts!                               
+            
+            </Text></View>
+
+            <View style={{
+      
+              margin: 16,
+              alignItems: 'flex-end',
+              justifyContent: 'center'
+            }}>
+              <TouchableOpacity onPress={() => {
+                this.props.navigation.navigate('CCA2')
+              }}>
+                <View style={{
+                  width: '75%',
+                  backgroundColor: 'white',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: 16,
+                  borderRadius: 16
+                }}>
+                  <Text style={{
+                    fontFamily: 'Avenir Next',
+                    fontSize: 15,
+                    fontWeight: '500'
+                  }}>
+                    I want to find out about a particular CCA
+                    </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+
             </ScrollView>
 
           </SafeAreaView>
@@ -68,6 +172,7 @@ class CCA1 extends Component {
 
           
           <SafeAreaView style={{
+            marginTop: 16,
             marginLeft: 8,
             position: 'absolute',
           }}>

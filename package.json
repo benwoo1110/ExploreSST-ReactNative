@@ -10,6 +10,7 @@
     "react": "16.6.1",
     "react-native": "0.57.7",
     "react-native-fast-image": "^5.1.1",
+    "react-native-firebase": "^5.1.1",
     "react-native-gesture-handler": "^1.0.10",
     "react-native-linear-gradient": "^2.5.3",
     "react-native-navigation-bar-color": "0.0.8",
@@ -18,6 +19,7 @@
     "react-native-swiper": "^1.5.14",
     "react-native-vector-icons": "^6.1.0",
     "react-native-video": "^4.2.0",
+    "react-native-youtube": "^1.1.0",
     "react-navigation": "^3.0.5",
     "react-navigation-fluid-transitions": "^0.2.73"
   },

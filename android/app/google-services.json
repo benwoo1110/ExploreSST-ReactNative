@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "632567358293",
+    "firebase_url": "https://exploresst.firebaseio.com",
+    "project_id": "exploresst",
+    "storage_bucket": "exploresst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632567358293:android:3ae03477d1033e74",
+        "android_client_info": {
+          "package_name": "org.sstinc.amalgam.explore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632567358293-r4idpev3p14fshp7afqnmd2gtccvcrrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSVPBA8sdDD9dhSqK4FWTHEqeuLOHQTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

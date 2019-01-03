@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, SafeAreaView, Image, ImageBackground, TouchableOpacity, ScrollView } from 'react-native'
 import { FILE_URL } from './constants'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import KnowingSST from './Conversations'
+
 
 class Orientation extends Component {
     static navigationOptions = {
@@ -76,7 +78,7 @@ class Orientation extends Component {
                        
                             backgroundColor: 'rgba(255, 255, 255, 0.5)'
                         }}>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("KnowingSST")}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatView"), {conversation: 'quack'}}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("cyberWellness")}}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
@@ -87,6 +89,7 @@ class Orientation extends Component {
 
 
                     <SafeAreaView style={{
+                        marginTop: 16, 
                         marginLeft: 8,
                         position: 'absolute',
                     }}>

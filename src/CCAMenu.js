@@ -83,6 +83,7 @@ class CCAMenu extends Component {
 
 
                     <SafeAreaView style={{
+                        marginTop: 16,
                         marginLeft: 8,
                         position: 'absolute',
                     }}>
