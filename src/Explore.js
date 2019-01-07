@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity, ImageBackground, SafeAreaView, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { FILE_URL } from './constants'
+
 
 class Explore extends Component {
   static navigationOptions = {
     header: null,
   }
-
   render() {
     return (
       <View style={{
@@ -90,9 +89,6 @@ class Explore extends Component {
               </TouchableOpacity>
             </View>
           </SafeAreaView>
-
-
-
           <SafeAreaView style={{
             marginTop: 16,
             marginLeft: 8,
@@ -110,5 +106,4 @@ class Explore extends Component {
     )
   }
 }
-
 export default Explore

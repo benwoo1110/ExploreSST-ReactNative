@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity , StatusBar} from 'react-native'
-import { FILE_URL } from './constants'
+
 
 
 class Entry extends Component {

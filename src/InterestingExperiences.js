@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { FILE_URL } from './constants'
+
 
 
 class InterestingExperiences extends Component {
@@ -14,7 +14,7 @@ class InterestingExperiences extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }}
+        <ImageBackground source={require('../assets/images/background.png')}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -36,7 +36,8 @@ class InterestingExperiences extends Component {
                 resizeMode: "cover",
                 alignItems: 'flex-start',
 
-              }} source={{ uri: FILE_URL + '/images/JenniferAniston.png' }} />
+
+              }} source={require('../assets/images/Farhan_Face.jpeg')} />
 
               <Text style={{
                 fontFamily: 'Avenir Next',

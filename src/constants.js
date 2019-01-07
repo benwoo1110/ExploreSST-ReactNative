@@ -1,1 +1,0 @@
-export const FILE_URL = 'http://localhost:3000'

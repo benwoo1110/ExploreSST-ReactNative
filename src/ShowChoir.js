@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { FILE_URL } from './constants'
+
 import YouTube from 'react-native-youtube'
 
 
@@ -16,7 +16,7 @@ class ShowChoir extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }}
+        <ImageBackground source={require('../assets/images/background.png')}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -37,7 +37,7 @@ class ShowChoir extends Component {
                 resizeMode: "cover",
                 alignItems: 'flex-start',
 
-              }} source={{ uri: FILE_URL + '/images/Rachel_Face.png' }} />
+              }} source={require('../assets/images/Rachel_Face.png' )} />
 
               <Text style={{
                 fontFamily: 'Avenir Next',

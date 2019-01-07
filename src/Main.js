@@ -11,18 +11,18 @@ import Year from "./Year";
 import Explore from './Explore';                               //-
 import intro from './intro';                                   //-
 import Orientation from './Orientation';                       //-
-import makingFriends from './makingFriends';                   //-
-import KnowingSST from './KnowingSST';                         //-
-import badgeNight from './badgeNight';                         //-
-import cyberWellness from './cyberWellness';                   //-
-import settlingIn from './settlingIn';                         //-
+                   //-
+                     //-
+                        //-
+                  //-
+                     //-
 import studentExperiences from './studentExperiences';         //-
 import CCAMenu from './CCAMenu';                               //-
 import CCA1 from './CCA1';                                     //-
 import InterestingExperiences from "./InterestingExperiences"; //-
 import ShowChoir from './ShowChoir';                           //-
 import CCA2 from './CCA2';                                     //-
-import ChatView from './ChatView';                             //-
+import ChatViewRachel from './ChatViewRachel';                             //-
 //SEC 1 ----------------------------------------------------------
 
 //SEC 2
@@ -43,17 +43,12 @@ const MainStack = createStackNavigator({
   Explore: { screen: Explore },
   intro: {screen: intro},
   Orientation: {screen: Orientation},
-  makingFriends: {screen: makingFriends},
-  KnowingSST: {screen: KnowingSST},
-  badgeNight: {screen: badgeNight},
-  cyberWellness: {screen: cyberWellness},
-  settlingIn: {screen: settlingIn},
   studentExperiences: {screen: studentExperiences},
   CCAMenu: {screen: CCAMenu},
   CCA1: {screen: CCA1},
   InterestingExperiences: {screen: InterestingExperiences},
   ShowChoir: {screen: ShowChoir},
   CCA2: {screen: CCA2},
-  ChatView: {screen: ChatView}
+  ChatViewRachel: {screen: ChatViewRachel}
 });
 export default createAppContainer(MainStack)

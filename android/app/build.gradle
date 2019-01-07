@@ -142,6 +142,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-fast-image')
     implementation project(':react-native-youtube')
     implementation project(':react-native-firebase')
     implementation project(':react-native-video')

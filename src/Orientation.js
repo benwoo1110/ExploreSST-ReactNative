@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, SafeAreaView, Image, ImageBackground, TouchableOpacity, ScrollView } from 'react-native'
-import { FILE_URL } from './constants'
+
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import KnowingSST from './Conversations'
+
 
 
 class Orientation extends Component {
@@ -16,7 +16,7 @@ class Orientation extends Component {
                 flex: 1,
                 backgroundColor: 'black'
             }}>
-                <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
+                <ImageBackground source={require('../assets/images/go.jpeg')}
                     style={{
                         flex: 1, resizeMode: 'contain'
                     }} imageStyle={{ opacity: 0.5 }}>
@@ -57,7 +57,7 @@ class Orientation extends Component {
                                 width: 300,
                                 height: 300,
                                 resizeMode: 'contain'
-                            }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
+                            }} source={require('../assets/images/Rachel_Waving.png')} />
                         </View>
 
                         <ScrollView style={{
@@ -78,11 +78,11 @@ class Orientation extends Component {
                        
                             backgroundColor: 'rgba(255, 255, 255, 0.5)'
                         }}>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatView"), {conversation: 'quack'}}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("makingFriends")}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("badgeNight")}}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("cyberWellness")}}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
-                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("settlingIn")}}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatViewRachel", {conversation: 'KnowingSST'})}}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View> 
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatViewRachel", {conversation: 'MakingFriends'})}}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatViewRachel", {conversation: 'BadgeNight'})}}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatViewRachel", {conversation: 'CyberWellness'})}}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
+                            <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("ChatViewRachel", {conversation: 'SettlingIn'})}}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
                             <View style={styles.buttonView}><TouchableOpacity onPress={() => {this.props.navigation.navigate("studentExperiences")}}><View><Text style={styles.buttonText}>Student Experiences in SST</Text ></View></TouchableOpacity></View>
                         </ScrollView>
                     </SafeAreaView>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, ImageBackground, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { FILE_URL } from './constants'
+
 import Swiper from 'react-native-swiper'
 import Video from 'react-native-video'
 
@@ -15,7 +15,7 @@ class intro extends Component {
         flex: 1,
         backgroundColor: 'black'
       }}>
-        <ImageBackground source={{ uri: FILE_URL + '/images/go.png' }}
+        <ImageBackground source={require('../assets/images/go.jpeg')}
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
@@ -38,7 +38,7 @@ class intro extends Component {
               height: 100,
               width: '75%',
               resizeMode: 'contain',
-            }} source={{ uri: FILE_URL + '/images/psblogo.png' }} />
+            }} source={require('../assets/images/psblogo.png')} />
             </View>
            <View style={{
              marginTop: 16,
@@ -107,7 +107,7 @@ class intro extends Component {
 
                 </View>
                     <View style={{padding: 8}}>
-                <Video source={{ uri: FILE_URL + '/videos/idk.mp4' }}
+                <Video source={require('../assets/videos/idk.mp4')}
                 ref={(ref) => {
                   this.player = ref
                 }}

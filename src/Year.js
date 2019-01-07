@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity, FlatList } from 'react-native'
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import LinearGradient from 'react-native-linear-gradient';
-import { FILE_URL } from './constants';
+
 
 
 
@@ -119,7 +119,7 @@ class Year extends Component {
               },
               shadowOpacity: 1,
               borderRadius: 5,
-            }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} resizeMode={'contain'}>
+            }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
               <Text style={{
                 margin: 8,
                 fontFamily: 'Avenir Next',
@@ -150,7 +150,7 @@ class Year extends Component {
                 },
                 shadowOpacity: 1,
                 borderRadius: 5,
-              }} source={{ uri: FILE_URL + '/Rachel_Waving.png' }} resizeMode={'contain'}>
+              }} source={require('../assets/images/Rachel_Waving.png')} resizeMode={'contain'}>
                 <Text style={{
                   margin: 8,
                   fontFamily: 'Avenir Next',

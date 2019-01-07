@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { FILE_URL } from './constants'
+
 
 class CCAMenu extends Component {
     static navigationOptions = {
@@ -14,7 +14,7 @@ class CCAMenu extends Component {
                 flex: 1,
                 backgroundColor: 'black'
             }}>
-                <ImageBackground source={{ uri: FILE_URL + '/images/background.png' }}
+                <ImageBackground source={require('../assets/images/background.png')}
                     style={{
                         flex: 1, resizeMode: 'contain'
                     }} imageStyle={{ opacity: 0.5 }}>
@@ -55,7 +55,7 @@ class CCAMenu extends Component {
                                 width: 300,
                                 height: 300,
                                 resizeMode: 'contain'
-                            }} source={{ uri: FILE_URL + '/images/Rachel_Waving.png' }} />
+                            }} source={require('../assets/images/Rachel_Waving.png')} />
                         </View>
 
                         <ScrollView style={{
