@@ -22,23 +22,18 @@ class InterestingExperiences extends Component {
             flex: 1,
             margin: 16
           }}>
-
             <View style={{
               flexDirection: 'row',
               justifyContent: 'center',
               paddingBottom: 8
             }}>
-
               <Image style={{
                 width: 50,
                 height: 50,
                 borderRadius: 25,
                 resizeMode: "cover",
                 alignItems: 'flex-start',
-
-
               }} source={require('../assets/images/Farhan_Face.jpeg')} />
-
               <Text style={{
                 fontFamily: 'Avenir Next',
                 textAlign: 'center',
@@ -49,12 +44,10 @@ class InterestingExperiences extends Component {
               }}>Farhan</Text>
             </View>
             <ScrollView>
-
               <View style={{
                 width: '75%',
                 backgroundColor: 'darkgrey',
                 shadowColor: 'gray',
-
                 shadowOffset: {
                   width: 2,
                   height: 2
@@ -64,18 +57,14 @@ class InterestingExperiences extends Component {
                 justifyContent: "center",
                 alignItems: "center",
                 alignSelf: "flex-end",
-
                 marginTop: 16
-
               }}><Text style={{
                 padding: 8,
                 fontSize: 18,
                 fontFamily: 'Avenir Next',
                 color: "white"
-
               }}>What other interesting experiences are there?
               </Text></View>
-
               <View style={
                 styles.ChatViewStyle
               }><Text style={
@@ -136,22 +125,8 @@ class InterestingExperiences extends Component {
                 styles.ChatTextStyle
               }>There are just so many interesting experiences you can find in SST. 
               </Text></View>
-              
             </ScrollView>
           </SafeAreaView>
-
-
-
-
-
-
-
-
-
-
-
-
-
           <SafeAreaView style={{
             marginLeft: 8,
             position: 'absolute',
@@ -161,9 +136,7 @@ class InterestingExperiences extends Component {
             }}>
               <Icon name={'keyboard-arrow-left'} color={'white'} size={40} />
             </TouchableOpacity>
-
           </SafeAreaView>
-
         </ImageBackground>
       </View>
     )
@@ -179,7 +152,6 @@ const styles = StyleSheet.create({
     width: '75%',
     backgroundColor: 'white',
     shadowColor: 'gray',
-
     shadowOffset: {
       width: 2,
       height: 2
@@ -188,10 +160,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-
     marginTop: 16
 
   }
 })
-
 export default InterestingExperiences

@@ -46,7 +46,6 @@ class Explore extends Component {
               padding: 8,
               fontSize: 18,
               fontFamily: 'Avenir Next',
-
             }}>Hello, I’m Rachel! I’m a year one SST student this year and I’m excited to share my new secondary school life with you! </Text>
             </View>
             <View style={{ flex: 1 }}>
@@ -59,7 +58,6 @@ class Explore extends Component {
                 resizeMode: 'contain'
               }} source={require('../assets/images/Rachel_Waving.png')} />
             </View>
-
             <View style={{
               position: 'absolute',
               bottom: 0,
@@ -99,7 +97,6 @@ class Explore extends Component {
             }}>
               <Icon name={'keyboard-arrow-left'} color={'white'} size={40} />
             </TouchableOpacity>
-
           </SafeAreaView>
         </ImageBackground>
       </View>

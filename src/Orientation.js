@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, SafeAreaView, Image, ImageBackground, TouchableOpacity, ScrollView } from 'react-native'
-
 import Icon from 'react-native-vector-icons/MaterialIcons'
-
-
 
 class Orientation extends Component {
     static navigationOptions = {
@@ -106,7 +103,6 @@ class Orientation extends Component {
     }
 }
 
-
 const styles=StyleSheet.create({
     buttonView: {
         padding: 8,
@@ -117,7 +113,5 @@ const styles=StyleSheet.create({
       buttonText:{
           fontSize: 18
       }
-   
-    
 });
 export default Orientation

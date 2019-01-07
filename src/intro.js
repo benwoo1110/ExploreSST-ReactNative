@@ -20,28 +20,28 @@ class intro extends Component {
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
-            flex:1,
+            flex: 1,
             margin: 16
           }}>
             <View>
-            <Text style={{
-              fontFamily: 'Avenir Next',
-              textAlign: 'center',
-              fontSize: 30,
-              fontWeight: '600',
-              color: 'white',
-            }}>Orientation</Text>
-            <Image style={{
+              <Text style={{
+                fontFamily: 'Avenir Next',
+                textAlign: 'center',
+                fontSize: 30,
+                fontWeight: '600',
+                color: 'white',
+              }}>Orientation</Text>
+              <Image style={{
 
-              alignSelf: 'center',
-              justifyContent: 'center',
-              height: 100,
-              width: '75%',
-              resizeMode: 'contain',
-            }} source={require('../assets/images/psblogo.png')} />
+                alignSelf: 'center',
+                justifyContent: 'center',
+                height: 100,
+                width: '75%',
+                resizeMode: 'contain',
+              }} source={require('../assets/images/psblogo.png')} />
             </View>
-           <View style={{
-             marginTop: 16,
+            <View style={{
+              marginTop: 16,
               width: '100%',
               backgroundColor: 'white',
               shadowColor: 'gray',
@@ -54,18 +54,14 @@ class intro extends Component {
               borderRadius: 5,
               justifyContent: "center",
               alignItems: "center",
-
             }}><Text style={{
               padding: 8,
               fontSize: 18,
               fontFamily: 'Avenir Next',
-
-
             }}>Hello! Welcome to SST! We are the Peer Support
-                        Board and we are here to bring you on board before
+            Board and we are here to bring you on board before
             the start of your SST Journey! Let’s go!</Text>
             </View>
-
             <View style={{
               marginTop: 16,
               width: '100%',
@@ -79,8 +75,6 @@ class intro extends Component {
                 height: 2
               },
               shadowOpacity: 1,
-
-
             }}>
               <Swiper index={0}>
                 <View>
@@ -89,45 +83,36 @@ class intro extends Component {
                     fontSize: 18,
                     fontFamily: 'Avenir Next',
                   }}>The annual SST orientation programme serves as the
-                    platform for the induction of new student entrants into
-                    the SST family.
-
-                    Orientation seeks to prepare the new entrants for learning
-                    in a uniquely SST environment.</Text>
+                      platform for the induction of new student entrants into
+                      the SST family.
+                      Orientation seeks to prepare the new entrants for learning
+                      in a uniquely SST environment.
+                    </Text>
                 </View>
                 <View>
                   <Text style={{
                     padding: 8,
                     fontSize: 18,
-                    fontFamily: 'Avenir Next',}}> The camp component aims
+                    fontFamily: 'Avenir Next',
+                  }}> The camp component aims
                     to imbue the values of SST and build the foundation of
                     teamwork and discipline amongst students through a series
                     of activities over a period of 2 days and 1 night.</Text>
-                
-
                 </View>
-                    <View style={{padding: 8}}>
-                <Video source={require('../assets/videos/idk.mp4')}
-                ref={(ref) => {
-                  this.player = ref
-                }}
-                controls = {true}
-                paused = {true}
-                onBuffer={this.onBuffer}
-                onError={this.onError}
-                style={{width: '100%', height: '100%', resizeMode: 'contain', alignSelf: 'center', borderRadius: 5}}/>
-</View>
-
-                
-                  
-
-
+                <View style={{ padding: 8 }}>
+                  <Video source={require('../assets/videos/idk.mp4')}
+                    ref={(ref) => {
+                      this.player = ref
+                    }}
+                    controls={true}
+                    paused={true}
+                    onBuffer={this.onBuffer}
+                    onError={this.onError}
+                    style={{ width: '100%', height: '100%', resizeMode: 'contain', alignSelf: 'center', borderRadius: 5 }} />
+                </View>
               </Swiper>
             </View>
-
-
-
-             <View style={{
+            <View style={{
               position: 'absolute',
               bottom: 0,
               right: 0,
@@ -156,12 +141,6 @@ class intro extends Component {
               </TouchableOpacity>
             </View>
           </SafeAreaView>
-
-
-
-
-
-
           <SafeAreaView style={{
             marginTop: 16,
             marginLeft: 8,
@@ -172,7 +151,6 @@ class intro extends Component {
             }}>
               <Icon name={'keyboard-arrow-left'} color={'white'} size={40} />
             </TouchableOpacity>
-
           </SafeAreaView>
         </ImageBackground>
       </View>

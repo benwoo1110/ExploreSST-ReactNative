@@ -52,16 +52,8 @@ export const conversations = {
         'I’m finding out that getting to those standards of performance took a lot of effort and practice, not to mention team work.',
         'But as they say,”No pain, no gain.”. I want to gain the confidence to express myself and the strength to endure tough situations.',
         'So I’ll break a leg, not literally of course. 😄 ',
-
-
-
-
-
-
-
     ],
 
     StudentExperiences: [
-
     ]
 }

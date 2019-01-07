@@ -18,27 +18,22 @@ class studentExperiences extends Component {
           style={{
             flex: 1, resizeMode: 'contain'
           }} imageStyle={{ opacity: 0.5 }}>
-
           <SafeAreaView style={{
             flex: 1,
             margin: 16
           }}>
-            
 						<View style={{
 							flexDirection: 'row',
 							justifyContent: 'center',
 							paddingBottom: 8
 						}}>
-
 							<Image style={{
 								width: 50,
 								height: 50,
 								borderRadius: 25,
 								resizeMode: "cover",
 								alignItems: 'flex-start',
-
 							}} source={require('../assets/images/Rachel_Face.png')} />
-
 							<Text style={{
 								fontFamily: 'Avenir Next',
 								textAlign: 'center',
@@ -54,7 +49,6 @@ class studentExperiences extends Component {
                 width: '75%',
                 backgroundColor: 'darkgrey',
                 shadowColor: 'gray',
-
                 shadowOffset: {
                   width: 2,
                   height: 2
@@ -64,43 +58,33 @@ class studentExperiences extends Component {
                 justifyContent: "center",
                 alignItems: "center",
                 alignSelf: "flex-end",
-
                 marginTop: 16
-
               }}><Text style={{
                 padding: 8,
                 fontSize: 18,
                 fontFamily: 'Avenir Next',
                 color: "white"
-
               }}>Tell me more about the Student Expriences in SST.
               </Text></View>
-
-
               <View style={
                 styles.ChatViewStyle
-
               }><Text style={
                styles.ChatTextStyle
               }>The annual SST orientation programme serves as the platform for the induction of new passionate innovators into the SST family.
             </Text></View>
             <View style={
                 styles.ChatViewStyle
-
               }><Text style={
                styles.ChatTextStyle
               }>Orientation seeks to prepare our budding passionate innovators for learning in a uniquely SST environment.
             </Text></View>
             <View style={
                 styles.ChatViewStyle
-
               }><Text style={
                styles.ChatTextStyle
               }> The Orientation camp component aims to imbue the values of SST and build the foundation of teamwork and discipline amongst students through a series of activities over a period of 2 days and 1 night.
             </Text></View>
-
             <View style={{
-              
               margin: 16,
               alignItems: 'flex-end',
               justifyContent: 'center'
@@ -127,11 +111,6 @@ class studentExperiences extends Component {
             </View>
             </ScrollView>
           </SafeAreaView>
-
-
-
-
-
           <SafeAreaView style={{
             marginLeft: 8,
             position: 'absolute',
@@ -141,21 +120,12 @@ class studentExperiences extends Component {
             }}>
               <Icon name={'keyboard-arrow-left'} color={'white'} size={40} />
             </TouchableOpacity>
-
           </SafeAreaView>
-
-
-
-
-
         </ImageBackground>
       </View>
-
-
     )
   }
 }
-
 const styles = StyleSheet.create({
   ChatTextStyle: {
     padding: 8,
@@ -175,14 +145,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
-
     marginTop: 16
-
   }
-
 })
-
-
-
 
 export default studentExperiences

@@ -3,9 +3,6 @@ import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpac
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import LinearGradient from 'react-native-linear-gradient';
 
-
-
-
 class Year extends Component {
   static navigationOptions = {
     header: null

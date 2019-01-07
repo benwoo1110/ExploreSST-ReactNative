@@ -1,27 +1,21 @@
 import React, { Component } from 'react'
-import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity , StatusBar} from 'react-native'
-
-
+import { View, Text, Image, ImageBackground, Button, SafeAreaView, TouchableOpacity, StatusBar } from 'react-native'
 
 class Entry extends Component {
   static navigationOptions = {
     header: null
   }
-
   render() {
     return (
-      
       <View style={{
         flex: 1,
-
         backgroundColor: 'black'
       }}>
-      <StatusBar
-     backgroundColor="rgba(0, 0, 0, 0)"
-     barStyle="light-content"
-     translucent ={true}
-
-   />
+        <StatusBar
+          backgroundColor="rgba(0, 0, 0, 0)"
+          barStyle="light-content"
+          translucent={true}
+        />
         <ImageBackground source={require('../assets/images/background.png')} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{
             flex: 1

@@ -2,18 +2,20 @@ import React, { Component } from 'react'
 import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-
-
 class CCA1 extends Component {
   static navigationOptions = {
     header: null
   }
+
   render() {
+
     return (
+
       <View style={{
         flex: 1,
         backgroundColor: 'black'
       }}>
+
         <ImageBackground source={require('../assets/images/background.png')}
           style={{
             flex: 1, resizeMode: 'contain'
@@ -23,6 +25,7 @@ class CCA1 extends Component {
             flex: 1,
             margin: 16
           }}>
+
           <View style={{
               flexDirection: 'row',
               justifyContent: 'center',
@@ -35,7 +38,6 @@ class CCA1 extends Component {
                 borderRadius: 25,
                 resizeMode: "cover",
                 alignItems: 'flex-start',
-
                 }} source={require('../assets/images/Rachel_Face.png')}/>
 
               <Text style={{
@@ -45,14 +47,15 @@ class CCA1 extends Component {
                 fontWeight: '600',
                 color: 'white',
                 paddingLeft: 16
-              }}>Rachel</Text>
+              }}>Rachel
+              </Text>
             </View>
+
             <ScrollView>
             <View style={{
                 width: '75%',
                 backgroundColor: 'darkgrey',
                 shadowColor: 'gray',
-
                 shadowOffset: {
                   width: 2,
                   height: 2
@@ -118,9 +121,8 @@ class CCA1 extends Component {
             Media Club                                                                                          
             Robotics@APEX                                                                                                             
             Singapore Youth Flying Club                                                                                    
-                                                                                
-            
-            </Text></View>
+            </Text>
+            </View>
             <View style={
                styles.ChatViewStyle
             }><Text style={
@@ -161,16 +163,6 @@ class CCA1 extends Component {
 
           </SafeAreaView>
 
-
-
-
-
-
-
-
-
-
-          
           <SafeAreaView style={{
             marginTop: 16,
             marginLeft: 8,
