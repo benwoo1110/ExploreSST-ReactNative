@@ -188,17 +188,15 @@ class CCA1 extends Component {
 
         </ImageBackground>
       </View>
-    )
+    );
   }
 }
 
-
-
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
   buttonView: {
       padding: 8
     },
-    buttonText:{
+    buttonText: {
         fontSize: 18
     },
     ChatTextStyle: {
@@ -219,10 +217,8 @@ const styles=StyleSheet.create({
       borderRadius: 5,
       justifyContent: "center",
       alignItems: "center",
-  
       marginTop: 16
-  
     }
 });
 
-export default CCA1
+export default CCA1;

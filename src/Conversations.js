@@ -1,6 +1,6 @@
 
 
-const conversations = {
+export const conversations = {
   KnowingSST: [
     'How did you get to know SST?',
     'SST conducts digital citizenship workshops for primary schools and I was one of the students who attended.',
@@ -57,4 +57,3 @@ const conversations = {
   StudentExperiences: [
   ]
 };
-export default conversations;

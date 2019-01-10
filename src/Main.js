@@ -16,7 +16,8 @@ import ShowChoir from './ShowChoir';
 import CCA2 from './CCA2';
 import ChatViewRachel from './ChatViewRachel';
 
-YellowBox.ignoreWarnings(['Importing the stack']);
+// YellowBox.ignoreWarnings(['Importing the stack']);
+// YellowBox.ignoreWarnings();
 
 const MainStack = createStackNavigator({
   Entry: { screen: Entry },
