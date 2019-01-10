@@ -142,6 +142,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-fs')
+    compile project(':react-native-firebase')
     compile project(':react-native-fast-image')
     implementation project(':react-native-youtube')
     implementation project(':react-native-firebase')

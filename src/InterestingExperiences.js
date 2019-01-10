@@ -1,39 +1,48 @@
-import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
-import Icon from 'react-native-vector-icons/MaterialIcons'
-
-
+import React, { Component } from 'react';
+import {
+  Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet
+} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 class InterestingExperiences extends Component {
   static navigationOptions = {
     header: null
   }
+
   render() {
     return (
       <View style={{
         flex: 1,
         backgroundColor: 'black'
-      }}>
-        <ImageBackground source={require('../assets/images/background.png')}
+      }}
+      >
+        <ImageBackground
+          source={require('../assets/images/background.png')}
           style={{
             flex: 1, resizeMode: 'contain'
-          }} imageStyle={{ opacity: 0.5 }}>
+          }}
+          imageStyle={{ opacity: 0.5 }}
+        >
           <SafeAreaView style={{
             flex: 1,
             margin: 16
-          }}>
+          }}
+          >
             <View style={{
               flexDirection: 'row',
               justifyContent: 'center',
               paddingBottom: 8
-            }}>
-              <Image style={{
-                width: 50,
-                height: 50,
-                borderRadius: 25,
-                resizeMode: "cover",
-                alignItems: 'flex-start',
-              }} source={require('../assets/images/Farhan_Face.jpeg')} />
+            }}
+            >
+              <Image
+                style={{
+                  width: 50,
+                  height: 50,
+                  borderRadius: 25,
+                  resizeMode: "cover",
+                  alignItems: 'flex-start',
+                }}
+                source={require('../assets/images/Farhan_Face.jpeg')} />
               <Text style={{
                 fontFamily: 'Avenir Next',
                 textAlign: 'center',
@@ -41,7 +50,10 @@ class InterestingExperiences extends Component {
                 fontWeight: '600',
                 color: 'white',
                 paddingLeft: 16
-              }}>Farhan</Text>
+              }}
+              >
+                Farhan
+              </Text>
             </View>
             <ScrollView>
               <View style={{
@@ -58,24 +70,34 @@ class InterestingExperiences extends Component {
                 alignItems: "center",
                 alignSelf: "flex-end",
                 marginTop: 16
-              }}><Text style={{
-                padding: 8,
-                fontSize: 18,
-                fontFamily: 'Avenir Next',
-                color: "white"
-              }}>What other interesting experiences are there?
-              </Text></View>
+              }}
+              >
+                <Text
+                  style={{
+                    padding: 8,
+                    fontSize: 18,
+                    fontFamily: 'Avenir Next',
+                    color: "white"
+                  }}
+                >
+                  What other interesting experiences are there?
+                </Text>
+              </View>
+              <View style={
+                styles.ChatViewStyle
+              }
+              >
+                <Text style={
+                  styles.ChatTextStyle
+                }>
+                  I’m not sure where to start but I’ll try. 🤗
+                </Text>
+              </View>
               <View style={
                 styles.ChatViewStyle
               }><Text style={
                 styles.ChatTextStyle
-              }>I’m not sure where to start but I’ll try. 🤗
-              </Text></View>
-              <View style={
-                styles.ChatViewStyle
-              }><Text style={
-                styles.ChatTextStyle
-              }>There are so many programmes spanned over the years that are available for the entire cohort. 
+              }>There are so many programmes spanned over the years that are available for the entire cohort.
               </Text></View>
               <View style={
                 styles.ChatViewStyle
@@ -123,7 +145,7 @@ class InterestingExperiences extends Component {
                 styles.ChatViewStyle
               }><Text style={
                 styles.ChatTextStyle
-              }>There are just so many interesting experiences you can find in SST. 
+              }>There are just so many interesting experiences you can find in SST.
               </Text></View>
             </ScrollView>
           </SafeAreaView>

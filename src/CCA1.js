@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import React, { Component } from 'react';
+import {
+  Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet
+} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 class CCA1 extends Component {
   static navigationOptions = {
@@ -8,31 +10,36 @@ class CCA1 extends Component {
   }
 
   render() {
-
     return (
 
       <View style={{
         flex: 1,
         backgroundColor: 'black'
-      }}>
-
-        <ImageBackground source={require('../assets/images/background.png')}
+      }}
+      >
+        <ImageBackground
+          source={require('../assets/images/background.png')}
           style={{
             flex: 1, resizeMode: 'contain'
-          }} imageStyle={{ opacity: 0.5 }}>
+          }}
+          imageStyle={{ opacity: 0.5 }}
+        >
 
           <SafeAreaView style={{
             flex: 1,
             margin: 16
-          }}>
+          }}
+          >
 
           <View style={{
               flexDirection: 'row',
               justifyContent: 'center',
               paddingBottom: 8
-            }}>
+            }}
+          >
 
-              <Image style={{
+              <Image
+              style={{
                 width: 50, 
                 height: 50,
                 borderRadius: 25,
@@ -53,9 +60,9 @@ class CCA1 extends Component {
 
             <ScrollView>
             <View style={{
-                width: '75%',
-                backgroundColor: 'darkgrey',
-                shadowColor: 'gray',
+              width: '75%',
+              backgroundColor: 'darkgrey',
+              shadowColor: 'gray',
                 shadowOffset: {
                   width: 2,
                   height: 2
@@ -68,14 +75,17 @@ class CCA1 extends Component {
 
                 marginTop: 16
 
-              }}><Text style={{
+              }}>
+              <Text style={{
                 padding: 8,
                 fontSize: 18,
                 fontFamily: 'Avenir Next',
                 color: "white"
 
-              }}>What are the CCAs in SST?
-              </Text></View>
+              }}>
+              What are the CCAs in SST?
+              </Text>
+            </View>
                
               <View style={
                styles.ChatViewStyle
@@ -109,7 +119,7 @@ class CCA1 extends Component {
             Guitar Ensemble                                                                                          
             Show Choir                                                                                    
                                                                                                 
-            
+          
             </Text></View>
             <View style={
                styles.ChatViewStyle
@@ -213,8 +223,6 @@ const styles=StyleSheet.create({
       marginTop: 16
   
     }
- 
-  
 });
 
 export default CCA1
