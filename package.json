@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "eslint-config-google": "^0.11.0",
     "lint": "^1.1.2",
     "react": "16.6.1",
     "react-native": "0.57.7",
@@ -16,6 +17,7 @@
     "react-native-gesture-handler": "^1.0.10",
     "react-native-linear-gradient": "^2.5.3",
     "react-native-navigation-bar-color": "0.0.8",
+    "react-native-pages": "^0.7.0",
     "react-native-parallax-scroll-view": "^0.21.3",
     "react-native-speech-bubble": "^0.4.1",
     "react-native-swiper": "^1.5.14",

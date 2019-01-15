@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 
+
 class Year extends Component {
   static navigationOptions = {
     header: null

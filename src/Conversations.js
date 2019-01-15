@@ -55,5 +55,23 @@ export const conversations = {
   ],
 
   StudentExperiences: [
+    'Tell me more about the Student Expriences in SST.',
+    'The annual SST orientation programme serves as the platform for the induction of new passionate innovators into the SST family.',
+    'Orientation seeks to prepare our budding passionate innovators for learning in a uniquely SST environment.',
+    'The Orientation camp component aims to imbue the values of SST and build the foundation of teamwork and discipline amongst students through a series of activities over a period of 2 days and 1 night.',
+  ],
+
+  InterestingExperiences: [ 
+    'What other interesting experiences are there?',
+    'I’m not sure where to start but I’ll try. 🤗',
+    'There are so many programmes spanned over the years that are available for the entire cohort.',
+    'Experiences that students go through are interdisciplinary and built upon.',
+    'For example, in Secondary 2, students go through the Investigative Skills in Science (ISS) programme, where they spend a term researching and developing a science project of their choice in place of regular classes.',
+    'In Secondary 3, they can opt for the Industrial Research and Attachment Programme, where they are able to utilise their research skills depending on their projects.',
+    'As you can see, programmes are integrated and pervasive.',
+    'Have you ever heard of SST’s Talent Development Programme (TDP) ?',
+    'It is a programme where every student is potentially a talent in some specific area(s) and SST has provisions in place to facilitate the identification and nurturing of each student’s specific talent based on his or her expressed area(s) of interest.',
+    'Some of these TDPs include Science TDP, Student Leadership Programmes, SST INC, and more. You can find out more by asking my friends!',
+    'There are just so many interesting experiences you can find in SST.'
   ]
 };

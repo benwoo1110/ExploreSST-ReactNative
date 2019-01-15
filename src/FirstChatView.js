@@ -5,7 +5,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { conversations } from './Conversations';
 
-class ChatViewRachel extends Component {
+class FirstChatview extends Component {
   static navigationOptions = {
     header: null
   }
@@ -29,6 +29,10 @@ class ChatViewRachel extends Component {
         return conversations.CyberWellenss;
       case 'SettlingIn':
         return conversations.SettlingIn;
+      case 'StudentExperiences':
+        return conversations.StudentExperiences;
+      case 'InterestingExperiences':
+        return conversations.InterestingExperiences;
       default:
         return 0;
     }
@@ -80,7 +84,7 @@ class ChatViewRachel extends Component {
         </View>
       );
     }
-    if (this.state.conversation === 'SettlingIn') {
+    if (this.state.conversation === 'SettlingIn' || this.state.conversation === 'StudentExperiences') {
       conversationBubbles.push(
         <View style={{
           margin: 16,
@@ -203,4 +207,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ChatViewRachel;
+export default FirstChatview;

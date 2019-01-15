@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-  Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet
+  Text, View, Image, ImageBackground, SafeAreaView,
+  TouchableOpacity, ScrollView, StyleSheet
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
 
 class CCAMenu extends Component {
   static navigationOptions = {
@@ -92,7 +92,7 @@ class CCAMenu extends Component {
             }}
             >
               <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('ShowChoir'); }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
-              <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('InterestingExperiences'); }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
+              <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'InterestingExperiences' }); }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
               <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('CCA1'); }}><View><Text style={styles.buttonText}>What are the CCAs in SST?</Text></View></TouchableOpacity></View>
             </ScrollView>
           </SafeAreaView>

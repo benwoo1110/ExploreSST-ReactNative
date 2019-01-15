@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+
 class Orientation extends Component {
   static navigationOptions = {
     header: null
@@ -69,7 +70,7 @@ class Orientation extends Component {
             <View style={{
               flexDirection: 'row',
               flex: 1,
-              backgroundColor: 'yellow'
+
             }}
             >
               <Image
@@ -77,13 +78,12 @@ class Orientation extends Component {
                   width: 150,
                   height: 300,
                   resizeMode: 'contain',
-                  marginTop: '100%' - 100
+                  marginTop: '75%'
                 }}
-                source={require('../assets/images/Rachel_Waving.png')} />
-
+                source={require('../assets/images/Rachel_Waving.png')}
+              />
 
               <ScrollView style={{
-
                 width: '60%',
                 shadowColor: 'gray',
                 shadowBlur: 10,
@@ -98,12 +98,12 @@ class Orientation extends Component {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }}
               >
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'KnowingSST' }); }}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'MakingFriends' }); }}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'BadgeNight' }); }}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'CyberWellness' }); }}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'SettlingIn' }); }}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("studentExperiences"); }}><View><Text style={styles.buttonText}>Student Experiences in SST</Text ></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'KnowingSST', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'MakingFriends', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'BadgeNight', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'CyberWellness', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'SettlingIn', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('FirstChatView', { conversation: 'StudentExperiences' }); }}><View><Text style={styles.buttonText}>Student Experiences in SST</Text ></View></TouchableOpacity></View>
               </ScrollView>
             </View>
           </SafeAreaView>
@@ -116,10 +116,10 @@ class Orientation extends Component {
           }}
           >
             <TouchableOpacity onPress={() => {
-              this.props.navigation.goBack()
+              this.props.navigation.goBack();
             }}
             >
-              <Icon name={'keyboard-arrow-left'} color={'white'} size={40} />
+              <Icon name="keyboard-arrow-left" color="white" size={40} />
             </TouchableOpacity>
 
           </SafeAreaView>
@@ -140,4 +140,4 @@ const styles = StyleSheet.create({
     fontSize: 18
   }
 });
-export default Orientation
+export default Orientation;

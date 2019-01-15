@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import Swiper from 'react-native-swiper';
 import Video from 'react-native-video';
 
+
 class intro extends Component {
   static navigationOptions = {
     header: null,
@@ -94,7 +95,7 @@ class intro extends Component {
               shadowOpacity: 1,
             }}
             >
-              <Swiper index={0}>
+              <Swiper removeClippedSubviews={false}>
                 <View>
                   <Text style={{
                     padding: 8,
@@ -138,6 +139,7 @@ class intro extends Component {
                   />
                 </View>
               </Swiper>
+
             </View>
             <View style={{
               position: 'absolute',

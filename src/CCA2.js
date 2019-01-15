@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
-import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import React, { Component } from 'react';
+import { Text, View, Image, ImageBackground, SafeAreaView, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 class CCA2 extends Component {
     static navigationOptions = {
         header: null
     }
+
     render() {
         return (
             <View style={{
@@ -20,7 +21,8 @@ class CCA2 extends Component {
                     <SafeAreaView style={{
                         flex: 1,
                         margin: 16
-                    }}>
+                    }}
+                    >
 
                         <View style={{
                             flexDirection: 'row',
@@ -35,7 +37,7 @@ class CCA2 extends Component {
                                 resizeMode: "cover",
                                 alignItems: 'flex-start',
 
-                            }} source={require('../assets//images/Farhan_Face.jpeg')}/>
+                            }} source={require('../assets//images/Farhan_Face.jpeg')} />
 
                             <Text style={{
                                 fontFamily: 'Avenir Next',
@@ -60,107 +62,106 @@ class CCA2 extends Component {
                         }>SST students shine in a diverse range of mixed and sometimes eclectic fields:
                         </Text></View>
                         <ScrollView>
-                        <View style={{
+                            <View style={{
 
-                            margin: 16,
-                            alignItems: 'stretch',
-                            justifyContent: 'center'
-                        }}>
-                            <TouchableOpacity onPress={() => {
-                                this.props.navigation.navigate('')
+                                margin: 16,
+                                alignItems: 'stretch',
+                                justifyContent: 'center'
                             }}>
-                                <View style={{
-
-                                    backgroundColor: 'white',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: 16,
-                                    borderRadius: 16
+                                <TouchableOpacity onPress={() => {
+                                    this.props.navigation.navigate('')
                                 }}>
-                                    <Text style={{
-                                        fontFamily: 'Avenir Next',
-                                        fontSize: 15,
-                                        fontWeight: '500'
-                                    }}>Sports and Games
+                                    <View style={{
+                                        backgroundColor: 'white',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: 16,
+                                        borderRadius: 16
+                                    }}>
+                                        <Text style={{
+                                            fontFamily: 'Avenir Next',
+                                            fontSize: 15,
+                                            fontWeight: '500'
+                                        }}>Sports and Games
                                     </Text>
-                                </View>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{
-                            margin: 16,
-                            alignItems: 'stretch',
-                            justifyContent: 'center'
-                        }}>
-                            <TouchableOpacity onPress={() => {
-                                this.props.navigation.navigate('')
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={{
+                                margin: 16,
+                                alignItems: 'stretch',
+                                justifyContent: 'center'
                             }}>
-                                <View style={{
-
-                                    backgroundColor: 'white',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: 16,
-                                    borderRadius: 16
+                                <TouchableOpacity onPress={() => {
+                                    this.props.navigation.navigate('')
                                 }}>
-                                    <Text style={{
-                                        fontFamily: 'Avenir Next',
-                                        fontSize: 15,
-                                        fontWeight: '500'
-                                    }}>Performing Arts
+                                    <View style={{
+
+                                        backgroundColor: 'white',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: 16,
+                                        borderRadius: 16
+                                    }}>
+                                        <Text style={{
+                                            fontFamily: 'Avenir Next',
+                                            fontSize: 15,
+                                            fontWeight: '500'
+                                        }}>Performing Arts
                                     </Text>
-                                </View>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{
-                            margin: 16,
-                            alignItems: 'stretch',
-                            justifyContent: 'center'
-                        }}>
-                            <TouchableOpacity onPress={() => {
-                                this.props.navigation.navigate('')
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={{
+                                margin: 16,
+                                alignItems: 'stretch',
+                                justifyContent: 'center'
                             }}>
-                                <View style={{
-
-                                    backgroundColor: 'white',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: 16,
-                                    borderRadius: 16
+                                <TouchableOpacity onPress={() => {
+                                    this.props.navigation.navigate('')
                                 }}>
-                                    <Text style={{
-                                        fontFamily: 'Avenir Next',
-                                        fontSize: 15,
-                                        fontWeight: '500'
-                                    }}>Clubs and Societies
+                                    <View style={{
+
+                                        backgroundColor: 'white',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: 16,
+                                        borderRadius: 16
+                                    }}>
+                                        <Text style={{
+                                            fontFamily: 'Avenir Next',
+                                            fontSize: 15,
+                                            fontWeight: '500'
+                                        }}>Clubs and Societies
                                     </Text>
-                                </View>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{
-                            margin: 16,
-                            alignItems: 'stretch',
-                            justifyContent: 'center'
-                        }}>
-                            <TouchableOpacity onPress={() => {
-                                this.props.navigation.navigate('')
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
+                            <View style={{
+                                margin: 16,
+                                alignItems: 'stretch',
+                                justifyContent: 'center'
                             }}>
-                                <View style={{
-
-                                    backgroundColor: 'white',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: 16,
-                                    borderRadius: 16
+                                <TouchableOpacity onPress={() => {
+                                    this.props.navigation.navigate('')
                                 }}>
-                                    <Text style={{
-                                        fontFamily: 'Avenir Next',
-                                        fontSize: 15,
-                                        fontWeight: '500'
-                                    }}>Uniform Groups
+                                    <View style={{
+
+                                        backgroundColor: 'white',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: 16,
+                                        borderRadius: 16
+                                    }}>
+                                        <Text style={{
+                                            fontFamily: 'Avenir Next',
+                                            fontSize: 15,
+                                            fontWeight: '500'
+                                        }}>Uniform Groups
                                     </Text>
-                                </View>
-                            </TouchableOpacity>
-                        </View>
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
                         </ScrollView>
 
 
