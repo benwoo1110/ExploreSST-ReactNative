@@ -13,6 +13,8 @@ import SecondChatView from './SecondChatView';
 import FarhanIntro from './SecondaryTwo/FarhanIntro';
 import ConversationSelect2 from './SecondaryTwo/ConversationSelect2';
 import ChatViewSec2 from './SecondaryTwo/ChatViewSec2';
+import ConversationSelect3 from './SecondaryThree/ConversationSelect3';
+import ChatViewSec3 from './SecondaryThree/ChatViewSec3';
 
 const MainStack = createStackNavigator({
   Entry: { screen: Entry },
@@ -28,6 +30,8 @@ const MainStack = createStackNavigator({
   SecondChatView: { screen: SecondChatView },
   FarhanIntro: { screen: FarhanIntro },
   ConversationSelect2: { screen: ConversationSelect2 },
-  ChatViewSec2: { screen: ChatViewSec2 }
+  ChatViewSec2: { screen: ChatViewSec2 },
+  ConversationSelect3: { screen: ConversationSelect3 },
+  ChatViewSec3: { screen: ChatViewSec3 }
 });
 export default createAppContainer(MainStack);

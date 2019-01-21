@@ -3,6 +3,9 @@ import {
   View, Text, ImageBackground, SafeAreaView, TouchableOpacity
 } from 'react-native';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
+import Background2 from '../assets/images/background2.jpg';
+import RachelWaving from '../assets/images/Rachel_Waving.png';
+import FarhanCoding from '../assets/images/Farhan_Coding.png';
 
 class Year extends Component {
   static navigationOptions = {
@@ -21,7 +24,7 @@ class Year extends Component {
           parallaxHeaderHeight={300}
           renderBackground={() => (
             <ImageBackground
-              source={require('../assets/images/background2.jpg')}
+              source={Background2}
               style={{
                 height: 300,
                 width: '100%',
@@ -67,7 +70,7 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5,
               }}
-              source={require('../assets/images/Rachel_Waving.png')}
+              source={RachelWaving}
               resizeMode="contain"
             >
               <Text style={{
@@ -107,7 +110,7 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5,
               }}
-              source={require('../assets/images/Farhan_Coding.png')}
+              source={FarhanCoding}
               resizeMode="contain"
             >
               <Text style={{
@@ -143,7 +146,7 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5,
               }}
-              source={require('../assets/images/Rachel_Waving.png')}
+              source={RachelWaving}
               resizeMode="contain"
             >
               <Text style={{
@@ -181,7 +184,7 @@ class Year extends Component {
                   shadowOpacity: 1,
                   borderRadius: 5,
                 }}
-                source={require('../assets/images/Rachel_Waving.png')}
+                source={RachelWaving}
                 resizeMode="contain"
               >
                 <Text style={{

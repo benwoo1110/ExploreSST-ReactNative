@@ -20,7 +20,7 @@ class Entry extends Component {
         <StatusBar
           backgroundColor="rgba(0, 0, 0, 0)"
           barStyle="light-content"
-          // translucent={true}
+          translucent={true}
         />
         <ImageBackground source={Background} style={{ flex: 1, resizeMode: 'contain' }} imageStyle={{ opacity: 0.5 }}>
           <SafeAreaView style={{

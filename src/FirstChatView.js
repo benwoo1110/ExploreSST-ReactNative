@@ -4,6 +4,8 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { conversations } from './Conversations';
+import Background from '../assets/images/background.png';
+import RachelFace from '../assets/images/Rachel_Face.png'
 
 class FirstChatview extends Component {
   static navigationOptions = {
@@ -125,7 +127,7 @@ class FirstChatview extends Component {
       }}
       >
         <ImageBackground
-          source={require('../assets/images/background.png')}
+          source={Background}
           style={{
             flex: 1, resizeMode: 'contain'
           }}
@@ -150,7 +152,7 @@ class FirstChatview extends Component {
                   resizeMode: 'cover',
                   alignItems: 'flex-start',
                 }}
-                source={require('../assets/images/Rachel_Face.png')}
+                source={RachelFace}
               />
               <Text style={{
                 fontFamily: 'Avenir Next',
