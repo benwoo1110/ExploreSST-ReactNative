@@ -5,7 +5,8 @@ import {
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Swiper from 'react-native-swiper';
 import Video from 'react-native-video';
-
+import GeneralOffice from '../assets/images/go.jpeg';
+import PSBLogo from '../assets/images/psblogo.png';
 
 class intro extends Component {
   static navigationOptions = {
@@ -20,7 +21,7 @@ class intro extends Component {
       }}
       >
         <ImageBackground
-          source={require('../assets/images/go.jpeg')}
+          source={GeneralOffice}
           style={{
             flex: 1, resizeMode: 'contain'
           }}
@@ -50,7 +51,7 @@ class intro extends Component {
                   width: '75%',
                   resizeMode: 'contain',
                 }}
-                source={require('../assets/images/psblogo.png')}
+                source={PSBLogo}
               />
             </View>
             <View style={{
@@ -181,10 +182,10 @@ class intro extends Component {
           }}
           >
             <TouchableOpacity onPress={() => {
-              this.props.navigation.goBack()
+              this.props.navigation.goBack();
             }}
             >
-              <Icon name="keyboard-arrow-left" color={'white'} size={40} />
+              <Icon name="keyboard-arrow-left" color="white" size={40} />
             </TouchableOpacity>
           </SafeAreaView>
         </ImageBackground>

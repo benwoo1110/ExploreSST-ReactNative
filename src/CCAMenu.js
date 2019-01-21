@@ -4,6 +4,8 @@ import {
   TouchableOpacity, ScrollView, StyleSheet
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import backgroundone from '../assets/images/background.png';
+import rachelOne from '../assets/images/Rachel_Waving.png';
 
 class CCAMenu extends Component {
   static navigationOptions = {
@@ -11,6 +13,7 @@ class CCAMenu extends Component {
   }
 
   render() {
+    const { navigation } = this.props;
     return (
       <View style={{
         flex: 1,
@@ -18,7 +21,7 @@ class CCAMenu extends Component {
       }}
       >
         <ImageBackground
-          source={require('../assets/images/background.png')}
+          source={backgroundone}
           style={{
             flex: 1, resizeMode: 'contain'
           }}
@@ -71,7 +74,7 @@ class CCAMenu extends Component {
                   height: 300,
                   resizeMode: 'contain'
                 }}
-                source={require('../assets/images/Rachel_Waving.png')}
+                source={rachelOne}
               />
             </View>
 
@@ -91,9 +94,9 @@ class CCAMenu extends Component {
               backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}
             >
-              <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('ShowChoir'); }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
-              <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate("ChatViewRachel", { conversation: 'InterestingExperiences' }); }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
-              <View style={styles.buttonView}><TouchableOpacity onPress={() => { this.props.navigation.navigate('CCA1'); }}><View><Text style={styles.buttonText}>What are the CCAs in SST?</Text></View></TouchableOpacity></View>
+              <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ShowChoir'); }}><View><Text style={styles.buttonText}>I want to see some of those showchoir performances!</Text></View></TouchableOpacity></View>
+              <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate("SecondChatView", { conversation: 'InterestingExperiences' }); }}><View><Text style={styles.buttonText}>What other interesting experiences are there?</Text></View></TouchableOpacity></View>
+              <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('CCA1'); }}><View><Text style={styles.buttonText}>What are the CCAs in SST?</Text></View></TouchableOpacity></View>
             </ScrollView>
           </SafeAreaView>
 

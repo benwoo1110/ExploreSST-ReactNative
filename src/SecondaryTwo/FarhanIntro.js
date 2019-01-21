@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import {
-  View, Text, TouchableOpacity, ImageBackground, SafeAreaView, Image
+  Text, View, ImageBackground, SafeAreaView, TouchableOpacity, Image
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import GeneralOffice from '../assets/images/go.jpeg';
-import RachelWaving from '../assets/images/Rachel_Waving.png';
 
-class Explore extends Component {
+class FarhanIntro extends Component {
   static navigationOptions = {
     header: null,
   }
 
   render() {
-    const { navigation } = this.props;
     return (
       <View style={{
         flex: 1,
@@ -20,7 +17,7 @@ class Explore extends Component {
       }}
       >
         <ImageBackground
-          source={GeneralOffice}
+          source={require('../../assets/images/go.jpeg')}
           style={{
             flex: 1, resizeMode: 'contain'
           }}
@@ -64,9 +61,10 @@ class Explore extends Component {
                   fontFamily: 'Avenir Next',
                 }}
               >
-                Hello, I’m Rachel!
-                I’m a year one SST student this year
-                and I’m excited to share my new secondary school life with you!
+                My name is Farhan and I’m currently in Secondary two.
+                I can’t believe I am already a senior to the Sec 1s.
+                We helped to plan their Orientation Week to ease them into Secondary School life.
+                I hope that I made them more comfortable.
               </Text>
             </View>
             <View style={{ flex: 1 }}>
@@ -79,7 +77,7 @@ class Explore extends Component {
                   height: '85%',
                   resizeMode: 'contain'
                 }}
-                source={RachelWaving}
+                source={require('../../assets/images/Farhan_Coding.png')}
               />
             </View>
             <View style={{
@@ -92,7 +90,7 @@ class Explore extends Component {
             }}
             >
               <TouchableOpacity onPress={() => {
-                navigation.navigate('intro');
+                this.props.navigation.navigate('ConversationSelect2');
               }}
               >
                 <View style={{
@@ -122,7 +120,7 @@ class Explore extends Component {
           }}
           >
             <TouchableOpacity onPress={() => {
-              navigation.goBack();
+              this.props.navigation.goBack();
             }}
             >
               <Icon name="keyboard-arrow-left" color="white" size={40} />
@@ -133,4 +131,5 @@ class Explore extends Component {
     );
   }
 }
-export default Explore;
+
+export default FarhanIntro;

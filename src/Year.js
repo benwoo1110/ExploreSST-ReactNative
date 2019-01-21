@@ -4,13 +4,13 @@ import {
 } from 'react-native';
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 
-
 class Year extends Component {
   static navigationOptions = {
     header: null
   }
 
   render() {
+    const { navigation } = this.props;
     return (
       <View style={{
         flex: 1,
@@ -46,7 +46,7 @@ class Year extends Component {
         >
           <TouchableOpacity
             onPress={() => {
-              this.props.navigation.navigate('Explore');
+              navigation.navigate('Explore');
             }}
             style={{
               alignItems: 'center',
@@ -84,10 +84,14 @@ class Year extends Component {
               </Text>
             </ImageBackground>
           </TouchableOpacity>
-          <TouchableOpacity style={{
-            alignItems: 'center',
-            margin: 16
-          }}
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('FarhanIntro');
+            }}
+            style={{
+              alignItems: 'center',
+              margin: 16
+            }}
           >
             <ImageBackground
               style={{

@@ -39,6 +39,7 @@ class FirstChatview extends Component {
   }
 
   render() {
+    const { navigation } = this.props;
     const conversationBubbles = [];
     conversationBubbles.push(
       <View style={{
@@ -68,7 +69,7 @@ class FirstChatview extends Component {
         </Text>
       </View>
     );
-    for (let i = 1; i < this.pickingConversation().length; i++) {
+    for (let i = 1; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
         <View
           style={
@@ -93,7 +94,7 @@ class FirstChatview extends Component {
         }}
         >
           <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('CCAMenu');
+            navigation.navigate('CCAMenu');
           }}
           >
             <View style={{
@@ -110,7 +111,7 @@ class FirstChatview extends Component {
                 fontWeight: '500'
               }}
               >
-                Let's look at CCAs!
+                Let us look at CCAs!
               </Text>
             </View>
           </TouchableOpacity>
@@ -174,7 +175,7 @@ class FirstChatview extends Component {
           }}
           >
             <TouchableOpacity onPress={() => {
-              this.props.navigation.goBack();
+              navigation.goBack();
             }}
             >
               <Icon name="keyboard-arrow-left" color="white" size={40} />

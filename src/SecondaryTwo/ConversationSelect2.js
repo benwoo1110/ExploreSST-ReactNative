@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
-  Text, View, StyleSheet, SafeAreaView, Image, ImageBackground, TouchableOpacity, ScrollView
+  Text, View, ImageBackground, SafeAreaView, TouchableOpacity, Image, StyleSheet, ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import GeneralOffice from '../assets/images/go.jpeg';
-import RachelWaving from '../assets/images/Rachel_Waving.png';
+import GeneralOffice from '../../assets/images/go.jpeg';
+import FarhanCoding from '../../assets/images/Farhan_Coding.png';
 
-class Orientation extends Component {
+class ConversationSelect2 extends Component {
   static navigationOptions = {
     header: null
   }
@@ -82,7 +82,7 @@ class Orientation extends Component {
                   resizeMode: 'contain',
                   marginTop: '75%'
                 }}
-                source={RachelWaving}
+                source={FarhanCoding}
               />
 
               <ScrollView style={{
@@ -100,12 +100,14 @@ class Orientation extends Component {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }}
               >
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'KnowingSST', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>How did you get to know SST?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'MakingFriends', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>I hear that students come from different primary schools here. How do you make friends?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'BadgeNight', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>What is Badge Night?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'CyberWellness', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>Tell me more about Cyber Wellness in SST</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'SettlingIn', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>How else did you settle in?</Text></View></TouchableOpacity></View>
-                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('FirstChatView', { conversation: 'StudentExperiences' }); }}><View><Text style={styles.buttonText}>Student Experiences in SST</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'ACE', character: 'Farhan' }); }}><View><Text style={styles.buttonText}>I’d love to share with you more about my advocacy projects!</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'InnoFest', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>Do you want to know about my ChangeMakers Innofest experience?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'CCA', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>My CCA is Fencing! Do you want to know more about CCAs in SST?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'SSTINC', character: 'Farhan' }); }}><View><Text style={styles.buttonText}>Let me share more on this TDP called SST INC with you!</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'ISS', character: 'Rachel' }); }}><View><Text style={styles.buttonText}>Do you know that we spend one term in Secondary 2 developing a science project in place of regular classes?</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'StudentExperiences' }); }}><View><Text style={styles.buttonText}>Do you know that we spend one term in Secondary 2 developing a science project in place of regular classes? What do we do though? Let me share with you!</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'Leadership', character: 'Farhan' }); }}><View><Text style={styles.buttonText}>I have no leadership position but I can share with you what I know!</Text></View></TouchableOpacity></View>
+                <View style={styles.buttonView}><TouchableOpacity onPress={() => { navigation.navigate('ChatViewSec2', { conversation: 'AS', character: 'Farhan' }); }}><View><Text style={styles.buttonText}>I have not taken any Applied Subject but I have my mind on one!</Text></View></TouchableOpacity></View>
               </ScrollView>
             </View>
           </SafeAreaView>
@@ -142,4 +144,5 @@ const styles = StyleSheet.create({
     fontSize: 18
   }
 });
-export default Orientation;
+
+export default ConversationSelect2;
