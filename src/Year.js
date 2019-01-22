@@ -1,24 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-  View, Text, ImageBackground, SafeAreaView, TouchableOpacity
-} from 'react-native';
-import ParallaxScrollView from 'react-native-parallax-scroll-view';
+  View,
+  Text,
+  ImageBackground,
+  SafeAreaView,
+  TouchableOpacity
+} from "react-native";
+import ParallaxScrollView from "react-native-parallax-scroll-view";
 import Background2 from '../assets/images/background2.jpg';
 import RachelWaving from '../assets/images/Rachel_Waving.png';
 import FarhanCoding from '../assets/images/Farhan_Coding.png';
 
+
 class Year extends Component {
   static navigationOptions = {
     header: null
-  }
+  };
 
   render() {
     const { navigation } = this.props;
     return (
-      <View style={{
-        flex: 1,
-        background: 'black'
-      }}
+      <View
+        style={{
+          flex: 1,
+          background: "black"
+        }}
       >
         <ParallaxScrollView
           parallaxHeaderHeight={300}
@@ -27,20 +33,21 @@ class Year extends Component {
               source={Background2}
               style={{
                 height: 300,
-                width: '100%',
-                alignItems: 'center',
-                justifyContent: 'center'
+                width: "100%",
+                alignItems: "center",
+                justifyContent: "center"
               }}
               imageStyle={{
                 opacity: 0.5
               }}
             >
-              <Text style={{
-                fontFamily: 'Avenir Next',
-                fontWeight: '600',
-                fontSize: 30,
-                color: 'white'
-              }}
+              <Text
+                style={{
+                  fontFamily: "Avenir Next",
+                  fontWeight: "600",
+                  fontSize: 30,
+                  color: "white"
+                }}
               >
                 Choose a Year
               </Text>
@@ -49,39 +56,40 @@ class Year extends Component {
         >
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate('Explore');
+              navigation.navigate("Explore");
             }}
             style={{
-              alignItems: 'center',
+              alignItems: "center",
               margin: 16
             }}
           >
             <ImageBackground
               style={{
                 height: 200,
-                width: '100%',
-                backgroundColor: 'white',
-                shadowColor: 'gray',
+                width: "100%",
+                backgroundColor: "white",
+                shadowColor: "gray",
                 shadowBlur: 10,
                 shadowOffset: {
                   width: 2,
                   height: 2
                 },
                 shadowOpacity: 1,
-                borderRadius: 5,
+                borderRadius: 5
               }}
               source={RachelWaving}
               resizeMode="contain"
             >
-              <Text style={{
-                margin: 8,
-                fontFamily: 'Avenir Next',
-                fontSize: 20,
-                fontWeight: '500',
-                position: 'absolute',
-                bottom: 8,
-                left: 8
-              }}
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
+                  bottom: 8,
+                  left: 8
+                }}
               >
                 Year 1
               </Text>
@@ -89,75 +97,78 @@ class Year extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate('FarhanIntro');
+              navigation.navigate("FarhanIntro");
             }}
             style={{
-              alignItems: 'center',
+              alignItems: "center",
               margin: 16
             }}
           >
             <ImageBackground
               style={{
                 height: 200,
-                width: '100%',
-                backgroundColor: 'white',
-                shadowColor: 'gray',
+                width: "100%",
+                backgroundColor: "white",
+                shadowColor: "gray",
                 shadowBlur: 10,
                 shadowOffset: {
                   width: 2,
                   height: 2
                 },
                 shadowOpacity: 1,
-                borderRadius: 5,
+                borderRadius: 5
               }}
               source={FarhanCoding}
               resizeMode="contain"
             >
-              <Text style={{
-                margin: 8,
-                fontFamily: 'Avenir Next',
-                fontSize: 20,
-                fontWeight: '500',
-                position: 'absolute',
-                bottom: 8,
-                left: 8
-              }}
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
+                  bottom: 8,
+                  left: 8
+                }}
               >
                 Year 2
               </Text>
             </ImageBackground>
           </TouchableOpacity>
-          <TouchableOpacity style={{
-            alignItems: 'center',
-            margin: 16
-          }}
+          <TouchableOpacity
+            style={{
+              alignItems: "center",
+              margin: 16
+            }}
           >
             <ImageBackground
               style={{
                 height: 200,
-                width: '100%',
-                backgroundColor: 'white',
-                shadowColor: 'gray',
+                width: "100%",
+                backgroundColor: "white",
+                shadowColor: "gray",
                 shadowBlur: 10,
                 shadowOffset: {
                   width: 2,
                   height: 2
                 },
                 shadowOpacity: 1,
-                borderRadius: 5,
+                borderRadius: 5
               }}
               source={RachelWaving}
               resizeMode="contain"
             >
-              <Text style={{
-                margin: 8,
-                fontFamily: 'Avenir Next',
-                fontSize: 20,
-                fontWeight: '500',
-                position: 'absolute',
-                bottom: 8,
-                left: 8
-              }}
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
+                  bottom: 8,
+                  left: 8
+                }}
               >
                 Year 3
               </Text>
@@ -166,36 +177,37 @@ class Year extends Component {
           <SafeAreaView>
             <TouchableOpacity
               style={{
-                alignItems: 'center',
+                alignItems: "center",
                 margin: 16
               }}
             >
               <ImageBackground
                 style={{
                   height: 200,
-                  width: '100%',
-                  backgroundColor: 'white',
-                  shadowColor: 'gray',
+                  width: "100%",
+                  backgroundColor: "white",
+                  shadowColor: "gray",
                   shadowBlur: 10,
                   shadowOffset: {
                     width: 2,
                     height: 2
                   },
                   shadowOpacity: 1,
-                  borderRadius: 5,
+                  borderRadius: 5
                 }}
                 source={RachelWaving}
                 resizeMode="contain"
               >
-                <Text style={{
-                  margin: 8,
-                  fontFamily: 'Avenir Next',
-                  fontSize: 20,
-                  fontWeight: '500',
-                  position: 'absolute',
-                  bottom: 8,
-                  left: 8
-                }}
+                <Text
+                  style={{
+                    margin: 8,
+                    fontFamily: "Avenir Next",
+                    fontSize: 20,
+                    fontWeight: "500",
+                    position: "absolute",
+                    bottom: 8,
+                    left: 8
+                  }}
                 >
                   Year 4
                 </Text>
