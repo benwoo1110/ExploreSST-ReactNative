@@ -12,7 +12,7 @@ import Swiper from "react-native-swiper";
 import Video from "react-native-video";
 import GeneralOffice from "../assets/images/go.jpeg";
 import PSBLogo from "../assets/images/psblogo.png";
-import vid from '../assets/videos/idk.mp4';
+import vid from "../assets/videos/idk.mp4";
 
 class intro extends Component {
   static navigationOptions = {
@@ -88,9 +88,8 @@ class intro extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                We are the Peer Support Board and we are
-                here to bring you on board before the start of your SST Journey!
-                Let’s go!
+                We are the Peer Support Board and we are here to bring you on
+                board before the start of your SST Journey! Let’s go!
               </Text>
             </View>
             <View
@@ -183,8 +182,7 @@ class intro extends Component {
                     justifyContent: "center",
                     padding: 16,
                     paddingHorizontal: 32,
-                    borderRadius: 16,
-
+                    borderRadius: 16
                   }}
                 >
                   <Text

@@ -116,8 +116,12 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "SCITDP", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec3", {
+                        conversation: "SCITDP",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
                         Tell me more about Science TDP
@@ -128,8 +132,12 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "Robotics", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec3", {
+                        conversation: "Robotics",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
                         Tell me more about Robotics
@@ -140,11 +148,16 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "IRAP", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec3", {
+                        conversation: "IRAP",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        What is the Industrial Research Attachment Program(IRAP)?
+                        What is the Industrial Research Attachment
+                        Program(IRAP)?
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -152,8 +165,12 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "Electronics", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec3", {
+                        conversation: "Electronics",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
                         Tell me more about the Electronics Applied Subject
@@ -164,8 +181,12 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "ACE", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec3", {
+                        conversation: "ACE",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
                         Tell me more about OBS

@@ -9,19 +9,19 @@ import {
   Animated
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
-import Background2 from '../assets/images/background2.jpg';
-import RachelWaving from '../assets/images/Rachel_Waving.png';
-import FarhanCoding from '../assets/images/Farhan_Coding.png';
-import WeiJieComputer from '../assets/images/WeiJie_Computer.png';
-import PriyaSolving from '../assets/images/Priya_Solving.png';
+import Background2 from "../assets/images/background2.jpg";
+import RachelWaving from "../assets/images/Rachel_Waving.png";
+import FarhanCoding from "../assets/images/Farhan_Coding.png";
+import WeiJieComputer from "../assets/images/WeiJie_Computer.png";
+import PriyaSolving from "../assets/images/Priya_Solving.png";
 
 class Year extends Component {
   static navigationOptions = {
     header: null
   };
   state = {
-    fadeAnim: new Animated.Value(0),  // Initial value for opacity: 0
-  }
+    fadeAnim: new Animated.Value(0) // Initial value for opacity: 0
+  };
 
   render() {
     const { navigation } = this.props;
@@ -173,9 +173,8 @@ class Year extends Component {
               alignItems: "center",
               margin: 16
             }}
-
-            onPress={() => { 
-              navigation.navigate('ConversationSelect3');
+            onPress={() => {
+              navigation.navigate("ConversationSelect3");
             }}
           >
             <ImageBackground
@@ -229,14 +228,11 @@ class Year extends Component {
                 alignItems: "center",
                 margin: 16
               }}
-
               onPress={() => {
                 Alert.alert(
-                  'Work in Progress',
-                  'This part of the application is not available for users. We apologise for the incovenience caused.',
-                  [
-                    { text: 'I Understand' }
-                  ]
+                  "Work in Progress",
+                  "This part of the application is not available for users. We apologise for the incovenience caused.",
+                  [{ text: "I Understand" }]
                 );
               }}
             >
@@ -269,7 +265,7 @@ class Year extends Component {
                   }}
                 >
                   Wei Jie
-              </Text>
+                </Text>
                 <Text
                   style={{
                     margin: 8,

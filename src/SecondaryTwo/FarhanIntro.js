@@ -8,8 +8,8 @@ import {
   Image
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import GeneralOffice from '../../assets/images/go.jpeg';
-import FarhanCoding from '../../assets/images/Farhan_Coding.png';
+import GeneralOffice from "../../assets/images/go.jpeg";
+import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 
 class FarhanIntro extends Component {
   static navigationOptions = {

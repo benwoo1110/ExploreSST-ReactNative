@@ -11,8 +11,8 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import YouTube from "react-native-youtube";
-import Background from '../assets/images/background.png';
-import RachelFace from '../assets/images/Rachel_Face.png';
+import Background from "../assets/images/background.png";
+import RachelFace from "../assets/images/Rachel_Face.png";
 
 class ShowChoir extends Component {
   static navigationOptions = {

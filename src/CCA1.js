@@ -10,8 +10,8 @@ import {
   StyleSheet
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import Background from '../assets/images/background.png';
-import RachelFace from '../assets/images/Rachel_Face.png';
+import Background from "../assets/images/background.png";
+import RachelFace from "../assets/images/Rachel_Face.png";
 
 class CCA1 extends Component {
   static navigationOptions = {

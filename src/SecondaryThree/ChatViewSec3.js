@@ -11,10 +11,8 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec3 } from "../Conversations";
-import Background from '../../assets/images/background.png';
-import RachelFace from '../../assets/images/Rachel_Face.png';
-
-
+import Background from "../../assets/images/background.png";
+import RachelFace from "../../assets/images/Rachel_Face.png";
 
 class ChatViewSec3 extends Component {
   static navigationOptions = {
