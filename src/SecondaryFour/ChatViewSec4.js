@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import {
   Text,
   View,
-  StyleSheet,
-  SafeAreaView,
-  Image,
   ImageBackground,
+  SafeAreaView,
   TouchableOpacity,
+  Image,
+  StyleSheet,
   ScrollView
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { conversations } from "./Conversations";
-import Background from '../assets/images/background.png';
-import RachelFace from '../assets/images/Rachel_Face.png';
+import { conversationsSec2 } from "../Conversations";
+import Background from "../../assets/images/background.png";
+import RachelFace from "../../assets/images/Rachel_Face.png";
 
-class SecondChatView extends Component {
+class ChatViewSec2 extends Component {
   static navigationOptions = {
     header: null
   };
@@ -28,8 +28,22 @@ class SecondChatView extends Component {
 
   pickingConversation() {
     switch (this.state.conversation) {
-      case "InterestingExperiences":
-        return conversations.InterestingExperiences;
+      case "SSTINC":
+        return conversationsSec2.SSTINC;
+      case "ISS":
+        return conversationsSec2.ISS;
+      case "OEE":
+        return conversationsSec2.OEE;
+      case "CCA":
+        return conversationsSec2.CCA;
+      case "AS":
+        return conversationsSec2.AS;
+      case "ACE":
+        return conversationsSec2.ACE;
+      case "InnoFest":
+        return conversationsSec2.InnoFest;
+      case "Leadership":
+        return conversationsSec2.Leadership;
       default:
         return 0;
     }
@@ -38,37 +52,8 @@ class SecondChatView extends Component {
   render() {
     const { navigation } = this.props;
     const conversationBubbles = [];
-    conversationBubbles.push(
-      <View
-        style={{
-          width: "75%",
-          backgroundColor: "darkgrey",
-          shadowColor: "gray",
-          shadowOffset: {
-            width: 2,
-            height: 2
-          },
-          shadowOpacity: 1,
-          borderRadius: 5,
-          justifyContent: "center",
-          alignItems: "center",
-          alignSelf: "flex-end",
-          marginTop: 16
-        }}
-      >
-        <Text
-          style={{
-            padding: 8,
-            fontSize: 18,
-            fontFamily: "Avenir Next",
-            color: "white"
-          }}
-        >
-          {this.pickingConversation()[0]}
-        </Text>
-      </View>
-    );
-    for (let i = 1; i < this.pickingConversation().length; i++) {
+
+    for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
         <View style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
@@ -179,7 +164,7 @@ class SecondChatView extends Component {
           >
             <TouchableOpacity
               onPress={() => {
-                this.props.navigation.goBack();
+                navigation.goBack();
               }}
             >
               <Icon name="keyboard-arrow-left" color="white" size={40} />
@@ -212,4 +197,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default SecondChatView;
+export default ChatViewSec2;

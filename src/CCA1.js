@@ -10,6 +10,8 @@ import {
   StyleSheet
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import Background from '../assets/images/background.png';
+import RachelFace from '../assets/images/Rachel_Face.png';
 
 class CCA1 extends Component {
   static navigationOptions = {
@@ -25,7 +27,7 @@ class CCA1 extends Component {
         }}
       >
         <ImageBackground
-          source={require("../assets/images/background.png")}
+          source={Background}
           style={{
             flex: 1,
             resizeMode: "contain"
@@ -53,7 +55,7 @@ class CCA1 extends Component {
                   resizeMode: "cover",
                   alignItems: "flex-start"
                 }}
-                source={require("../assets/images/Rachel_Face.png")}
+                source={RachelFace}
               />
 
               <Text

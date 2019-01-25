@@ -12,6 +12,7 @@ import Swiper from "react-native-swiper";
 import Video from "react-native-video";
 import GeneralOffice from "../assets/images/go.jpeg";
 import PSBLogo from "../assets/images/psblogo.png";
+import vid from '../assets/videos/idk.mp4';
 
 class intro extends Component {
   static navigationOptions = {
@@ -87,7 +88,7 @@ class intro extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                Hello! Welcome to SST! We are the Peer Support Board and we are
+                We are the Peer Support Board and we are
                 here to bring you on board before the start of your SST Journey!
                 Let’s go!
               </Text>
@@ -113,6 +114,7 @@ class intro extends Component {
                   <Text
                     style={{
                       padding: 8,
+                      paddingBottom: 0,
                       fontSize: 18,
                       fontFamily: "Avenir Next"
                     }}
@@ -137,9 +139,9 @@ class intro extends Component {
                     night.
                   </Text>
                 </View>
-                <View style={{ padding: 8 }}>
+                <View style={{ padding: 8, paddingBottom: 40 }}>
                   <Video
-                    source={require("../assets/videos/idk.mp4")}
+                    source={vid}
                     ref={ref => {
                       this.player = ref;
                     }}
@@ -149,7 +151,7 @@ class intro extends Component {
                     onError={this.onError}
                     style={{
                       width: "100%",
-                      height: "100%",
+                      height: "95%",
                       resizeMode: "contain",
                       alignSelf: "center",
                       borderRadius: 5
@@ -175,11 +177,14 @@ class intro extends Component {
               >
                 <View
                   style={{
+                    flex: 1,
                     backgroundColor: "white",
                     alignItems: "center",
                     justifyContent: "center",
                     padding: 16,
-                    borderRadius: 16
+                    paddingHorizontal: 32,
+                    borderRadius: 16,
+
                   }}
                 >
                   <Text
@@ -189,7 +194,7 @@ class intro extends Component {
                       fontWeight: "500"
                     }}
                   >
-                    Let us Explore!
+                    Next
                   </Text>
                 </View>
               </TouchableOpacity>

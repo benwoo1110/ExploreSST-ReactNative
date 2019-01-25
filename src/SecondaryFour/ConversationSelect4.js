@@ -13,7 +13,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 
-class ConversationSelect3 extends Component {
+class ConversationSelect2 extends Component {
   static navigationOptions = {
     header: null
   };
@@ -116,11 +116,16 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "SCITDP", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "ACE",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        Tell me more about Science TDP
+                        I’d love to share with you more about my advocacy
+                        projects!
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -128,11 +133,16 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "Robotics", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "InnoFest",
+                        character: "Rachel"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        Tell me more about Robotics
+                        Do you want to know about my ChangeMakers Innofest
+                        experience?
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -140,11 +150,16 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "IRAP", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "CCA",
+                        character: "Rachel"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        What is the Industrial Research Attachment Program(IRAP)?
+                        My CCA is Fencing! Do you want to know more about CCAs
+                        in SST?
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -152,11 +167,15 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "Electronics", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "SSTINC",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        Tell me more about the Electronics Applied Subject
+                        Let me share more on this TDP called SST INC with you!
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -164,11 +183,68 @@ class ConversationSelect3 extends Component {
                 <View style={styles.buttonView}>
                   <TouchableOpacity
                     onPress={() => {
-                      navigation.navigate("ChatViewSec3", { conversation: "ACE", character: "Farhan" });
-                    }}>
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "ISS",
+                        character: "Rachel"
+                      });
+                    }}
+                  >
                     <View>
                       <Text style={styles.buttonText}>
-                        Tell me more about OBS
+                        Do you know that we spend one term in Secondary 2
+                        developing a science project in place of regular
+                        classes?
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.buttonView}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "StudentExperiences"
+                      });
+                    }}
+                  >
+                    <View>
+                      <Text style={styles.buttonText}>
+                        Do you know that we spend one term in Secondary 2
+                        developing a science project in place of regular
+                        classes? What do we do though? Let me share with you!
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.buttonView}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "Leadership",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
+                    <View>
+                      <Text style={styles.buttonText}>
+                        I have no leadership position but I can share with you
+                        what I know!
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.buttonView}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      navigation.navigate("ChatViewSec2", {
+                        conversation: "AS",
+                        character: "Farhan"
+                      });
+                    }}
+                  >
+                    <View>
+                      <Text style={styles.buttonText}>
+                        I have not taken any Applied Subject but I have my mind
+                        on one!
                       </Text>
                     </View>
                   </TouchableOpacity>
@@ -210,4 +286,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ConversationSelect3;
+export default ConversationSelect2;

@@ -11,6 +11,8 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import YouTube from "react-native-youtube";
+import Background from '../assets/images/background.png';
+import RachelFace from '../assets/images/Rachel_Face.png';
 
 class ShowChoir extends Component {
   static navigationOptions = {
@@ -26,7 +28,7 @@ class ShowChoir extends Component {
         }}
       >
         <ImageBackground
-          source={require("../assets/images/background.png")}
+          source={Background}
           style={{
             flex: 1,
             resizeMode: "contain"
@@ -54,7 +56,7 @@ class ShowChoir extends Component {
                   resizeMode: "cover",
                   alignItems: "flex-start"
                 }}
-                source={require("../assets/images/Rachel_Face.png")}
+                source={RachelFace}
               />
               <Text
                 style={{

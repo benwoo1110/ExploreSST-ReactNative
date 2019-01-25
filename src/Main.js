@@ -1,20 +1,20 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Entry from './Entry';
-import Year from './Year';
-import Explore from './Explore';
-import intro from './intro';
-import Orientation from './Orientation';
-import CCAMenu from './CCAMenu';
-import CCA1 from './CCA1';
-import ShowChoir from './ShowChoir';
-import CCA2 from './CCA2';
-import FirstChatView from './FirstChatView';
-import SecondChatView from './SecondChatView';
-import FarhanIntro from './SecondaryTwo/FarhanIntro';
-import ConversationSelect2 from './SecondaryTwo/ConversationSelect2';
-import ChatViewSec2 from './SecondaryTwo/ChatViewSec2';
-import ConversationSelect3 from './SecondaryThree/ConversationSelect3';
-import ChatViewSec3 from './SecondaryThree/ChatViewSec3';
+import { createStackNavigator, createAppContainer } from "react-navigation";
+import Entry from "./Entry";
+import Year from "./Year";
+import Explore from "./Explore";
+import intro from "./intro";
+import Orientation from "./Orientation";
+import CCAMenu from "./CCAMenu";
+import CCA1 from "./CCA1";
+import ShowChoir from "./ShowChoir";
+import CCA2 from "./CCA2";
+import FirstChatView from "./FirstChatView";
+import SecondChatView from "./SecondChatView";
+import FarhanIntro from "./SecondaryTwo/FarhanIntro";
+import ConversationSelect2 from "./SecondaryTwo/ConversationSelect2";
+import ChatViewSec2 from "./SecondaryTwo/ChatViewSec2";
+import ConversationSelect3 from "./SecondaryThree/ConversationSelect3";
+import ChatViewSec3 from "./SecondaryThree/ChatViewSec3";
 
 const MainStack = createStackNavigator({
   Entry: { screen: Entry },

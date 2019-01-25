@@ -4,18 +4,24 @@ import {
   Text,
   ImageBackground,
   SafeAreaView,
-  TouchableOpacity
+  TouchableOpacity,
+  Alert,
+  Animated
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
 import Background2 from '../assets/images/background2.jpg';
 import RachelWaving from '../assets/images/Rachel_Waving.png';
 import FarhanCoding from '../assets/images/Farhan_Coding.png';
-
+import WeiJieComputer from '../assets/images/WeiJie_Computer.png';
+import PriyaSolving from '../assets/images/Priya_Solving.png';
 
 class Year extends Component {
   static navigationOptions = {
     header: null
   };
+  state = {
+    fadeAnim: new Animated.Value(0),  // Initial value for opacity: 0
+  }
 
   render() {
     const { navigation } = this.props;
@@ -49,7 +55,7 @@ class Year extends Component {
                   color: "white"
                 }}
               >
-                Choose a Year
+                Year
               </Text>
             </ImageBackground>
           )}
@@ -80,6 +86,19 @@ class Year extends Component {
               source={RachelWaving}
               resizeMode="contain"
             >
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
+                  bottom: 40,
+                  left: 8
+                }}
+              >
+                Rachel
+              </Text>
               <Text
                 style={{
                   margin: 8,
@@ -128,6 +147,19 @@ class Year extends Component {
                   fontSize: 20,
                   fontWeight: "500",
                   position: "absolute",
+                  bottom: 40,
+                  left: 8
+                }}
+              >
+                Farhan
+              </Text>
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
                   bottom: 8,
                   left: 8
                 }}
@@ -140,6 +172,10 @@ class Year extends Component {
             style={{
               alignItems: "center",
               margin: 16
+            }}
+
+            onPress={() => { 
+              navigation.navigate('ConversationSelect3');
             }}
           >
             <ImageBackground
@@ -156,9 +192,22 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5
               }}
-              source={RachelWaving}
+              source={PriyaSolving}
               resizeMode="contain"
             >
+              <Text
+                style={{
+                  margin: 8,
+                  fontFamily: "Avenir Next",
+                  fontSize: 20,
+                  fontWeight: "500",
+                  position: "absolute",
+                  bottom: 40,
+                  left: 8
+                }}
+              >
+                Priya
+              </Text>
               <Text
                 style={{
                   margin: 8,
@@ -180,6 +229,16 @@ class Year extends Component {
                 alignItems: "center",
                 margin: 16
               }}
+
+              onPress={() => {
+                Alert.alert(
+                  'Work in Progress',
+                  'This part of the application is not available for users. We apologise for the incovenience caused.',
+                  [
+                    { text: 'I Understand' }
+                  ]
+                );
+              }}
             >
               <ImageBackground
                 style={{
@@ -195,9 +254,22 @@ class Year extends Component {
                   shadowOpacity: 1,
                   borderRadius: 5
                 }}
-                source={RachelWaving}
+                source={WeiJieComputer}
                 resizeMode="contain"
               >
+                <Text
+                  style={{
+                    margin: 8,
+                    fontFamily: "Avenir Next",
+                    fontSize: 20,
+                    fontWeight: "500",
+                    position: "absolute",
+                    bottom: 40,
+                    left: 8
+                  }}
+                >
+                  Wei Jie
+              </Text>
                 <Text
                   style={{
                     margin: 8,

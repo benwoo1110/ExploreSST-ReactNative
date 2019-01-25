@@ -163,11 +163,85 @@ export const conversationsSec2 = {
 };
 
 export const conversationsSec3 = {
-  Electronics: [],
+  Electronics: [
+    "Tell me more about the Electronics Applied Subject",
+    "My applied subject is Electronics. ",
+    "What we learn in Electronics is the branch of science, engineering and technology which deals with electrical circuits. The Electronics course aims to equip students with a sound understanding of basic electronics and provides ample opportunities for students to hone their creative and problem solving skills.",
+    "Topics include fundamentals of physics and electricity, types of resistors, voltage and current sources, Network Theorem and analysis, capacitors, light emitting semiconductors, sensors, output devices, bipolar junction transistors and project management.",
+    "There are many hands-on classes which I enjoy, because I am able to tinker and learn from the projects given. For example, we learn through practical application of electronics to the design of authentic gadgets and products, such as building of a transistor organ, rain detector, sound activated ballet dancer, universal electronic timer, heat sensor, line-follower robot, and many more!",
+    "This has given me a deeper understanding of the subject and also improved my research skills."
+  ],
 
-  Computing: [],
+  Robotics: [
+    "It's been almost 2 years since I joined Robotics@APEX, and I have enjoyed every session. As my friends and I always proclaim proudly to school visitors,” Robotics is our PASSION!” In Robotics, we are required to use our creativity, be self-directed in coming up with solutions and develop collaborative skills as we often work in groups. ",
+    "The Robotics @APEX (formerly known as Robotics Club) was set up in 2010. I feel our story mirrors that of our school in some way. We made our name mainly by daring to be fearless against the established, pitting our freshness against experience. That was how we made a name for ourselves in competitions such as the VEX Robotics World Championship, IDE Robotics Competition ",
+    "While we are given ample opportunities to apply their skills and knowledge across a vast array of competitions, we also test our potential through research projects. One of our alumni, Choy Rui Zhi, a graduate from SP's Architecture (Singapore Institute of Architect Gold Medal) took an interest in his course because of Robotics. Click here to watch his video! ",
+    "Passion requires commitment. Amidst the long hours spent at the club, we learn time management and discipline to ensure we stay on track with our academic work. Acquiring various life skills as we hone technological expertise really is a win!"
+  ],
 
-  DesignStudies: [],
+  IRAP: [
+    "What is the Industrial Research Attachment Program(IRAP)?",
+    "In Secondary 3, students have the choice of participating in IRAP. What does IRAP stand for? It stands for Industrial and Research Attachment Programme. In SST, IRAP is open to SST students who are keen on the practical application of their skills and competencies.",
+    "They will utilise interpersonal skills and experience first hand the functions, operations and challenges of the various organisations in their respective industries.",
+    "Some companies that students have interned with include; A*STAR’s Genome Institute of Singapore, KK Hospital Women’s and Children’s Hospital, Ngee Ann Polytechnic Centre of Innovation, WorldSkills Foundation, National Library Board (NLB), Volunex Pte Ltd, N&N Agriculture Pte Ltd and Home-fix.",
+    "I heard from a senior about the insightful experience they had while interning at N&N Agriculture. Before I go on, let me explain to you what they worked on during their ISS project in Secondary 2. They found that there was inadequate research that investigated the strength of an eggshell. ",
+    "They then proceeded to carry out an experiment to determine the strength of an eggshell at different points. ",
+    "When they reached Secondary 3, they had a chance to experience their IRAP at N&N Agriculture. Coincidentally, N&N Agriculture is one of the only three-layer farms licensed by the Agri-Food & Veterinary Authority of Singapore to produce fresh chicken eggs in Singapore.",
+    "There, my seniors were able to gain greater insight into how science and technology is applied in industries to increase productivity. The ISS and IRAP helped kindled their interest in biology and it was nice to hear how they were able to build upon their learning.",
+    "Often, our seniors' experiences will inspire later cohorts to investigate certain topics from other perspectives. In this case, another group of students researched how washing of eggs encouraged bacterial growth. Following through with a stint at N&N Agriculture, they had to challenge their original conclusions since the eggs at the farm were washed and waxed!"
+  ],
 
-  Biotechnology: []
+  SCITDP: [
+    "I am currently in SST's Science TDP. TDP stands for Talent Development Programme, where students are able to gain foundational skills and competencies that capitalise on their personal strengths and unique talents. We get to choose from a wide spectrum of areas to cultivate our interests and talents. Aside from Science TDP, there is SST Inc, Robotics@APEX, etc. ",
+    "All TDPs are a great avenue to transform those passions into industry expertise.",
+    "In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline. ",
+    "Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?",
+    "He is Sec 3 student that represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!"
+  ]
+};
+
+export const conversationsSec4 = {
+  Computing: [
+    "The applied subject I’m taking is Computing+ and that is not a typo! ",
+    "In a typical computing course, you would learn computational thinking to analyse and solve problems. In SST, students take Computing+ and that is not a typo. The + comes from what our forward-looking teachers added so we get to learn about other areas such as the Internet of Things and Ethical Hacking.",
+    "To explain more about what we learn in computing, it involves problem-solving processes involving analysis, pattern finding, abstraction and algorithmic design. We use these processes to develop programmes to deal confidently with complex and open ended problems. We are equipped with computational thinking and creativity to analyse and solve problems."
+  ],
+
+  Astronomy: [
+    "My CCA is Astonomy Club. Last year, we were featured on the news while we camped out in the night with our telescopes waiting for the Lunar Eclipse and the longest Blood Moon. It was an insightful experience for me to catch the two phenomenon, especially together with friends who enjoy the same passion as I do.",
+    "Other than being frequent sky-watchers, we also conduct Fox Hunting games in SST to engage our own community as well as visiting schools. What exactly is Fox Hunting? It is an activity whereby participants use radio direction finding techniques to locate one or more radio transmitters hidden within a desginated search area.",
+    "We utilise these games as a means to foster bonding with visitors from other schools, as we get them to take part in it too!",
+    "SST Astronomy Club takes part in various competitions as well! We participate in competitions such as Raffles AstroNite, where our AstroClub members shared more about how it is a relevant platform for learning about radio telescopes",
+    "There are also other challenges such as the AstroChallenge, 21st NYP-IPS Astronomy Competition and more!",
+    "One of our SSTAlumni, Chiu Chen Ning participated in the Cassini Scientist for a Day Contest and his award winning essay about the Solar System Exploration was featured on NASA's website. So exciting!"
+  ],
+
+  DiscoverProgram: [
+    "In January, my schoolmates and I experienced the Discover Programme.",
+    "It is a unique out-of-classroom experience that helps us uncover our strengths and interests, and it is one of SST's Education and Career Guidance programme that seeks to help us plan for our future ahead. Being a school of innovation by design, SST has been working with many partners to evolve the programme over the years.",
+    "There were workshops and learning journeys, where we gained insights into what the future holds in terms of career pathways. Corporate and government organisations such as Pestbusters GIC and BCA provided enriching perpectives into their respective fields.",
+    "During the camp, students with a strong aptitude and passion in Science, Technology, Engineering and Mathematics (STEM) and design have the opportunity to participate in a design and prototyping workshop at the Singapore University of Technology and Design (SUTD) coined the Big-D Camp.",
+    "Other students interested in engineering will take part in the NTU Applied Sciences Camp, where there are learning programmes and challenges under the tutelage of NTU professors and students from schools such as School of Electrical and Electronic Engineering (EEE) and School of Material Science and Engineering (MSE).",
+    "Personally, I was stoked to experience how learning is like in University. There were many mentors and lecturers there to guide us as well, which made the experience so much more fruitful.",
+    "I love how SST is always evolving and innovating! From my discussions with alumni students, I realised that there are fresh experiences to look forward to every year. For the Discover Programme, new initiatives this year included stints at a life-science company and an NP-SST Accelerator Camp",
+    "Organised in collaboration with our partner Ngee Ann Polytechnic (NP) School of Business and Accountancy, the NP-SST Accelerator Camp provides students with the knowledge, skills, resources and opportunities to realise their dreams of bringing their technological innovations to market to impact the community.",
+    "View our SST Facebook page to find out more about the Discover Programme!"
+  ],
+
+  CareerFairGuidanceTalks: [
+    "Although I'll be graduating this year, I am definitely looking forward to my post-secondary education. Initially, I remember having anxieties but I no longer feel that way as SST has put in place a wide series of Education and Career Guidance (ECG) from Year 1 all the way to Year 4!",
+    "There is a huge array of ECG programmes in SST such as assembly talks to help us find out more about JC, IB or Polytechnic education. Other than these talks, we are also exposed to Career Fairs, Industrial Attachments as well as our very own Secondary 4 Discover Programme that seeks to help us plan for our future ahead.",
+    "Every year, SST combines the School-Parent Meeting with a Career Day @ SST. SST's multi-pronged approach helps us to explore possible pathways such as Parent-teacher discussions on our progress and ways to support our learning needs and a Post-Secondary and Tertiary Education Fair (largest support this year from over 20 organisations such as Infocomm Media Development Authority - IMDA, Building and Construction Authority, etc!).",
+    "I am looking forward to seeing #SSTAlumni back at #SST to speak to us about their chosen pathways! Some of my classmate parents will also be involved in the Career Talks by sharing their occupation and what its like to work in their field. I am glad that these resources are so readily available here at SST."
+  ],
+
+  AlumniSuccess: [
+    "Now that I am graduating, I often think about what I want to do after SST. Personally, I find it hard to choose, but after seeing my alumni find success in whatever path they have chosen, I feel more assured.",
+    "There has been a balance over the years in terms of alumni career progression, as 55% often opt for JC or IB, and 45% for Polytechnic.",
+    "One of them, Muhammad Danish B Massuryono from the class of 2015, came back to SST to share with us about his post secondary journey. He was featured in Berita Harian for doing well in the A Levels examinations despite facing challenges. He is currently in Nanyang Technological University, Singapore, Lee Kong Chian School of Medicine. You can find out more about him here: https://www.youtube.com/watch?v=s849gz9M9RQ&t=13s&fbclid=IwAR1D5f9fQ_uzHgB6Oai1cSKqGvHv_qr_1y_AXjCDJDq1qA7rfYoDBT98ZnM",
+    "Joshua Kwan, our Lee Kuan Yew Award recipient for All-Round Excellence, is a senior known to many of us. As Chairperson of the Robotics@Apex, he was a science and engineering enthusiast who developed exemplary prototypes for local and global competitions. Through the SUTD-SST Big-D Camp, he nurtured a keen interest in building electric vehicles. At National Junior College, he and a fellow SST Alumnus joined a group representing his school in an electric vehicle challenge for IP schools. We were so proud to hear that they were able to add value from their previous experience to help their team win. ",
+    "Our teachers often tell us about how our alumni students made a difference in their post-secondary institutions and community. I was inspired to learn about how Joshua sought to catalyse interest in science and engineering by putting up a proposal for a robotics arm within his science related CCA in JC.",
+    "We also have He Shi Ying, who received the Lee Kuan Yew Award and was a recipient of the NUS Global Merit Scholarship. She will be studying Global Studies in National University of Singapore, FASS.",
+    "Of course, we have many more alumni who are doing really well! Click here to read more: https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1878022048874711"
+  ]
 };

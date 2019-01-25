@@ -8,6 +8,8 @@ import {
   Image
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import GeneralOffice from '../../assets/images/go.jpeg';
+import FarhanCoding from '../../assets/images/Farhan_Coding.png';
 
 class FarhanIntro extends Component {
   static navigationOptions = {
@@ -23,7 +25,7 @@ class FarhanIntro extends Component {
         }}
       >
         <ImageBackground
-          source={require("../../assets/images/go.jpeg")}
+          source={GeneralOffice}
           style={{
             flex: 1,
             resizeMode: "contain"
@@ -87,7 +89,7 @@ class FarhanIntro extends Component {
                   height: "85%",
                   resizeMode: "contain"
                 }}
-                source={require("../../assets/images/Farhan_Coding.png")}
+                source={FarhanCoding}
               />
             </View>
             <View

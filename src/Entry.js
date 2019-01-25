@@ -5,7 +5,8 @@ import {
   ImageBackground,
   SafeAreaView,
   TouchableOpacity,
-  StatusBar
+  StatusBar,
+  AsyncStorage
 } from "react-native";
 import Background from "../assets/images/background.png";
 
@@ -14,13 +15,20 @@ class Entry extends Component {
     header: null
   };
 
+  componentWillMount() {
+      var Ft = AsyncStorage.getItem("IsWelcomed")
+      if (Ft == "Has Been Gay") {
+        this.props.navigation.navigate('Year');
+      }
+  }
   render() {
     return (
-      <View
+      < View
         style={{
           flex: 1,
           backgroundColor: "black"
-        }}
+        }
+        }
       >
         <StatusBar
           backgroundColor="rgba(0, 0, 0, 0)"
@@ -67,6 +75,7 @@ class Entry extends Component {
                 onPress={() => {
                   const { navigation } = this.props;
                   navigation.navigate("Year");
+                  AsyncStorage.setItem('IsWelcomed', "Has Been Gay");
                 }}
               >
                 <View
@@ -92,7 +101,7 @@ class Entry extends Component {
             </View>
           </SafeAreaView>
         </ImageBackground>
-      </View>
+      </View >
     );
   }
 }
