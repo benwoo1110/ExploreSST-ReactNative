@@ -14,7 +14,7 @@ import { conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 
-class ChatViewSec2 extends Component {
+class ChatViewSec4 extends Component {
   static navigationOptions = {
     header: null
   };
@@ -197,4 +197,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ChatViewSec2;
+export default ChatViewSec4;

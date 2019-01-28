@@ -182,7 +182,7 @@ class ConversationSelect3 extends Component {
                   <TouchableOpacity
                     onPress={() => {
                       navigation.navigate("ChatViewSec3", {
-                        conversation: "ACE",
+                        conversation: "OBS",
                         character: "Farhan"
                       });
                     }}

@@ -174,7 +174,7 @@ class Year extends Component {
               margin: 16
             }}
             onPress={() => {
-              navigation.navigate("ConversationSelect3");
+              navigation.navigate("PriyaIntro");
             }}
           >
             <ImageBackground
@@ -229,11 +229,7 @@ class Year extends Component {
                 margin: 16
               }}
               onPress={() => {
-                Alert.alert(
-                  "Work in Progress",
-                  "This part of the application is not available for users. We apologise for the incovenience caused.",
-                  [{ text: "I Understand" }]
-                );
+                navigation.navigate("WeiJieIntro")
               }}
             >
               <ImageBackground

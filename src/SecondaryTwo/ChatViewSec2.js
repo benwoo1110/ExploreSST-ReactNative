@@ -13,6 +13,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
+import FarhanProfile from "../../assets/images/Farhan_profile.png"
 
 class ChatViewSec2 extends Component {
   static navigationOptions = {
@@ -138,7 +139,7 @@ class ChatViewSec2 extends Component {
                   resizeMode: "cover",
                   alignItems: "flex-start"
                 }}
-                source={RachelFace}
+                source={FarhanProfile}
               />
               <Text
                 style={{
@@ -150,7 +151,7 @@ class ChatViewSec2 extends Component {
                   paddingLeft: 16
                 }}
               >
-                Rachel
+                Farhan
               </Text>
             </View>
             <ScrollView>{conversationBubbles}</ScrollView>

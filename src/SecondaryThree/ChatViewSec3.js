@@ -29,58 +29,28 @@ class ChatViewSec3 extends Component {
   pickingConversation() {
     switch (this.state.conversation) {
       case "Electronics":
-        return conversationsSec3.Electonics;
-      case "MakingFriends":
-        return conversations.MakingFriends;
-      case "BadgeNight":
-        return conversations.BadgeNight;
+        return conversationsSec3.Electronics;
       case "CyberWellness":
         return conversations.CyberWellenss;
       case "SettlingIn":
         return conversations.SettlingIn;
-      case "StudentExperiences":
-        return conversations.StudentExperiences;
-      case "InterestingExperiences":
-        return conversations.InterestingExperiences;
+      case "SCITDP":
+        return conversationsSec3.SCITDP;
+      case "Robotics":
+        return conversationsSec3.Robotics;
+      case "IRAP":
+        return conversationsSec3.IRAP;
+      case "OBS":
+        return conversationsSec3.OBS;
       default:
-        return 0;
+        return;
     }
   }
 
   render() {
     const { navigation } = this.props;
     const conversationBubbles = [];
-    conversationBubbles.push(
-      <View
-        style={{
-          width: "75%",
-          backgroundColor: "darkgrey",
-          shadowColor: "gray",
-          shadowOffset: {
-            width: 2,
-            height: 2
-          },
-          shadowOpacity: 1,
-          borderRadius: 5,
-          justifyContent: "center",
-          alignItems: "center",
-          alignSelf: "flex-end",
-          marginTop: 16
-        }}
-      >
-        <Text
-          style={{
-            padding: 8,
-            fontSize: 18,
-            fontFamily: "Avenir Next",
-            color: "white"
-          }}
-        >
-          {this.pickingConversation()[0]}
-        </Text>
-      </View>
-    );
-    for (let i = 1; i < this.pickingConversation().length; i += 1) {
+    for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
         <View style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
@@ -177,7 +147,7 @@ class ChatViewSec3 extends Component {
                   paddingLeft: 16
                 }}
               >
-                Rachel
+                Priya
               </Text>
             </View>
             <ScrollView>{conversationBubbles}</ScrollView>

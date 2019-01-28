@@ -13,7 +13,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 
-class ConversationSelect2 extends Component {
+class ConversationSelect4 extends Component {
   static navigationOptions = {
     header: null
   };
@@ -286,4 +286,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ConversationSelect2;
+export default ConversationSelect4;

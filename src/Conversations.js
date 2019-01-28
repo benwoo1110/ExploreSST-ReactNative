@@ -197,6 +197,13 @@ export const conversationsSec3 = {
     "In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline. ",
     "Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?",
     "He is Sec 3 student that represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!"
+  ],
+
+  OBS: [
+    "Since SST's establishment, all Secondary 3 students in SST will undergo a three days two night Outward Bound School Camp. There, we learnt how to recognise and manage emotions, develop care and concern for others, make responsible decisions, establish positive relationships and handle challenging situations effectively.",
+    "There were many activities and challenges we faced as a team, such as high elements, team-based challenges and expeditions around outdoor spaces that helped foster our collaborative skills and built courage in us. ",
+    "I had a lot of fun during the OBS camp and gained many friends along the way. It was a great experience! It also reminded me of the times where we got to spend time together during our Outdoor Education Expedition in Secondary 2.",
+    "I remember the outdoor life skills such as risk assessment, first aid, outdoor cooking, tent pitching, map reading and navigation. Those were great memories with my classmates! Thinking back. I realised that it has helped to toughen us gradually and prepared us for the gruelling OBS camp!"
   ]
 };
 
