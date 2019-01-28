@@ -12,7 +12,7 @@ import {
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec3 } from "../Conversations";
 import Background from "../../assets/images/background.png";
-import RachelFace from "../../assets/images/Rachel_Face.png";
+import PriyaFace from "../../assets/images/Priya_profile.png";
 
 class ChatViewSec3 extends Component {
   static navigationOptions = {
@@ -135,7 +135,7 @@ class ChatViewSec3 extends Component {
                   resizeMode: "cover",
                   alignItems: "flex-start"
                 }}
-                source={RachelFace}
+                source={PriyaFace}
               />
               <Text
                 style={{

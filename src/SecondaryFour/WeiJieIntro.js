@@ -109,7 +109,7 @@ class WeiJieIntro extends Component {
             >
               <TouchableOpacity
                 onPress={() => {
-                  this.props.navigation.navigate("ConversationSelect3");
+                  this.props.navigation.navigate("ConversationSelect4");
                 }}
               >
                 <View

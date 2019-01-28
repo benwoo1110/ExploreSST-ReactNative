@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
-import FarhanCoding from "../../assets/images/Farhan_Coding.png";
+import PriyaSolving from "../../assets/images/Priya_Solving.png"
 
 class ConversationSelect3 extends Component {
   static navigationOptions = {
@@ -94,7 +94,7 @@ class ConversationSelect3 extends Component {
                   resizeMode: "contain",
                   marginTop: "75%"
                 }}
-                source={FarhanCoding}
+                source={PriyaSolving}
               />
 
               <ScrollView
@@ -133,8 +133,7 @@ class ConversationSelect3 extends Component {
                   <TouchableOpacity
                     onPress={() => {
                       navigation.navigate("ChatViewSec3", {
-                        conversation: "Robotics",
-                        character: "Farhan"
+                        conversation: "Robotics"
                       });
                     }}
                   >

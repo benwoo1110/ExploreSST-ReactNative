@@ -10,9 +10,9 @@ import {
   ScrollView
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { conversationsSec2 } from "../Conversations";
+import { conversationsSec4 } from "../Conversations";
 import Background from "../../assets/images/background.png";
-import RachelFace from "../../assets/images/Rachel_Face.png";
+import WeiJieFace from "../../assets/images/WeiJie_profile.png";
 
 class ChatViewSec4 extends Component {
   static navigationOptions = {
@@ -28,22 +28,16 @@ class ChatViewSec4 extends Component {
 
   pickingConversation() {
     switch (this.state.conversation) {
-      case "SSTINC":
-        return conversationsSec2.SSTINC;
-      case "ISS":
-        return conversationsSec2.ISS;
-      case "OEE":
-        return conversationsSec2.OEE;
-      case "CCA":
-        return conversationsSec2.CCA;
-      case "AS":
-        return conversationsSec2.AS;
-      case "ACE":
-        return conversationsSec2.ACE;
-      case "InnoFest":
-        return conversationsSec2.InnoFest;
-      case "Leadership":
-        return conversationsSec2.Leadership;
+      case "Computing":
+        return conversationsSec4.Computing
+      case "Astronomy":
+        return conversationsSec4.Astronomy;
+      case "DiscoverProgram":
+        return conversationsSec4.DiscoverProgram;
+      case "CareerFairGuidanceTalks":
+        return conversationsSec4.CareerFairGuidanceTalks;
+      case "AlumniSuccess":
+        return conversationsSec4.AlumniSuccess;
       default:
         return 0;
     }
@@ -138,7 +132,7 @@ class ChatViewSec4 extends Component {
                   resizeMode: "cover",
                   alignItems: "flex-start"
                 }}
-                source={RachelFace}
+                source={WeiJieFace}
               />
               <Text
                 style={{
@@ -150,7 +144,7 @@ class ChatViewSec4 extends Component {
                   paddingLeft: 16
                 }}
               >
-                Rachel
+                Wei Jie
               </Text>
             </View>
             <ScrollView>{conversationBubbles}</ScrollView>
