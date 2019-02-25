@@ -60,60 +60,65 @@ class Year extends Component {
             </ImageBackground>
           )}
         >
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate("Explore");
-            }}
-            style={{
-              alignItems: "center",
-              margin: 16
-            }}
-          >
-            <ImageBackground
-              style={{
-                height: 200,
-                width: "100%",
-                backgroundColor: "white",
-                shadowColor: "gray",
-                shadowBlur: 10,
-                shadowOffset: {
-                  width: 2,
-                  height: 2
-                },
-                shadowOpacity: 1,
-                borderRadius: 5
+          <View>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("Explore");
               }}
-              source={RachelWaving}
-              resizeMode="contain"
+              style={{
+                alignItems: "center",
+                margin: 16,
+
+              }}
             >
-              <Text
+              <ImageBackground
                 style={{
-                  margin: 8,
-                  fontFamily: "Avenir Next",
-                  fontSize: 20,
-                  fontWeight: "500",
-                  position: "absolute",
-                  bottom: 40,
-                  left: 8
+                  borderTopLeftRadius: 15,
+                  borderTopRightRadius: 15,
+                  height: 200,
+                  width: "100%",
+                  backgroundColor: "white",
+                  shadowColor: "gray",
+                  shadowBlur: 10,
+                  shadowOffset: {
+                    width: 2,
+                    height: 2
+                  },
+                  shadowOpacity: 1,
+                  borderRadius: 5
                 }}
+                source={RachelWaving}
+                resizeMode="contain"
               >
-                Rachel
-              </Text>
-              <Text
-                style={{
-                  margin: 8,
-                  fontFamily: "Avenir Next",
-                  fontSize: 20,
-                  fontWeight: "500",
-                  position: "absolute",
-                  bottom: 8,
-                  left: 8
-                }}
-              >
-                Year 1
-              </Text>
-            </ImageBackground>
-          </TouchableOpacity>
+                <Text
+                  style={{
+                    margin: 8,
+                    fontFamily: "Avenir Next",
+                    fontSize: 20,
+                    fontWeight: "500",
+                    position: "absolute",
+                    bottom: 40,
+                    left: 8
+                  }}
+                >
+                  Rachel
+                </Text>
+                <Text
+                  style={{
+                    margin: 8,
+                    fontFamily: "Avenir Next",
+                    fontSize: 20,
+                    fontWeight: "500",
+                    position: "absolute",
+                    bottom: 8,
+                    left: 8
+                  }}
+                >
+                  Year 1
+                </Text>
+              </ImageBackground>
+            </TouchableOpacity>
+          </View>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate("FarhanIntro");
@@ -229,7 +234,7 @@ class Year extends Component {
                 margin: 16
               }}
               onPress={() => {
-                navigation.navigate("WeiJieIntro")
+                navigation.navigate("WeiJieIntro");
               }}
             >
               <ImageBackground
