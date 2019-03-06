@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  Animated,
   Text,
   View,
   StyleSheet,
@@ -22,7 +23,8 @@ class FirstChatview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      conversation: this.props.navigation.state.params.conversation
+      conversation: this.props.navigation.state.params.conversation,
+      fadeValue: new Animated.Value(0)
     };
   }
 
