@@ -13,6 +13,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec4 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import WeiJieFace from "../../assets/images/WeiJie_profile.png";
+import FadeInView from "react-native-fade-in-view";
 
 class ChatViewSec4 extends Component {
   static navigationOptions = {
@@ -49,11 +50,11 @@ class ChatViewSec4 extends Component {
 
     for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <View style={styles.ChatViewStyle}>
+        <FadeInView duration={1000} style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
             {this.pickingConversation()[i]}
           </Text>
-        </View>
+        </FadeInView>
       );
     }
     if (

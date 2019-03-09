@@ -14,6 +14,7 @@ import { conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 import FarhanProfile from "../../assets/images/Farhan_profile.png"
+import FadeInView from "react-native-fade-in-view";
 
 class ChatViewSec2 extends Component {
   static navigationOptions = {
@@ -56,11 +57,11 @@ class ChatViewSec2 extends Component {
 
     for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <View style={styles.ChatViewStyle}>
+        <FadeInView duration={1000} style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
             {this.pickingConversation()[i]}
           </Text>
-        </View>
+        </FadeInView>
       );
     }
     if (

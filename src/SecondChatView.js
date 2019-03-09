@@ -13,6 +13,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversations } from "./Conversations";
 import Background from "../assets/images/background.png";
 import RachelFace from "../assets/images/Rachel_Face.png";
+import FadeInView from "react-native-fade-in-view";
 
 class SecondChatView extends Component {
   static navigationOptions = {
@@ -70,11 +71,11 @@ class SecondChatView extends Component {
     );
     for (let i = 1; i < this.pickingConversation().length; i++) {
       conversationBubbles.push(
-        <View style={styles.ChatViewStyle}>
+        <FadeInView duration={1000} style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
             {this.pickingConversation()[i]}
           </Text>
-        </View>
+        </FadeInView>
       );
     }
     if (

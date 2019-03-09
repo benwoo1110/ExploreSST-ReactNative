@@ -73,8 +73,6 @@ class Year extends Component {
             >
               <ImageBackground
                 style={{
-                  borderTopLeftRadius: 15,
-                  borderTopRightRadius: 15,
                   height: 200,
                   width: "100%",
                   backgroundColor: "white",

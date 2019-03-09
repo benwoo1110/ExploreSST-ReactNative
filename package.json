@@ -8,9 +8,12 @@
   },
   "dependencies": {
     "eslint-config-google": "^0.11.0",
+    "flow": "^0.2.3",
     "lint": "^1.1.2",
     "react": "16.6.1",
     "react-native": "0.57.7",
+    "react-native-fade": "^1.0.3",
+    "react-native-fade-in-view": "^1.0.5",
     "react-native-fast-image": "^5.1.1",
     "react-native-firebase": "^5.1.1",
     "react-native-fs": "^2.13.3",
