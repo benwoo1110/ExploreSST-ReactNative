@@ -1765,6 +1765,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.sstinc.Amalgam.Explore;
 				PRODUCT_NAME = ExploreSST;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1795,6 +1796,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.sstinc.Amalgam.Explore;
 				PRODUCT_NAME = ExploreSST;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

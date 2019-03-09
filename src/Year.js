@@ -44,7 +44,7 @@ class Year extends Component {
                 justifyContent: "center"
               }}
               imageStyle={{
-                opacity: 0.5
+                opacity: 0.6
               }}
             >
               <Text

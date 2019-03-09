@@ -31,7 +31,7 @@ class Explore extends Component {
             flex: 1,
             resizeMode: "contain"
           }}
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
@@ -82,10 +82,10 @@ class Explore extends Component {
               <Image
                 style={{
                   alignSelf: "center",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
                   marginTop: "20%",
                   width: "35%",
-                  height: "85%",
+                  height: "80%",
                   resizeMode: "contain"
                 }}
                 source={RachelWaving}

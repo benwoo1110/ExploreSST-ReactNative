@@ -18,6 +18,8 @@ class Orientation extends Component {
     header: null
   };
 
+  
+
   render() {
     const { navigation } = this.props;
     return (

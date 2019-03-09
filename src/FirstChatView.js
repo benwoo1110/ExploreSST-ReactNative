@@ -14,7 +14,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversations } from "./Conversations";
 import Background from "../assets/images/background.png";
 import RachelFace from "../assets/images/Rachel_Face.png";
-import FadeInView from "react-native-fade-in-view";
+
 
 class FirstChatview extends Component {
   static navigationOptions = {
@@ -24,12 +24,19 @@ class FirstChatview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      conversation: this.props.navigation.state.params.conversation
+      conversation: this.props.navigation.state.params.conversation,
+      
     };
+    this.fadeAnimation = new Animated.Value(0);
   }
 
-  onLoadFade = () =>
-    this.setState(prevState => ({ isOpaque: !prevState.isOpaque }));
+  componentDidMount() {
+    Animated.timing(this.fadeAnimation, {
+      toValue: 1,
+      duration: 1000,
+      useNativeDriver: true,      
+    }).start()
+  }
 
   pickingConversation() {
     switch (this.state.conversation) {
@@ -88,15 +95,14 @@ class FirstChatview extends Component {
     );
     for (let i = 1; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <FadeInView
-          duration={1000}
+        <Animated.View style={{opacity: this.fadeAnimation}}
         >
           <View style={[styles.ChatViewStyle]}>
             <Text style={styles.ChatTextStyle}>
               {this.pickingConversation()[i]}
             </Text>
           </View>
-        </FadeInView>
+        </Animated.View>
       );
     }
     if (

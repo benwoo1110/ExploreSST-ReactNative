@@ -18,7 +18,13 @@ class intro extends Component {
   static navigationOptions = {
     header: null
   };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      isplaying: true
+    }
+   
+  }
   render() {
     return (
       <View
@@ -33,7 +39,7 @@ class intro extends Component {
             flex: 1,
             resizeMode: "contain"
           }}
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
@@ -51,22 +57,25 @@ class intro extends Component {
                   color: "white"
                 }}
               >
+              
                 Orientation
               </Text>
+              </View>
               <Image
                 style={{
                   alignSelf: "center",
-                  justifyContent: "center",
-                  height: 100,
-                  width: "75%",
-                  resizeMode: "contain"
+                  justifyContent: "flex-start",
+                  height: "14.5%",
+                  width: "50%",
+                  resizeMode: "contain",
+
                 }}
                 source={PSBLogo}
               />
-            </View>
+            
             <View
               style={{
-                marginTop: 16,
+                marginTop: 32,
                 width: "100%",
                 backgroundColor: "white",
                 shadowColor: "gray",
@@ -94,7 +103,7 @@ class intro extends Component {
             </View>
             <View
               style={{
-                marginTop: 16,
+                marginTop: 48,
                 width: "100%",
                 height: "35%",
                 backgroundColor: "white",
@@ -106,6 +115,8 @@ class intro extends Component {
                   height: 2
                 },
                 shadowOpacity: 1
+
+
               }}
             >
               <Swiper removeClippedSubviews={false}>
@@ -139,13 +150,13 @@ class intro extends Component {
                   </Text>
                 </View>
                 <View style={{ padding: 8, paddingBottom: 40 }}>
-                  <Video
+                  <Video key={vid}
                     source={vid}
                     ref={ref => {
                       this.player = ref;
                     }}
                     controls={true}
-                    paused={true}
+                    paused={this.state.isplaying}
                     onBuffer={this.onBuffer}
                     onError={this.onError}
                     style={{
@@ -171,6 +182,7 @@ class intro extends Component {
             >
               <TouchableOpacity
                 onPress={() => {
+                  this.setState({isplaying: true})
                   this.props.navigation.navigate("Orientation");
                 }}
               >

@@ -37,7 +37,7 @@ class Entry extends Component {
         <ImageBackground
           source={Background}
           style={{ flex: 1, resizeMode: "contain" }}
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
