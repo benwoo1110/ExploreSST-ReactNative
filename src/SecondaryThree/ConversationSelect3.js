@@ -77,7 +77,7 @@ class ConversationSelect3 extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                So many new poeple and experiences to talk about, where would
+                So many new people and experiences to talk about, where would
                 you like me to start ?
               </Text>
             </View>
