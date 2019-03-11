@@ -85,7 +85,7 @@ class Orientation extends Component {
             </View>
             <View
               style={{
-                flexDirection: "row",
+
                 flex: 1
               }}
             >
@@ -94,13 +94,17 @@ class Orientation extends Component {
                   width: 150,
                   height: 300,
                   resizeMode: "contain",
-                  marginTop: "75%"
+                  position: "absolute",
+                  left: 0, 
+                  bottom: 16
+
                 }}
                 source={RachelWaving}
               />
 
               <ScrollView
                 style={{
+                  position: "absolute",
                   width: "60%",
                   shadowColor: "gray",
                   shadowBlur: 10,
@@ -110,10 +114,14 @@ class Orientation extends Component {
                   },
                   shadowOpacity: 1,
                   borderRadius: 5,
-                  marginTop: 16,
+
                   alignSelf: "flex-end",
-                  backgroundColor: "rgba(255, 255, 255, 0.5)"
+                  backgroundColor: "rgba(255, 255, 255, 0.5)",
+                  top: 16,
+                  bottom: 0,
+                  right: 0
                 }}
+
               >
                 <View style={styles.buttonView}>
                   <TouchableOpacity

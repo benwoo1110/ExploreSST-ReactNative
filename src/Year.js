@@ -55,7 +55,7 @@ class Year extends Component {
                   color: "white"
                 }}
               >
-                Year
+                Choose a Year
               </Text>
             </ImageBackground>
           )}

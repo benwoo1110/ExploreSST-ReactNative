@@ -159,6 +159,7 @@ class intro extends Component {
                     paused={this.state.isplaying}
                     onBuffer={this.onBuffer}
                     onError={this.onError}
+                    repeat = {false}
                     style={{
                       width: "100%",
                       height: "95%",
@@ -182,7 +183,8 @@ class intro extends Component {
             >
               <TouchableOpacity
                 onPress={() => {
-                  this.setState({isplaying: true})
+                  this.player.seek(205);
+                  // this.player.paused = true
                   this.props.navigation.navigate("Orientation");
                 }}
               >
@@ -219,6 +221,7 @@ class intro extends Component {
           >
             <TouchableOpacity
               onPress={() => {
+     
                 this.props.navigation.goBack();
               }}
             >
