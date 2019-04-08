@@ -15,7 +15,6 @@ import { conversations } from "./Conversations";
 import Background from "../assets/images/background.png";
 import RachelFace from "../assets/images/Rachel_Face.png";
 
-
 class FirstChatview extends Component {
   static navigationOptions = {
     header: null

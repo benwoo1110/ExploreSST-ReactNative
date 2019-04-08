@@ -10,9 +10,9 @@ import {
   StyleSheet
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import YouTube from "react-native-youtube";
 import Background from "../assets/images/background.png";
 import RachelFace from "../assets/images/Rachel_Face.png";
+import Video from "react-native-video";
 
 class ShowChoir extends Component {
   static navigationOptions = {
@@ -106,7 +106,7 @@ class ShowChoir extends Component {
                 </Text>
               </View>
               <View style={styles.ChatViewStyle}>
-                <YouTube
+                <Video
                   videoId="KVZ-P-ZI6W4"
                   onReady={e => this.setState({ isReady: true })}
                   onChangeState={e => this.setState({ status: e.state })}

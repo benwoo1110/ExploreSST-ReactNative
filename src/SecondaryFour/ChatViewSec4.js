@@ -7,30 +7,39 @@ import {
   TouchableOpacity,
   Image,
   StyleSheet,
-  ScrollView
+  ScrollView,
+  Animated
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec4 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import WeiJieFace from "../../assets/images/WeiJie_profile.png";
-import FadeInView from "react-native-fade-in-view";
 
 class ChatViewSec4 extends Component {
   static navigationOptions = {
     header: null
   };
 
+  componentDidMount() {
+    Animated.timing(this.fadeAnimation, {
+      toValue: 1,
+      duration: 1000,
+      useNativeDriver: true
+    }).start();
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       conversation: this.props.navigation.state.params.conversation
     };
+    this.fadeAnimation = new Animated.Value(0);
   }
 
   pickingConversation() {
     switch (this.state.conversation) {
       case "Computing":
-        return conversationsSec4.Computing
+        return conversationsSec4.Computing;
       case "Astronomy":
         return conversationsSec4.Astronomy;
       case "DiscoverProgram":
@@ -50,11 +59,13 @@ class ChatViewSec4 extends Component {
 
     for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <FadeInView duration={1000} style={styles.ChatViewStyle}>
-          <Text style={styles.ChatTextStyle}>
-            {this.pickingConversation()[i]}
-          </Text>
-        </FadeInView>
+        <Animated.View style={{opacity: this.fadeAnimation}}>
+          <View style={styles.ChatViewStyle}>
+            <Text style={styles.ChatTextStyle}>
+              {this.pickingConversation()[i]}
+            </Text>
+          </View>
+        </Animated.View>
       );
     }
     if (

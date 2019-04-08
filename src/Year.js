@@ -10,10 +10,10 @@ import {
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
 import Background2 from "../assets/images/background2.jpg";
-import RachelWaving from "../assets/images/Rachel_Waving.png";
-import FarhanCoding from "../assets/images/Farhan_Coding.png";
-import WeiJieComputer from "../assets/images/WeiJie_Computer.png";
-import PriyaSolving from "../assets/images/Priya_Solving.png";
+import smallRachel from "../assets/images/smallRachel.png";
+import smallFarhan from "../assets/images/smallFarhan.png";
+import smallWeiJie from "../assets/images/smallWeiJie.png"
+import smallPriya from "../assets/images/smallPriya.png"
 
 class Year extends Component {
   static navigationOptions = {
@@ -85,7 +85,7 @@ class Year extends Component {
                   shadowOpacity: 1,
                   borderRadius: 5
                 }}
-                source={RachelWaving}
+                source={smallRachel}
                 resizeMode="contain"
               >
                 <Text
@@ -140,7 +140,7 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5
               }}
-              source={FarhanCoding}
+              source={smallFarhan}
               resizeMode="contain"
             >
               <Text
@@ -194,7 +194,7 @@ class Year extends Component {
                 shadowOpacity: 1,
                 borderRadius: 5
               }}
-              source={PriyaSolving}
+              source={smallPriya}
               resizeMode="contain"
             >
               <Text
@@ -249,7 +249,7 @@ class Year extends Component {
                   shadowOpacity: 1,
                   borderRadius: 5
                 }}
-                source={WeiJieComputer}
+                source={smallWeiJie}
                 resizeMode="contain"
               >
                 <Text

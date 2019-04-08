@@ -7,24 +7,33 @@ import {
   Image,
   ImageBackground,
   TouchableOpacity,
-  ScrollView
+  ScrollView,
+  Animated
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec3 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import PriyaFace from "../../assets/images/Priya_profile.png";
-import FadeInView from "react-native-fade-in-view";
 
 class ChatViewSec3 extends Component {
   static navigationOptions = {
     header: null
   };
 
+  componentDidMount() {
+    Animated.timing(this.fadeAnimation, {
+      toValue: 1,
+      duration: 1000,
+      useNativeDriver: true,      
+    }).start()
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       conversation: this.props.navigation.state.params.conversation
     };
+    this.fadeAnimation = new Animated.Value(0);
   }
 
   pickingConversation() {
@@ -53,11 +62,13 @@ class ChatViewSec3 extends Component {
     const conversationBubbles = [];
     for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <FadeInView duration={1000} style={styles.ChatViewStyle}>
+        <Animated.View style={{ opacity: this.fadeAnimation }}>
+        <View style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
             {this.pickingConversation()[i]}
           </Text>
-        </FadeInView>
+        </View>
+        </Animated.View>
       );
     }
     if (

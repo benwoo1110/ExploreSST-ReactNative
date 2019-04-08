@@ -7,14 +7,13 @@ import {
   TouchableOpacity,
   Image,
   StyleSheet,
-  ScrollView
+  ScrollView,
+  Animated
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
-import RachelFace from "../../assets/images/Rachel_Face.png";
 import FarhanProfile from "../../assets/images/Farhan_profile.png"
-import FadeInView from "react-native-fade-in-view";
 
 class ChatViewSec2 extends Component {
   static navigationOptions = {
@@ -26,6 +25,15 @@ class ChatViewSec2 extends Component {
     this.state = {
       conversation: this.props.navigation.state.params.conversation
     };
+    this.fadeAnimation = new Animated.Value(0);
+  }
+
+  componentDidMount() {
+    Animated.timing(this.fadeAnimation, {
+      toValue: 1,
+      duration: 1000,
+      useNativeDriver: true,      
+    }).start()
   }
 
   pickingConversation() {
@@ -57,11 +65,13 @@ class ChatViewSec2 extends Component {
 
     for (let i = 0; i < this.pickingConversation().length; i += 1) {
       conversationBubbles.push(
-        <FadeInView duration={1000} style={styles.ChatViewStyle}>
+        <Animated.View style = {{opacity: this.fadeAnimation}}>
+        <View style={styles.ChatViewStyle}>
           <Text style={styles.ChatTextStyle}>
             {this.pickingConversation()[i]}
           </Text>
-        </FadeInView>
+        </View>
+        </Animated.View>
       );
     }
     if (
