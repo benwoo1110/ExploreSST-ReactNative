@@ -4,15 +4,13 @@
 target 'ExploreSST' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-pod 'Firebase'
 
   # Pods for ExploreSST
 
   target 'ExploreSST-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RNFS', :path => '../node_modules/react-native-fs'
-
+    
   end
 
   target 'ExploreSSTTests' do
