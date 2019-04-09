@@ -1,5 +1,5 @@
 {
-  "name": "ExploreSST",
+  "name": "ExploreSST_RN_II",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,57 +7,25 @@
     "test": "jest"
   },
   "dependencies": {
-    "eslint-config-google": "^0.11.0",
-    "flow": "^0.2.3",
-    "lint": "^1.1.2",
-    "react": "16.6.1",
-    "react-native": "0.57.7",
-    "react-native-fade": "^1.0.3",
-    "react-native-fade-in-view": "^1.0.5",
-    "react-native-fast-image": "^5.1.1",
-    "react-native-fs": "^2.13.3",
-    "react-native-gesture-handler": "^1.0.10",
-    "react-native-linear-gradient": "^2.5.3",
-    "react-native-navigation-bar-color": "0.0.8",
-    "react-native-pages": "^0.7.0",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-linear-gradient": "^2.5.4",
     "react-native-parallax-scroll-view": "^0.21.3",
-    "react-native-speech-bubble": "^0.4.1",
-    "react-native-swiper": "^1.5.14",
-    "react-native-vector-icons": "^6.3.0",
-    "react-native-video": "^4.4.0",
-    "react-native-video-player": "^0.10.0",
-    "react-native-youtube": "^1.1.0",
-    "react-navigation": "^3.0.5",
-    "react-navigation-fluid-transitions": "^0.2.73"
+    "react-native-svg": "^9.3.7",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.6.1"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "babel-jest": "23.6.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.3",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.50.0",
-    "react-test-renderer": "16.6.1"
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "babel-jest": "24.7.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "lint": "eslint *.js **/*.js",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/QinGuan2004/exploresst.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/QinGuan2004/exploresst/issues"
-  },
-  "homepage": "https://github.com/QinGuan2004/exploresst#readme",
-  "description": ""
+  }
 }

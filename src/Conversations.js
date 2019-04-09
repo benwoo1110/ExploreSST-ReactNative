@@ -30,7 +30,7 @@ export const conversations = {
 
   CyberWellenss: [
     "Tell me more about Cyber Wellness in SST. ",
-    "Ever wondered how parents of SST manage their children’s use of macbook in a 1-1 school? For starters, all macbooks are termed as learning devices to emphasise the intent of harnessing ICT to optimise learning.",
+    "Ever wondered how parents of SST manage their children's use of macbook in a 1-1 school? For starters, all macbooks are termed as learning devices to emphasise the intent of harnessing ICT to optimise learning.",
     "SST holds a series of Parents Engagement Programmes for our Secondary 1 parents, led by our student Cyber Wellness Ambassadors (CWSA).",
     "The CWSAs plan,organise and conduct sharing sessions on areas such as improving security and productivity when using a learning device.",
     "As a 1-1 school, cyberwellness is an essential component of student learning.",
