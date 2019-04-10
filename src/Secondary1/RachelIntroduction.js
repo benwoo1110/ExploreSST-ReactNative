@@ -56,7 +56,7 @@ class RachelIntroduction extends Component {
             }}
           >
 
-            {/* <Modal
+            <Modal
               animationType="slide"
               transparent={true}
               visible={true}
@@ -76,7 +76,7 @@ class RachelIntroduction extends Component {
                 <Text>dfsdfghjkilugkyftjdryestawrq</Text>
               </View>
 
-            </Modal>  */}
+            </Modal> 
 
             <Text
               style={{
