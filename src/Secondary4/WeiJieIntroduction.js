@@ -71,6 +71,13 @@ class WeiJieIntroduction extends Component {
                   padding: 8,
                   fontSize: 18,
                   fontFamily: "Avenir Next"
+                  /*
+              There were assembly talks to find out more about JC or Polytechnics, 
+                Industrial Attachments, Career Fairs and our Secondary 4 Discover 
+                Camp that is a unique out-of-classroom experience that will help 
+                our students uncover their strengths and interests. It seeks to help 
+                us plan for our future ahead. 
+              */
                 }}
               >
                 Hi, I'm Wei Jie from Secondary 4. I can't believe that I am 
@@ -78,12 +85,6 @@ class WeiJieIntroduction extends Component {
                 this year, I'm relieved that SST has put in place a series of 
                 Education and Career Guidance (ECG) from Secondary 1 all the 
                 way to Secondary 4! 
-
-                There were assembly talks to find out more about JC or Polytechnics, 
-                Industrial Attachments, Career Fairs and our Secondary 4 Discover 
-                Camp that is a unique out-of-classroom experience that will help 
-                our students uncover their strengths and interests. It seeks to help 
-                us plan for our future ahead. 
               </Text>
             </View>
             <View style={{ flex: 1 }}>
