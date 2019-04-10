@@ -16,19 +16,18 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png"
-
+import QuestionButton from "../Components/QuestionButton";
 
 class RachelIntroduction extends Component {
   static navigationOptions = {
     header: null
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      modalVisible: false
-    }
-
+  state = {
+    modalVisible: false
+  }
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
   }
 
 
@@ -56,10 +55,11 @@ class RachelIntroduction extends Component {
             }}
           >
 
+
             <Modal
-              animationType="slide"
+              animationType="fade"
               transparent={true}
-              visible={true}
+              visible={this.state.modalVisible}
               onRequestClose={() => { }}
               style={{
 
@@ -73,10 +73,61 @@ class RachelIntroduction extends Component {
                 alignItems: "center",
                 justifyContent: "center"
               }}>
-                <Text>dfsdfghjkilugkyftjdryestawrq</Text>
+                <View style={{
+                  position: "absolute",
+                  top: 16,
+                  bottom: 16,
+                  left: 16, 
+                  right: 16,
+                  backgroundColor: "red",
+                }}>
+                  <QuestionButton />
+
+                </View>
+
+
+
+
+
+                <TouchableOpacity
+                  style={{
+
+                    backgroundColor: "#84C7C3",
+                    position: "absolute",
+                    height: 60,
+                    width: 60,
+                    bottom: 16,
+                    right: 0,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 30,
+                    margin: 16
+                  }}
+                  onPress={() => {
+                    this.setModalVisible(!this.state.modalVisible);
+                  }}
+                >
+                  <LinearGradient
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 1, y: 0 }}
+                    colors={["#84C7C3", "#0084C2"]}
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      borderRadius: 30,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+
+                    <Image
+                      source={chat}
+                    />
+                  </LinearGradient>
+                </TouchableOpacity>
               </View>
 
-            </Modal> 
+            </Modal>
 
             <Text
               style={{
@@ -155,7 +206,7 @@ class RachelIntroduction extends Component {
                 borderRadius: 30,
               }}
               onPress={() => {
-                this.state.modalVisible = true
+                this.setModalVisible(!this.state.modalVisible);
               }}
             >
               <LinearGradient
