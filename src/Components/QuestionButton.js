@@ -11,8 +11,8 @@ class QuestionButton extends Component {
 		return (
 			<TouchableOpacity
 				style={{
-					position: "relative",
-					top: "40%",
+					position: "absolute",
+					top: this.props.tOffset,
 					opacity: 1, 
 					backgroundColor: "#84C7C3",
 					position: "absolute",

@@ -29,6 +29,9 @@ class RachelIntroduction extends Component {
   setModalVisible(visible) {
     this.setState({ modalVisible: visible });
   }
+  constructor(props){
+    super(props);
+  }
 
 
   render() {
@@ -62,13 +65,12 @@ class RachelIntroduction extends Component {
               visible={this.state.modalVisible}
               onRequestClose={() => { }}
               style={{
-
               }}
             >
               <View style={{
                 flex: 1,
-                opacity: 0.6,
-                backgroundColor: "black",
+                
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
                 margin: 0,
                 alignItems: "center",
                 justifyContent: "center"
@@ -79,25 +81,21 @@ class RachelIntroduction extends Component {
                   bottom: 16,
                   left: 16, 
                   right: 16,
-                  backgroundColor: "red",
                 }}>
-                  <QuestionButton />
-
+                  <QuestionButton tOffset="60%"/>
+                  <QuestionButton tOffset="70%"/>
+                  <QuestionButton tOffset="80%"/>
                 </View>
-
-
-
-
-
                 <TouchableOpacity
                   style={{
-
+                    position: "absolute",
                     backgroundColor: "#84C7C3",
                     position: "absolute",
                     height: 60,
                     width: 60,
-                    bottom: 16,
+                    bottom: 24,
                     right: 0,
+
                     alignItems: "center",
                     justifyContent: "center",
                     borderRadius: 30,
@@ -199,7 +197,7 @@ class RachelIntroduction extends Component {
                 position: "absolute",
                 height: 60,
                 width: 60,
-                bottom: 16,
+                bottom: 24,
                 right: 0,
                 alignItems: "center",
                 justifyContent: "center",
