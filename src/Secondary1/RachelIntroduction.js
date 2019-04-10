@@ -7,13 +7,16 @@ import {
   SafeAreaView,
   Image,
   ScrollView,
-  StyleSheet
+  StyleSheet,
+  Modal,
+  Alert
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png";
+import chat from "../../assets/images/chat.png"
+
 
 class RachelIntroduction extends Component {
   static navigationOptions = {
@@ -22,8 +25,12 @@ class RachelIntroduction extends Component {
 
   constructor(props) {
     super(props);
-    this.imageDark = 0.6;
+    this.state = {
+      modalVisible: false
+    }
+
   }
+
 
   render() {
     const { navigation } = this.props;
@@ -40,7 +47,7 @@ class RachelIntroduction extends Component {
             flex: 1,
             resizeMode: "contain"
           }}
-          imageStyle={{ opacity: this.imageDark }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
@@ -48,6 +55,29 @@ class RachelIntroduction extends Component {
               margin: 16
             }}
           >
+
+            <Modal
+              animationType="slide"
+              transparent={true}
+              visible={true}
+              onRequestClose={() => { }}
+              style={{
+
+              }}
+            >
+              <View style={{
+                flex: 1,
+                opacity: 0.6,
+                backgroundColor: "black",
+                margin: 0,
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
+                <Text>dfsdfghjkilugkyftjdryestawrq</Text>
+              </View>
+
+            </Modal> 
+
             <Text
               style={{
                 fontFamily: "Avenir Next",
@@ -101,22 +131,31 @@ class RachelIntroduction extends Component {
               />
             </View>
             <View style={{
-              position: "absolute",
-              bottom: 16,
+              backgroundColor: "white",
+              // position: "absolute",
               left: 0,
-              backgroundColor: "#FFF",
+              bottom: 0,
+              padding: 8,
+              marginRight: 68,
               borderRadius: 5
             }}>
-              <Text>So many new people and experiences to talk about. Where would you like me to start?</Text>
+              <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
             </View>
             <TouchableOpacity
               style={{
+
                 backgroundColor: "#84C7C3",
-               
+                position: "absolute",
+                height: 60,
+                width: 60,
+                bottom: 16,
+                right: 0,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 30,
               }}
               onPress={() => {
-                const { navigation } = this.props;
-                navigation.navigate("Year");
+                this.state.modalVisible = true
               }}
             >
               <LinearGradient
@@ -124,17 +163,17 @@ class RachelIntroduction extends Component {
                 end={{ x: 1, y: 0 }}
                 colors={["#84C7C3", "#0084C2"]}
                 style={{
-                  position: "absolute",
-                  bottom: 8,
-                  right: 0,
-                  height: 60,
-                  width: 60,
-                  borderRadius: 30,
                   alignItems: "center",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  borderRadius: 30,
+                  width: "100%",
+                  height: "100%",
                 }}
               >
-                <Image source={chat} style={{}} />
+
+                <Image
+                  source={chat}
+                />
               </LinearGradient>
             </TouchableOpacity>
             {/* <ScrollView
