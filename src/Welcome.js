@@ -14,6 +14,7 @@ import {
     SafeAreaView,
     TouchableOpacity,
     StatusBar,
+    StyleSheet,
 } from 'react-native';
 import background from "../assets/images/background.png"
 

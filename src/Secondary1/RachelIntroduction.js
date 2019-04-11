@@ -16,7 +16,7 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png"
-import QuestionButton from "../Components/QuestionButton";
+
 
 class RachelIntroduction extends Component {
   static navigationOptions = {
@@ -30,13 +30,10 @@ class RachelIntroduction extends Component {
     this.setState({ modalVisible: visible });
   }
 
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
-  onNavigation(){
-    this.setState({modalVisible: false}/*, () => this.props.navigation.navigate('ChatViewSec1')*/);
-  }
 
 
   render() {
@@ -66,16 +63,11 @@ class RachelIntroduction extends Component {
 
             <Modal
               animationType="fade"
-              onNavigate={this.onNavigate}
               transparent={true}
               visible={this.state.modalVisible}
-              onRequestClose={() => { }}
-              style={{
-              }}
             >
               <View style={{
                 flex: 1,
-                
                 backgroundColor: "rgba(0, 0, 0, 0.7)",
                 margin: 0,
                 alignItems: "center",
@@ -85,12 +77,52 @@ class RachelIntroduction extends Component {
                   position: "absolute",
                   top: 16,
                   bottom: 16,
-                  left: 16, 
+                  left: 16,
                   right: 16,
                 }}>
-                  <QuestionButton converseText="How did you get to know SST?" tOffset="60%"  navigation={this.props.navigation} conversation="KnowingSST" action={()=>{this.onNavigate}}/>
-                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="70%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
-                  <QuestionButton converseText="Ask my own question" tOffset="80%"/>
+                  <TouchableOpacity
+                    style={[styles.buttonStyle,{top: "60%"}]}
+                    onPress={() => {
+                      const { navigation } = this.props;
+                      navigation.navigate("KnowingSST");
+                      this.setModalVisible(false);
+
+                    }}
+                  >
+                    <LinearGradient
+                      start={{ x: 0, y: 1 }}
+                      end={{ x: 1, y: 0 }}
+                      colors={["#84C7C3", "#0084C2"]}
+                      style={styles.linGrad}
+                    >
+                      <View style={{
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        flex: 1,
+                      }}>
+                        <Text style={{
+                          color: "white",
+                          fontFamily: "Avenir Next",
+                          marginLeft: 16,
+                          flex: 1,
+                          fontSize: 16,
+                        }}>How did you get to know SST?</Text>
+
+                        <Image
+                          source={chat}
+                          style={{
+                            marginRight: 16,
+                            justifyContent: "center",
+                          }}
+                        />
+                      </View>
+                    </LinearGradient>
+                  </TouchableOpacity>
+
+                  {/* //TODO:1.1.1 */}
+                  {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
+                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
+                  <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
                 </View>
                 <TouchableOpacity
                   style={{
@@ -341,15 +373,23 @@ class RachelIntroduction extends Component {
   }
 }
 const styles = StyleSheet.create({
-  buttonView: {
-    padding: 8,
-    margin: 8,
-    backgroundColor: "white",
-    borderRadius: 5
+  buttonStyle: {
+    position: "absolute",
+    opacity: 1,
+    backgroundColor: "#84C7C3",
+    position: "absolute",
+    height: 60,
+    width: "100%",
+    borderRadius: 30,
+    width: "100%",
   },
-  buttonText: {
-    fontSize: 18
+  linGrad: {
+    opacity: 1,
+    borderRadius: 30,
+    width: "100%",
+    height: "100%",
   }
+
 });
 
 export default RachelIntroduction;

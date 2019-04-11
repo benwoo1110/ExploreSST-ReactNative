@@ -26,7 +26,7 @@ class QuestionButton extends Component {
 					navigation.navigate("ChatViewSec1", {
 						conversation: this.props.conversation
 					});
-					this.props.action
+					this.props.onPress;
 				}}
 			>
 				<LinearGradient

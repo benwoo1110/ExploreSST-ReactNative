@@ -5,6 +5,7 @@ import Year from "./src/Year";
 
 import RachelIntroduction from "./src/Secondary1/RachelIntroduction";
 import ChatViewSec1 from "./src/Secondary1/ChatViewSec1"
+import KnowingSST from "./src/Secondary1/KnowingSST"
 
 import FarhanIntroduction from "./src/Secondary2/FarhanIntroduction";
 import ConversationSelect2 from "./src/Secondary2/ConversationSelect2";
@@ -27,6 +28,8 @@ const MainStack = createStackNavigator({
 
   RachelIntroduction: { screen: RachelIntroduction },
   ChatViewSec1: { screen: ChatViewSec1 },
+  KnowingSST: { screen: KnowingSST },
+
 
   FarhanIntroduction: { screen: FarhanIntroduction },
   ConversationSelect2: { screen: ConversationSelect2 },

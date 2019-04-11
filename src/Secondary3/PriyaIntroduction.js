@@ -73,10 +73,10 @@ class PriyaIntroduction extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                Hey! My name is Priya. I am in Secondary 3 this year. To me,
-                every year is a learning journey and there are different
-                explorations in store every day! In Sec 3, I took up an Applied
-                Subject, which is Electronics. I participated in OBS and had my
+                Hey! My name is Priya. I am in Secondary 3 this year. To me, 
+                every year is a learning journey and there are different 
+                explorations in store every day!  In Sec 3, I took up an Applied 
+                Subject, which is Electronics. I participated in OBS and had my 
                 Industrial and Research Attachment (IRAP). What would you like
                 to find out?
               </Text>

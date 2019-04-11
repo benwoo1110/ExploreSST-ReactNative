@@ -73,10 +73,10 @@ class FarhanIntroduction extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                My name is Farhan and I’m currently in Secondary two. I can’t
-                believe I am already a senior to the Sec 1s. We helped to plan
-                their Orientation Week to ease them into Secondary School life.
-                I hope that I made them more comfortable.
+                My name is Farhan and I'm currently in Secondary 2. I can't believe 
+                I am already a senior to my juniors in Secondary 1. We helped to 
+                plan their Orientation Week to ease them into Secondary School life. 
+                I hope that made them feel more comfortable. 
               </Text>
             </View>
             <View style={{ flex: 1 }}>

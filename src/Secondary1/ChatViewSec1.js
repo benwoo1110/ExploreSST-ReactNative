@@ -55,7 +55,7 @@ class ChatViewSec1 extends Component {
 				return conversations.CCA;
 			case "AppliedLearning":
 				return conversations.AppliedLearning;
-			 case "ChangeMakersProgramme":
+			case "ChangeMakersProgramme":
 				return conversations.ChangeMakersProgramme;
 			case "AS_DesignStudies":
 				return conversations.AS_DesignStudies;
@@ -102,8 +102,7 @@ class ChatViewSec1 extends Component {
 		);
 		for (let i = 1; i < this.pickingConversation().length; i += 1) {
 			conversationBubbles.push(
-				<Animated.View style={{ opacity: this.fadeAnimation }}
-				>
+				<Animated.View style={{ opacity: this.fadeAnimation }}>
 					<View style={[styles.ChatViewStyle]}>
 						<Text style={styles.ChatTextStyle}>
 							{this.pickingConversation()[i]}
