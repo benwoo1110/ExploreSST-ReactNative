@@ -38,8 +38,8 @@ class ChatViewSec3 extends Component {
 
   pickingConversation() {
     switch (this.state.conversation) {
-      case "Electronics":
-        return conversationsSec3.Electronics;
+      case "AS_Electronics":
+        return conversationsSec3.AS_Electronics;
       case "CyberWellness":
         return conversations.CyberWellenss;
       case "SettlingIn":

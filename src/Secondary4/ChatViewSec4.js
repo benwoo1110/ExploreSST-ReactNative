@@ -38,8 +38,8 @@ class ChatViewSec4 extends Component {
 
   pickingConversation() {
     switch (this.state.conversation) {
-      case "Computing":
-        return conversationsSec4.Computing;
+      case "AS_Computing":
+        return conversationsSec4.AS_Computing;
       case "Astronomy":
         return conversationsSec4.Astronomy;
       case "DiscoverProgram":
