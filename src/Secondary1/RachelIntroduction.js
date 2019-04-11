@@ -29,8 +29,13 @@ class RachelIntroduction extends Component {
   setModalVisible(visible) {
     this.setState({ modalVisible: visible });
   }
+
   constructor(props){
     super(props);
+  }
+
+  onNavigate(){
+    this.setState({modalVisible: false}, () => this.props.navigation.navigate('ChatViewSec1'));
   }
 
 
@@ -61,6 +66,7 @@ class RachelIntroduction extends Component {
 
             <Modal
               animationType="fade"
+              onNavigate={this.onNavigate}
               transparent={true}
               visible={this.state.modalVisible}
               onRequestClose={() => { }}
@@ -82,7 +88,7 @@ class RachelIntroduction extends Component {
                   left: 16, 
                   right: 16,
                 }}>
-                  <QuestionButton converseText="How did you get to know SST?" tOffset="60%"/>
+                  <QuestionButton converseText="How did you get to know SST?" tOffset="60%"  navigation={this.props.navigation} conversation="KnowingSST" action={()=>{this.onNavigate}}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="70%"/>
                   <QuestionButton converseText="Ask my own question" tOffset="80%"/>
                 </View>
@@ -185,6 +191,7 @@ class RachelIntroduction extends Component {
               left: 0,
               bottom: 0,
               padding: 8,
+              paddingVertical: 4,
               marginRight: 68,
               borderRadius: 5
             }}>

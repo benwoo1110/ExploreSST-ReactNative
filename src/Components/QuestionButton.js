@@ -22,7 +22,11 @@ class QuestionButton extends Component {
 					width: "100%",
 				}}
 				onPress={() => {
-					this.setModalVisible(!this.state.modalVisible);
+					const { navigation } = this.props;
+					navigation.navigate("ChatViewSec1", {
+						conversation: this.props.conversation
+					});
+					this.props.action
 				}}
 			>
 				<LinearGradient
@@ -37,21 +41,23 @@ class QuestionButton extends Component {
 					}}
 				>
 					<View style={{
-						flexDirection: "row"
+						flexDirection: "row",
+						justifyContent: "center",
+						flex: 1,
 					}}>
 						<Text style={{
 							color: "white",
 							fontFamily: "Avenir Next",
 							marginLeft: 16,
-							fontSize: 16,
-							marginRight: 8,
-							justifyContent: "center"
+							flex: 1
+
 						}}>{this.props.converseText}</Text>
 
 						<Image
 							source={chat}
 							style={{
-								marginRight: 8,
+								marginRight: 16,
+								justifyContent: "center",
 							}}
 						/>
 					</View>
