@@ -34,8 +34,8 @@ class RachelIntroduction extends Component {
     super(props);
   }
 
-  onNavigate(){
-    this.setState({modalVisible: false}, () => this.props.navigation.navigate('ChatViewSec1'));
+  onNavigation(){
+    this.setState({modalVisible: false}/*, () => this.props.navigation.navigate('ChatViewSec1')*/);
   }
 
 
