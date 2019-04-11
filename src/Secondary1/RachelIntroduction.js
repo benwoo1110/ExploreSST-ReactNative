@@ -89,7 +89,7 @@ class RachelIntroduction extends Component {
                   right: 16,
                 }}>
                   <QuestionButton converseText="How did you get to know SST?" tOffset="60%"  navigation={this.props.navigation} conversation="KnowingSST" action={()=>{this.onNavigate}}/>
-                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="70%"/>
+                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="70%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
                   <QuestionButton converseText="Ask my own question" tOffset="80%"/>
                 </View>
                 <TouchableOpacity

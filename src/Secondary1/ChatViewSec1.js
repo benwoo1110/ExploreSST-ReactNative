@@ -47,12 +47,20 @@ class ChatViewSec1 extends Component {
 				return conversations.BadgeNight;
 			case "CyberWellness":
 				return conversations.CyberWellenss;
-			case "SettlingIn":
-				return conversations.SettlingIn;
-			case "StudentExperiences":
-				return conversations.StudentExperiences;
-			case "InterestingExperiences":
-				return conversations.InterestingExperiences;
+			case "SettlingIn_CCA":
+				return conversations.SettlingIn_CCA;
+			case "Showchoir":
+				return conversations.Showchoir;
+			case "CCA":
+				return conversations.CCA;
+			case "AppliedLearning":
+				return conversations.AppliedLearning;
+			 case "ChangeMakersProgramme":
+				return conversations.ChangeMakersProgramme;
+			case "AS_DesignStudies":
+				return conversations.AS_DesignStudies;
+			case "SchoolBell":
+				return conversations.SchoolBell;
 			default:
 				return 0;
 		}

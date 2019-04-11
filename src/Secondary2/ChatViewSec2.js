@@ -46,14 +46,16 @@ class ChatViewSec2 extends Component {
         return conversationsSec2.OEE;
       case "CCA":
         return conversationsSec2.CCA;
-      case "AS":
+      case "AS_Biotech":
         return conversationsSec2.AS;
       case "ACE":
         return conversationsSec2.ACE;
-      case "InnoFest":
-        return conversationsSec2.InnoFest;
+      case "ChangeMakersInnofest":
+        return conversationsSec2.ChangeMakersInnofest;
       case "Leadership":
         return conversationsSec2.Leadership;
+      case "Fencing":
+        return conversationsSec2.Fencing;
       default:
         return 0;
     }
