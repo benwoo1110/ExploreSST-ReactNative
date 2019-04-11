@@ -82,9 +82,9 @@ class RachelIntroduction extends Component {
                   left: 16, 
                   right: 16,
                 }}>
-                  <QuestionButton tOffset="60%"/>
-                  <QuestionButton tOffset="70%"/>
-                  <QuestionButton tOffset="80%"/>
+                  <QuestionButton converseText="How did you get to know SST?" tOffset="60%"/>
+                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="70%"/>
+                  <QuestionButton converseText="Ask my own question" tOffset="80%"/>
                 </View>
                 <TouchableOpacity
                   style={{

@@ -13,7 +13,7 @@ class QuestionButton extends Component {
 				style={{
 					position: "absolute",
 					top: this.props.tOffset,
-					opacity: 1, 
+					opacity: 1,
 					backgroundColor: "#84C7C3",
 					position: "absolute",
 					height: 60,
@@ -31,19 +31,30 @@ class QuestionButton extends Component {
 					colors={["#84C7C3", "#0084C2"]}
 					style={{
 						opacity: 1,
-						alignItems: "center",
-						justifyContent: "center",
 						borderRadius: 30,
 						width: "100%",
 						height: "100%",
 					}}
 				>
+					<View style={{
+						flexDirection: "row"
+					}}>
+						<Text style={{
+							color: "white",
+							fontFamily: "Avenir Next",
+							marginLeft: 16,
+							fontSize: 16,
+							marginRight: 8,
+							justifyContent: "center"
+						}}>{this.props.converseText}</Text>
 
-					<Image
-						source={chat}
-						style = {{
-						}}
-					/>
+						<Image
+							source={chat}
+							style={{
+								marginRight: 8,
+							}}
+						/>
+					</View>
 				</LinearGradient>
 			</TouchableOpacity>
 		)
