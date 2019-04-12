@@ -17,11 +17,10 @@ import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 import chat from "../../assets/images/chat.png"
-import cancel from "../../assets/images/cancel.png"
+import cancel from "../../assets/images/cancel.png";
 
-class KnowingSST extends Component {
-
-	static navigationOptions = {
+class Orientation extends Component {
+    static navigationOptions = {
 		header: null
 	};
 
@@ -53,7 +52,7 @@ class KnowingSST extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={styles.AskingView}>
-							<Text style={styles.AskingText}>{conversations.KnowingSST[0]}</Text>
+							<Text style={styles.AskingText}>{conversations.Orientation[0]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -61,7 +60,7 @@ class KnowingSST extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}>{conversations.KnowingSST[i]}</Text>
+							<Text style={styles.ChatTextStyle}>{conversations.Orientation[i]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -338,4 +337,5 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default KnowingSST
+
+export default Orientation

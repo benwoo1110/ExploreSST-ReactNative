@@ -118,6 +118,44 @@ class RachelIntroduction extends Component {
                       </View>
                     </LinearGradient>
                   </TouchableOpacity>
+                  <TouchableOpacity
+                    style={[styles.buttonStyle,{top: "70%"}]}
+                    onPress={() => {
+                      const { navigation } = this.props;
+                      navigation.navigate("Orientation");
+                      this.setModalVisible(false);
+
+                    }}
+                  >
+                    <LinearGradient
+                      start={{ x: 0, y: 1 }}
+                      end={{ x: 1, y: 0 }}
+                      colors={["#84C7C3", "#0084C2"]}
+                      style={styles.linGrad}
+                    >
+                      <View style={{
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        flex: 1,
+                      }}>
+                        <Text style={{
+                          color: "white",
+                          fontFamily: "Avenir Next",
+                          marginLeft: 16,
+                          flex: 1,
+                          fontSize: 16,
+                        }}> I hear that students come from different primary schools here - how do you make friends?</Text>
+
+                        <Image
+                          source={chat}
+                          style={{
+                            marginRight: 16,
+                            justifyContent: "center",
+                          }}
+                        />
+                      </View>
+                    </LinearGradient>
+                  </TouchableOpacity>
 
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -264,93 +302,7 @@ class RachelIntroduction extends Component {
                 />
               </LinearGradient>
             </TouchableOpacity>
-            {/* <ScrollView
-                style={{
-                  position: "absolute",
-                  height: "50%",
-                  width: "60%",
-                  shadowColor: "gray",
-                  shadowBlur: 10,
-                  shadowOffset: {
-                    width: 2,
-                    height: 2
-                  },
-                  shadowOpacity: 1,
-                  borderRadius: 5,
-
-                  alignSelf: "flex-end",
-                  backgroundColor: "rgba(255, 255, 255, 0.5)",
-                  top: "50%"-16,
-                  bottom: 0,
-                  right: 0
-                }}
-
-              >
-                <View style={styles.buttonView}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("FirstChatView", {
-                        conversation: "KnowingSST",
-                        character: "Rachel"
-                      });
-                    }}
-                  >
-                    <View>
-                      <Text style={styles.buttonText}>
-                        How did you get to know SST?
-                      </Text>
-                    </View>
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.buttonView}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("FirstChatView", {
-                        conversation: "MakingFriends",
-                        character: "Rachel"
-                      });
-                    }}
-                  >
-                    <View>
-                      <Text style={styles.buttonText}>
-                        I hear that students come from different primary schools
-                        here. How do you make friends?
-                      </Text>
-                    </View>
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.buttonView}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("FirstChatView", {
-                        conversation: "SettlingIn",
-                        character: "Rachel"
-                      });
-                    }}
-                  >
-                    <View>
-                      <Text style={styles.buttonText}>
-                        How else did you settle in?
-                      </Text>
-                    </View>
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.buttonView}>
-                  <TouchableOpacity
-                    onPress={() => {
-                      navigation.navigate("FirstChatView", {
-                        conversation: "StudentExperiences"
-                      });
-                    }}
-                  >
-                    <View>
-                      <Text style={styles.buttonText}>
-                        Student Experiences in SST
-                      </Text>
-                    </View>
-                  </TouchableOpacity>
-                </View>
-              </ScrollView> */}
+           
           </SafeAreaView>
           <SafeAreaView
             style={{

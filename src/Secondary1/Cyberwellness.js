@@ -1,26 +1,27 @@
 import React, { Component } from "react";
 import {
-	Animated,
-	Text,
-	View,
-	StyleSheet,
-	SafeAreaView,
-	Image,
-	ImageBackground,
-	TouchableOpacity,
-	ScrollView,
-	Modal
+    View,
+    Text,
+    TouchableOpacity,
+    ImageBackground,
+    SafeAreaView,
+    Image,
+    ScrollView,
+    StyleSheet,
+    Modal,
+		Alert,
+		Animated
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { conversations } from "../Conversations";
+import GeneralOffice from "../../assets/images/go.jpeg";
+import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
+import chat from "../../assets/images/chat.png"
+import { conversations } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import chat from "../../assets/images/chat.png"
-import cancel from "../../assets/images/cancel.png"
 
-class KnowingSST extends Component {
-
+class CyberWellness extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -48,12 +49,12 @@ class KnowingSST extends Component {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
 
-		for (let i = 0; i < conversations.KnowingSST.length; i += 1) {
+		for (let i = 0; i < conversations.CyberWellenss.length; i += 1) {
 			if (i == 0) {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={styles.AskingView}>
-							<Text style={styles.AskingText}>{conversations.KnowingSST[0]}</Text>
+							<Text style={styles.AskingText}>{conversations.CyberWellenss[0]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -166,7 +167,9 @@ class KnowingSST extends Component {
 										borderRadius: 30,
 										margin: 16
 									}}
-									onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+									onPress={() => {
+										this.setModalVisible(!this.state.modalVisible);
+									}}
 								>
 									<LinearGradient
 										start={{ x: 0, y: 1 }}
@@ -182,7 +185,7 @@ class KnowingSST extends Component {
 									>
 
 										<Image
-											source={cancel}
+											source={chat}
 										/>
 									</LinearGradient>
 								</TouchableOpacity>
@@ -235,7 +238,9 @@ class KnowingSST extends Component {
 								justifyContent: "center",
 								borderRadius: 30,
 							}}
-							onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+							onPress={() => {
+								this.setModalVisible(!this.state.modalVisible);
+							}}
 						>
 							<LinearGradient
 								start={{ x: 0, y: 1 }}
@@ -338,4 +343,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default KnowingSST
+export default CyberWellness

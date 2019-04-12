@@ -8,7 +8,7 @@ export const conversations = {
     "They brought me to the SST Open House and the rest is history."
   ],
 
-  MakingFriends: [
+  Orientation: [
     "I hear that students come from different primary schools here - how do you make friends?",
     "I was so nervous I couldn't sleep the night before I started school! [emoji]",
     "Officially, orientation starts on the first day of the year but SST prepares us from Registration Day.",
