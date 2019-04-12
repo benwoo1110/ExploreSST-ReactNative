@@ -16,6 +16,8 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png"
+import select_prompt from "../../assets/images/select_prompt.png"
+import cancel from "../../assets/images/cancel.png"
 
 
 class RachelIntroduction extends Component {
@@ -81,7 +83,7 @@ class RachelIntroduction extends Component {
                   right: 16,
                 }}>
                   <TouchableOpacity
-                    style={[styles.buttonStyle,{top: "60%"}]}
+                    style={[styles.buttonStyle,{top: "80%"}]}
                     onPress={() => {
                       const { navigation } = this.props;
                       navigation.navigate("KnowingSST");
@@ -109,9 +111,10 @@ class RachelIntroduction extends Component {
                         }}>How did you get to know SST?</Text>
 
                         <Image
-                          source={chat}
+                          source={select_prompt}
                           style={{
-                            marginRight: 16,
+                            marginRight: 14,
+                            marginTop: 12,
                             justifyContent: "center",
                           }}
                         />
@@ -147,16 +150,16 @@ class RachelIntroduction extends Component {
                         }}> I hear that students come from different primary schools here - how do you make friends?</Text>
 
                         <Image
-                          source={chat}
+                          source={select_prompt}
                           style={{
-                            marginRight: 16,
+                            marginRight: 14,
+                            marginTop: 12,
                             justifyContent: "center",
                           }}
                         />
                       </View>
                     </LinearGradient>
                   </TouchableOpacity>
-
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
@@ -195,7 +198,7 @@ class RachelIntroduction extends Component {
                   >
 
                     <Image
-                      source={chat}
+                      source={cancel}
                     />
                   </LinearGradient>
                 </TouchableOpacity>
