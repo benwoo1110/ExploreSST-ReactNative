@@ -105,7 +105,8 @@ class RachelIntroduction extends Component {
                         <Text style={{
                           color: "white",
                           fontFamily: "Avenir Next",
-                          marginLeft: 16,
+                          alignSelf: "center",
+                          marginLeft: 18,
                           flex: 1,
                           fontSize: 16,
                         }}>How did you get to know SST?</Text>
@@ -144,10 +145,11 @@ class RachelIntroduction extends Component {
                         <Text style={{
                           color: "white",
                           fontFamily: "Avenir Next",
-                          marginLeft: 16,
+                          alignSelf: "center",
+                          marginLeft: 18,
                           flex: 1,
-                          fontSize: 16,
-                        }}> I hear that students come from different primary schools here - how do you make friends?</Text>
+                          fontSize: 13,
+                        }}>I hear that students come from different primary schools here - how do you make friends?</Text>
 
                         <Image
                           source={select_prompt}
