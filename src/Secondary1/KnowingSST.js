@@ -9,7 +9,8 @@ import {
 	ImageBackground,
 	TouchableOpacity,
 	ScrollView,
-	Modal
+	Modal,
+	Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversations } from "../Conversations";
@@ -44,6 +45,12 @@ class KnowingSST extends Component {
 		}).start()
 	}
 
+	openURL(url) {
+		if (url != "") {
+		Linking.openURL(url);
+		}
+	}
+
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
@@ -53,7 +60,7 @@ class KnowingSST extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={styles.AskingView}>
-							<Text style={styles.AskingText}>{conversations.KnowingSST[0]}</Text>
+							<Text style={styles.AskingText}>{conversations.KnowingSST[0][0]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -61,7 +68,9 @@ class KnowingSST extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}>{conversations.KnowingSST[i]}</Text>
+							<Text style={styles.ChatTextStyle} onPress={
+								this.openURL.bind(this, conversations.KnowingSST[i][1])}>
+								{conversations.KnowingSST[i][0]}</Text>
 						</View>
 					</Animated.View>
 				);

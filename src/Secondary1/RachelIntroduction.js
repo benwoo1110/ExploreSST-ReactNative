@@ -9,7 +9,8 @@ import {
   ScrollView,
   StyleSheet,
   Modal,
-  Alert
+  Alert,
+  Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
@@ -19,7 +20,6 @@ import chat from "../../assets/images/chat.png"
 import select_prompt from "../../assets/images/select_prompt.png"
 import cancel from "../../assets/images/cancel.png"
 
-
 class RachelIntroduction extends Component {
   static navigationOptions = {
     header: null
@@ -27,16 +27,14 @@ class RachelIntroduction extends Component {
 
   state = {
     modalVisible: false
-  }
+  };
   setModalVisible(visible) {
     this.setState({ modalVisible: visible });
-  }
+  };
 
   constructor(props) {
     super(props);
-  }
-
-
+  };
 
   render() {
     const { navigation } = this.props;
@@ -61,8 +59,6 @@ class RachelIntroduction extends Component {
               margin: 16
             }}
           >
-
-
             <Modal
               animationType="fade"
               transparent={true}
