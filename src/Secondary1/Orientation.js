@@ -144,6 +144,44 @@ class Orientation extends Component {
 											</View>
 										</LinearGradient>
 									</TouchableOpacity>
+                                    <TouchableOpacity
+										style={[styles.buttonStyle, { top: "70%" }]}
+										onPress={() => {
+											const { navigation } = this.props;
+											navigation.navigate("SettlingIn");
+											this.setModalVisible(false);
+
+										}}
+									>
+										<LinearGradient
+											start={{ x: 0, y: 1 }}
+											end={{ x: 1, y: 0 }}
+											colors={["#84C7C3", "#0084C2"]}
+											style={styles.linGrad}
+										>
+											<View style={{
+												flexDirection: "row",
+												justifyContent: "center",
+												flex: 1,
+											}}>
+												<Text style={{
+													color: "white",
+													fontFamily: "Avenir Next",
+													marginLeft: 16,
+													flex: 1,
+													fontSize: 16,
+												}}>How else did you settle in?</Text>
+
+												<Image
+													source={chat}
+													style={{
+														marginRight: 16,
+														justifyContent: "center",
+													}}
+												/>
+											</View>
+										</LinearGradient>
+									</TouchableOpacity>
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

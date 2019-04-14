@@ -36,7 +36,7 @@ export const conversations = {
     "Our students go beyond imbibing the tenets of digital citizenship to advocate core values to peers, juniors from other schools, parents of SST and even educators at various platforms."
   ],
 
-  SettlingIn_CCA: [
+  SettlingIn: [
     "How else did you settle in?",
     "One of the early milestones you would face as an SST student is chosing a CCA.",
     "Since the cohort is a small one, we are told that the school will start new CCAs only if there is a sizeable number of interested students. But the truth is that our students have no problems finding a CCA that either helps to hone current skills and interests or uncover a hidden talent or passion.",

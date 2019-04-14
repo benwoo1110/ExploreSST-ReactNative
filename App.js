@@ -8,6 +8,7 @@ import ChatViewSec1 from "./src/Secondary1/ChatViewSec1"
 import KnowingSST from "./src/Secondary1/KnowingSST"
 import Cyberwellness from "./src/Secondary1/Cyberwellness"
 import Orientation from "./src/Secondary1/Orientation"
+import SettlingIn from "./src/Secondary1/SettlingIn"
 
 import FarhanIntroduction from "./src/Secondary2/FarhanIntroduction";
 import ConversationSelect2 from "./src/Secondary2/ConversationSelect2";
@@ -33,6 +34,7 @@ const MainStack = createStackNavigator({
   KnowingSST: { screen: KnowingSST },
   Cyberwellness: { screen: Cyberwellness },
   Orientation: { screen: Orientation },
+  SettlingIn: { screen: SettlingIn },
  
 
   FarhanIntroduction: { screen: FarhanIntroduction },
@@ -49,4 +51,5 @@ const MainStack = createStackNavigator({
 
   QuestionButton: { screen: QuestionButton},
 });
+
 export default createAppContainer(MainStack);
