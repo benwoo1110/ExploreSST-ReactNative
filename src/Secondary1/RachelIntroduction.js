@@ -9,14 +9,16 @@ import {
   ScrollView,
   StyleSheet,
   Modal,
-  Alert
+  Alert,
+  Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png"
-
+import chat from "../../assets/images/chat.png";
+import select_prompt from "../../assets/images/select_prompt.png";
+import cancel from "../../assets/images/cancel.png";
 
 class RachelIntroduction extends Component {
   static navigationOptions = {
@@ -25,16 +27,61 @@ class RachelIntroduction extends Component {
 
   state = {
     modalVisible: false
-  }
+  };
   setModalVisible(visible) {
     this.setState({ modalVisible: visible });
-  }
+  };
 
   constructor(props) {
     super(props);
+  };
+
+  // THIS IS THE NEW FUNCTION
+  prompts(name, prompt_text, sequence) {
+    const position = 20 + 80*sequence;
+    return (
+      <TouchableOpacity
+        style={[styles.buttonStyle,{bottom: position}]}
+        onPress={() => {
+          const { navigation } = this.props;
+          navigation.navigate(name);
+          this.setModalVisible(false);
+
+        }}
+      >
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
+        >
+          <View style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flex: 1,
+          }}>
+            <Text style={{
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 20,
+              flex: 1,
+              fontSize: 16,
+            }}>{prompt_text}</Text>
+
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 14,
+                marginTop: 12,
+                justifyContent: "center",
+              }}
+            />
+          </View>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
   }
-
-
 
   render() {
     const { navigation } = this.props;
@@ -59,8 +106,6 @@ class RachelIntroduction extends Component {
               margin: 16
             }}
           >
-
-
             <Modal
               animationType="fade"
               transparent={true}
@@ -80,83 +125,8 @@ class RachelIntroduction extends Component {
                   left: 16,
                   right: 16,
                 }}>
-                  <TouchableOpacity
-                    style={[styles.buttonStyle,{top: "60%"}]}
-                    onPress={() => {
-                      const { navigation } = this.props;
-                      navigation.navigate("KnowingSST");
-                      this.setModalVisible(false);
-
-                    }}
-                  >
-                    <LinearGradient
-                      start={{ x: 0, y: 1 }}
-                      end={{ x: 1, y: 0 }}
-                      colors={["#84C7C3", "#0084C2"]}
-                      style={styles.linGrad}
-                    >
-                      <View style={{
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        flex: 1,
-                      }}>
-                        <Text style={{
-                          color: "white",
-                          fontFamily: "Avenir Next",
-                          marginLeft: 16,
-                          flex: 1,
-                          fontSize: 16,
-                        }}>How did you get to know SST?</Text>
-
-                        <Image
-                          source={chat}
-                          style={{
-                            marginRight: 16,
-                            justifyContent: "center",
-                          }}
-                        />
-                      </View>
-                    </LinearGradient>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    style={[styles.buttonStyle,{top: "70%"}]}
-                    onPress={() => {
-                      const { navigation } = this.props;
-                      navigation.navigate("Orientation");
-                      this.setModalVisible(false);
-
-                    }}
-                  >
-                    <LinearGradient
-                      start={{ x: 0, y: 1 }}
-                      end={{ x: 1, y: 0 }}
-                      colors={["#84C7C3", "#0084C2"]}
-                      style={styles.linGrad}
-                    >
-                      <View style={{
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        flex: 1,
-                      }}>
-                        <Text style={{
-                          color: "white",
-                          fontFamily: "Avenir Next",
-                          marginLeft: 16,
-                          flex: 1,
-                          fontSize: 16,
-                        }}> I hear that students come from different primary schools here - how do you make friends?</Text>
-
-                        <Image
-                          source={chat}
-                          style={{
-                            marginRight: 16,
-                            justifyContent: "center",
-                          }}
-                        />
-                      </View>
-                    </LinearGradient>
-                  </TouchableOpacity>
-
+                  {this.prompts("KnowingSST", "How did you get to know SST?", 1)}
+                  {this.prompts("Orientation", "How do you make friends in the new environment?", 2)}
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
@@ -195,7 +165,7 @@ class RachelIntroduction extends Component {
                   >
 
                     <Image
-                      source={chat}
+                      source={cancel}
                     />
                   </LinearGradient>
                 </TouchableOpacity>
@@ -257,9 +227,9 @@ class RachelIntroduction extends Component {
             </View>
             <View style={{
               backgroundColor: "white",
-              // position: "absolute",
+              position: "absolute",
               left: 0,
-              bottom: 0,
+              bottom: 20,
               padding: 8,
               paddingVertical: 4,
               marginRight: 68,
@@ -278,7 +248,7 @@ class RachelIntroduction extends Component {
                 right: 0,
                 alignItems: "center",
                 justifyContent: "center",
-                borderRadius: 30,
+                borderRadius: 30
               }}
               onPress={() => {
                 this.setModalVisible(!this.state.modalVisible);
