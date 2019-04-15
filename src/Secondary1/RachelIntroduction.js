@@ -19,6 +19,7 @@ import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png";
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
+// import QuestionButton from "../../src/Components/QuestionButton";
 
 class RachelIntroduction extends Component {
   static navigationOptions = {
@@ -37,15 +38,25 @@ class RachelIntroduction extends Component {
   };
 
   // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence) {
+  openURL(url) {
+		if (url != "") {
+      Linking.openURL(url);
+      return true;
+		} return false;
+  }
+  
+  // THIS IS THE NEW FUNCTION
+  prompts(name, prompt_text, sequence, url) {
     const position = 20 + 80*sequence;
     return (
       <TouchableOpacity
         style={[styles.buttonStyle,{bottom: position}]}
         onPress={() => {
           const { navigation } = this.props;
-          navigation.navigate(name);
-          this.setModalVisible(false);
+          if (!this.openURL(url)) {
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
 
         }}
       >
@@ -72,7 +83,7 @@ class RachelIntroduction extends Component {
             <Image
               source={select_prompt}
               style={{
-                marginRight: 14,
+                marginRight: 18,
                 marginTop: 12,
                 justifyContent: "center",
               }}
@@ -125,12 +136,15 @@ class RachelIntroduction extends Component {
                   left: 16,
                   right: 16,
                 }}>
-                  {this.prompts("KnowingSST", "How did you get to know SST?", 1)}
-                  {this.prompts("Orientation", "How do you make friends in the new environment?", 2)}
+                  {/* CHANGE HERE*/}
+                  {this.prompts("KnowingSST", "How did you get to know SST?", 1, "")}
+                  {this.prompts("Orientation", "How do you make friends in the new environment?", 2, "")}
+
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
                   <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
+
                 </View>
                 <TouchableOpacity
                   style={{

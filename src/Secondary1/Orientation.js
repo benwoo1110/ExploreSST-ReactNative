@@ -9,7 +9,8 @@ import {
 	ImageBackground,
 	TouchableOpacity,
 	ScrollView,
-	Modal
+	Modal,
+	Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversations } from "../Conversations";
@@ -17,6 +18,7 @@ import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 import chat from "../../assets/images/chat.png"
+import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
 class Orientation extends Component {
@@ -43,16 +45,75 @@ class Orientation extends Component {
 		}).start()
 	}
 
+	// THIS IS THE NEW FUNCTION
+  openURL(url) {
+		if (url != "") {
+      Linking.openURL(url);
+      return true;
+		} return false;
+  }
+  
+  // THIS IS THE NEW FUNCTION
+  prompts(name, prompt_text, sequence, url) {
+    const position = 20 + 80*sequence;
+    return (
+      <TouchableOpacity
+        style={[styles.buttonStyle,{bottom: position}]}
+        onPress={() => {
+          const { navigation } = this.props;
+          if (!this.openURL(url)) {
+						navigation.navigate(name);
+						this.setModalVisible(false);
+					}
+        }}
+      >
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
+        >
+          <View style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flex: 1,
+          }}>
+            <Text style={{
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 20,
+              flex: 1,
+              fontSize: 16,
+            }}>{prompt_text}</Text>
+
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 18,
+                marginTop: 12,
+                justifyContent: "center",
+              }}
+            />
+          </View>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
+
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
 
-		for (let i = 0; i < conversations.KnowingSST.length; i += 1) {
+		// CHANGE HERE
+		const content = conversations.Orientation;
+
+		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={styles.AskingView}>
-							<Text style={styles.AskingText}>{conversations.Orientation[0]}</Text>
+							<Text style={styles.AskingText}>{content[0][0]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -60,7 +121,7 @@ class Orientation extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}>{conversations.Orientation[i]}</Text>
+							<Text style={styles.ChatTextStyle}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
 				);
@@ -106,82 +167,10 @@ class Orientation extends Component {
 									left: 16,
 									right: 16,
 								}}>
-									<TouchableOpacity
-										style={[styles.buttonStyle, { top: "60%" }]}
-										onPress={() => {
-											const { navigation } = this.props;
-											navigation.navigate("Cyberwellness");
-											this.setModalVisible(false);
-
-										}}
-									>
-										<LinearGradient
-											start={{ x: 0, y: 1 }}
-											end={{ x: 1, y: 0 }}
-											colors={["#84C7C3", "#0084C2"]}
-											style={styles.linGrad}
-										>
-											<View style={{
-												flexDirection: "row",
-												justifyContent: "center",
-												flex: 1,
-											}}>
-												<Text style={{
-													color: "white",
-													fontFamily: "Avenir Next",
-													marginLeft: 16,
-													flex: 1,
-													fontSize: 16,
-												}}>Tell me more about CyberWellness in SST</Text>
-
-												<Image
-													source={chat}
-													style={{
-														marginRight: 16,
-														justifyContent: "center",
-													}}
-												/>
-											</View>
-										</LinearGradient>
-									</TouchableOpacity>
-                                    <TouchableOpacity
-										style={[styles.buttonStyle, { top: "70%" }]}
-										onPress={() => {
-											const { navigation } = this.props;
-											navigation.navigate("SettlingIn");
-											this.setModalVisible(false);
-
-										}}
-									>
-										<LinearGradient
-											start={{ x: 0, y: 1 }}
-											end={{ x: 1, y: 0 }}
-											colors={["#84C7C3", "#0084C2"]}
-											style={styles.linGrad}
-										>
-											<View style={{
-												flexDirection: "row",
-												justifyContent: "center",
-												flex: 1,
-											}}>
-												<Text style={{
-													color: "white",
-													fontFamily: "Avenir Next",
-													marginLeft: 16,
-													flex: 1,
-													fontSize: 16,
-												}}>How else did you settle in?</Text>
-
-												<Image
-													source={chat}
-													style={{
-														marginRight: 16,
-														justifyContent: "center",
-													}}
-												/>
-											</View>
-										</LinearGradient>
-									</TouchableOpacity>
+									
+									{/* CHANGE HERE*/}
+                  {this.prompts("CyberWellenss", "Tell me more about CyberWellness in SST", 1, "")}
+                  {this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

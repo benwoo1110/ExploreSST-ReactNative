@@ -5,7 +5,7 @@ export const conversations = {
     ["I learnt useful tips on how I can encourage the healthy and responsible use of technology back in my primary school.", ""],
     ["I found it amazing that the SST students conducting the workshops also organised sessions for parents of SST as well.", ""],
     ["My parents also thought it was important for a STEM school to have a holistic approach to learning ICT.", ""],
-    ["They brought me to the SST Open House and the rest is history. (link: https://www.google.com)", "https://www.google.com"]
+    ["They brought me to the SST Open House and the rest is history.", ""],
   ],
 
   Orientation: [
@@ -17,7 +17,8 @@ export const conversations = {
     ["You get to know the SST community and learn what is expected of all students. Because this is a small community, everyone looks out for one another.", ""],
     ["I see alumni students coming back all the time to help!", ""],
     ["Click here to view our Orientation Week album!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1818489524827964"],
-    ["Click here to view our CCA Trials!", "https://www.facebook.com/ssts.1technologydrive/photos/a.1818489524827964/1830455566964693/?type=3&theater"]
+    ["Click here to view our CCA Trials!", "https://www.facebook.com/ssts.1technologydrive/photos/a.1818489524827964/1830455566964693/?type=3&theater"],
+    ["Click here to view our Sec 1 Badge Night!", "https://www.facebook.com/219440164732916/photos/?tab=album&album_id=1840285539315029"]
   ],
 
   BadgeNight: [ // this one idk still have
@@ -79,7 +80,8 @@ export const conversations = {
     ["I love it that all students get to go through experiences such as the Discover Programme as a cohort. Here are all the cohort-wide programmes that every #SSTudent will go through. photo of cohort wide programmes", ""],
     ["Through these programmes, students are able to gain foundational skills and competencies. But if they wish to investigate specific areas of interest or talents, we have the Talent Development Programme in place! We get to choose from a wide spectrum of areas to cultivate our interests and talents. There is the Science TDP, SST Inc, Robotics@APEX, Student Leadership Programmes, etc.", ""],
     ["Applied Subjects are also a huge factor of the SST Experience. ALL students are required to take up 1 Applied Subject.", ""],
-    ["They choose from Biotechnology, Computing, Design Studies and Electronics. Did you know that Biotechnology and Design Studies is exclusive to SST only? These subjects are reflected in the GCE O-Level Examination and are recognised for admission in post-secondary institutions.", ""]
+    ["They choose from Biotechnology, Computing, Design Studies and Electronics. Did you know that Biotechnology and Design Studies is exclusive to SST only? These subjects are reflected in the GCE O-Level Examination and are recognised for admission in post-secondary institutions.", ""],
+    ["Click here for some facinating views of our cohort wide programme!", "https://drive.google.com/open?id=17AXronkXyvjc505_YevyZyRdSJIzv4u1"]
   ],
 
   ChangeMakersProgramme: [
@@ -101,7 +103,8 @@ export const conversations = {
     ["DS in SST equips students with knowledge and skills of the design field through design thinking, design process and fundamentals of three design disciplines: visual communication design, interior and exhibition space design, and architectural design.", ""],
     ["The course also aims to nurture an awareness and appreciation of the positive relationships among design, humanity, art, technology, business, culture and economic development. As such, it cultivates an awareness of the role of design in shaping one’s experience of visual communication, space, objects and the environment.", ""],
     ["My sister told me that an SST Alumni, Choy Rui Zhi came back to SST to share his journey in design with his DS juniors. He was one of the first to take up Design Studies and he graduated as a Architecture course medallist from Singapore Polytechnic.", ""],
-    ["She told me that she felt really inspired after hearing him speak about his passions. It is certainly heart warming to see SST alumni coming back so often to support, guide and inspire us.", ""]
+    ["She told me that she felt really inspired after hearing him speak about his passions. It is certainly heart warming to see SST alumni coming back so often to support, guide and inspire us.", ""],
+    ["Click here to see our Alumni, Choy Rui Zhi, sharing about his journey in design", " https://www.facebook.com/ssts.1technologydrive/posts/2155944061082507?__xts__%5B0%5D=68.ARCXLBiayUHjA68x7Ms_w65bVBsjD4uf2xGHAFKkE_9xWC2kChpMs0_uZ5UT7IgB-iQPKT8LsZsUBxaJjIuFOwGrcrBEzhqgdTq7vNE8CjvJNk7lheIViW6wzGNPV7HejmrUxDohsYQlqPBzEJ6-CDDb3CnNvlqUaNd7LTZ81YNuZQDAUaHdXyg0w4WdMfmcGsJQsg&__tn__=-R"]
 
   ],
 
@@ -124,8 +127,8 @@ export const conversationsSec2 = {
     ["SST Inc has created many different apps over the years. What impressed me the most was this KK Hospital App, where students worked with KK Women's and Children's Hospital to develop the KKH Paediatrics Anaesthesia Handbook App. It assists junior doctors in various areas such as administering the right dosage for anaesthesia based on patient profile, example being weight, age.", ""],
     ["I often hear my seniors talk about lessons that they took home from their trip to San Francisco. It seems that they were able to learn so much from their participation at the Developers Conference and their learning journeys to technology firms such as Apple, Google.", ""],
     ["The last time they were there, my seniors also headed to UserTesting where one of alumnus Jurvis was a intern. For a young student like me, it was also amazing to learn that SSTudents are often offered jobs on their trip. I really hope I make the cut to go for the next trip!", ""],
-    ["If I were to sum up my thoughts on SST Inc, I like how we are able to hone programming skills, explore and implement ideas, especially doing something that benefits society. BRB while I continue working on my app!", ""]
-
+    ["If I were to sum up my thoughts on SST Inc, I like how we are able to hone programming skills, explore and implement ideas, especially doing something that benefits society. BRB while I continue working on my app!", ""],
+    ["Click here to view the amazing photos taking in ProjectSF 2019!", "https://www.facebook.com/ssts.1technologydrive/videos/1442196409123946/?__xts__[0]=68.ARD_K-iemPprQSO4Mqna32QHKzQ-PL88mR5T0q1vwWhIzYD31rP9ALkL7a4w7v3pIs5ccvjoc3nYqXhei409H2Ct7yvvTJZEQZbJgXXaOLTB-UgKOQGP78TNtbEr8cgVyIvh_RztCMvYwXbmSvUyOBmqpvnbTb6899AzGzDUNtYNhtKgoK6mtEKhy1JSDASQnJwU8_OA4C0Tunf-EQ&__tn__=-R"]
   ],
 
   Leadership: [
@@ -136,7 +139,9 @@ export const conversationsSec2 = {
     ["Annually, over 100 student leaders are invested across the Student Council, Peer Support Board (PSB), Co-Curricular Activities and Houses.", ""],
     ["While I am not a student leader myself, some of my friends are and I am often proud to see them take charge over initiatives in SST.", ""],
     ["One of my friends is in PSB and he often talks enthusiastically about the events that he helps to plan for the school, as well as ways that we could show appreciation to SST staff.", ""],
-    ["Other major school events organised by Student Council include the SST Sec 1 Badge Ceremony and the Student Leaders’ Investiture. Visit our SST Facebook Page for more information!", ""]
+    ["Other major school events organised by Student Council include the SST Sec 1 Badge Ceremony and the Student Leaders’ Investiture. Visit our SST Facebook Page for more information!", ""],
+    ["ACE Milestone", "https://www.facebook.com/ssts.1technologydrive/posts/2013186688691579?__xts__%5B0%5D=68.ARCT2gDwrSS3-GhtsnTX8J-wNDKixz8-XmmJMELwqc7_hHMasZrG0scQ9kKMEc0eLc5-JnJU_7YnUkZG4KbnHRJXT2OKywdRzgJ3OFrXQriPB74iB-1w-ltMX5XFiAFZMw9-RLHgrMIhDLbA4xVi5ayRGeuSEsJrfgJkkfbF1WNPXhE6qFZT3PSn7RQ1VwgglQQfFEMJQCWG&__tn__=-R"],
+    ["Sec 1 badge ceremony", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1840285539315029"]
   ],
 
   ISS: [
@@ -147,7 +152,8 @@ export const conversationsSec2 = {
    ["One interesting project that my schoolmates worked on includes investigation of the digestion time of various starchy substances.", ""],
    ["Their experiment helped establish which type of starchy food is most suitable for patients to consume when they are affected with different types of diseases.", ""],
    ["I feel that this app will really help the patients in terms of calibrating the right food choices!", ""],
-   ["If you're interested to view 2018's ISS projects, click here! (http://sst2018-iss.blogspot.com/p/2018-projects.html) Many of these projects have won awards such as Science Castle, West Zone Students' Science Symposium and more!", ""]
+   ["If you're interested to view 2018's ISS projects, click here!", "http://sst2018-iss.blogspot.com/p/2018-projects.html"],
+   ["Many of these projects have won awards such as Science Castle, West Zone Students' Science Symposium and more!", ""]
   ],
 
   ACE: [
@@ -160,7 +166,9 @@ export const conversationsSec2 = {
     ["Facilitated by the Year Three Active Citizenship Education (ACE) leaders, we share our understanding and views of different environmental, healthcare and social issues before drawing relevance to their community.", ""],
     ["That's not all there is to ACE though. Earlier this year, we initiated the #ACEfooddrive2k19, a food donation drive with the objective to help improve the poverty situation of over 400 underprivileged families.", ""],
     ["On 12 Jan 2019, 30 ACE leaders, 65 student volunteers, 16 teacher volunteers and SST alumni assisted in distributing food bags. The ACE leaders also sent another 100 food bags to the elderly community at Lengkok Bahru at a later date, and distributed the food bags to the aunties and uncles who have been keeping SST clean and safe.", ""],
-    ["This is just one of the many initiatives that we came up with. To read more about our advocacy campaigns, click here: https://sites.google.com/sst.edu.sg/acesst/", ""]
+    ["This is just one of the many initiatives that we came up with. To read more about our advocacy campaigns, click here: https://sites.google.com/sst.edu.sg/acesst/", "https://sites.google.com/sst.edu.sg/acesst/"],
+    ["outreach talks on FB", "https://www.facebook.com/events/590444031301542/permalink/602879813391297/"],
+    ["Bei jing trip: One Belt, One Road", "https://www.facebook.com/ssts.1technologydrive/posts/1945229002154015?__xts__%5B0%5D=68.ARDfzq779ngWbyQ5XWAJDM8Iq2_sGKYAz8gUEXkDxprofkjzkWMUBNcLMmJi08zgtMwHIT5U6y-KwsO8_wHtx94rwIu5-ErCvn_hhYkUxS5QWopgCItkCYbKr9DLzsZbBrla_IgrXERTnIlxauOS-SxvxTDB-S1Pp0I8XMFe7b1-VvYGww-PHvzKrzi95D-HpJJ1SA&__tn__=-R"]
   ],
 
   ChangeMakersInnofest: [
