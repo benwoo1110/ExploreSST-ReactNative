@@ -94,7 +94,7 @@ class CyberWellness extends Component {
             <Image
               source={select_prompt}
               style={{
-                marginRight: 16,
+                marginRight: 18,
                 marginTop: 14,
                 justifyContent: "center",
               }}
@@ -125,7 +125,8 @@ class CyberWellness extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}>{content[i][0]}</Text>
+							<Text style={styles.ChatTextStyle}
+								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
 				);

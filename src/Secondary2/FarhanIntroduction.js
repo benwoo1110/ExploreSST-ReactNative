@@ -1,22 +1,102 @@
 import React, { Component } from "react";
 import {
-  Text,
   View,
+  Text,
+  TouchableOpacity,
   ImageBackground,
   SafeAreaView,
-  TouchableOpacity,
-  Image
+  Image,
+  ScrollView,
+  StyleSheet,
+  Modal,
+  Alert,
+  Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
+import LinearGradient from "react-native-linear-gradient";
+import chat from "../../assets/images/chat.png";
+import select_prompt from "../../assets/images/select_prompt.png";
+import cancel from "../../assets/images/cancel.png";
+// import QuestionButton from "../../src/Components/QuestionButton";
 
 class FarhanIntroduction extends Component {
   static navigationOptions = {
     header: null
   };
 
+  state = {
+    modalVisible: false
+  };
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
+  };
+
+  constructor(props) {
+    super(props);
+  };
+
+  // THIS IS THE NEW FUNCTION
+  openURL(url) {
+		if (url != "") {
+      Linking.openURL(url);
+      return true;
+		} return false;
+  }
+  
+  // THIS IS THE NEW FUNCTION
+  prompts(name, prompt_text, sequence, url) {
+    const position = 22 + 78*sequence;
+    return (
+      <TouchableOpacity
+        style={[styles.buttonStyle,{bottom: position}]}
+        onPress={() => {
+          const { navigation } = this.props;
+          if (!this.openURL(url)) {
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
+
+        }}
+      >
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
+        >
+          <View style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flex: 1,
+          }}>
+            <Text style={{
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 24,
+              marginRight: 12,
+              flex: 1,
+              fontSize: 16,
+            }}>{prompt_text}</Text>
+
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 16,
+                marginTop: 14,
+                justifyContent: "center",
+              }}
+            />
+          </View>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
+
   render() {
+    const { navigation } = this.props;
     return (
       <View
         style={{
@@ -30,7 +110,7 @@ class FarhanIntroduction extends Component {
             flex: 1,
             resizeMode: "contain"
           }}
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
@@ -38,6 +118,83 @@ class FarhanIntroduction extends Component {
               margin: 16
             }}
           >
+            <Modal
+              animationType="fade"
+              transparent={true}
+              visible={this.state.modalVisible}
+            >
+              <View style={{
+                flex: 1,
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                margin: 0,
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
+                <View style={{
+                  position: "absolute",
+                  top: 16,
+                  bottom: 16,
+                  left: 16,
+                  right: 16,
+                }}>
+                  {/* CHANGE HERE*/}
+                  {this.prompts("", "Could you tell me more about your advocacy projects!", 1, "")}
+                  {this.prompts("", "How was your ChangeMakers Innofest experience like?", 2, "")}
+                  {this.prompts("", "Your CCA is Fencing? What other CCAs are there in SST?", 3, "")}
+                  {this.prompts("ISS", "I've heard that you spend a term developing science projects instead of regular classes. Could you explain more about that?", 4, "")}
+                  {this.prompts("SSTINC", "What is SST Inc about? What is a TDP?", 5, "")}
+                  {this.prompts("Leadership", "What kinds of leadership positions are there in SST?", 6, "")}
+                  {this.prompts("", "I heard that SST offers Applied Subjects. Which AS will you be taking?", 7, "")}
+                  {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience in Secondary 1!", 8, "")}
+                  
+
+                  {/* //TODO:1.1.1 */}
+                  {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
+                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
+                  <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
+
+                </View>
+                <TouchableOpacity
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "#84C7C3",
+                    position: "absolute",
+                    height: 60,
+                    width: 60,
+                    bottom: 24,
+                    right: 0,
+
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 30,
+                    margin: 16
+                  }}
+                  onPress={() => {
+                    this.setModalVisible(!this.state.modalVisible);
+                  }}
+                >
+                  <LinearGradient
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 1, y: 0 }}
+                    colors={["#84C7C3", "#0084C2"]}
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      borderRadius: 30,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+
+                    <Image
+                      source={cancel}
+                    />
+                  </LinearGradient>
+                </TouchableOpacity>
+              </View>
+
+            </Modal>
+
             <Text
               style={{
                 fontFamily: "Avenir Next",
@@ -47,7 +204,7 @@ class FarhanIntroduction extends Component {
                 color: "white"
               }}
             >
-              Orientation
+              Introduction
             </Text>
             <View
               style={{
@@ -83,51 +240,63 @@ class FarhanIntroduction extends Component {
               <Image
                 style={{
                   alignSelf: "center",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
                   marginTop: "20%",
                   width: "35%",
-                  height: "85%",
+                  height: "80%",
                   resizeMode: "contain"
                 }}
                 source={FarhanCoding}
               />
             </View>
-            <View
+            <View style={{
+              backgroundColor: "white",
+              position: "absolute",
+              left: 0,
+              bottom: 20,
+              padding: 8,
+              paddingVertical: 4,
+              marginRight: 68,
+              borderRadius: 5
+            }}>
+              <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
+            </View>
+            <TouchableOpacity
               style={{
+
+                backgroundColor: "#84C7C3",
                 position: "absolute",
-                bottom: 0,
+                height: 60,
+                width: 60,
+                bottom: 24,
                 right: 0,
-                margin: 16,
-                alignItems: "flex-end",
-                justifyContent: "center"
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 30
+              }}
+              onPress={() => {
+                this.setModalVisible(!this.state.modalVisible);
               }}
             >
-              <TouchableOpacity
-                onPress={() => {
-                  this.props.navigation.navigate("ConversationSelect2");
+              <LinearGradient
+                start={{ x: 0, y: 1 }}
+                end={{ x: 1, y: 0 }}
+                colors={["#84C7C3", "#0084C2"]}
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderRadius: 30,
+                  width: "100%",
+                  height: "100%",
                 }}
               >
-                <View
-                  style={{
-                    backgroundColor: "white",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: 16,
-                    borderRadius: 16
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontFamily: "Avenir Next",
-                      fontSize: 15,
-                      fontWeight: "500"
-                    }}
-                  >
-                    Let us Explore!
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            </View>
+
+                <Image
+                  source={chat}
+                />
+              </LinearGradient>
+            </TouchableOpacity>
+           
           </SafeAreaView>
           <SafeAreaView
             style={{
@@ -138,7 +307,7 @@ class FarhanIntroduction extends Component {
           >
             <TouchableOpacity
               onPress={() => {
-                this.props.navigation.goBack();
+                navigation.goBack();
               }}
             >
               <Icon name="keyboard-arrow-left" color="white" size={40} />
@@ -149,5 +318,35 @@ class FarhanIntroduction extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  buttonStyle: {
+    position: "absolute",
+    opacity: 1,
+    backgroundColor: "#84C7C3",
+    position: "absolute",
+    height: 60,
+    width: "100%",
+    borderRadius: 30,
+    width: "100%",
+  },
+  linGrad: {
+    opacity: 1,
+    borderRadius: 30,
+    width: "100%",
+    height: "100%",
+  }
+
+});
 
 export default FarhanIntroduction;
+
+
+
+/*
+My name is Farhan and I'm currently in Secondary 2. I can't believe 
+                I am already a senior to my juniors in Secondary 1. We helped to 
+                plan their Orientation Week to ease them into Secondary School life. 
+                I hope that made them feel more comfortable. 
+                */
+
+               

@@ -1,28 +1,30 @@
 import React, { Component } from "react";
 import {
-	Animated,
-	Text,
-	View,
-	StyleSheet,
-	SafeAreaView,
-	Image,
-	ImageBackground,
-	TouchableOpacity,
-	ScrollView,
-	Modal,
-	Linking
+    View,
+    Text,
+    TouchableOpacity,
+    ImageBackground,
+    SafeAreaView,
+    Image,
+    ScrollView,
+    StyleSheet,
+    Modal,
+		Alert,
+		Animated,
+		Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { conversations } from "../Conversations";
+import GeneralOffice from "../../assets/images/go.jpeg";
 import LinearGradient from "react-native-linear-gradient";
-import Background from "../../assets/images/background.png";
-import RachelFace from "../../assets/images/Rachel_Face.png";
 import chat from "../../assets/images/chat.png"
+import { conversations, conversationsSec2 } from "../Conversations";
+import Background from "../../assets/images/background.png";
+import FarhanProfile from "../../assets/images/Farhan_profile.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
-class Orientation extends Component {
-    static navigationOptions = {
+class ISS extends Component {
+	static navigationOptions = {
 		header: null
 	};
 
@@ -62,9 +64,10 @@ class Orientation extends Component {
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
-						navigation.navigate(name);
-						this.setModalVisible(false);
-					}
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
+
         }}
       >
         <LinearGradient
@@ -82,8 +85,7 @@ class Orientation extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-							marginLeft: 20,
-							marginRight: 12,
+              marginLeft: 20,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -107,7 +109,7 @@ class Orientation extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversations.Orientation;
+		const content = conversationsSec2.ISS;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -170,9 +172,11 @@ class Orientation extends Component {
 									right: 16,
 								}}>
 									
-									{/* CHANGE HERE*/}
-                  {this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
-                  {this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
+									{this.prompts("", "I would love to read more about SSTudents' ISS projects!", 1, "http://sst2018-iss.blogspot.com/p/2018-projects.html")}
+									{this.prompts("", "Do tell me more about the ChangeMakers Innofest for Sec 2 students", 2, "")}
+									{this.prompts("", "Could you share more about TDP with me? What are the types of TDPs offered in SST?", 3, "")}
+									{this.prompts("", "It seems that certain students follow up their experiences from ISS to IRAP. What are some of your IRAP experiences?", 4, "")}
+									
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -194,7 +198,9 @@ class Orientation extends Component {
 										borderRadius: 30,
 										margin: 16
 									}}
-									onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+									onPress={() => {
+										this.setModalVisible(!this.state.modalVisible);
+									}}
 								>
 									<LinearGradient
 										start={{ x: 0, y: 1 }}
@@ -232,7 +238,7 @@ class Orientation extends Component {
 									resizeMode: "cover",
 									alignItems: "flex-start"
 								}}
-								source={RachelFace}
+								source={FarhanProfile}
 							/>
 							<Text
 								style={{
@@ -244,7 +250,7 @@ class Orientation extends Component {
 									paddingLeft: 16
 								}}
 							>
-								Rachel
+								Farhan
 								</Text>
 						</View>
 						<ScrollView>
@@ -263,7 +269,9 @@ class Orientation extends Component {
 								justifyContent: "center",
 								borderRadius: 30,
 							}}
-							onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+							onPress={() => {
+								this.setModalVisible(!this.state.modalVisible);
+							}}
 						>
 							<LinearGradient
 								start={{ x: 0, y: 1 }}
@@ -366,5 +374,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-
-export default Orientation
+export default ISS

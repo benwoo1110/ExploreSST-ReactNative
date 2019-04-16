@@ -124,7 +124,8 @@ class KnowingSST extends Component {
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}>{content[i][0]}</Text>
+							<Text style={styles.ChatTextStyle}
+								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
 				);

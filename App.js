@@ -6,7 +6,7 @@ import Year from "./src/Year";
 import RachelIntroduction from "./src/Secondary1/RachelIntroduction";
 import ChatViewSec1 from "./src/Secondary1/ChatViewSec1";
 import KnowingSST from "./src/Secondary1/KnowingSST";
-import Cyberwellness from "./src/Secondary1/Cyberwellness";
+import CyberWellness from "./src/Secondary1/Cyberwellness";
 import Orientation from "./src/Secondary1/Orientation";
 import SettlingIn_CCA from "./src/Secondary1/SettlingIn_CCA";
 import CCA from "./src/Secondary1/CCA";
@@ -19,6 +19,9 @@ import SchoolBell from "./src/Secondary1/SchoolBell";
 import FarhanIntroduction from "./src/Secondary2/FarhanIntroduction";
 import ConversationSelect2 from "./src/Secondary2/ConversationSelect2";
 import ChatViewSec2 from "./src/Secondary2/ChatViewSec2";
+import SSTINC from "./src/Secondary2/SSTINC";
+import Leadership from "./src/Secondary2/Leadership";
+import ISS from "./src/Secondary2/ISS";
 
 import PriyaIntroduction from "./src/Secondary3/PriyaIntroduction";
 import ConversationSelect3 from "./src/Secondary3/ConversationSelect3";
@@ -38,7 +41,7 @@ const MainStack = createStackNavigator({
   RachelIntroduction: { screen: RachelIntroduction },
   ChatViewSec1: { screen: ChatViewSec1 },
   KnowingSST: { screen: KnowingSST },
-  Cyberwellness: { screen: Cyberwellness },
+  CyberWellness: { screen: CyberWellness },
   Orientation: { screen: Orientation },
   SettlingIn_CCA: { screen: SettlingIn_CCA },
   CCA: { screen: CCA },
@@ -51,6 +54,9 @@ const MainStack = createStackNavigator({
   FarhanIntroduction: { screen: FarhanIntroduction },
   ConversationSelect2: { screen: ConversationSelect2 },
   ChatViewSec2: { screen: ChatViewSec2 },
+  SSTINC: { screen: SSTINC },
+  Leadership: { screen: Leadership },
+  ISS: { screen: ISS },
 
   PriyaIntroduction: { screen: PriyaIntroduction },
   ConversationSelect3: { screen: ConversationSelect3 },
