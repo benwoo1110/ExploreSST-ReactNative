@@ -93,7 +93,7 @@ class KnowingSST extends Component {
             <Image
               source={select_prompt}
               style={{
-                marginRight: 18,
+                marginRight: 16,
                 marginTop: 14,
                 justifyContent: "center",
               }}

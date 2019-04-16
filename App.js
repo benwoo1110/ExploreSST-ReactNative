@@ -6,7 +6,7 @@ import Year from "./src/Year";
 import RachelIntroduction from "./src/Secondary1/RachelIntroduction";
 import ChatViewSec1 from "./src/Secondary1/ChatViewSec1";
 import KnowingSST from "./src/Secondary1/KnowingSST";
-import CyberWellness from "./src/Secondary1/CyberWellness";
+import Cyberwellness from "./src/Secondary1/Cyberwellness";
 import Orientation from "./src/Secondary1/Orientation";
 import SettlingIn_CCA from "./src/Secondary1/SettlingIn_CCA";
 import CCA from "./src/Secondary1/CCA";
@@ -38,7 +38,7 @@ const MainStack = createStackNavigator({
   RachelIntroduction: { screen: RachelIntroduction },
   ChatViewSec1: { screen: ChatViewSec1 },
   KnowingSST: { screen: KnowingSST },
-  CyberWellness: { screen: CyberWellness },
+  Cyberwellness: { screen: Cyberwellness },
   Orientation: { screen: Orientation },
   SettlingIn_CCA: { screen: SettlingIn_CCA },
   CCA: { screen: CCA },
