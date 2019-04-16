@@ -56,7 +56,7 @@ class KnowingSST extends Component {
   
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 20 + 80*sequence;
+    const position = 22 + 78*sequence;
     return (
       <TouchableOpacity
         style={[styles.buttonStyle,{bottom: position}]}
@@ -84,7 +84,8 @@ class KnowingSST extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-              marginLeft: 20,
+							marginLeft: 20,
+							marginRight: 12,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -93,7 +94,7 @@ class KnowingSST extends Component {
               source={select_prompt}
               style={{
                 marginRight: 18,
-                marginTop: 12,
+                marginTop: 14,
                 justifyContent: "center",
               }}
             />
@@ -171,14 +172,14 @@ class KnowingSST extends Component {
 								}}>
 									
 									{/* CHANGE HERE*/}
-                  {this.prompts("CyberWellenss", "Tell me more about CyberWellness in SST", 1, "")}
+                  {this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
                   {this.prompts("", "Deets on the SST Open House?", 2, "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1998729310137317")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
                   <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
-								</View>
+							</View>
 								<TouchableOpacity
 									style={{
 										position: "absolute",

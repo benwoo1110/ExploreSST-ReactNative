@@ -55,7 +55,7 @@ class Orientation extends Component {
   
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 20 + 80*sequence;
+    const position = 22 + 78*sequence;
     return (
       <TouchableOpacity
         style={[styles.buttonStyle,{bottom: position}]}
@@ -82,7 +82,8 @@ class Orientation extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-              marginLeft: 20,
+							marginLeft: 20,
+							marginRight: 12,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -91,7 +92,7 @@ class Orientation extends Component {
               source={select_prompt}
               style={{
                 marginRight: 18,
-                marginTop: 12,
+                marginTop: 14,
                 justifyContent: "center",
               }}
             />
@@ -169,7 +170,7 @@ class Orientation extends Component {
 								}}>
 									
 									{/* CHANGE HERE*/}
-                  {this.prompts("CyberWellenss", "Tell me more about CyberWellness in SST", 1, "")}
+                  {this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
                   {this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
 
 									{/* //TODO:1.1.1 */}

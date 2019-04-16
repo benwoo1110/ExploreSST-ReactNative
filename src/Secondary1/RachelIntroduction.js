@@ -47,7 +47,7 @@ class RachelIntroduction extends Component {
   
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 20 + 80*sequence;
+    const position = 22 + 78*sequence;
     return (
       <TouchableOpacity
         style={[styles.buttonStyle,{bottom: position}]}
@@ -75,7 +75,8 @@ class RachelIntroduction extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-              marginLeft: 20,
+              marginLeft: 24,
+              marginRight: 12,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -84,7 +85,7 @@ class RachelIntroduction extends Component {
               source={select_prompt}
               style={{
                 marginRight: 18,
-                marginTop: 12,
+                marginTop: 14,
                 justifyContent: "center",
               }}
             />

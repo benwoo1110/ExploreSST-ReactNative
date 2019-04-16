@@ -29,7 +29,7 @@ export const conversations = {
     ["The Secondary 1 students will also complete a session on school ethos and values (by SConnect).", ""]
   ],
 
-  CyberWellenss: [
+  CyberWellness: [
     ["Tell me more about CyberWellness in SST", ""],
     ["Ever wondered how parents of SST manage their children's use of macbook in a 1-1 school?", ""],
     ["For starters, all macbooks are termed as learning devices to emphasise the intent of harnessing ICT to optimise learning.", ""],
@@ -55,7 +55,7 @@ export const conversations = {
   ],
 
   CCA: [ // Not DONE
-    "What are the CCAs in SST?",
+    ["What are the CCAs in SST?",""]
   ],
 
   InterestingExperiences: [
@@ -104,7 +104,7 @@ export const conversations = {
     ["The course also aims to nurture an awareness and appreciation of the positive relationships among design, humanity, art, technology, business, culture and economic development. As such, it cultivates an awareness of the role of design in shaping one’s experience of visual communication, space, objects and the environment.", ""],
     ["My sister told me that an SST Alumni, Choy Rui Zhi came back to SST to share his journey in design with his DS juniors. He was one of the first to take up Design Studies and he graduated as a Architecture course medallist from Singapore Polytechnic.", ""],
     ["She told me that she felt really inspired after hearing him speak about his passions. It is certainly heart warming to see SST alumni coming back so often to support, guide and inspire us.", ""],
-    ["Click here to see our Alumni, Choy Rui Zhi, sharing about his journey in design", " https://www.facebook.com/ssts.1technologydrive/posts/2155944061082507?__xts__%5B0%5D=68.ARCXLBiayUHjA68x7Ms_w65bVBsjD4uf2xGHAFKkE_9xWC2kChpMs0_uZ5UT7IgB-iQPKT8LsZsUBxaJjIuFOwGrcrBEzhqgdTq7vNE8CjvJNk7lheIViW6wzGNPV7HejmrUxDohsYQlqPBzEJ6-CDDb3CnNvlqUaNd7LTZ81YNuZQDAUaHdXyg0w4WdMfmcGsJQsg&__tn__=-R"]
+    ["Click here to see our Alumni, Choy Rui Zhi, sharing about his journey in design.", "https://www.facebook.com/ssts.1technologydrive/posts/2155944061082507?__xts__%5B0%5D=68.ARCXLBiayUHjA68x7Ms_w65bVBsjD4uf2xGHAFKkE_9xWC2kChpMs0_uZ5UT7IgB-iQPKT8LsZsUBxaJjIuFOwGrcrBEzhqgdTq7vNE8CjvJNk7lheIViW6wzGNPV7HejmrUxDohsYQlqPBzEJ6-CDDb3CnNvlqUaNd7LTZ81YNuZQDAUaHdXyg0w4WdMfmcGsJQsg&__tn__=-R"]
 
   ],
 

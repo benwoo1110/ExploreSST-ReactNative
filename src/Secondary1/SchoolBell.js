@@ -24,7 +24,7 @@ import RachelFace from "../../assets/images/Rachel_Face.png";
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
-class CyberWellness extends Component {
+class SchoolBell extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -110,7 +110,7 @@ class CyberWellness extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversations.CyberWellness;
+		const content = conversations.SchoolBell;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -171,8 +171,8 @@ class CyberWellness extends Component {
 									left: 16,
 									right: 16,
 								}}>
-									
-									{this.prompts("CareerFairGuidanceTalks", "Tell me more about other parent engagement sessions!", 1, "")}
+
+								 {/*NO PROMPTS*/}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -370,4 +370,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default CyberWellness
+export default SchoolBell

@@ -9,14 +9,16 @@ import {
     ImageBackground,
     TouchableOpacity,
     ScrollView,
-    Modal
+    Modal,
+    Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversations } from "../Conversations";
 import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import chat from "../../assets/images/chat.png"
+import chat from "../../assets/images/chat.png";
+import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png"
 
 class SettlingIn_CCA extends Component {
@@ -51,53 +53,55 @@ class SettlingIn_CCA extends Component {
         } return false;
     }
 
-    // THIS IS THE NEW FUNCTION
-    prompts(name, prompt_text, sequence, url) {
-    const position = 20 + 80*sequence;
+   // THIS IS THE NEW FUNCTION
+   prompts(name, prompt_text, sequence, url) {
+    const position = 22 + 78*sequence;
     return (
-    <TouchableOpacity
+      <TouchableOpacity
         style={[styles.buttonStyle,{bottom: position}]}
         onPress={() => {
-        const { navigation } = this.props;
-        if (!this.openURL(url)) {
+          const { navigation } = this.props;
+          if (!this.openURL(url)) {
             navigation.navigate(name);
             this.setModalVisible(false);
-            }
+          }
+
         }}
-    >
+      >
         <LinearGradient
-        start={{ x: 0, y: 1 }}
-        end={{ x: 1, y: 0 }}
-        colors={["#84C7C3", "#0084C2"]}
-        style={styles.linGrad}
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
         >
-        <View style={{
+          <View style={{
             flexDirection: "row",
             justifyContent: "center",
             flex: 1,
-        }}>
+          }}>
             <Text style={{
-            color: "white",
-            fontFamily: "Avenir Next",
-            alignSelf: "center",
-            marginLeft: 20,
-            flex: 1,
-            fontSize: 16,
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 20,
+              marginRight: 12,
+              flex: 1,
+              fontSize: 16,
             }}>{prompt_text}</Text>
 
             <Image
-            source={select_prompt}
-            style={{
+              source={select_prompt}
+              style={{
                 marginRight: 18,
-                marginTop: 12,
+                marginTop: 14,
                 justifyContent: "center",
-            }}
+              }}
             />
-        </View>
+          </View>
         </LinearGradient>
-    </TouchableOpacity>
+      </TouchableOpacity>
     );
-    }
+  }
 
     render() {
         const { navigation } = this.props;

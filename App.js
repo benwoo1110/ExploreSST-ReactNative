@@ -4,11 +4,17 @@ import Welcome from "./src/Welcome";
 import Year from "./src/Year";
 
 import RachelIntroduction from "./src/Secondary1/RachelIntroduction";
-import ChatViewSec1 from "./src/Secondary1/ChatViewSec1"
-import KnowingSST from "./src/Secondary1/KnowingSST"
-import Cyberwellness from "./src/Secondary1/Cyberwellness"
-import Orientation from "./src/Secondary1/Orientation"
-import SettlingIn_CCA from "./src/Secondary1/SettlingIn_CCA"
+import ChatViewSec1 from "./src/Secondary1/ChatViewSec1";
+import KnowingSST from "./src/Secondary1/KnowingSST";
+import CyberWellness from "./src/Secondary1/CyberWellness";
+import Orientation from "./src/Secondary1/Orientation";
+import SettlingIn_CCA from "./src/Secondary1/SettlingIn_CCA";
+import CCA from "./src/Secondary1/CCA";
+import InterestingExperiences from "./src/Secondary1/InterestingExperiences";
+import AppliedLearning from "./src/Secondary1/AppliedLearning";
+import AS_DesignStudies from "./src/Secondary1/AS_DesignStudies";
+import ChangeMakersProgramme from "./src/Secondary1/ChangeMakersProgramme";
+import SchoolBell from "./src/Secondary1/SchoolBell";
 
 import FarhanIntroduction from "./src/Secondary2/FarhanIntroduction";
 import ConversationSelect2 from "./src/Secondary2/ConversationSelect2";
@@ -32,10 +38,15 @@ const MainStack = createStackNavigator({
   RachelIntroduction: { screen: RachelIntroduction },
   ChatViewSec1: { screen: ChatViewSec1 },
   KnowingSST: { screen: KnowingSST },
-  Cyberwellness: { screen: Cyberwellness },
+  CyberWellness: { screen: CyberWellness },
   Orientation: { screen: Orientation },
   SettlingIn_CCA: { screen: SettlingIn_CCA },
- 
+  CCA: { screen: CCA },
+  InterestingExperiences: { screen: InterestingExperiences },
+  AppliedLearning: { screen: AppliedLearning },
+  AS_DesignStudies: { screen: AS_DesignStudies },
+  ChangeMakersProgramme: { screen: ChangeMakersProgramme },
+  SchoolBell: { screen: SchoolBell },
 
   FarhanIntroduction: { screen: FarhanIntroduction },
   ConversationSelect2: { screen: ConversationSelect2 },

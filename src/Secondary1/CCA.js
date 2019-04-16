@@ -24,7 +24,7 @@ import RachelFace from "../../assets/images/Rachel_Face.png";
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
-class CyberWellness extends Component {
+class CCA extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -86,7 +86,8 @@ class CyberWellness extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-              marginLeft: 20,
+							marginLeft: 20,
+							marginRight: 12,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -110,7 +111,7 @@ class CyberWellness extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversations.CyberWellness;
+		const content = conversations.CCA;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -172,7 +173,8 @@ class CyberWellness extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("CareerFairGuidanceTalks", "Tell me more about other parent engagement sessions!", 1, "")}
+									{this.prompts("InterestingExperiences", "What other interesting experiences are there?", 1, "")}
+									{this.prompts("", "I would like to find out more about a specific CCA.", 2, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -370,4 +372,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default CyberWellness
+export default CCA
