@@ -1,22 +1,102 @@
 import React, { Component } from "react";
 import {
-  Text,
   View,
+  Text,
+  TouchableOpacity,
   ImageBackground,
   SafeAreaView,
-  TouchableOpacity,
-  Image
+  Image,
+  ScrollView,
+  StyleSheet,
+  Modal,
+  Alert,
+  Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import PriyaSolving from "../../assets/images/Priya_Solving.png";
+import LinearGradient from "react-native-linear-gradient";
+import chat from "../../assets/images/chat.png";
+import select_prompt from "../../assets/images/select_prompt.png";
+import cancel from "../../assets/images/cancel.png";
+// import QuestionButton from "../../src/Components/QuestionButton";
 
 class PriyaIntroduction extends Component {
   static navigationOptions = {
     header: null
   };
 
+  state = {
+    modalVisible: false
+  };
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
+  };
+
+  constructor(props) {
+    super(props);
+  };
+
+  // THIS IS THE NEW FUNCTION
+  openURL(url) {
+		if (url != "") {
+      Linking.openURL(url);
+      return true;
+		} return false;
+  }
+  
+  // THIS IS THE NEW FUNCTION
+  prompts(name, prompt_text, sequence, url) {
+    const position = 22 + 78*sequence;
+    return (
+      <TouchableOpacity
+        style={[styles.buttonStyle,{bottom: position}]}
+        onPress={() => {
+          const { navigation } = this.props;
+          if (!this.openURL(url)) {
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
+
+        }}
+      >
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
+        >
+          <View style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flex: 1,
+          }}>
+            <Text style={{
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 24,
+              marginRight: 12,
+              flex: 1,
+              fontSize: 16,
+            }}>{prompt_text}</Text>
+
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 16,
+                marginTop: 14,
+                justifyContent: "center",
+              }}
+            />
+          </View>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
+
   render() {
+    const { navigation } = this.props;
     return (
       <View
         style={{
@@ -30,7 +110,7 @@ class PriyaIntroduction extends Component {
             flex: 1,
             resizeMode: "contain"
           }}
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.6 }}
         >
           <SafeAreaView
             style={{
@@ -38,6 +118,81 @@ class PriyaIntroduction extends Component {
               margin: 16
             }}
           >
+            <Modal
+              animationType="fade"
+              transparent={true}
+              visible={this.state.modalVisible}
+            >
+              <View style={{
+                flex: 1,
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                margin: 0,
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
+                <View style={{
+                  position: "absolute",
+                  top: 16,
+                  bottom: 16,
+                  left: 16,
+                  right: 16,
+                }}>
+                
+                  {/* CHANGE HERE*/}
+                  {this.prompts("", "What are some of the new programmes that Sec 3 students in SST will take up?", 1, "")}
+                  {this.prompts("", "Can I find out more from your juniors about their lower secondary experiences?", 2, "")}
+                  {this.prompts("", "What is IRAP about?", 3, "")}
+                  {this.prompts("SCITDP", "Science TDP? Tell me more!", 4, "")}
+                  {this.prompts("", "What about other TDPs?", 5, "")}
+                  {this.prompts("", "Could you tell me more about OBS?", 6, "")}
+
+                  {/* //TODO:1.1.1 */}
+                  {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
+                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
+                  <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
+
+                </View>
+                <TouchableOpacity
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "#84C7C3",
+                    position: "absolute",
+                    height: 60,
+                    width: 60,
+                    bottom: 24,
+                    right: 0,
+
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 30,
+                    margin: 16
+                  }}
+                  onPress={() => {
+                    this.setModalVisible(!this.state.modalVisible);
+                  }}
+                >
+                  <LinearGradient
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 1, y: 0 }}
+                    colors={["#84C7C3", "#0084C2"]}
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      borderRadius: 30,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+
+                    <Image
+                      source={cancel}
+                    />
+                  </LinearGradient>
+                </TouchableOpacity>
+              </View>
+
+            </Modal>
+
             <Text
               style={{
                 fontFamily: "Avenir Next",
@@ -47,7 +202,7 @@ class PriyaIntroduction extends Component {
                 color: "white"
               }}
             >
-              Orientation
+              Introduction
             </Text>
             <View
               style={{
@@ -85,51 +240,63 @@ class PriyaIntroduction extends Component {
               <Image
                 style={{
                   alignSelf: "center",
-                  marginLeft: "10%",
+                  marginLeft: "5%",
                   marginTop: "20%",
                   width: "35%",
-                  height: "85%",
+                  height: "80%",
                   resizeMode: "contain"
                 }}
                 source={PriyaSolving}
               />
             </View>
-            <View
+            <View style={{
+              backgroundColor: "white",
+              position: "absolute",
+              left: 0,
+              bottom: 20,
+              padding: 8,
+              paddingVertical: 4,
+              marginRight: 68,
+              borderRadius: 5
+            }}>
+              <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
+            </View>
+            <TouchableOpacity
               style={{
+
+                backgroundColor: "#84C7C3",
                 position: "absolute",
-                bottom: 0,
+                height: 60,
+                width: 60,
+                bottom: 24,
                 right: 0,
-                margin: 16,
-                alignItems: "flex-end",
-                justifyContent: "center"
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 30
+              }}
+              onPress={() => {
+                this.setModalVisible(!this.state.modalVisible);
               }}
             >
-              <TouchableOpacity
-                onPress={() => {
-                  this.props.navigation.navigate("ConversationSelect3");
+              <LinearGradient
+                start={{ x: 0, y: 1 }}
+                end={{ x: 1, y: 0 }}
+                colors={["#84C7C3", "#0084C2"]}
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderRadius: 30,
+                  width: "100%",
+                  height: "100%",
                 }}
               >
-                <View
-                  style={{
-                    backgroundColor: "white",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: 16,
-                    borderRadius: 16
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontFamily: "Avenir Next",
-                      fontSize: 15,
-                      fontWeight: "500"
-                    }}
-                  >
-                    Let us Explore!
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            </View>
+
+                <Image
+                  source={chat}
+                />
+              </LinearGradient>
+            </TouchableOpacity>
+           
           </SafeAreaView>
           <SafeAreaView
             style={{
@@ -140,7 +307,7 @@ class PriyaIntroduction extends Component {
           >
             <TouchableOpacity
               onPress={() => {
-                this.props.navigation.goBack();
+                navigation.goBack();
               }}
             >
               <Icon name="keyboard-arrow-left" color="white" size={40} />
@@ -151,5 +318,24 @@ class PriyaIntroduction extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  buttonStyle: {
+    position: "absolute",
+    opacity: 1,
+    backgroundColor: "#84C7C3",
+    position: "absolute",
+    height: 60,
+    width: "100%",
+    borderRadius: 30,
+    width: "100%",
+  },
+  linGrad: {
+    opacity: 1,
+    borderRadius: 30,
+    width: "100%",
+    height: "100%",
+  }
+
+});
 
 export default PriyaIntroduction;

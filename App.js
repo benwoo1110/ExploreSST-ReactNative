@@ -26,6 +26,7 @@ import ISS from "./src/Secondary2/ISS";
 import PriyaIntroduction from "./src/Secondary3/PriyaIntroduction";
 import ConversationSelect3 from "./src/Secondary3/ConversationSelect3";
 import ChatViewSec3 from "./src/Secondary3/ChatViewSec3";
+import SCITDP from "./src/Secondary3/SCITDP";
 
 import WeiJieIntroduction from "./src/Secondary4/WeiJieIntroduction";
 import ConversationSelect4 from "./src/Secondary4/ConversationSelect4";
@@ -61,6 +62,7 @@ const MainStack = createStackNavigator({
   PriyaIntroduction: { screen: PriyaIntroduction },
   ConversationSelect3: { screen: ConversationSelect3 },
   ChatViewSec3: { screen: ChatViewSec3 },
+  SCITDP: { screen: SCITDP },
 
   WeiJieIntroduction: { screen: WeiJieIntroduction },
   ConversationSelect4: { screen: ConversationSelect4 },
