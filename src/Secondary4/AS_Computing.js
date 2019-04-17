@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import {
-    View,
-    Text,
-    TouchableOpacity,
-    ImageBackground,
-    SafeAreaView,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Modal,
-    Alert,
-    Animated,
-    Linking
+	View,
+	Text,
+	TouchableOpacity,
+	ImageBackground,
+	SafeAreaView,
+	Image,
+	ScrollView,
+	StyleSheet,
+	Modal,
+	Alert,
+	Animated,
+	Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { conversationsSec4 } from "../Conversations";
@@ -22,8 +22,7 @@ import chat from "../../assets/images/chat.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png"
 
-
-class ECG extends Component {
+class ASComputing extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -109,7 +108,7 @@ class ECG extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversationsSec4.ECG;
+		const content = conversationsSec4.AS_Computing;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -175,8 +174,8 @@ class ECG extends Component {
 								}}>
 
 									{/* CHANGE HERE*/}
-									{this.prompts("DiscoverCamp", "Tell me more about the Discover Programme", 1, "")}
-									{this.prompts("", "Tell me about the School Parent Meeting and Career Day", 2, "https://www.facebook.com/search/top/?q=School%20of%20Science%20and%20Technology%2C%20Singapore%20career%20day&epa=SEARCH_BOX")}
+									{this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
+									{this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
 
 								</View>
 								<TouchableOpacity
@@ -366,5 +365,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-
-export default ECG
+export default ASComputing
