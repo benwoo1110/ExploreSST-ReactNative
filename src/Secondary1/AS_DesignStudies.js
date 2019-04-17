@@ -173,7 +173,7 @@ class AS_DesignStudies extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Find out more about Biotechnology! (Sec 2)", 1, "")}
+									{this.prompts("AS_Biotech", "Find out more about Biotechnology! (Sec 2)", 1, "")}
 									{this.prompts("", "Find out more about Electronics! (Sec 3)", 2, "")}
 									{this.prompts("", "Find out more about Computing +! (Sec 4)", 3, "")}
 

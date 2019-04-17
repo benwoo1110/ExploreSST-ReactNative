@@ -173,7 +173,7 @@ class ChangeMakersProgramme extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me about the ChangeMakers Innofest experience in Secondary 2!", 1, "")}
+									{this.prompts("ChangeMakersInnofest", "Tell me about the ChangeMakers Innofest experience in Secondary 2!", 1, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
