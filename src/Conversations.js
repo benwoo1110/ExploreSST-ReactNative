@@ -167,8 +167,7 @@ export const conversationsSec2 = {
     ["That's not all there is to ACE though. Earlier this year, we initiated the #ACEfooddrive2k19, a food donation drive with the objective to help improve the poverty situation of over 400 underprivileged families.", ""],
     ["On 12 Jan 2019, 30 ACE leaders, 65 student volunteers, 16 teacher volunteers and SST alumni assisted in distributing food bags. The ACE leaders also sent another 100 food bags to the elderly community at Lengkok Bahru at a later date, and distributed the food bags to the aunties and uncles who have been keeping SST clean and safe.", ""],
     ["This is just one of the many initiatives that we came up with. To read more about our advocacy campaigns, click here: https://sites.google.com/sst.edu.sg/acesst/", "https://sites.google.com/sst.edu.sg/acesst/"],
-    ["outreach talks on FB", "https://www.facebook.com/events/590444031301542/permalink/602879813391297/"],
-    ["Bei jing trip: One Belt, One Road", "https://www.facebook.com/ssts.1technologydrive/posts/1945229002154015?__xts__%5B0%5D=68.ARDfzq779ngWbyQ5XWAJDM8Iq2_sGKYAz8gUEXkDxprofkjzkWMUBNcLMmJi08zgtMwHIT5U6y-KwsO8_wHtx94rwIu5-ErCvn_hhYkUxS5QWopgCItkCYbKr9DLzsZbBrla_IgrXERTnIlxauOS-SxvxTDB-S1Pp0I8XMFe7b1-VvYGww-PHvzKrzi95D-HpJJ1SA&__tn__=-R"]
+    ["outreach talks on FB", "https://www.facebook.com/events/590444031301542/permalink/602879813391297/"]
   ],
 
   ChangeMakersInnofest: [
