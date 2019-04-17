@@ -5,16 +5,88 @@ import {
   ImageBackground,
   SafeAreaView,
   TouchableOpacity,
-  Image
+  Image,
+  Modal,
+  StyleSheet
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import WeiJieComputer from "../../assets/images/WeiJie_Computer.png";
+import LinearGradient from "react-native-linear-gradient";
+import chat from "../../assets/images/chat.png";
+import select_prompt from "../../assets/images/select_prompt.png";
+import cancel from "../../assets/images/cancel.png";
 
 class WeiJieIntroduction extends Component {
   static navigationOptions = {
     header: null
   };
+
+  state = {
+    modalVisible: false
+  };
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
+  };
+
+  constructor(props) {
+    super(props);
+  };
+  openURL(url) {
+		if (url != "") {
+      Linking.openURL(url);
+      return true;
+		} return false;
+  }
+
+  prompts(name, prompt_text, sequence, url) {
+    const position = 22 + 78*sequence;
+    return (
+      <TouchableOpacity
+        style={[styles.buttonStyle,{bottom: position}]}
+        onPress={() => {
+          const { navigation } = this.props;
+          if (!this.openURL(url)) {
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
+
+        }}
+      >
+        <LinearGradient
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+          colors={["#84C7C3", "#0084C2"]}
+          style={styles.linGrad}
+        >
+          <View style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flex: 1,
+          }}>
+            <Text style={{
+              color: "white",
+              fontFamily: "Avenir Next",
+              alignSelf: "center",
+              marginLeft: 24,
+              marginRight: 12,
+              flex: 1,
+              fontSize: 16,
+            }}>{prompt_text}</Text>
+
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 16,
+                marginTop: 14,
+                justifyContent: "center",
+              }}
+            />
+          </View>
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
 
   render() {
     return (
@@ -38,6 +110,71 @@ class WeiJieIntroduction extends Component {
               margin: 16
             }}
           >
+          <Modal
+              animationType="fade"
+              transparent={true}
+              visible={this.state.modalVisible}
+            >
+              <View style={{
+                flex: 1,
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                margin: 0,
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
+                <View style={{
+                  position: "absolute",
+                  top: 16,
+                  bottom: 16,
+                  left: 16,
+                  right: 16,
+                }}>
+                  {/* CHANGE HERE*/}
+                  {this.prompts("DiscoverCamp", "Tell me more about the Discover Camp", 1, "")}
+                  {this.prompts("ECG", "What about the ECG in SST", 2, "")}
+                  {this.prompts("AlumniSuccess", "Where do SST students go on to after they graduate?", 3, "")}
+
+                </View>
+                <TouchableOpacity
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "#84C7C3",
+                    position: "absolute",
+                    height: 60,
+                    width: 60,
+                    bottom: 24,
+                    right: 0,
+
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 30,
+                    margin: 16
+                  }}
+                  onPress={() => {
+                    this.setModalVisible(!this.state.modalVisible);
+                  }}
+                >
+                  <LinearGradient
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 1, y: 0 }}
+                    colors={["#84C7C3", "#0084C2"]}
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      borderRadius: 30,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+
+                    <Image
+                      source={cancel}
+                    />
+                  </LinearGradient>
+                </TouchableOpacity>
+              </View>
+
+            </Modal>
             <Text
               style={{
                 fontFamily: "Avenir Next",
@@ -99,42 +236,53 @@ class WeiJieIntroduction extends Component {
                 source={WeiJieComputer}
               />
             </View>
-            <View
+            <View style={{
+              backgroundColor: "white",
+              position: "absolute",
+              left: 0,
+              bottom: 20,
+              padding: 8,
+              paddingVertical: 4,
+              marginRight: 68,
+              borderRadius: 5
+            }}>
+              <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
+            </View>
+            <TouchableOpacity
               style={{
+
+                backgroundColor: "#84C7C3",
                 position: "absolute",
-                bottom: 0,
+                height: 60,
+                width: 60,
+                bottom: 24,
                 right: 0,
-                margin: 16,
-                alignItems: "flex-end",
-                justifyContent: "center"
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 30
+              }}
+              onPress={() => {
+                this.setModalVisible(!this.state.modalVisible);
               }}
             >
-              <TouchableOpacity
-                onPress={() => {
-                  this.props.navigation.navigate("ConversationSelect4");
+              <LinearGradient
+                start={{ x: 0, y: 1 }}
+                end={{ x: 1, y: 0 }}
+                colors={["#84C7C3", "#0084C2"]}
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderRadius: 30,
+                  width: "100%",
+                  height: "100%",
                 }}
               >
-                <View
-                  style={{
-                    backgroundColor: "white",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: 16,
-                    borderRadius: 16
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontFamily: "Avenir Next",
-                      fontSize: 15,
-                      fontWeight: "500"
-                    }}
-                  >
-                    Let us Explore!
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            </View>
+
+                <Image
+                  source={chat}
+                />
+              </LinearGradient>
+            </TouchableOpacity>
           </SafeAreaView>
           <SafeAreaView
             style={{
@@ -156,5 +304,24 @@ class WeiJieIntroduction extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  buttonStyle: {
+    position: "absolute",
+    opacity: 1,
+    backgroundColor: "#84C7C3",
+    position: "absolute",
+    height: 60,
+    width: "100%",
+    borderRadius: 30,
+    width: "100%",
+  },
+  linGrad: {
+    opacity: 1,
+    borderRadius: 30,
+    width: "100%",
+    height: "100%",
+  }
+
+});
 
 export default WeiJieIntroduction;

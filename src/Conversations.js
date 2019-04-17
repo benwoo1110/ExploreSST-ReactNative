@@ -305,7 +305,7 @@ export const conversationsSec4 = {
     ["View our SST Facebook page to find out more about the Discover Programme!", ""]
   ],
 
-  CareerFairGuidanceTalks: [
+  ECG: [
     ["What about the Education and Career Guidance(ECG) in SST?", ""],
     ["Although I'll be graduating this year, I am definitely looking forward to my post-secondary education. Initially, I remember having anxieties but I no longer feel that way as SST has put in place a wide series of Education and Career Guidance (ECG) from Year 1 all the way to Year 4!", ""],
     ["There is a huge array of ECG programmes in SST such as assembly talks to help us find out more about JC, IB or Polytechnic education. Other than these talks, we are also exposed to Career Fairs, Industrial Attachments as well as our very own Secondary 4 Discover Programme that seeks to help us plan for our future ahead.", ""],
