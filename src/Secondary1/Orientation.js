@@ -105,6 +105,7 @@ class Orientation extends Component {
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
+		var TextStyle = styles.ChatViewStyle;
 
 		// CHANGE HERE
 		const content = conversations.Orientation;
@@ -119,10 +120,15 @@ class Orientation extends Component {
 					</Animated.View>
 				);
 			} else {
+				if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}
+							<Text style={TextStyle}
 								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
@@ -334,6 +340,13 @@ const styles = StyleSheet.create({
 		fontSize: 18,
 		fontFamily: "Avenir Next"
 	},
+	ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
+	},
 	ChatViewStyle: {
 		width: "75%",
 		backgroundColor: "white",
@@ -363,7 +376,7 @@ const styles = StyleSheet.create({
 		borderRadius: 30,
 		width: "100%",
 		height: "100%",
-	}
+	},
 })
 
 

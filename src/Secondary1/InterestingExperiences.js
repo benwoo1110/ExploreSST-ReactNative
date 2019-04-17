@@ -175,9 +175,9 @@ class InterestingExperiences extends Component {
 								}}>
 									
 									{this.prompts("AppliedLearning", "How is applied learning in SST different?", 1, "")}
-									{this.prompts("", "I would like find out more about Electronics!", 2, "")}
-									{this.prompts("", "I would like to find out more about Computing +!", 3, "")}
-									{this.prompts("", "I would like to find out more about Design Studies!", 4, "")}
+									{this.prompts("AS_Electronics", "I would like find out more about Electronics!", 2, "")}
+									{this.prompts("AS_Computing", "I would like to find out more about Computing +!", 3, "")}
+									{this.prompts("AS_DesignStudies", "I would like to find out more about Design Studies!", 4, "")}
 									{this.prompts("AS_Biotech", "I would like to find out more about Biotechnology!", 5, "")}
 									{this.prompts("ChangeMakersProgramme", "Tell me more about ChangeMakers Programme", 6, "")}
 									{this.prompts("ACE", "Did you mention you are an #Actvocate?", 7, "")}

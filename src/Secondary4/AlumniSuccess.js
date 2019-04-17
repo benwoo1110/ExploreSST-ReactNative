@@ -106,6 +106,7 @@ class AlumniSuccess extends Component {
     render() {
         const { navigation } = this.props;
         const conversationBubbles = [];
+        var TextStyle = styles.ChatViewStyle;
 
         // CHANGE HERE
         const content = conversationsSec4.AlumniSuccess;
@@ -120,10 +121,15 @@ class AlumniSuccess extends Component {
                     </Animated.View>
                 );
             } else {
+                if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
                 conversationBubbles.push(
                     <Animated.View style={{ opacity: this.fadeAnimation }}>
                         <View style={[styles.ChatViewStyle]}>
-                            <Text style={styles.ChatTextStyle}
+                            <Text style={TextStyle}
                                 onPress={this.openURL.bind(this, content[i][1])}>
                                 {content[i][0]}
                             </Text>
@@ -335,6 +341,13 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontFamily: "Avenir Next"
     },
+    ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
+	},
     ChatViewStyle: {
         width: "75%",
         backgroundColor: "white",

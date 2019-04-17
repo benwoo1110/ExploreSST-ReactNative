@@ -114,6 +114,11 @@ export const conversations = {
     ["You see, students are expected to be self-directed learners and this is an instance in which they take responsibility for managing their time.", ""],
     ["The school does, however, have a bell to remind students to go home at the end of the day.", ""],
     ["With the so many ways in which they get to explore and deepen their interest, time does fly!", ""]
+  ],
+
+  AppliedSubjects: [
+    ["Tell me about Applied Subjects!", ""],
+    ["All students take up an Applied Subject in SST. SST offers a range of applied subjects to cover different interests and these subjects are recognised for admission to Junior Colleges and Polytechnics.", ""]
   ]
 };
 
@@ -182,7 +187,8 @@ export const conversationsSec2 = {
     ["The task as a team is to look for possible gaps in the current ecosystem, propose and develop possible solution/s that would help Singapore to cope better with this elderly challenge.", ""],
     ["Throughout the 3 days, they were grouped in teams of 4 to 5 to work on the challenge. They adopted the roles of Team Leader/Pitcher, Coder/Programmer, Designer/Maker (2) and Storyteller/Marketer.", ""],
     ["On the first day, Keynote speaker Dr Radiah Salim, Founder of Club HEAL, spoke to the students on The New Orphans - elderly in Singapore and challenges that they face. With the context set, students then went on learning journeys to venues such as SAGE CC, ClubHEAL, Jamiyah Nursing Home and Apple Inc.", ""],
-    ["In the next 2 days, students spent the whole night coding and developing our prototypes, working under a hackathon format.  Although we were tired on the last day, we were energised by the idea of presenting our ideas to the judges.", ""]
+    ["In the next 2 days, students spent the whole night coding and developing our prototypes, working under a hackathon format.  Although we were tired on the last day, we were energised by the idea of presenting our ideas to the judges.", ""],
+    ["Link to our 3 HODs speaking about the CM Programme", "https://www.youtube.com/watch?v=pqKGNe6uaU0"]
   ],
 
   OEE: [
@@ -190,7 +196,8 @@ export const conversationsSec2 = {
     ["As part of our Sports & Wellness programme in SST, all Secondary 2 students undergo an Outdoor Education Module.", ""],
     ["During the OEE, my friends and I were taught outdoor life skills such as risk assessment, first aid, outdoor cooking, tent pitching, map reading and navigation.", ""],
     ["These skills would be applied when we participate in the overnight Secondary 2 Outdoor Education Expedition.", ""],
-    ["The expedition serves as a preparative activity before the cohort goes for their Outward Bound Singapore (OBS) Camp in Secondary 3.", ""]
+    ["The expedition serves as a preparative activity before the cohort goes for their Outward Bound Singapore (OBS) Camp in Secondary 3.", ""],
+    ["Here are some OEE Photos!", "https://www.facebook.com/ssts.1technologydrive/photos/a.1736284946381756/1736297996380451/?type=3&theater"]
   ],
 
   CCA_S2: [
@@ -214,11 +221,16 @@ export const conversationsSec2 = {
   Fencing: [
     ["Can you tell me more about your CCA?", ""],
     ["I was so excited to choose my CCA when I was in Secondary 1.", ""],
-    ["During the CCA trials, I was drawn to Singapore Youth Flying Club because of how my seniors built an autonomous blimp in a FB live video (https://www.facebook.com/ssts.1technologydrive/videos/1333494316660823/?__xts__[0]=68.ARA29zAi3Otl1Fk06bMMPz0QpCvDhOdFOhjQilhyGJBOXYk4uo_PmVfQyWnNPKSH2FcoWkO-VOskMzqU7VobBD0k0Zdj1naJbvvGURuV9Y6UPZEkeRrrLhlffmRoVX9o21TOAWkHXllcIv_MG5QMOo05veQDv2HtGhlPXiYOjG0miNirpzZHQg&__tn__=-R). How cool is that?. Did you see the size of that thing?", ""],
+    ["During the CCA trials, I was drawn to Singapore Youth Flying Club because of how my seniors built an autonomous blimp in a FB live video (https://www.facebook.com/ssts.1technologydrive/videos/1333494316660823/?__xts__[0]=68.ARA29zAi3Otl1Fk06bMMPz0QpCvDhOdFOhjQilhyGJBOXYk4uo_PmVfQyWnNPKSH2FcoWkO-VOskMzqU7VobBD0k0Zdj1naJbvvGURuV9Y6UPZEkeRrrLhlffmRoVX9o21TOAWkHXllcIv_MG5QMOo05veQDv2HtGhlPXiYOjG0miNirpzZHQg&__tn__=-R). How cool is that?. Did you see the size of that thing?", "https://www.facebook.com/ssts.1technologydrive/videos/1333494316660823/?__xts__[0]=68.ARA29zAi3Otl1Fk06bMMPz0QpCvDhOdFOhjQilhyGJBOXYk4uo_PmVfQyWnNPKSH2FcoWkO-VOskMzqU7VobBD0k0Zdj1naJbvvGURuV9Y6UPZEkeRrrLhlffmRoVX9o21TOAWkHXllcIv_MG5QMOo05veQDv2HtGhlPXiYOjG0miNirpzZHQg&__tn__=-R"],
     ["In the end, I decided to take up fencing because I wanted to broaden my exposure by having a variety of experiences to optimise my time in SST. Fencing's a really uncommon CCA and I'm interested in sports so I thought that it was perfect.", ""],
     ["Do you wish to know more about the other CCAs in SST? One really popular CCA would be our SST Show Choir! Last year, they were awarded with the Diamond Award in the B-dazzled 2018, and they have received this award more than once!", ""],
     ["Click here to view some of their performances: https://www.youtube.com/watch?v=G4Jc0yLuzuY", ""]
   ],
+
+  TDPs: [
+    ["Could you share more about TDP with me? What are the types of TDPs offered in SST?", ""],
+    ["TDP stands for Talent development Programme. This programme is a platform for students who are interested to further their knowledge on areas not taught in the Curriculum."]
+  ]
 };
 
 export const conversationsSec3 = {
@@ -236,28 +248,28 @@ export const conversationsSec3 = {
     ["Tell me more about Robotics!",  ""],
     ["It's been almost 2 years since I joined Robotics@APEX, and I have enjoyed every session.", ""],
     ["As my friends and I always proclaim proudly to school visitors,\” Robotics is our PASSION!\” In Robotics, we are required to use our creativity, be self-directed in coming up with solutions and develop collaborative skills as we often work in groups.", ""],
-    ["The Robotics @APEX (formerly known as Robotics Club) was set up in 2010. I feel our story mirrors that of our school in some way. We made our name mainly by daring to be fearless against the established, pitting our freshness against experience. That was how we made a name for ourselves in competitions such as the VEX Robotics World Championship, IDE Robotics Competition", ""],
-    ["While we are given ample opportunities to apply their skills and knowledge across a vast array of competitions, we also test our potential through research projects. One of our alumni, Choy Rui Zhi, a graduate from SP's Architecture (Singapore Institute of Architect Gold Medal) took an interest in his course because of Robotics. Click here to watch his video!", ""],
+    ["The Robotics @APEX (formerly known as Robotics Club) was set up in 2010. I feel our story mirrors that of our school in some way. We made our name mainly by daring to be fearless against the established, pitting our freshness against experience. That was how we made a name for ourselves in competitions such as the VEX Robotics World Championship, IDE Robotics Competition", "https://www.facebook.com/ssts.1technologydrive/posts/1979151225428459?__xts__%5B0%5D=68.ARDWTRnznrmLEIB9oO0SIPur4cBSc3CtFPci-VNlzv6AJfF0aGNhKyiHxtjKeVCQSj5P1XUj6PSDM9yozyCx6StIqImrM3GMw1Zj_p9iMTp7v3gXxsYQ9kntfPFAMzeLhif4tjwhSqH8MryzuTUO_6DG2aOS2bfQThU2Bj9tb2X83jQwVJKuv9Nb1C1bg9C79qAY-A&__tn__=-R", "https://www.facebook.com/ssts.1technologydrive/photos/a.335885459755052/1928681870475395/?type=3&__xts__%5B0%5D=68.ARBezaHmR3sEJ-QQQvz1ASfmaIXjv1nqT3KhceMx5yp4RPyAWeVVqrZH9V-CovLM_JXMFZBWBvBOjlkhJNGOEAgXKw16t0mYB35itbUusNFvK41zNUt3ADgGjkjMnxTIX66pEniWnB5SwAdGRu7gLMdbWb3wMaS4dX_8JTdnIulBio0GkB6DRJt69G4y0FqsuWLuXg&__tn__=-R"],
+    ["While we are given ample opportunities to apply their skills and knowledge across a vast array of competitions, we also test our potential through research projects. One of our alumni, Choy Rui Zhi, a graduate from SP's Architecture (Singapore Institute of Architect Gold Medal) took an interest in his course because of Robotics. Click here to watch his video!", "https://www.facebook.com/sstrobotics/"],
     ["Passion requires commitment. Amidst the long hours spent at the club, we learn time management and discipline to ensure we stay on track with our academic work. Acquiring various life skills as we hone technological expertise = WIN!", ""]
   ],
 
   IRAP: [
     ["What is the Industrial Research Attachment Program(IRAP)?", ""],
-    ["In Secondary 3, students have the choice of participating in IRAP. What does IRAP stand for? It stands for Industrial and Research Attachment Programme. In SST, IRAP is open to SST students who are keen on the practical application of their skills and competencies. They will utilise interpersonal skills and experience first hand the functions, operations and challenges of the various organisations in their respective industries.", ""],
+    ["In Secondary 3, students have the choice of participating in IRAP. What does IRAP stand for? It stands for Industrial and Research Attachment Programme. In SST, IRAP is open to SST students who are keen on the practical application of their skills and competencies. They will utilise interpersonal skills and experience first hand the functions, operations and challenges of the various organisations in their respective industries.", "https://www.facebook.com/ssts.1technologydrive/posts/1823371601006423?__xts__%5B0%5D=68.ARBD-DuVmdlNyNUsfHEHVM9vVp1QTvz7CBnAHZ7dPyWVSnDPy-LpT40yquUqnlwmLKVPALizyL1z7xMls7UAipMoBGi7CiD7RtFQJiLb2KGUCuvW_3-xHqNqQwH5Yyfr20Qunx6u9T5q-f-7vibPwzEEhNJKF7JHOCJ6j5xD2cMwjBtDt5WhLJDHuDs_k5L2ia-ttA&__tn__=-R"],
     ["Some companies that students have interned with include; A*STAR’s Genome Institute of Singapore, KK Hospital Women’s and Children’s Hospital, Ngee Ann Polytechnic Centre of Innovation, WorldSkills Foundation, National Library Board (NLB), Volunex Pte Ltd, N&N Agriculture Pte Ltd and Home-fix.", ""],
     ["I heard from a senior about the insightful experience they had while interning at N&N Agriculture. Before I go on, let me explain to you what they worked on during their ISS project in Secondary 2. They found that there was inadequate research that investigated the strength of an eggshell. They then proceeded to carry out an experiment to determine the strength of an eggshell at different points.", ""],
-    ["When they reached Secondary 3, they had a chance to experience their IRAP at N&N Agriculture. Coincidentally, N&N Agriculture is one of the only three-layer farms licensed by the Agri-Food & Veterinary Authority of Singapore to produce fresh chicken eggs in Singapore. There, my seniors were able to gain greater insight into how science and technology is applied in industries to increase productivity.", ""],
+    ["When they reached Secondary 3, they had a chance to experience their IRAP at N&N Agriculture. Coincidentally, N&N Agriculture is one of the only three-layer farms licensed by the Agri-Food & Veterinary Authority of Singapore to produce fresh chicken eggs in Singapore. There, my seniors were able to gain greater insight into how science and technology is applied in industries to increase productivity.", "https://www.facebook.com/ssts.1technologydrive/videos/1437990226211231/?__xts__%5B0%5D=68.ARAZ4mqbfzCC56I-x98G6qymJrSsR9HFTq3xuLToUURFpyL_Q7d6DW8MzBxPX-PtHKNH_h2UEuCwQNi6m6id4f-h_asMG4xq9AvHRXOgGJBaBccOtCdUqszctOOKkxWoi7ZjtbTWTT2_01jyyHgJWNtkQeME_x0MakifmvPRGK0uGJmnol7pXQ&__tn__=-R"],
     ["The ISS and IRAP helped kindled their interest in biology and it was nice to hear how they were able to build upon their learning.", ""],
     ["Often, our seniors' experiences will inspire later cohorts to investigate certain topics from other perspectives. In this case, another group of students researched how washing of eggs encouraged bacterial growth. Following through with a stint at N&N Agriculture, they had to challenge their original conclusions since the eggs at the farm were washed and waxed!", ""]
   ],
 
   SCITDP: [
     ["Science TDP? Tell me more!", ""],
-    ["I am currently in SST's Science TDP. TDP stands for Talent Development Programme, where students are able to gain foundational skills and competencies that capitalise on their personal strengths and unique talents. We get to choose from a wide spectrum of areas to cultivate our interests and talents.", ""],
+    ["I am currently in SST's Science TDP. TDP stands for Talent Development Programme, where students are able to gain foundational skills and competencies that capitalise on their personal strengths and unique talents. We get to choose from a wide spectrum of areas to cultivate our interests and talents.", "https://www.facebook.com/ssts.1technologydrive/posts/1848248521852064?__xts__%5B0%5D=68.ARDbCiwH8TKww1_NQups8fZ1lSSAimylHwWSeq3iE8IBMLoaSbh9wwK5OxyoTJepFh7KW3BapPA0Jic8FXpQwNJOzTF0-0CGPshF1eSfaVwGkAQo0NmZjYZ5v6ogkx9AgQ2h4Y4gSznLVz2pgGptBn2JIDTosRy_PnMH28zzhEIiSp677sy513Ld_jyRTJW7pTL0IA&__tn__=-R"],
     ["Aside from Science TDP, there is SST Inc, Robotics@APEX, etc.", ""],
     ["All TDPs are a great avenue to transform those passions into industry expertise.", ""],
-    ["In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline.", ""],
-    ["Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?", ""],
+    ["In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline.", "https://www.facebook.com/ssts.1technologydrive/posts/1939068892770026?__tn__=-R"],
+    ["Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?", "https://www.facebook.com/ssts.1technologydrive/posts/2038928002784114?__tn__=-R"],
     ["He is Sec 3 student that represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!", ""]
   ],
 
@@ -265,9 +277,9 @@ export const conversationsSec3 = {
     ["Could you tell me more about OBS?", ""],
     ["Since SST's establishment, all Secondary 3 students in SST will undergo a three days two night Outward Bound School Camp. There, we learnt how to recognise and manage emotions, develop care and concern for others, make responsible decisions, establish positive relationships and handle challenging situations effectively.", ""],
     ["There were many activities and challenges we faced as a team, such as high elements, team-based challenges and expeditions around outdoor spaces that helped foster our collaborative skills and built courage in us.", ""],
-    ["I had a lot of fun during the OBS camp and gained many friends along the way. It was a great experience! It also reminded me of the times where we got to spend time together during our Outdoor Education Expedition in Secondary 2.", ""],
+    ["I had a lot of fun during the OBS camp and gained many friends along the way. It was a great experience! It also reminded me of the times where we got to spend time together during our Outdoor Education Expedition in Secondary 2.", "https://www.facebook.com/ssts.1technologydrive/photos/a.1736284946381756/1736297996380451/?type=3&theater"],
     ["I remember the outdoor life skills such as risk assessment, first aid, outdoor cooking, tent pitching, map reading and navigation. Those were great memories with my classmates!", ""],
-    ["Thinking back. I realised that it has helped to toughen us gradually and prepared us for the gruelling OBS camp!", ""]
+    ["Thinking back. I realised that it has helped to toughen us gradually and prepared us for the gruelling OBS camp!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1420186097991644"]
   ]
 };
 
@@ -277,7 +289,10 @@ export const conversationsSec4 = {
     ["The applied subject I’m taking is Computing+ and that is not a typo!", ""],
     ["To explain more about what we learn in computing, it involves problem-solving processes involving analysis, pattern finding, abstraction and algorithmic design. We use these processes to develop programmes to deal confidently with complex and open ended problems.", ""],
     ["We are equipped with computational thinking and creativity to analyse and solve problems. On top of these, our forward-looking teachers added topics such as the Internet of Things and Ethical Hacking ;hence the \"+\". [Emoji] ", ""],
-    ["Though it may sound profound, we have teachers here to guide us!", ""]
+    ["Though it may sound profound, we have teachers here to guide us!", ""],
+    ["Year 3 #SSTudent Celeste Low made the news for completing 10 weeks of Google's Code in the Community Programme. She later clarified she actually meant to become a white hat hacker instead of a spy 😆.", ""],
+    ["Click here to find out more!", "https://www.facebook.com/ssts.1technologydrive/posts/1548644671812452?__tn__=-R"],
+    ["3D-Tronics National Info-comm Challenge 2018", "https://www.facebook.com/ssts.1technologydrive/posts/2029285450415036?__xts__%5B0%5D=68.ARA2A0s5zEYX5QI37gLur-dEN4silCt_obD47nw2ZyWWEiLj_zODFITImIGLM-76Vk7CGzRtw1TvRycj01_QSFG3k2Zno_mUcg9wPDHtCJ4BNjlO-qqJGnRp8rSlwF0i5MalFTj7B-LqMheWf3KjvMq1dHVj1AR5MwrpKVrxyj01QfeWwnuQQy81Y9IWgngY--uEyg&__tn__=-R"]
   ],
 
   Astronomy: [
@@ -285,13 +300,15 @@ export const conversationsSec4 = {
     ["My CCA is Astonomy Club.", ""],
     ["Last year, we were featured on the news while we camped out in the night with our telescopes waiting for the Lunar Eclipse and the longest Blood Moon. It was an insightful experience for me to catch these phenomena, especially together with friends who share the same passion! [emoji] ", ""],
     ["Other than being frequent sky-watchers, we also conduct Fox Hunting games in SST to engage our own community as well as visiting schools.", ""],
-    ["What exactly is Fox Hunting? It is an activity whereby participants use radio direction finding techniques to locate one or more radio transmitters hidden within a desginated search area. These games make for great bonding activities.", ""],
+    ["What exactly is Fox Hunting?", "https://www.facebook.com/ssts.1technologydrive/photos/a.335885459755052/1983410595002522/?type=3&theater"],
+    ["It is an activity whereby participants use radio direction finding techniques to locate one or more radio transmitters hidden within a desginated search area. These games make for great bonding activities.", ""],
     ["SST Astronomy Club takes part in various competitions as well! We participate in competitions such as Raffles AstroNite, AstroChallenge, 21st NYP-IPS Astronomy Competition and more!", ""],
-    ["One of our SSTAlumni, Chiu Chen Ning participated in the Cassini Scientist for a Day Contest and his award winning essay about the Solar System Exploration was featured on NASA's website. So exciting!", ""]
+    ["One of our SSTAlumni, Chiu Chen Ning participated in the Cassini Scientist for a Day Contest and his award winning essay about the Solar System Exploration was featured on NASA's website. So exciting!", ""],
+    ["Click here to read Chen Ning's essay!", "http://sstastro.blogspot.com/2015/04/cassini-essay-writing-competition.html"]
 
   ],
 
-  DiscoverProgram: [
+  DiscoverCamp: [
     ["Tell me more about Discover Camp!", ""],
     ["In January, my schoolmates and I experienced the Discover Programme.", ""],
     ["It is a unique out-of-classroom experience that helps us uncover our strengths and interests, and it is one of SST's Education and Career Guidance programme that seeks to help us plan for our future ahead. Being a school of innovation by design, SST has been working with many partners to evolve the programme over the years.", ""],
@@ -302,7 +319,8 @@ export const conversationsSec4 = {
     ["I love how SST is always evolving and innovating! From my discussions with alumni students, I realised that there are fresh experiences to look forward to every year.", ""],
     ["For the Discover Programme, new initiatives this year included stints at a life-science company and an NP-SST Accelerator Camp.", ""],
     ["Organised in collaboration with our partner Ngee Ann Polytechnic (NP) School of Business and Accountancy, the NP-SST Accelerator Camp provides students with the knowledge, skills, resources and opportunities to realise their dreams of bringing their technological innovations to market to impact the community.", ""],
-    ["View our SST Facebook page to find out more about the Discover Programme!", ""]
+    ["View our SST Facebook page to find out more about the Discover Programme!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1831453583531558"],
+    ["Discover Programme Video", "https://www.youtube.com/watch?v=JN_AGdDP4mE"]
   ],
 
   ECG: [
@@ -311,7 +329,7 @@ export const conversationsSec4 = {
     ["There is a huge array of ECG programmes in SST such as assembly talks to help us find out more about JC, IB or Polytechnic education. Other than these talks, we are also exposed to Career Fairs, Industrial Attachments as well as our very own Secondary 4 Discover Programme that seeks to help us plan for our future ahead.", ""],
     ["Every year, SST combines the School-Parent Meeting with a Career Day @ SST. SST's multi-pronged approach helps us to explore possible pathways such as Parent-teacher discussions on our progress and ways to support our learning needs and a Post-Secondary and Tertiary Education Fair.", ""],
     ["I am looking forward to seeing #SSTAlumni back at #SST to speak to us about their chosen pathways! Some of my classmate parents will also be involved in the Career Talks by sharing their occupation and what its like to work in their field.", ""],
-    ["I am glad that these resources are so readily available here at SST.", ""]
+    ["I am glad that these resources are so readily available here at SST.", "https://www.facebook.com/ssts.1technologydrive/posts/1974096149267300?__tn__=-R"]
   ],
 
   AlumniSuccess: [
@@ -319,12 +337,12 @@ export const conversationsSec4 = {
     ["Now that I am graduating, I often think about what I want to do after SST. Personally, I find it hard to choose, but after seeing my alumni find success in whatever path they have chosen, I feel more assured.", ""],
     ["There has been a balance over the years in terms of alumni career progression, as 55% often opt for JC or IB, and 45% for Polytechnic.", ""],
     ["One of them, Muhammad Danish B Massuryono from the class of 2015, came back to SST to share with us about his post secondary journey. He was featured in Berita Harian for doing well in the A Levels examinations despite facing challenges. He is currently in Nanyang Technological University, Singapore, Lee Kong Chian School of Medicine.", ""],
-    ["You can find out more about him here: https://www.youtube.com/watch?v=s849gz9M9RQ&t=13s&fbclid=IwAR1D5f9fQ_uzHgB6Oai1cSKqGvHv_qr_1y_AXjCDJDq1qA7rfYoDBT98ZnM", ""],
+    ["You can find out more about him here: https://www.youtube.com/watch?v=s849gz9M9RQ&t=13s&fbclid=IwAR1D5f9fQ_uzHgB6Oai1cSKqGvHv_qr_1y_AXjCDJDq1qA7rfYoDBT98ZnM", "https://www.youtube.com/watch?v=s849gz9M9RQ&t=13s&fbclid=IwAR1D5f9fQ_uzHgB6Oai1cSKqGvHv_qr_1y_AXjCDJDq1qA7rfYoDBT98ZnM"],
     ["Joshua Kwan, our Lee Kuan Yew Award recipient for All-Round Excellence, is a senior known to many of us. As Chairperson of the Robotics@Apex, he was a science and engineering enthusiast who developed exemplary prototypes for local and global competitions.", ""],
     ["Through the SUTD-SST Big-D Camp, he nurtured a keen interest in building electric vehicles. At National Junior College, he and a fellow SST Alumnus joined a group representing his school in an electric vehicle challenge for IP schools.", ""],
     ["We were so proud to hear that they were able to add value from their previous experience to help their team win.", ""],
     ["Our teachers often tell us about how our alumni students made a difference in their post-secondary institutions and community. I was inspired to learn about how Joshua sought to catalyse interest in science and engineering by putting up a proposal for a robotics arm within his science related CCA in JC.", ""],
     ["We also have He Shi Ying, who received the Lee Kuan Yew Award and was a recipient of the NUS Global Merit Scholarship. She will be studying Global Studies in National University of Singapore, FASS.", ""],
-    ["Of course, we have many more alumni who are doing really well! Click here to read more: https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1878022048874711", ""]
+    ["Of course, we have many more alumni who are doing really well! Click here to read more: https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1878022048874711", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1878022048874711"]
   ]
 };

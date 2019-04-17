@@ -1,28 +1,32 @@
+
 import React, { Component } from "react";
 import {
-	Animated,
-	Text,
-	View,
-	StyleSheet,
-	SafeAreaView,
-	Image,
-	ImageBackground,
-	TouchableOpacity,
-	ScrollView,
-	Modal,
-	Linking
+    View,
+    Text,
+    TouchableOpacity,
+    ImageBackground,
+    SafeAreaView,
+    Image,
+    ScrollView,
+    StyleSheet,
+    Modal,
+		Alert,
+		Animated,
+		Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { conversations, conversationsSec4 } from "../Conversations";
+import GeneralOffice from "../../assets/images/go.jpeg";
+import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
+import chat from "../../assets/images/chat.png"
+import { conversations } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import chat from "../../assets/images/chat.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
-class DiscoverCamp extends Component {
-    static navigationOptions = {
+class AppliedSubjects extends Component {
+	static navigationOptions = {
 		header: null
 	};
 
@@ -62,9 +66,10 @@ class DiscoverCamp extends Component {
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
-						navigation.navigate(name);
-						this.setModalVisible(false);
-					}
+            navigation.navigate(name);
+            this.setModalVisible(false);
+          }
+
         }}
       >
         <LinearGradient
@@ -82,8 +87,7 @@ class DiscoverCamp extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-							marginLeft: 20,
-							marginRight: 12,
+              marginLeft: 20,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -105,10 +109,10 @@ class DiscoverCamp extends Component {
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
-		var TextStyle = styles.ChatViewStyle;
+		var TextStyle = styles.ChatViewStyle
 
 		// CHANGE HERE
-		const content = conversationsSec4.DiscoverCamp;
+		const content = conversations.AppliedSubjects;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -176,9 +180,11 @@ class DiscoverCamp extends Component {
 									right: 16,
 								}}>
 									
-									{/* CHANGE HERE*/}
-                  {this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
-                  {this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
+									{this.prompts("AS_DesignStudies", "Find out more about Design Studies! (Sec 1)", 1, "")}
+									{this.prompts("AS_Biotech", "Find out more about Biotechnology! (Sec 2)", 2, "")}
+									{this.prompts("AS_Electronics", "Find out more about Electronics! (Sec 3)", 3, "")}
+									{this.prompts("AS_Computing", "Find out more about Computing +! (Sec 4)", 4, "")}
+		
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -200,7 +206,9 @@ class DiscoverCamp extends Component {
 										borderRadius: 30,
 										margin: 16
 									}}
-									onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+									onPress={() => {
+										this.setModalVisible(!this.state.modalVisible);
+									}}
 								>
 									<LinearGradient
 										start={{ x: 0, y: 1 }}
@@ -269,7 +277,9 @@ class DiscoverCamp extends Component {
 								justifyContent: "center",
 								borderRadius: 30,
 							}}
-							onPress={() => {this.setModalVisible(!this.state.modalVisible);}}
+							onPress={() => {
+								this.setModalVisible(!this.state.modalVisible);
+							}}
 						>
 							<LinearGradient
 								start={{ x: 0, y: 1 }}
@@ -376,8 +386,7 @@ const styles = StyleSheet.create({
 		borderRadius: 30,
 		width: "100%",
 		height: "100%",
-	},
+	}
 })
 
-
-export default DiscoverCamp
+export default AppliedSubjects

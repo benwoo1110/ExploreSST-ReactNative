@@ -175,7 +175,7 @@ class AppliedLearning extends Component {
 								}}>
 									
 									{this.prompts("SSTINC", "Tell me more about TDP!", 1, "")}
-									{this.prompts("", "Tell me about Applied Subjects!", 2, "")}
+									{this.prompts("AppliedSubjects", "Tell me about Applied Subjects!", 2, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

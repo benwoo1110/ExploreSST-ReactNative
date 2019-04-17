@@ -107,6 +107,7 @@ class OEE extends Component {
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
+		var TextStyle = styles.ChatViewStyle;
 
 		// CHANGE HERE
 		const content = conversationsSec2.OEE;
@@ -121,10 +122,15 @@ class OEE extends Component {
 					</Animated.View>
 				);
 			} else {
+				if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}
+							<Text style={TextStyle}
 								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
@@ -172,7 +178,7 @@ class OEE extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "tell me more about OBS!", 1, "")}
+									{this.prompts("OBS", "tell me more about OBS!", 1, "")}
 						
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -337,6 +343,13 @@ const styles = StyleSheet.create({
 		padding: 8,
 		fontSize: 18,
 		fontFamily: "Avenir Next"
+	},
+	ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
 	},
 	ChatViewStyle: {
 		width: "75%",

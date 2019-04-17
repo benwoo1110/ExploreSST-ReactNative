@@ -175,7 +175,7 @@ class CCA extends Component {
 								}}>
 									
 									{this.prompts("InterestingExperiences", "What other interesting experiences are there?", 1, "")}
-									{this.prompts("", "I would like to find out more about a specific CCA.", 2, "")}
+									{/*this.prompts("", "I would like to find out more about a specific CCA.", 2, "")*/}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
