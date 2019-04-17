@@ -141,11 +141,6 @@ class RachelIntroduction extends Component {
                   {this.prompts("KnowingSST", "How did you get to know SST?", 1, "")}
                   {this.prompts("Orientation", "How do you make friends in the new environment?", 2, "")}
 
-                  {/* //TODO:1.1.1 */}
-                  {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
-                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
-                  <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
-
                 </View>
                 <TouchableOpacity
                   style={{
@@ -178,16 +173,13 @@ class RachelIntroduction extends Component {
                       height: "100%",
                     }}
                   >
-
                     <Image
                       source={cancel}
                     />
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
-
             </Modal>
-
             <Text
               style={{
                 fontFamily: "Avenir Next",

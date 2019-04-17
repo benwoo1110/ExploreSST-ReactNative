@@ -4,7 +4,7 @@ import Welcome from "./src/Welcome";
 import Year from "./src/Year";
 
 import RachelIntroduction from "./src/Secondary1/RachelIntroduction";
-import ChatViewSec1 from "./src/Secondary1/ChatViewSec1";
+// import ChatViewSec1 from "./src/Secondary1/ChatViewSec1"; not in use
 import KnowingSST from "./src/Secondary1/KnowingSST";
 import CyberWellness from "./src/Secondary1/Cyberwellness";
 import Orientation from "./src/Secondary1/Orientation";
@@ -37,8 +37,13 @@ import SCITDP from "./src/Secondary3/SCITDP";
 import WeiJieIntroduction from "./src/Secondary4/WeiJieIntroduction";
 import ConversationSelect4 from "./src/Secondary4/ConversationSelect4";
 import ChatViewSec4 from "./src/Secondary4/ChatViewSec4";
+import AlumniSuccess from "./src/Secondary4/AlumniSuccess"
+import ECG from "./src/Secondary4/ECG"
+import DiscoverCamp from "./src/Secondary4/DiscoverCamp"
+
 
 import QuestionButton from "./src/Components/QuestionButton"
+import Style from "./src/Components/Style"
 
 
 const MainStack = createStackNavigator({
@@ -46,7 +51,7 @@ const MainStack = createStackNavigator({
   Year: { screen: Year },
 
   RachelIntroduction: { screen: RachelIntroduction },
-  ChatViewSec1: { screen: ChatViewSec1 },
+  // ChatViewSec1: { screen: ChatViewSec1 }, not in use
   KnowingSST: { screen: KnowingSST },
   CyberWellness: { screen: CyberWellness },
   Orientation: { screen: Orientation },
@@ -79,6 +84,10 @@ const MainStack = createStackNavigator({
   WeiJieIntroduction: { screen: WeiJieIntroduction },
   ConversationSelect4: { screen: ConversationSelect4 },
   ChatViewSec4: { screen: ChatViewSec4 },
+  AlumniSuccess: { screen: AlumniSuccess },
+  ECG: { screen: ECG},
+  DiscoverCamp: { screen: DiscoverCamp},
+
 
   QuestionButton: { screen: QuestionButton},
 });
