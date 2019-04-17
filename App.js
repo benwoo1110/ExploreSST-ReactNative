@@ -22,6 +22,8 @@ import ChatViewSec2 from "./src/Secondary2/ChatViewSec2";
 import SSTINC from "./src/Secondary2/SSTINC";
 import Leadership from "./src/Secondary2/Leadership";
 import ISS from "./src/Secondary2/ISS";
+import ACE from "./src/Secondary2/ACE";
+import ChangeMakersInnofest from "./src/Secondary2/ChangeMakersInnofest";
 
 import PriyaIntroduction from "./src/Secondary3/PriyaIntroduction";
 import ConversationSelect3 from "./src/Secondary3/ConversationSelect3";
@@ -58,6 +60,8 @@ const MainStack = createStackNavigator({
   SSTINC: { screen: SSTINC },
   Leadership: { screen: Leadership },
   ISS: { screen: ISS },
+  ACE: { screen: ACE },
+  ChangeMakersInnofest: { screen: ChangeMakersInnofest },
 
   PriyaIntroduction: { screen: PriyaIntroduction },
   ConversationSelect3: { screen: ConversationSelect3 },
