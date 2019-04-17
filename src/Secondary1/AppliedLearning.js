@@ -174,7 +174,7 @@ class AppliedLearning extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about TDP!", 1, "")}
+									{this.prompts("SSTINC", "Tell me more about TDP!", 1, "")}
 									{this.prompts("", "Tell me about Applied Subjects!", 2, "")}
 
 									{/* //TODO:1.1.1 */}

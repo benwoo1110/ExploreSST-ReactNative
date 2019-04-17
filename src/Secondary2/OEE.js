@@ -15,16 +15,15 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
-import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png"
-import { conversations } from "../Conversations";
+import { conversations, conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
-import RachelFace from "../../assets/images/Rachel_Face.png";
+import FarhanProfile from "../../assets/images/Farhan_profile.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
-class InterestingExperiences extends Component {
+class OEE extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -86,8 +85,7 @@ class InterestingExperiences extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-							marginLeft: 20,
-							marginRight: 12,
+              marginLeft: 20,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -111,7 +109,7 @@ class InterestingExperiences extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversations.InterestingExperiences;
+		const content = conversationsSec2.OEE;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -174,15 +172,8 @@ class InterestingExperiences extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("AppliedLearning", "How is applied learning in SST different?", 1, "")}
-									{this.prompts("", "I would like find out more about Electronics!", 2, "")}
-									{this.prompts("", "I would like to find out more about Computing +!", 3, "")}
-									{this.prompts("", "I would like to find out more about Design Studies!", 4, "")}
-									{this.prompts("AS_Biotech", "I would like to find out more about Biotechnology!", 5, "")}
-									{this.prompts("ChangeMakersProgramme", "Tell me more about ChangeMakers Programme", 6, "")}
-									{this.prompts("ACE", "Did you mention you are an #Actvocate?", 7, "")}
-									{this.prompts("SchoolBell", "Did you say there are no school bells?", 8, "")}
-
+									{this.prompts("", "tell me more about OBS!", 1, "")}
+						
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
                   <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
@@ -243,7 +234,7 @@ class InterestingExperiences extends Component {
 									resizeMode: "cover",
 									alignItems: "flex-start"
 								}}
-								source={RachelFace}
+								source={FarhanProfile}
 							/>
 							<Text
 								style={{
@@ -255,7 +246,7 @@ class InterestingExperiences extends Component {
 									paddingLeft: 16
 								}}
 							>
-								Rachel
+								Farhan
 								</Text>
 						</View>
 						<ScrollView>
@@ -379,4 +370,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default InterestingExperiences
+export default OEE

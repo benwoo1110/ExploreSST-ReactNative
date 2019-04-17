@@ -24,6 +24,10 @@ import Leadership from "./src/Secondary2/Leadership";
 import ISS from "./src/Secondary2/ISS";
 import ACE from "./src/Secondary2/ACE";
 import ChangeMakersInnofest from "./src/Secondary2/ChangeMakersInnofest";
+import OEE from "./src/Secondary2/OEE";
+import AS_Biotech from "./src/Secondary2/AS_Biotech";
+import CCA_S2 from "./src/Secondary2/CCA_S2";
+import Fencing from "./src/Secondary2/Fencing";
 
 import PriyaIntroduction from "./src/Secondary3/PriyaIntroduction";
 import ConversationSelect3 from "./src/Secondary3/ConversationSelect3";
@@ -62,6 +66,10 @@ const MainStack = createStackNavigator({
   ISS: { screen: ISS },
   ACE: { screen: ACE },
   ChangeMakersInnofest: { screen: ChangeMakersInnofest },
+  OEE: { screen: OEE },
+  AS_Biotech: { screen: AS_Biotech },
+  CCA_S2: { screen: CCA_S2 },
+  Fencing: { screen: Fencing },
 
   PriyaIntroduction: { screen: PriyaIntroduction },
   ConversationSelect3: { screen: ConversationSelect3 },

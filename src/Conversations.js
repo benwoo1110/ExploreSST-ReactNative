@@ -193,7 +193,8 @@ export const conversationsSec2 = {
     ["The expedition serves as a preparative activity before the cohort goes for their Outward Bound Singapore (OBS) Camp in Secondary 3.", ""]
   ],
 
-  CCA: [
+  CCA_S2: [
+    ["CCA STUFF"]
   ],
 
   AS_Biotech: [
@@ -211,7 +212,7 @@ export const conversationsSec2 = {
   ],
 
   Fencing: [
-    ["What CCA are you in?", ""],
+    ["Can you tell me more about your CCA?", ""],
     ["I was so excited to choose my CCA when I was in Secondary 1.", ""],
     ["During the CCA trials, I was drawn to Singapore Youth Flying Club because of how my seniors built an autonomous blimp in a FB live video (https://www.facebook.com/ssts.1technologydrive/videos/1333494316660823/?__xts__[0]=68.ARA29zAi3Otl1Fk06bMMPz0QpCvDhOdFOhjQilhyGJBOXYk4uo_PmVfQyWnNPKSH2FcoWkO-VOskMzqU7VobBD0k0Zdj1naJbvvGURuV9Y6UPZEkeRrrLhlffmRoVX9o21TOAWkHXllcIv_MG5QMOo05veQDv2HtGhlPXiYOjG0miNirpzZHQg&__tn__=-R). How cool is that?. Did you see the size of that thing?", ""],
     ["In the end, I decided to take up fencing because I wanted to broaden my exposure by having a variety of experiences to optimise my time in SST. Fencing's a really uncommon CCA and I'm interested in sports so I thought that it was perfect.", ""],

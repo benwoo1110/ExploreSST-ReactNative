@@ -174,7 +174,7 @@ class SettlingIn_CCA extends Component {
                                     
                                     {/* CHANGE HERE*/}
                                     {this.prompts("", "I want to see some of those showchoir performances!", 1, "https://www.youtube.com/watch?v=G4Jc0yLuzuY")}
-                                    {this.prompts("CCA", "What are the CCAs in SST?", 2, "")}
+                                    {this.prompts("CCA_S2", "What are the CCAs in SST?", 2, "")}
 
                                     {/* //TODO:1.1.1 */}
                                     {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
