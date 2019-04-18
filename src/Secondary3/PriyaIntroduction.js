@@ -139,8 +139,8 @@ class PriyaIntroduction extends Component {
                 }}>
                 
                   {/* CHANGE HERE*/}
-                  {this.prompts("", "What are some of the new programmes that Sec 3 students in SST will take up?", 1, "")}
-                  {this.prompts("", "Can I find out more from your juniors about their lower secondary experiences?", 2, "")}
+                  {this.prompts("", "What are you looking forward to this year?", 1, "")}
+                  {this.prompts("", "Tell me more about your juniors' experiences", 2, "")}
                   {this.prompts("", "What is IRAP about?", 3, "")}
                   {this.prompts("SCITDP", "Science TDP? Tell me more!", 4, "")}
                   {this.prompts("", "What about other TDPs?", 5, "")}
