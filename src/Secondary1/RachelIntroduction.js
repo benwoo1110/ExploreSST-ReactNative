@@ -19,6 +19,8 @@ import LinearGradient from "react-native-linear-gradient";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 // import QuestionButton from "../../src/Components/QuestionButton";
 
+var height = 22;
+
 class RachelIntroduction extends Component {
   static navigationOptions = {
     header: null
@@ -43,12 +45,26 @@ class RachelIntroduction extends Component {
     } return false;
   }
 
-  // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78 * sequence;
+  reset() {
+    height = 22;
+  }
+  
+  prompts(name, prompt_text, long, url) {
+    var PromptStyle = styles.linGrad;
+    var top = 14;
+
+    if (long) {
+      height += 102;
+      PromptStyle = styles.linGrad_big;
+      top = 26;
+    }
+    else {
+      height += 78;
+    }
+
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle, { bottom: position }]}
+        style={[styles.buttonStyle,{bottom: height}]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -62,7 +78,7 @@ class RachelIntroduction extends Component {
           start={{ x: 0, y: 1 }}
           end={{ x: 1, y: 0 }}
           colors={["#84C7C3", "#0084C2"]}
-          style={styles.linGrad}
+          style={PromptStyle}
         >
           <View style={{
             flexDirection: "row",
@@ -131,8 +147,9 @@ class RachelIntroduction extends Component {
                   right: 16,
                 }}>
                   {/* CHANGE HERE*/}
-                  {this.prompts("KnowingSST", "How did you get to know SST?", 1, "")}
-                  {this.prompts("Orientation", "How do you make friends in the new environment?", 2, "")}
+                  {this.prompts("KnowingSST", "How did you get to know SST?", false, "")}
+                  {this.prompts("Orientation", " How do you make friends in the new environment?", false, "")}
+                  {this.reset()}
 
                 </View>
                 <TouchableOpacity
@@ -302,11 +319,16 @@ const styles = StyleSheet.create({
   },
   linGrad: {
     opacity: 1,
-    borderRadius: 30,
+    borderRadius: 20,
     width: "100%",
     height: "100%",
+  },
+  linGrad_big: {
+    opacity: 1,
+    borderRadius: 20,
+    width: "100%",
+    height: "140%",
   }
-
 });
 
 export default RachelIntroduction;

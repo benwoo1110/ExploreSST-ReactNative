@@ -17,10 +17,9 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 import LinearGradient from "react-native-linear-gradient";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-
 // import QuestionButton from "../../src/Components/QuestionButton";
 
-var prompt_height = 0;
+var height = 22;
 
 class FarhanIntroduction extends Component {
   static navigationOptions = {
@@ -46,13 +45,26 @@ class FarhanIntroduction extends Component {
 		} return false;
   };
 
-  // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence, url) {
-    prompt_height += 50;
-    var box_height = prompt_height + 22;
+  reset() {
+    height = 22;
+  }
+  
+  prompts(name, prompt_text, long, url) {
+    var PromptStyle = styles.linGrad;
+    var top = 14;
+
+    if (long) {
+      height += 102;
+      PromptStyle = styles.linGrad_big;
+      top = 26;
+    }
+    else {
+      height += 78;
+    }
+
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: prompt_height}]}
+        style={[styles.buttonStyle,{bottom: height}]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -66,7 +78,7 @@ class FarhanIntroduction extends Component {
           start={{ x: 0, y: 1 }}
           end={{ x: 1, y: 0 }}
           colors={["#84C7C3", "#0084C2"]}
-          style={styles.linGrad}
+          style={PromptStyle}
         >
           <View style={{
             flexDirection: "row",
@@ -81,9 +93,20 @@ class FarhanIntroduction extends Component {
               marginRight: 12,
               flex: 1,
               fontSize: 16,
-            }}>{prompt_height}</Text>
+            }}>{prompt_text}</Text>
 
+<<<<<<< HEAD
+            <Image
+              source={select_prompt}
+              style={{
+                marginRight: 16,
+                marginTop: top,
+                justifyContent: "center",
+              }}
+            />
+=======
 <SendIcon />
+>>>>>>> 14b92343fba1788f2c35ba77f4e66c628e628b99
           </View>
         </LinearGradient>
       </TouchableOpacity>
@@ -133,16 +156,16 @@ class FarhanIntroduction extends Component {
                   right: 16,
                 }}>
                   {/* CHANGE HERE*/}
-                  {this.prompts("ACE", "Could you tell me more about your advocacy projects!", 1, "")}
-                  {this.prompts("ChangeMakersInnofest", "How was your ChangeMakers Innofest experience like?", 2, "")}
-                  {this.prompts("CCA_S2", "Your CCA is Fencing? What other CCAs are there in SST?", 3, "")}
-                  {this.prompts("ISS", "I've heard that you spend a term developing science projects instead of regular classes.", 4, "")}
+                  {this.prompts("ACE", "Could you tell me more about your advocacy projects!", false, "")}
+                  {this.prompts("ChangeMakersInnofest", "How was your ChangeMakers Innofest experience like?", false, "")}
+                  {this.prompts("CCA_S2", "Your CCA is Fencing? What other CCAs are there in SST?", false, "")}
+                  {this.prompts("ISS", "I've heard that you spend a term developing science projects instead of regular classes.", true, "")}
                   {/* change this ^^ */}
-                  {this.prompts("SSTINC", "What is SST Inc about? What is a TDP?", 5, "")}
-                  {this.prompts("Leadership", "What kinds of leadership positions are there in SST?", 6, "")}
-                  {this.prompts("AS_Biotech", "Which Applied Subjects will you be taking?", 7, "")}
-                  {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience.", 8, "")}
-                  
+                  {this.prompts("SSTINC", "What is SST Inc about? What is a TDP?", false, "")}
+                  {this.prompts("Leadership", "What kinds of leadership positions are there in SST?", false, "")}
+                  {this.prompts("AS_Biotech", "Which Applied Subjects will you be taking?", false, "")}
+                  {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience.", false, "")}
+                  {this.reset()}
 
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -323,22 +346,16 @@ const styles = StyleSheet.create({
   },
   linGrad: {
     opacity: 1,
-    borderRadius: 30,
+    borderRadius: 20,
     width: "100%",
     height: "100%",
+  },
+  linGrad_big: {
+    opacity: 1,
+    borderRadius: 20,
+    width: "100%",
+    height: "140%",
   }
-
 });
 
 export default FarhanIntroduction;
-
-
-
-/*
-My name is Farhan and I'm currently in Secondary 2. I can't believe 
-                I am already a senior to my juniors in Secondary 1. We helped to 
-                plan their Orientation Week to ease them into Secondary School life. 
-                I hope that made them feel more comfortable. 
-                */
-
-               
