@@ -144,11 +144,12 @@ class FarhanIntroduction extends Component {
                   {this.prompts("ACE", "Could you tell me more about your advocacy projects!", 1, "")}
                   {this.prompts("ChangeMakersInnofest", "How was your ChangeMakers Innofest experience like?", 2, "")}
                   {this.prompts("CCA_S2", "Your CCA is Fencing? What other CCAs are there in SST?", 3, "")}
-                  {this.prompts("ISS", "I've heard that you spend a term developing science projects instead of regular classes. Could you explain more about that?", 4, "")}
+                  {this.prompts("ISS", "I've heard that you spend a term developing science projects instead of regular classes.", 4, "")}
+                  {/* change this ^^ */}
                   {this.prompts("SSTINC", "What is SST Inc about? What is a TDP?", 5, "")}
                   {this.prompts("Leadership", "What kinds of leadership positions are there in SST?", 6, "")}
-                  {this.prompts("AS_Biotech", "I heard that SST offers Applied Subjects. Which AS will you be taking?", 7, "")}
-                  {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience in Secondary 1!", 8, "")}
+                  {this.prompts("AS_Biotech", "Which Applied Subjects will you be taking?", 7, "")}
+                  {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience.", 8, "")}
                   
 
                   {/* //TODO:1.1.1 */}

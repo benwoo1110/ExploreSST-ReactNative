@@ -10,7 +10,7 @@ export const conversations = {
 
   Orientation: [
     ["I hear that students come from different primary schools here - how do you make friends?", ""],
-    ["I was so nervous I couldn't sleep the night before I started school! [emoji]", ""],
+    ["I was so nervous I couldn't sleep the night before I started school! 😄", ""],
     ["Officially, orientation starts on the first day of the year but SST prepares us from Registration Day.", ""],
     ["We get guidance on what's to happen in the first week of school, how we can prepare for it, and of course booklists, uniforms and our learning device.", ""],
     ["The orientation itself is organised by seniors in SST. For me, the experience was a fun one.", ""],
@@ -45,8 +45,8 @@ export const conversations = {
     ["Since the cohort is a small one, we are told that the school will start new CCAs only if there is a sizeable number of interested students. But the truth is that our students have no problems finding a CCA that either helps to hone current skills and interests or uncover a hidden talent or passion.", ""],
     ["During the CCA tryouts, students are given the opportunity to attend any CCA session of their choice during a two-week trial period. Following the trial period, students would then indicate their preferred choice of CCA for the rest of their 4 years in SST.", ""],
     ["I had a hard time choosing but eventually went with my heart in choosing showchoir. Showchoir is a performings arts CCA in SST. Other categories are Sports and Games, Clubs and Societies and Uniform groups.", ""],
-    ["I had seen clips of my seniors performing and was in awe. [emoji] I'm finding out that getting to those standards of performance took a lot of effort and practice, not to mention team work. But as they say,\"No pain, no gain.\"",  ""],
-    ["I want to gain the confidence to express myself and the strength to endure tough situations. So I'll break a leg, not literally of course.[Emoji]", ""]
+    ["I had seen clips of my seniors performing and was in awe. 😯 I'm finding out that getting to those standards of performance took a lot of effort and practice, not to mention team work. But as they say,\"No pain, no gain.\"",  ""],
+    ["I want to gain the confidence to express myself and the strength to endure tough situations. So I'll break a leg, not literally of course. 😄", ""]
   ],
 
   Showchoir: [
@@ -60,7 +60,7 @@ export const conversations = {
 
   InterestingExperiences: [
     ["What other interesting experiences are there?", ""],
-    ["I'm not sure where to start but I'll try. [emoji]", ""],
+    ["I'm not sure where to start but I'll try. 😄", ""],
     ["There are so many programmes spanned over the years that are available for the entire cohort. Experiences that students go through are interdisciplinary and built upon.", ""],
     ["For example, in Secondary 2, students go through the Investigative Skills in Science (ISS) programme. Through the ISS, students  spend a term researching and developing a science project of their choice in place of regular classes.", ""],
     ["In Secondary 3, they can opt for the Industrial Research and Attachment Programme, which provides a platform for industry exposure. As you can see, programmes are integrated and pervasive.", ""],
@@ -298,7 +298,7 @@ export const conversationsSec4 = {
   Astronomy: [
     ["Tell me more about Astronomy CCA!", ""],
     ["My CCA is Astonomy Club.", ""],
-    ["Last year, we were featured on the news while we camped out in the night with our telescopes waiting for the Lunar Eclipse and the longest Blood Moon. It was an insightful experience for me to catch these phenomena, especially together with friends who share the same passion! [emoji] ", ""],
+    ["Last year, we were featured on the news while we camped out in the night with our telescopes waiting for the Lunar Eclipse and the longest Blood Moon. It was an insightful experience for me to catch these phenomena, especially together with friends who share the same passion! 🔭 ", ""],
     ["Other than being frequent sky-watchers, we also conduct Fox Hunting games in SST to engage our own community as well as visiting schools.", ""],
     ["What exactly is Fox Hunting?", "https://www.facebook.com/ssts.1technologydrive/photos/a.335885459755052/1983410595002522/?type=3&theater"],
     ["It is an activity whereby participants use radio direction finding techniques to locate one or more radio transmitters hidden within a desginated search area. These games make for great bonding activities.", ""],
