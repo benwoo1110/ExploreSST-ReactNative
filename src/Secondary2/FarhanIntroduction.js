@@ -17,7 +17,7 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png";
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 import cancel from "../../assets/images/cancel.png";
 import Svg from 'react-native-svg';
 // import QuestionButton from "../../src/Components/QuestionButton";
@@ -98,6 +98,7 @@ class FarhanIntroduction extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
+<<<<<<< HEAD
             <Image
               source={select_prompt}
               style={{
@@ -106,6 +107,9 @@ class FarhanIntroduction extends Component {
                 justifyContent: "center",
               }}
             />
+=======
+<SendIcon />
+>>>>>>> 14b92343fba1788f2c35ba77f4e66c628e628b99
           </View>
         </LinearGradient>
       </TouchableOpacity>

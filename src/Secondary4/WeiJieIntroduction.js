@@ -14,7 +14,7 @@ import GeneralOffice from "../../assets/images/go.jpeg";
 import WeiJieComputer from "../../assets/images/WeiJie_Computer.png";
 import LinearGradient from "react-native-linear-gradient";
 import chat from "../../assets/images/chat.png";
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 import cancel from "../../assets/images/cancel.png";
 
 class WeiJieIntroduction extends Component {
@@ -73,15 +73,7 @@ class WeiJieIntroduction extends Component {
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
-
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: 14,
-                justifyContent: "center",
-              }}
-            />
+<SendIcon />
           </View>
         </LinearGradient>
       </TouchableOpacity>

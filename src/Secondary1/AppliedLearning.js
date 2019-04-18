@@ -1,29 +1,27 @@
 
 import React, { Component } from "react";
 import {
-    View,
-    Text,
-    TouchableOpacity,
-    ImageBackground,
-    SafeAreaView,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Modal,
-		Alert,
-		Animated,
-		Linking
+	View,
+	Text,
+	TouchableOpacity,
+	ImageBackground,
+	SafeAreaView,
+	Image,
+	ScrollView,
+	StyleSheet,
+	Modal,
+	Alert,
+	Animated,
+	Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png"
 import { conversations } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import select_prompt from "../../assets/images/select_prompt.png";
-import cancel from "../../assets/images/cancel.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 
 class AppliedLearning extends Component {
 	static navigationOptions = {
@@ -35,11 +33,11 @@ class AppliedLearning extends Component {
 		this.fadeAnimation = new Animated.Value(0);
 	}
 	state = {
-    modalVisible: false
-  }
-  setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
-  }
+		modalVisible: false
+	}
+	setModalVisible(visible) {
+		this.setState({ modalVisible: visible });
+	}
 
 	componentDidMount() {
 		Animated.timing(this.fadeAnimation, {
@@ -50,61 +48,54 @@ class AppliedLearning extends Component {
 	}
 
 	// THIS IS THE NEW FUNCTION
-  openURL(url) {
+	openURL(url) {
 		if (url != "") {
-      Linking.openURL(url);
-      return true;
+			Linking.openURL(url);
+			return true;
 		} return false;
-  }
-  
-  // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
-    return (
-      <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
-        onPress={() => {
-          const { navigation } = this.props;
-          if (!this.openURL(url)) {
-            navigation.navigate(name);
-            this.setModalVisible(false);
-          }
+	}
 
-        }}
-      >
-        <LinearGradient
-          start={{ x: 0, y: 1 }}
-          end={{ x: 1, y: 0 }}
-          colors={["#84C7C3", "#0084C2"]}
-          style={styles.linGrad}
-        >
-          <View style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            flex: 1,
-          }}>
-            <Text style={{
-              color: "white",
-              fontFamily: "Avenir Next",
-              alignSelf: "center",
-              marginLeft: 20,
-              flex: 1,
-              fontSize: 16,
-            }}>{prompt_text}</Text>
+	// THIS IS THE NEW FUNCTION
+	prompts(name, prompt_text, sequence, url) {
+		const position = 22 + 78 * sequence;
+		return (
+			<TouchableOpacity
+				style={[styles.buttonStyle, { bottom: position }]}
+				onPress={() => {
+					const { navigation } = this.props;
+					if (!this.openURL(url)) {
+						navigation.navigate(name);
+						this.setModalVisible(false);
+					}
 
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: 14,
-                justifyContent: "center",
-              }}
-            />
-          </View>
-        </LinearGradient>
-      </TouchableOpacity>
-    );
-  }
+				}}
+			>
+				<LinearGradient
+					start={{ x: 0, y: 1 }}
+					end={{ x: 1, y: 0 }}
+					colors={["#84C7C3", "#0084C2"]}
+					style={styles.linGrad}
+				>
+					<View style={{
+						flexDirection: "row",
+						justifyContent: "center",
+						flex: 1,
+					}}>
+						<Text style={{
+							color: "white",
+							fontFamily: "Avenir Next",
+							alignSelf: "center",
+							marginLeft: 20,
+							flex: 1,
+							fontSize: 16,
+						}}>{prompt_text}</Text>
+
+						<SendIcon />
+					</View>
+				</LinearGradient>
+			</TouchableOpacity>
+		);
+	}
 
 	render() {
 		const { navigation } = this.props;
@@ -173,7 +164,7 @@ class AppliedLearning extends Component {
 									left: 16,
 									right: 16,
 								}}>
-									
+
 									{this.prompts("SSTINC", "Tell me more about TDP!", 1, "")}
 									{this.prompts("AppliedSubjects", "Tell me about Applied Subjects!", 2, "")}
 
@@ -284,10 +275,7 @@ class AppliedLearning extends Component {
 									height: "100%",
 								}}
 							>
-
-								<Image
-									source={chat}
-								/>
+								<ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
 					</SafeAreaView>

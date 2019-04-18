@@ -20,7 +20,7 @@ import chat from "../../assets/images/chat.png"
 import { conversations, conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import FarhanProfile from "../../assets/images/Farhan_profile.png"
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 import cancel from "../../assets/images/cancel.png";
 
 var height = 22;
@@ -107,14 +107,7 @@ class ISS extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: top,
-                justifyContent: "center",
-              }}
-            />
+<SendIcon />
           </View>
         </LinearGradient>
       </TouchableOpacity>

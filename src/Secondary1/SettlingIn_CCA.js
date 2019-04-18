@@ -18,7 +18,7 @@ import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 import chat from "../../assets/images/chat.png";
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 import cancel from "../../assets/images/cancel.png"
 
 class SettlingIn_CCA extends Component {
@@ -89,14 +89,7 @@ class SettlingIn_CCA extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 18,
-                marginTop: 14,
-                justifyContent: "center",
-              }}
-            />
+<SendIcon />
           </View>
         </LinearGradient>
       </TouchableOpacity>

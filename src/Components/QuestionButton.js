@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, Image, Linking, StyleSheet } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 class QuestionButton extends Component {
 	constructor(props){
 		super(props);
@@ -48,14 +48,7 @@ class QuestionButton extends Component {
 					fontSize: 16,
 				}}>{prompt_text}</Text>
 
-				<Image
-					source={select_prompt}
-					style={{
-					marginRight: 14,
-					marginTop: 12,
-					justifyContent: "center",
-					}}
-				/>
+				<SendIcon />
 				</View>
 			</LinearGradient>
 			</TouchableOpacity>
