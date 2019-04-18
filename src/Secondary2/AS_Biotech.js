@@ -107,6 +107,7 @@ class AS_Biotech extends Component {
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
+		var TextStyle = styles.ChatViewStyle;
 
 		// CHANGE HERE
 		const content = conversationsSec2.AS_Biotech;
@@ -121,10 +122,15 @@ class AS_Biotech extends Component {
 					</Animated.View>
 				);
 			} else {
+				if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}
+							<Text style={TextStyle}
 								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
 						</View>
 					</Animated.View>
@@ -173,11 +179,11 @@ class AS_Biotech extends Component {
 								}}>
 									
 									{this.prompts("AppliedLearning", "How is applied learning in SST different?", 1, "")}
-									{this.prompts("", "Find out more about Electronics!", 2, "")}
-									{this.prompts("", "Find out more about Computing +!", 3, "")}
+									{this.prompts("AS_Electronics", "Find out more about Electronics!", 2, "")}
+									{this.prompts("AS_Computing", "Find out more about Computing +!", 3, "")}
 									{this.prompts("AS_DesignStudies", "Find out more about Design Studies!", 4, "")}
-									{this.prompts("", "What did you do during the Discover Programme!", 5, "")}
-									{this.prompts("", "What is this mouse trap car project about?", 6, "")}
+									{this.prompts("DiscoverCamp", "What did you do during the Discover Programme!", 5, "")}
+									{this.prompts("ISS", "What is this mouse trap car project about?", 6, "")}
 									{this.prompts("ChangeMakersProgramme", "Tell me more about ChangeMakers Programme", 7, "")}
 									{this.prompts("ACE", "Did you mention you are an #Actvocate?", 8, "")}
 						
@@ -344,6 +350,13 @@ const styles = StyleSheet.create({
 		padding: 8,
 		fontSize: 18,
 		fontFamily: "Avenir Next"
+	},
+	ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
 	},
 	ChatViewStyle: {
 		width: "75%",

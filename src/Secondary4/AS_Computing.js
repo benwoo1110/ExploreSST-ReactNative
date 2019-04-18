@@ -22,7 +22,7 @@ import chat from "../../assets/images/chat.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png"
 
-class ASComputing extends Component {
+class AS_Computing extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -106,6 +106,7 @@ class ASComputing extends Component {
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
+		var TextStyle = styles.ChatViewStyle;
 
 		// CHANGE HERE
 		const content = conversationsSec4.AS_Computing;
@@ -120,10 +121,15 @@ class ASComputing extends Component {
 					</Animated.View>
 				);
 			} else {
+				if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}
+							<Text style={TextStyle}
 								onPress={this.openURL.bind(this, content[i][1])}>
 								{content[i][0]}
 							</Text>
@@ -174,8 +180,9 @@ class ASComputing extends Component {
 								}}>
 
 									{/* CHANGE HERE*/}
-									{this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
-									{this.prompts("SettlingIn_CCA", "How else did you settle in?", 2, "")}
+									{this.prompts("AS_Electronics", "Find out more about Electronics!", 1, "")}
+									{this.prompts("AS_Biotech", "Find out more about Biotechnology!", 2, "")}
+									{this.prompts("AS_DesignStudies", "Find out more about Design Studies!", 3, "")}
 
 								</View>
 								<TouchableOpacity
@@ -333,6 +340,13 @@ const styles = StyleSheet.create({
 		fontSize: 18,
 		fontFamily: "Avenir Next"
 	},
+	ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
+	},
 	ChatViewStyle: {
 		width: "75%",
 		backgroundColor: "white",
@@ -365,4 +379,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default ASComputing
+export default AS_Computing

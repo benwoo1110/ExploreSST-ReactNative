@@ -173,7 +173,7 @@ class CyberWellness extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("CareerFairGuidanceTalks", "Tell me more about other parent engagement sessions!", 1, "")}
+									{this.prompts("ECG", "Tell me more about other parent engagement sessions!", 1, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
