@@ -95,18 +95,7 @@ class FarhanIntroduction extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-<<<<<<< HEAD
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: top,
-                justifyContent: "center",
-              }}
-            />
-=======
 <SendIcon />
->>>>>>> 14b92343fba1788f2c35ba77f4e66c628e628b99
           </View>
         </LinearGradient>
       </TouchableOpacity>
