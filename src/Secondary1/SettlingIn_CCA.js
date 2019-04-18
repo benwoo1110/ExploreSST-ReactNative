@@ -17,9 +17,8 @@ import { conversations } from "../Conversations";
 import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import chat from "../../assets/images/chat.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png"
+
 
 class SettlingIn_CCA extends Component {
     static navigationOptions = {
@@ -204,9 +203,7 @@ class SettlingIn_CCA extends Component {
                                         }}
                                     >
 
-                                        <Image
-                                            source={cancel}
-                                        />
+<CloseIcon/>
                                     </LinearGradient>
                                 </TouchableOpacity>
                             </View>
@@ -273,9 +270,7 @@ class SettlingIn_CCA extends Component {
                                 }}
                             >
 
-                                <Image
-                                    source={chat}
-                                />
+<ChatIcon />
                             </LinearGradient>
                         </TouchableOpacity>
                     </SafeAreaView>

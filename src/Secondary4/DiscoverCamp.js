@@ -17,9 +17,8 @@ import { conversations, conversationsSec4 } from "../Conversations";
 import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import chat from "../../assets/images/chat.png"
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 
 class DiscoverCamp extends Component {
     static navigationOptions = {
@@ -208,9 +207,7 @@ class DiscoverCamp extends Component {
 										}}
 									>
 
-										<Image
-											source={cancel}
-										/>
+<CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
 							</View>
@@ -277,9 +274,7 @@ class DiscoverCamp extends Component {
 								}}
 							>
 
-								<Image
-									source={chat}
-								/>
+<ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
 					</SafeAreaView>

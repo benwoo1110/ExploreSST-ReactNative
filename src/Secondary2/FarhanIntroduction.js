@@ -16,9 +16,8 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import FarhanCoding from "../../assets/images/Farhan_Coding.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 // import QuestionButton from "../../src/Components/QuestionButton";
 
 var prompt_height = 0;
@@ -183,9 +182,7 @@ class FarhanIntroduction extends Component {
                     }}
                   >
 
-                    <Image
-                      source={cancel}
-                    />
+<CloseIcon/>
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -288,9 +285,7 @@ class FarhanIntroduction extends Component {
                 }}
               >
 
-                <Image
-                  source={chat}
-                />
+<ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
            

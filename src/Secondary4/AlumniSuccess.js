@@ -18,9 +18,8 @@ import { conversationsSec4 } from "../Conversations";
 import LinearGradient from "react-native-linear-gradient";
 import Background from "../../assets/images/background.png";
 import WeiJieFace from "../../assets/images/WeiJie_profile.png";
-import chat from "../../assets/images/chat.png"
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png"
+
 
 class AlumniSuccess extends Component {
     static navigationOptions = {
@@ -209,9 +208,7 @@ class AlumniSuccess extends Component {
                                         }}
                                     >
 
-                                        <Image
-                                            source={cancel}
-                                        />
+<CloseIcon/>
                                     </LinearGradient>
                                 </TouchableOpacity>
                             </View>
@@ -277,10 +274,7 @@ class AlumniSuccess extends Component {
                                     height: "100%",
                                 }}
                             >
-
-                                <Image
-                                    source={chat}
-                                />
+<ChatIcon />
                             </LinearGradient>
                         </TouchableOpacity>
                     </SafeAreaView>

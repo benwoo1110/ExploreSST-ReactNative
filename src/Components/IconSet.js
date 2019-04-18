@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 export class ChatIcon extends Component {
 	render() {
 		return (
-			<Icon name="chat" color="white" size={40} />
+			<Icon name="chat" color="white" size={35} />
 		)
 	}
 }

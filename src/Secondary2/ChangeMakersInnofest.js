@@ -16,12 +16,11 @@ import {
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png"
 import { conversations, conversationsSec2 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import FarhanProfile from "../../assets/images/Farhan_profile.png"
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 
 class ChangeMakersInnofest extends Component {
 	static navigationOptions = {
@@ -212,9 +211,7 @@ class ChangeMakersInnofest extends Component {
 										}}
 									>
 
-										<Image
-											source={cancel}
-										/>
+<CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
 							</View>
@@ -283,9 +280,7 @@ class ChangeMakersInnofest extends Component {
 								}}
 							>
 
-								<Image
-									source={chat}
-								/>
+<ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
 					</SafeAreaView>

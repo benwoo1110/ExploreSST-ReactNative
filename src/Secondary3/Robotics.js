@@ -16,12 +16,11 @@ import {
 import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png"
 import { conversations, conversationsSec3 } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import PriyaProfile from "../../assets/images/Priya_profile.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 
 class SCITDP extends Component {
 	static navigationOptions = {
@@ -205,10 +204,7 @@ class SCITDP extends Component {
 											height: "100%",
 										}}
 									>
-
-										<Image
-											source={cancel}
-										/>
+<CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
 							</View>
@@ -277,9 +273,7 @@ class SCITDP extends Component {
 								}}
 							>
 
-								<Image
-									source={chat}
-								/>
+<ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
 					</SafeAreaView>

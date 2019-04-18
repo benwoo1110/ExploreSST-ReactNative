@@ -205,9 +205,7 @@ class AppliedLearning extends Component {
 										}}
 									>
 
-										<Image
-											source={cancel}
-										/>
+										<CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
 							</View>

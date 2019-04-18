@@ -16,9 +16,8 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import PriyaSolving from "../../assets/images/Priya_Solving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 // import QuestionButton from "../../src/Components/QuestionButton";
 
 class PriyaIntroduction extends Component {
@@ -177,9 +176,7 @@ class PriyaIntroduction extends Component {
                     }}
                   >
 
-                    <Image
-                      source={cancel}
-                    />
+<CloseIcon/>
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -284,9 +281,7 @@ class PriyaIntroduction extends Component {
                 }}
               >
 
-                <Image
-                  source={chat}
-                />
+<ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
            

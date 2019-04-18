@@ -17,12 +17,11 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png"
 import { conversations } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 
 class CyberWellness extends Component {
 	static navigationOptions = {
@@ -205,9 +204,7 @@ class CyberWellness extends Component {
 										}}
 									>
 
-										<Image
-											source={cancel}
-										/>
+<CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
 							</View>
@@ -276,9 +273,7 @@ class CyberWellness extends Component {
 								}}
 							>
 
-								<Image
-									source={chat}
-								/>
+<ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
 					</SafeAreaView>

@@ -13,9 +13,8 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import WeiJieComputer from "../../assets/images/WeiJie_Computer.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
-import cancel from "../../assets/images/cancel.png";
+
 
 class WeiJieIntroduction extends Component {
   static navigationOptions = {
@@ -159,9 +158,7 @@ class WeiJieIntroduction extends Component {
                     }}
                   >
 
-                    <Image
-                      source={cancel}
-                    />
+<CloseIcon/>
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -270,9 +267,7 @@ class WeiJieIntroduction extends Component {
                 }}
               >
 
-                <Image
-                  source={chat}
-                />
+<ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
           </SafeAreaView>
