@@ -16,9 +16,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import RachelWaving from "../../assets/images/Rachel_Waving.png";
 import LinearGradient from "react-native-linear-gradient";
-import chat from "../../assets/images/chat.png";
-import select_prompt from "../../assets/images/select_prompt.png";
-import cancel from "../../assets/images/cancel.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 // import QuestionButton from "../../src/Components/QuestionButton";
 
 class RachelIntroduction extends Component {
@@ -39,18 +37,18 @@ class RachelIntroduction extends Component {
 
   // THIS IS THE NEW FUNCTION
   openURL(url) {
-		if (url != "") {
+    if (url != "") {
       Linking.openURL(url);
       return true;
-		} return false;
+    } return false;
   }
-  
+
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
+    const position = 22 + 78 * sequence;
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
+        style={[styles.buttonStyle, { bottom: position }]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -81,14 +79,9 @@ class RachelIntroduction extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: 14,
-                justifyContent: "center",
-              }}
-            />
+           <SendIcon />
+
+
           </View>
         </LinearGradient>
       </TouchableOpacity>
@@ -173,9 +166,7 @@ class RachelIntroduction extends Component {
                       height: "100%",
                     }}
                   >
-                    <Image
-                      source={cancel}
-                    />
+                    <CloseIcon />
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -215,7 +206,7 @@ class RachelIntroduction extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                Hello, I’m Rachel! I’m a year one SST student this year and I’m
+                Hello, I'm Rachel! I’m a year one SST student this year and I’m
                 excited to share my new secondary school life with you!
               </Text>
             </View>
@@ -273,13 +264,10 @@ class RachelIntroduction extends Component {
                   height: "100%",
                 }}
               >
-
-                <Image
-                  source={chat}
-                />
+                <ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
-           
+
           </SafeAreaView>
           <SafeAreaView
             style={{

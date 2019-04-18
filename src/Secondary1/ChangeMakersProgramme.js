@@ -21,7 +21,7 @@ import chat from "../../assets/images/chat.png"
 import { conversations } from "../Conversations";
 import Background from "../../assets/images/background.png";
 import RachelFace from "../../assets/images/Rachel_Face.png";
-import select_prompt from "../../assets/images/select_prompt.png";
+import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 import cancel from "../../assets/images/cancel.png";
 
 class ChangeMakersProgramme extends Component {
@@ -91,14 +91,7 @@ class ChangeMakersProgramme extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-            <Image
-              source={select_prompt}
-              style={{
-                marginRight: 16,
-                marginTop: 14,
-                justifyContent: "center",
-              }}
-            />
+<SendIcon />
           </View>
         </LinearGradient>
       </TouchableOpacity>
