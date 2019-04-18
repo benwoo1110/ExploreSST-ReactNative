@@ -16,7 +16,7 @@ export class ChatIcon extends Component {
 export class CloseIcon extends Component {
 	render() {
 		return (
-			<Icon name="close" color="white" size={40} />
+			<Icon name="close" color="white" size={35} />
 		)
 	}
 }

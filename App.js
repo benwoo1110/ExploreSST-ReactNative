@@ -102,7 +102,6 @@ const MainStack = createStackNavigator({
   DiscoverCamp: { screen: DiscoverCamp},
   AS_Computing: { screen: AS_Computing},
 
-
   QuestionButton: { screen: QuestionButton},
 });
 
