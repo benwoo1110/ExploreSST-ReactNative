@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
   },
   linGrad: {
     opacity: 1,
-    borderRadius: 30,
+    borderRadius: 20,
     width: "100%",
     height: "100%",
   }

@@ -81,7 +81,7 @@ export const conversations = {
     ["Through these programmes, students are able to gain foundational skills and competencies. But if they wish to investigate specific areas of interest or talents, we have the Talent Development Programme in place! We get to choose from a wide spectrum of areas to cultivate our interests and talents. There is the Science TDP, SST Inc, Robotics@APEX, Student Leadership Programmes, etc.", ""],
     ["Applied Subjects are also a huge factor of the SST Experience. ALL students are required to take up 1 Applied Subject.", ""],
     ["They choose from Biotechnology, Computing, Design Studies and Electronics. Did you know that Biotechnology and Design Studies is exclusive to SST only? These subjects are reflected in the GCE O-Level Examination and are recognised for admission in post-secondary institutions.", ""],
-    ["Click here for some facinating views of our cohort wide programme!", "https://drive.google.com/open?id=17AXronkXyvjc505_YevyZyRdSJIzv4u1"]
+    ["Click here for some facinating views of our cohort wide programme! 🔗", "https://drive.google.com/open?id=17AXronkXyvjc505_YevyZyRdSJIzv4u1"]
   ],
 
   ChangeMakersProgramme: [

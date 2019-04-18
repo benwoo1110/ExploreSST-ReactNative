@@ -23,6 +23,8 @@ import FarhanProfile from "../../assets/images/Farhan_profile.png"
 import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 
+var height = 22;
+
 class ISS extends Component {
 	static navigationOptions = {
 		header: null
@@ -54,13 +56,27 @@ class ISS extends Component {
       return true;
 		} return false;
   }
+
+	reset() {
+    height = 22;
+  }
   
-  // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
+  prompts(name, prompt_text, long, url) {
+    var PromptStyle = styles.linGrad;
+    var top = 14;
+
+    if (long) {
+      height += 102;
+      PromptStyle = styles.linGrad_big;
+      top = 26;
+    }
+    else {
+      height += 78;
+    }
+
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
+        style={[styles.buttonStyle,{bottom: height}]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -74,7 +90,7 @@ class ISS extends Component {
           start={{ x: 0, y: 1 }}
           end={{ x: 1, y: 0 }}
           colors={["#84C7C3", "#0084C2"]}
-          style={styles.linGrad}
+          style={PromptStyle}
         >
           <View style={{
             flexDirection: "row",
@@ -85,7 +101,8 @@ class ISS extends Component {
               color: "white",
               fontFamily: "Avenir Next",
               alignSelf: "center",
-              marginLeft: 20,
+              marginLeft: 24,
+              marginRight: 12,
               flex: 1,
               fontSize: 16,
             }}>{prompt_text}</Text>
@@ -94,7 +111,7 @@ class ISS extends Component {
               source={select_prompt}
               style={{
                 marginRight: 16,
-                marginTop: 14,
+                marginTop: top,
                 justifyContent: "center",
               }}
             />
@@ -172,11 +189,11 @@ class ISS extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "I would love to read more about SSTudents' ISS projects!", 1, "http://sst2018-iss.blogspot.com/p/2018-projects.html")}
-									{this.prompts("ChangeMakersInnofest", "Do tell me more about the ChangeMakers Innofest for Sec 2 students", 2, "")}
-									{this.prompts("TDPs", "Could you share more about TDP with me? What are the types of TDPs offered in SST?", 3, "")}
-									{this.prompts("IRAP", "It seems that certain students follow up their experiences from ISS to IRAP. What are some of your IRAP experiences?", 4, "")}
-									
+									{this.prompts("", "I would love to read more about SSTudents' ISS projects!", false, "http://sst2018-iss.blogspot.com/p/2018-projects.html")}
+									{this.prompts("ChangeMakersInnofest", "Do tell me more about the ChangeMakers Innofest for Sec 2 students", true, "")}
+									{this.prompts("TDPs", "Could you share more about TDP with me? What are the types of TDPs offered in SST?", true, "")}
+									{this.prompts("IRAP", "I heard some students follow up their experiences to IRAP. What are some of your IRAP experiences?", true, "")}
+									{this.reset()}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -366,12 +383,18 @@ const styles = StyleSheet.create({
 		borderRadius: 30,
 		width: "100%",
 	},
-	linGrad: {
-		opacity: 1,
-		borderRadius: 30,
-		width: "100%",
-		height: "100%",
-	}
+  linGrad: {
+    opacity: 1,
+    borderRadius: 20,
+    width: "100%",
+    height: "100%",
+  },
+  linGrad_big: {
+    opacity: 1,
+    borderRadius: 20,
+    width: "100%",
+    height: "140%",
+  }
 })
 
 export default ISS

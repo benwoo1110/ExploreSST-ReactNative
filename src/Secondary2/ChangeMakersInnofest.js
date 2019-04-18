@@ -178,7 +178,7 @@ class ChangeMakersInnofest extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "What other programmes do you have in SST?", 1, "")}
+									{this.prompts("DiscoverCamp", "What other programmes do you have in SST?", 1, "")}
 									{this.prompts("", "I want to see photos of the ChangeMakers Innofest!", 2, "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=albums")}
 									{this.prompts("", "Do tell me more about the SST ChangeMakers Programme", 3, "https://www.youtube.com/watch?v=pqKGNe6uaU0")}
 						
@@ -379,7 +379,7 @@ const styles = StyleSheet.create({
 	},
 	linGrad: {
 		opacity: 1,
-		borderRadius: 30,
+		borderRadius: 20,
 		width: "100%",
 		height: "100%",
 	}

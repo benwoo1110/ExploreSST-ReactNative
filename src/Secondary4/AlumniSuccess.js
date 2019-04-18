@@ -182,8 +182,8 @@ class AlumniSuccess extends Component {
                                     {/* CHANGE HERE*/}
                                     {this.prompts("ECG", "Tell me about how SST prepares you for post-secondary education! ", 4, "")}
                                     {this.prompts("", "I want to know more about the alumni", 3, "https://www.facebook.com/search/str/%23SSTAlumni/keywords_search?epa=SEARCH_BOX")}
-                                    {this.prompts("", "I want to know more about Danish, the alumni from sst", 2, "https://www.youtube.com/watch?v=s849gz9M9RQ&t=8s")}
-                                    {this.prompts("", "I want to know more about Danish, the alumni from sst", 1, "https://www.youtube.com/watch?v=7HfHRCFkHtE&t=4s")}
+                                    {this.prompts("", "I want to know more about Danish, the alumni from SST", 2, "https://www.youtube.com/watch?v=s849gz9M9RQ&t=8s")}
+                                    {this.prompts("", "I want to know more about Shi Ying, the alumni from SST", 1, "https://www.youtube.com/watch?v=7HfHRCFkHtE&t=4s")}
 
                                 </View>
                                 <TouchableOpacity
@@ -374,7 +374,7 @@ const styles = StyleSheet.create({
     },
     linGrad: {
         opacity: 1,
-        borderRadius: 30,
+        borderRadius: 20,
         width: "100%",
         height: "100%",
     }
