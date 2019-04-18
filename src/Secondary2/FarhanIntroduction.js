@@ -21,6 +21,8 @@ import select_prompt from "../../assets/images/select_prompt.png";
 import cancel from "../../assets/images/cancel.png";
 // import QuestionButton from "../../src/Components/QuestionButton";
 
+var prompt_height = 0;
+
 class FarhanIntroduction extends Component {
   static navigationOptions = {
     header: null
@@ -43,14 +45,15 @@ class FarhanIntroduction extends Component {
       Linking.openURL(url);
       return true;
 		} return false;
-  }
-  
+  };
+
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
+    prompt_height += 50;
+    var box_height = prompt_height + 22;
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
+        style={[styles.buttonStyle,{bottom: prompt_height}]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -79,7 +82,7 @@ class FarhanIntroduction extends Component {
               marginRight: 12,
               flex: 1,
               fontSize: 16,
-            }}>{prompt_text}</Text>
+            }}>{prompt_height}</Text>
 
             <Image
               source={select_prompt}
