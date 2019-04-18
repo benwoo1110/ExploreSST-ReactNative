@@ -288,16 +288,11 @@ export const conversationsSec4 = {
     ["Tell me more about the Computing+ Applied Subject", ""],
     ["The applied subject I’m taking is Computing+ and that is not a typo!", ""],
     ["To explain more about what we learn in computing, it involves problem-solving processes involving analysis, pattern finding, abstraction and algorithmic design. We use these processes to develop programmes to deal confidently with complex and open ended problems.", ""],
-<<<<<<< HEAD
-    ["We are equipped with computational thinking and creativity to analyse and solve problems. On top of these, our forward-looking teachers added topics such as the Internet of Things and Ethical Hacking ;hence the \"+\". 🤔 ", ""],
-    ["Though it may sound profound, we have teachers here to guide us!", ""]
-=======
     ["We are equipped with computational thinking and creativity to analyse and solve problems. On top of these, our forward-looking teachers added topics such as the Internet of Things and Ethical Hacking ;hence the \"+\". [Emoji] ", ""],
     ["Though it may sound profound, we have teachers here to guide us!", ""],
     ["Year 3 #SSTudent Celeste Low made the news for completing 10 weeks of Google's Code in the Community Programme. She later clarified she actually meant to become a white hat hacker instead of a spy 😆.", ""],
     ["Click here to find out more!", "https://www.facebook.com/ssts.1technologydrive/posts/1548644671812452?__tn__=-R"],
     ["3D-Tronics National Info-comm Challenge 2018", "https://www.facebook.com/ssts.1technologydrive/posts/2029285450415036?__xts__%5B0%5D=68.ARA2A0s5zEYX5QI37gLur-dEN4silCt_obD47nw2ZyWWEiLj_zODFITImIGLM-76Vk7CGzRtw1TvRycj01_QSFG3k2Zno_mUcg9wPDHtCJ4BNjlO-qqJGnRp8rSlwF0i5MalFTj7B-LqMheWf3KjvMq1dHVj1AR5MwrpKVrxyj01QfeWwnuQQy81Y9IWgngY--uEyg&__tn__=-R"]
->>>>>>> 99a622ce4e5acc307acb11536c9ed16774cd93f0
   ],
 
   Astronomy: [
