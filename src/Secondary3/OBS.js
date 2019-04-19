@@ -21,7 +21,7 @@ import Background from "../../assets/images/background.png";
 import PriyaProfile from "../../assets/images/Priya_profile.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 
-class SCITDP extends Component {
+class OBS extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -100,7 +100,7 @@ class SCITDP extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversationsSec3.SCITDP;
+		const content = conversationsSec3.OBS;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -163,9 +163,8 @@ class SCITDP extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about the other TDPs!", 1, "")}
-									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
-									{this.prompts("", "Tell me more about Robotics!", 3, "")}
+									{this.prompts("", "Tell me more about the Outdoor Education Expedition!", 1, "https://www.facebook.com/ssts.1technologydrive/photos/a.1736284946381756/1736297996380451/?type=3&theater")}
+									{this.prompts("CCA_S2", "Do you have any Sports CCA?", 2, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -359,4 +358,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default SCITDP
+export default OBS

@@ -164,9 +164,9 @@ class AS_Electronics extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about the other TDPs!", 1, "")}
-									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
-									{this.prompts("", "Tell me more about Robotics!", 3, "")}
+									{this.prompts("AS_Biotech", "Find out more about Biotechnology!", 1, "")}
+									{this.prompts("AS_Computing", "Find out more about Computing +!", 2, "")}
+									{this.prompts("AS_DesignStudies", "Find out more about Design Studies!", 3, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

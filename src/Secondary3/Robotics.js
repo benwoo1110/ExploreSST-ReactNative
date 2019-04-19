@@ -22,7 +22,7 @@ import PriyaProfile from "../../assets/images/Priya_profile.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 
 
-class SCITDP extends Component {
+class Robotics extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -101,7 +101,7 @@ class SCITDP extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversationsSec3.SCITDP;
+		const content = conversationsSec3.Robotics;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -164,9 +164,8 @@ class SCITDP extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about the other TDPs!", 1, "")}
-									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
-									{this.prompts("", "Tell me more about Robotics!", 3, "")}
+									{this.prompts("CCA_S2", "What other CCA are you interested in?", 1, "")}
+									{this.prompts("", "what do most of our alumni do after SST?", 2, "https://www.facebook.com/pg/ssts.1technologydrive/posts/?ref=page_internal")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -359,4 +358,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default SCITDP
+export default Robotics

@@ -164,9 +164,9 @@ class SCITDP extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about the other TDPs!", 1, "")}
+									{this.prompts("SCITDP", "Tell me more about the other TDPs!", 1, "")}
 									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
-									{this.prompts("", "Tell me more about Robotics!", 3, "")}
+									{this.prompts("Robotics", "Tell me more about Robotics!", 3, "")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

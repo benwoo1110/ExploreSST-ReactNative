@@ -22,7 +22,7 @@ import PriyaProfile from "../../assets/images/Priya_profile.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 
 
-class SCITDP extends Component {
+class IRAP extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -101,7 +101,7 @@ class SCITDP extends Component {
 		const conversationBubbles = [];
 
 		// CHANGE HERE
-		const content = conversationsSec3.SCITDP;
+		const content = conversationsSec3.IRAP;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -164,9 +164,8 @@ class SCITDP extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "Tell me more about the other TDPs!", 1, "")}
-									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
-									{this.prompts("", "Tell me more about Robotics!", 3, "")}
+									{this.prompts("ISS", "Tell me more about ISS", 1, "")}
+									{this.prompts("", "Tell me more about other IRAP opportunities", 2, "https://www.facebook.com/ssts.1technologydrive/videos/1437990226211231/?__xts__%5B0%5D=68.ARAZ4mqbfzCC56I-x98G6qymJrSsR9HFTq3xuLToUURFpyL_Q7d6DW8MzBxPX-PtHKNH_h2UEuCwQNi6m6id4f-h_asMG4xq9AvHRXOgGJBaBccOtCdUqszctOOKkxWoi7ZjtbTWTT2_01jyyHgJWNtkQeME_x0MakifmvPRGK0uGJmnol7pXQ&__tn__=-R")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -360,4 +359,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default SCITDP
+export default IRAP

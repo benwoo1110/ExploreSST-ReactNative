@@ -16,7 +16,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import GeneralOffice from "../../assets/images/go.jpeg";
 import PriyaSolving from "../../assets/images/Priya_Solving.png";
 import LinearGradient from "react-native-linear-gradient";
-import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
+import { ChatIcon, CloseIcon, SendIcon } from "../Components/IconSet"
 
 // import QuestionButton from "../../src/Components/QuestionButton";
 
@@ -38,18 +38,18 @@ class PriyaIntroduction extends Component {
 
   // THIS IS THE NEW FUNCTION
   openURL(url) {
-		if (url != "") {
+    if (url != "") {
       Linking.openURL(url);
       return true;
-		} return false;
+    } return false;
   }
-  
+
   // THIS IS THE NEW FUNCTION
   prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
+    const position = 22 + 78 * sequence;
     return (
       <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
+        style={[styles.buttonStyle, { bottom: position }]}
         onPress={() => {
           const { navigation } = this.props;
           if (!this.openURL(url)) {
@@ -80,7 +80,7 @@ class PriyaIntroduction extends Component {
               fontSize: 16,
             }}>{prompt_text}</Text>
 
-<SendIcon />
+            <SendIcon />
           </View>
         </LinearGradient>
       </TouchableOpacity>
@@ -129,14 +129,14 @@ class PriyaIntroduction extends Component {
                   left: 16,
                   right: 16,
                 }}>
-                
+
                   {/* CHANGE HERE*/}
-                  {this.prompts("", "What are you looking forward to this year?", 1, "")}
-                  {this.prompts("", "Tell me more about your juniors' experiences", 2, "")}
-                  {this.prompts("", "What is IRAP about?", 3, "")}
+                  {/*this.prompts("", "What are you looking forward to this year?", 1, "")*/}
+                  {this.prompts("RachelIntroduction", "Tell me more about your juniors' experiences", 2, "")}
+                  {this.prompts("IRAP", "What is IRAP about?", 3, "")}
                   {this.prompts("SCITDP", "Science TDP? Tell me more!", 4, "")}
-                  {this.prompts("", "What about other TDPs?", 5, "")}
-                  {this.prompts("", "Could you tell me more about OBS?", 6, "")}
+                  {this.prompts("SSTINC", "What about other TDPs?", 5, "")}
+                  {this.prompts("OBS", "Could you tell me more about OBS?", 6, "")}
 
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
@@ -176,7 +176,7 @@ class PriyaIntroduction extends Component {
                     }}
                   >
 
-<CloseIcon/>
+                    <CloseIcon />
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -218,10 +218,10 @@ class PriyaIntroduction extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                Hey! My name is Priya. I am in Secondary 3 this year. To me, 
-                every year is a learning journey and there are different 
-                explorations in store every day!  In Sec 3, I took up an Applied 
-                Subject, which is Electronics. I participated in OBS and had my 
+                Hey! My name is Priya. I am in Secondary 3 this year. To me,
+                every year is a learning journey and there are different
+                explorations in store every day!  In Sec 3, I took up an Applied
+                Subject, which is Electronics. I participated in OBS and had my
                 Industrial and Research Attachment (IRAP). What would you like
                 to find out?
               </Text>
@@ -281,10 +281,10 @@ class PriyaIntroduction extends Component {
                 }}
               >
 
-<ChatIcon />
+                <ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
-           
+
           </SafeAreaView>
           <SafeAreaView
             style={{
