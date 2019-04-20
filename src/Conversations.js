@@ -55,7 +55,12 @@ export const conversations = {
   ],
 
   CCA: [ // Not DONE
-    ["What are the CCAs in SST?",""]
+    ["What are the CCAs in SST?",""],
+    ["There are 4 main categories of CCA in SST.", ""],
+    ["We have Sports and Games which includes: \n  -  Athletics \n  -  Badminton \n  -  Basketball \n  -  Fencing \n  -  Floorball \n  -  Taekwondo \n  -  Wushu", ""],
+    ["We also have the Performing Arts CCAs: \n  -  English Drama Club \n  -  Guitar Ensemble \n  -  Showchoir", ""],
+    ["There are Clubs and Societies: \n  -  Astronomy \n  -  Media Club \n  -  Robotics@Apex \n  -  Singapore Youth Club", ""],
+    ["Lastly, we have one Uniform Group that is Scout!", ""]
   ],
 
   InterestingExperiences: [
@@ -81,7 +86,7 @@ export const conversations = {
     ["Through these programmes, students are able to gain foundational skills and competencies. But if they wish to investigate specific areas of interest or talents, we have the Talent Development Programme in place! We get to choose from a wide spectrum of areas to cultivate our interests and talents. There is the Science TDP, SST Inc, Robotics@APEX, Student Leadership Programmes, etc.", ""],
     ["Applied Subjects are also a huge factor of the SST Experience. ALL students are required to take up 1 Applied Subject.", ""],
     ["They choose from Biotechnology, Computing, Design Studies and Electronics. Did you know that Biotechnology and Design Studies is exclusive to SST only? These subjects are reflected in the GCE O-Level Examination and are recognised for admission in post-secondary institutions.", ""],
-    ["Click here for some facinating views of our cohort wide programme! 🔗", "https://drive.google.com/open?id=17AXronkXyvjc505_YevyZyRdSJIzv4u1"]
+    ["Click here for some facinating views of our cohort wide programme!", "https://drive.google.com/open?id=17AXronkXyvjc505_YevyZyRdSJIzv4u1"]
   ],
 
   ChangeMakersProgramme: [
@@ -201,7 +206,14 @@ export const conversationsSec2 = {
   ],
 
   CCA_S2: [
-    ["CCA STUFF"]
+    [" Your CCA is Fencing? What other CCAs are there in SST?", ""]
+    ["SST has an array of CCAs and is incredibly open to new ideas for CCA groups as long as there is enough demand for an area if interest.", ""],
+    ["For example, Scout was introduced as a Uniformed Group some years into the school's establishment, and although Basketball was only catered for male students, the female students grouped together and joined Basketball as a second CCA!", ""]
+    ["Here are the list of CCAs in SST!", ""],
+    ["We have Sports and Games which includes: \n  -  Athletics \n  -  Badminton \n  -  Basketball \n  -  Fencing \n  -  Floorball \n  -  Taekwondo \n  -  Wushu", ""],
+    ["We also have the Performing Arts CCAs: \n  -  English Drama Club \n  -  Guitar Ensemble \n  -  Showchoir", ""],
+    ["There are Clubs and Societies: \n  -  Astronomy \n  -  Media Club \n  -  Robotics@Apex \n  -  Singapore Youth Club", ""],
+    ["Lastly, we have one Uniform Group that is Scout!", ""]
   ],
 
   AS_Biotech: [

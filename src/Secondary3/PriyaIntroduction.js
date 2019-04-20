@@ -132,11 +132,11 @@ class PriyaIntroduction extends Component {
 
                   {/* CHANGE HERE*/}
                   {/*this.prompts("", "What are you looking forward to this year?", 1, "")*/}
-                  {this.prompts("RachelIntroduction", "Tell me more about your juniors' experiences", 2, "")}
-                  {this.prompts("IRAP", "What is IRAP about?", 3, "")}
-                  {this.prompts("SCITDP", "Science TDP? Tell me more!", 4, "")}
-                  {this.prompts("SSTINC", "What about other TDPs?", 5, "")}
-                  {this.prompts("OBS", "Could you tell me more about OBS?", 6, "")}
+                  {this.prompts("RachelIntroduction", "Tell me more about your juniors' experiences", 1, "")}
+                  {this.prompts("IRAP", "What is IRAP about?", 2, "")}
+                  {this.prompts("SCITDP", "Science TDP? Tell me more!", 3, "")}
+                  {this.prompts("SSTINC", "What about other TDPs?", 4, "")}
+                  {this.prompts("OBS", "Could you tell me more about OBS?", 5, "")}
 
                   {/* //TODO:1.1.1 */}
                   {/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
