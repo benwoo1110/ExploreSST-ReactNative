@@ -13,7 +13,7 @@ import {
   Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import GeneralOffice from "../../assets/images/go.jpeg";
+import GeneralOffice from "../../assets/images/go.png";
 import PriyaSolving from "../../assets/images/Priya_Solving.png";
 import LinearGradient from "react-native-linear-gradient";
 import { ChatIcon, CloseIcon, SendIcon } from "../Components/IconSet"

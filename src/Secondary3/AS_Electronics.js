@@ -14,7 +14,7 @@ import {
 		Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import GeneralOffice from "../../assets/images/go.jpeg";
+import GeneralOffice from "../../assets/images/go.png";
 import LinearGradient from "react-native-linear-gradient";
 import { conversations, conversationsSec3 } from "../Conversations";
 import Background from "../../assets/images/background.png";

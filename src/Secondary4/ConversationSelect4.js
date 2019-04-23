@@ -10,7 +10,7 @@ import {
   ScrollView
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import GeneralOffice from "../../assets/images/go.jpeg";
+import GeneralOffice from "../../assets/images/go.png";
 import WeiJieComputer from "../../assets/images/WeiJie_Computer.png";
 
 class ConversationSelect4 extends Component {

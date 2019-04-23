@@ -9,7 +9,7 @@ import {
 	Animated
 } from "react-native";
 import ParallaxScrollView from "react-native-parallax-scroll-view";
-import Background2 from "../assets/images/background2.jpg";
+import Background2 from "../assets/images/background2.png";
 import smallRachel from "../assets/images/smallRachel.png";
 import smallFarhan from "../assets/images/smallFarhan.png";
 import smallWeiJie from "../assets/images/smallWeiJie.png";
