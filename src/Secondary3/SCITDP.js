@@ -164,7 +164,8 @@ class SCITDP extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("SCITDP", "Tell me more about the other TDPs!", 1, "")}
+									{/*this.prompts("SCITDP", "Tell me more about the other TDPs!", 1, "")*/}
+									{this.prompts("", "I want to know more about Matthew Liang!", 1, "https://www.facebook.com/ssts.1technologydrive/posts/2038928002784114?__tn__=-R")}
 									{this.prompts("SSTINC", "Tell me more about SST Inc!", 2, "")}
 									{this.prompts("Robotics", "Tell me more about Robotics!", 3, "")}
 

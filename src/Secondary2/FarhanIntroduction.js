@@ -152,7 +152,7 @@ class FarhanIntroduction extends Component {
                   {/* change this ^^ */}
                   {this.prompts("SSTINC", "What is SST Inc about? What is a TDP?", false, "")}
                   {this.prompts("Leadership", "What kinds of leadership positions are there in SST?", false, "")}
-                  {this.prompts("AS_Biotech", "Which Applied Subjects will you be taking?", false, "")}
+                  {this.prompts("AS_Biotech", "Which Applied Subject will you be taking?", false, "")}
                   {this.prompts("RachelIntroduction", "I would like to know more about your junior's experience.", false, "")}
                   {this.reset()}
 

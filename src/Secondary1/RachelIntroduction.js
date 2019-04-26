@@ -223,8 +223,8 @@ class RachelIntroduction extends Component {
                   fontFamily: "Avenir Next"
                 }}
               >
-                Hello, I'm Rachel! I’m a year one SST student this year and I’m
-                excited to share my new secondary school life with you!
+                Hello, I'm Rachel! I'm a Secondary 1 SST student this year and 
+                I'm excited to share my new secondary school life with you!
               </Text>
             </View>
             <View style={{ flex: 1 }}>

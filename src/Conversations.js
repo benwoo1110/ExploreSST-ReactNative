@@ -17,7 +17,7 @@ export const conversations = {
     ["You get to know the SST community and learn what is expected of all students. Because this is a small community, everyone looks out for one another.", ""],
     ["I see alumni students coming back all the time to help!", ""],
     ["Click here to view our Orientation Week album!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1818489524827964"],
-    ["Click here to view our CCA Trials!", "https://www.facebook.com/ssts.1technologydrive/photos/a.1818489524827964/1830455566964693/?type=3&theater"],
+    ["Click here to view our CCA Trials album!", "https://www.facebook.com/ssts.1technologydrive/photos/a.1818489524827964/1830455566964693/?type=3&theater"],
     ["Click here to view our Sec 1 Badge Night!", "https://www.facebook.com/219440164732916/photos/?tab=album&album_id=1840285539315029"]
   ],
 
@@ -107,7 +107,7 @@ export const conversations = {
     ["I found out more about Design Studies through the SST website (www.sst.edu.sg) today.", ""],
     ["DS in SST equips students with knowledge and skills of the design field through design thinking, design process and fundamentals of three design disciplines: visual communication design, interior and exhibition space design, and architectural design.", ""],
     ["The course also aims to nurture an awareness and appreciation of the positive relationships among design, humanity, art, technology, business, culture and economic development. As such, it cultivates an awareness of the role of design in shaping one’s experience of visual communication, space, objects and the environment.", ""],
-    ["My sister told me that an SST Alumni, Choy Rui Zhi came back to SST to share his journey in design with his DS juniors. He was one of the first to take up Design Studies and he graduated as a Architecture course medallist from Singapore Polytechnic.", ""],
+    ["My sister told me that an SST Alumni, Choy Rui Zhi came back to SST to share his journey in design with his DS juniors. He was one of the first to take up Design Studies and he graduated as an Architecture course medallist from Singapore Polytechnic.", ""],
     ["She told me that she felt really inspired after hearing him speak about his passions. It is certainly heart warming to see SST alumni coming back so often to support, guide and inspire us.", ""],
     ["Click here to see our Alumni, Choy Rui Zhi, sharing about his journey in design.", "https://www.facebook.com/ssts.1technologydrive/posts/2155944061082507?__xts__%5B0%5D=68.ARCXLBiayUHjA68x7Ms_w65bVBsjD4uf2xGHAFKkE_9xWC2kChpMs0_uZ5UT7IgB-iQPKT8LsZsUBxaJjIuFOwGrcrBEzhqgdTq7vNE8CjvJNk7lheIViW6wzGNPV7HejmrUxDohsYQlqPBzEJ6-CDDb3CnNvlqUaNd7LTZ81YNuZQDAUaHdXyg0w4WdMfmcGsJQsg&__tn__=-R"]
 
@@ -138,7 +138,7 @@ export const conversationsSec2 = {
     ["I often hear my seniors talk about lessons that they took home from their trip to San Francisco. It seems that they were able to learn so much from their participation at the Developers Conference and their learning journeys to technology firms such as Apple, Google.", ""],
     ["The last time they were there, my seniors also headed to UserTesting where one of alumnus Jurvis was a intern. For a young student like me, it was also amazing to learn that SSTudents are often offered jobs on their trip. I really hope I make the cut to go for the next trip!", ""],
     ["If I were to sum up my thoughts on SST Inc, I like how we are able to hone programming skills, explore and implement ideas, especially doing something that benefits society. BRB while I continue working on my app!", ""],
-    ["Click here to view the amazing photos taking in ProjectSF 2019!", "https://www.facebook.com/ssts.1technologydrive/videos/1442196409123946/?__xts__[0]=68.ARD_K-iemPprQSO4Mqna32QHKzQ-PL88mR5T0q1vwWhIzYD31rP9ALkL7a4w7v3pIs5ccvjoc3nYqXhei409H2Ct7yvvTJZEQZbJgXXaOLTB-UgKOQGP78TNtbEr8cgVyIvh_RztCMvYwXbmSvUyOBmqpvnbTb6899AzGzDUNtYNhtKgoK6mtEKhy1JSDASQnJwU8_OA4C0Tunf-EQ&__tn__=-R"]
+    ["Click here to view the amazing photos taken during ProjectSF 2019!", "https://www.facebook.com/ssts.1technologydrive/videos/1442196409123946/?__xts__[0]=68.ARD_K-iemPprQSO4Mqna32QHKzQ-PL88mR5T0q1vwWhIzYD31rP9ALkL7a4w7v3pIs5ccvjoc3nYqXhei409H2Ct7yvvTJZEQZbJgXXaOLTB-UgKOQGP78TNtbEr8cgVyIvh_RztCMvYwXbmSvUyOBmqpvnbTb6899AzGzDUNtYNhtKgoK6mtEKhy1JSDASQnJwU8_OA4C0Tunf-EQ&__tn__=-R"]
   ],
 
   Leadership: [
@@ -169,15 +169,14 @@ export const conversationsSec2 = {
   ACE: [
     ["Could you tell me more about your advocacy projects?", ""],
     ["Do you know that every student in Secondary 1 will get to travel for an Overseas Learning Experience?", ""],
-    ["My friends and I were given the chance to network and collaborate with peers/counterparts in the ASEAN region and beyond.", ""],
+    ["My friends and I were given the chance to network and collaborate with counterparts in the ASEAN region and beyond.", ""],
     ["The objectives of the OLE is to reinforce our understanding that our communities are interconnected and interdependent despite having different beliefs, cultures and values.", ""],
     ["With this new knowledge and understanding, equipped with the service and advocacy skills, we are empowered to take action and make a positive change for the community. How do we extend our learning beyond the trip themselves?", ""],
     ["When we are back in Singapore, we reflect on their overseas learning experiences and work together as teams of advocates to research into their area of community concerns and work on advocacy campaigns.", ""],
     ["Facilitated by the Year Three Active Citizenship Education (ACE) leaders, we share our understanding and views of different environmental, healthcare and social issues before drawing relevance to their community.", ""],
     ["That's not all there is to ACE though. Earlier this year, we initiated the #ACEfooddrive2k19, a food donation drive with the objective to help improve the poverty situation of over 400 underprivileged families.", ""],
     ["On 12 Jan 2019, 30 ACE leaders, 65 student volunteers, 16 teacher volunteers and SST alumni assisted in distributing food bags. The ACE leaders also sent another 100 food bags to the elderly community at Lengkok Bahru at a later date, and distributed the food bags to the aunties and uncles who have been keeping SST clean and safe.", ""],
-    ["This is just one of the many initiatives that we came up with. To read more about our advocacy campaigns, click here: https://sites.google.com/sst.edu.sg/acesst/", "https://sites.google.com/sst.edu.sg/acesst/"],
-    ["outreach talks on FB", "https://www.facebook.com/events/590444031301542/permalink/602879813391297/"]
+    ["This is just one of the many initiatives that we came up with. To read more about our advocacy campaigns, click here: https://sites.google.com/sst.edu.sg/acesst/", "https://sites.google.com/sst.edu.sg/acesst/"]
   ],
 
   ChangeMakersInnofest: [
@@ -193,7 +192,7 @@ export const conversationsSec2 = {
     ["Throughout the 3 days, they were grouped in teams of 4 to 5 to work on the challenge. They adopted the roles of Team Leader/Pitcher, Coder/Programmer, Designer/Maker (2) and Storyteller/Marketer.", ""],
     ["On the first day, Keynote speaker Dr Radiah Salim, Founder of Club HEAL, spoke to the students on The New Orphans - elderly in Singapore and challenges that they face. With the context set, students then went on learning journeys to venues such as SAGE CC, ClubHEAL, Jamiyah Nursing Home and Apple Inc.", ""],
     ["In the next 2 days, students spent the whole night coding and developing our prototypes, working under a hackathon format.  Although we were tired on the last day, we were energised by the idea of presenting our ideas to the judges.", ""],
-    ["Link to our 3 HODs speaking about the CM Programme", "https://www.youtube.com/watch?v=pqKGNe6uaU0"]
+    ["Link to our 3 HODs speaking about the CM Programme", "https://www.youtube.com/watch?v=MX0jrwWdIZk"]
   ],
 
   OEE: [
@@ -277,12 +276,14 @@ export const conversationsSec3 = {
 
   SCITDP: [
     ["Science TDP? Tell me more!", ""],
-    ["I am currently in SST's Science TDP. TDP stands for Talent Development Programme, where students are able to gain foundational skills and competencies that capitalise on their personal strengths and unique talents. We get to choose from a wide spectrum of areas to cultivate our interests and talents.", "https://www.facebook.com/ssts.1technologydrive/posts/1848248521852064?__xts__%5B0%5D=68.ARDbCiwH8TKww1_NQups8fZ1lSSAimylHwWSeq3iE8IBMLoaSbh9wwK5OxyoTJepFh7KW3BapPA0Jic8FXpQwNJOzTF0-0CGPshF1eSfaVwGkAQo0NmZjYZ5v6ogkx9AgQ2h4Y4gSznLVz2pgGptBn2JIDTosRy_PnMH28zzhEIiSp677sy513Ld_jyRTJW7pTL0IA&__tn__=-R"],
+    ["I am currently in SST's Science TDP. TDP stands for Talent Development Programme, where students are able to gain foundational skills and competencies that capitalise on their personal strengths and unique talents. We get to choose from a wide spectrum of areas to cultivate our interests and talents.", ""],
     ["Aside from Science TDP, there is SST Inc, Robotics@APEX, etc.", ""],
-    ["All TDPs are a great avenue to transform those passions into industry expertise.", ""],
-    ["In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline.", "https://www.facebook.com/ssts.1technologydrive/posts/1939068892770026?__tn__=-R"],
-    ["Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?", "https://www.facebook.com/ssts.1technologydrive/posts/2038928002784114?__tn__=-R"],
-    ["He is Sec 3 student that represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!", ""]
+    ["All TDPs are  great avenues for honing skills and  transforming passions into industry expertise.", ""],
+    ["In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline.", ""],
+    ["Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?", ""],
+    ["He was in Secondary 3 when he represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!", ""],
+    ["Japan Hyper-Interdisciplinary Conference in Toyko", "https://www.facebook.com/ssts.1technologydrive/posts/1939068892770026?__tn__=-R"],
+    ["International Science Youth Forum", "https://www.facebook.com/ssts.1technologydrive/posts/1848248521852064?__xts__%5B0%5D=68.ARDbCiwH8TKww1_NQups8fZ1lSSAimylHwWSeq3iE8IBMLoaSbh9wwK5OxyoTJepFh7KW3BapPA0Jic8FXpQwNJOzTF0-0CGPshF1eSfaVwGkAQo0NmZjYZ5v6ogkx9AgQ2h4Y4gSznLVz2pgGptBn2JIDTosRy_PnMH28zzhEIiSp677sy513Ld_jyRTJW7pTL0IA&__tn__=-R"]
   ],
 
   OBS: [
@@ -300,7 +301,7 @@ export const conversationsSec4 = {
     ["Tell me more about the Computing+ Applied Subject", ""],
     ["The applied subject I’m taking is Computing+ and that is not a typo!", ""],
     ["To explain more about what we learn in computing, it involves problem-solving processes involving analysis, pattern finding, abstraction and algorithmic design. We use these processes to develop programmes to deal confidently with complex and open ended problems.", ""],
-    ["We are equipped with computational thinking and creativity to analyse and solve problems. On top of these, our forward-looking teachers added topics such as the Internet of Things and Ethical Hacking ;hence the \"+\". [Emoji] ", ""],
+    ["We are equipped with computational thinking and creativity to analyse and solve problems. On top of these, our forward-looking teachers added topics such as the Internet of Things and Ethical Hacking ;hence the \"+\". 😮 ", ""],
     ["Though it may sound profound, we have teachers here to guide us!", ""],
     ["Year 3 #SSTudent Celeste Low made the news for completing 10 weeks of Google's Code in the Community Programme. She later clarified she actually meant to become a white hat hacker instead of a spy 😆.", ""],
     ["Click here to find out more!", "https://www.facebook.com/ssts.1technologydrive/posts/1548644671812452?__tn__=-R"],
@@ -332,7 +333,7 @@ export const conversationsSec4 = {
     ["For the Discover Programme, new initiatives this year included stints at a life-science company and an NP-SST Accelerator Camp.", ""],
     ["Organised in collaboration with our partner Ngee Ann Polytechnic (NP) School of Business and Accountancy, the NP-SST Accelerator Camp provides students with the knowledge, skills, resources and opportunities to realise their dreams of bringing their technological innovations to market to impact the community.", ""],
     ["View our SST Facebook page to find out more about the Discover Programme!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1831453583531558"],
-    ["Discover Programme Video", "https://www.youtube.com/watch?v=JN_AGdDP4mE"]
+    ["Discover Programme Video", "https://www.youtube.com/watch?v=8OnWtf64Uto"]
   ],
 
   ECG: [

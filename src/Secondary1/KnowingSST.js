@@ -166,7 +166,7 @@ class KnowingSST extends Component {
 									
 									{/* CHANGE HERE*/}
                   {this.prompts("CyberWellness", "Tell me more about CyberWellness in SST", 1, "")}
-                  {this.prompts("", "Deets on the SST Open House?", 2, "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1998729310137317")}
+                  {this.prompts("", "Deets on the SST Open House?", 2, "(https://www.facebook.com/events/366375483942187/")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
