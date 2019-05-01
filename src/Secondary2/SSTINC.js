@@ -171,7 +171,8 @@ class SSTINC extends Component {
 								}}>
 									
 									{this.prompts("SCITDP", "Tell me more about the other TDPs", 1, "")}
-									{this.prompts("", "Can I download any of the Apps done by SST INC?", 2, "http://appstore.com/schoolofscienceandtechnologysingapore")}
+									{this.prompts("", "Can I download other Apps done by SST INC on the App Store? (iOS)", 2, "http://appstore.com/schoolofscienceandtechnologysingapore")}
+									{this.prompts("", "What about on the Google Play Store? (for Android phones)", 3, "https://play.google.com/store/apps/dev?id=6906067944948034911&hl=en")}
 
 									{/* //TODO:1.1.1 */}
 									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>

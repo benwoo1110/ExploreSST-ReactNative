@@ -181,7 +181,7 @@ class ISS extends Component {
 									right: 16,
 								}}>
 									
-									{this.prompts("", "I would love to read more about SSTudents' ISS projects!", false, "http://sst2018-iss.blogspot.com/p/2018-projects.html")}
+									{this.prompts("", "I would love to read more about SSTudents' ISS projects!", false, "https://sst2019-iss.blogspot.com/p/2019-projects.html")}
 									{this.prompts("ChangeMakersInnofest", "Do tell me more about the ChangeMakers Innofest for Sec 2 students", true, "")}
 									{this.prompts("TDPs", "Could you share more about TDP with me? What are the types of TDPs offered in SST?", true, "")}
 									{this.prompts("IRAP", "I heard some students follow up their experiences to IRAP. What are some of your IRAP experiences?", true, "")}

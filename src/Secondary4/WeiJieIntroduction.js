@@ -121,9 +121,10 @@ class WeiJieIntroduction extends Component {
                   right: 16,
                 }}>
                   {/* CHANGE HERE*/}
-                  {this.prompts("DiscoverCamp", "Tell me more about the Discover Camp", 1, "")}
-                  {this.prompts("ECG", "What about the ECG in SST", 2, "")}
-                  {this.prompts("AlumniSuccess", "Where do SST students go on to after they graduate?", 3, "")}
+                  {this.prompts("Astronomy", "Heard that your CCA is Astronomy. Tell me more!", 1, "")}
+                  {this.prompts("DiscoverCamp", "Tell me more about the Discover Camp", 2, "")}
+                  {this.prompts("ECG", "What about the ECG in SST", 3, "")}
+                  {this.prompts("AlumniSuccess", "Where do SST students go on to after they graduate?", 4, "")}
 
                 </View>
                 <TouchableOpacity
@@ -225,6 +226,7 @@ class WeiJieIntroduction extends Component {
                 source={WeiJieComputer}
               />
             </View>
+            {/*
             <View style={{
               backgroundColor: "white",
               position: "absolute",
@@ -237,6 +239,7 @@ class WeiJieIntroduction extends Component {
             }}>
               <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
             </View>
+          */}
             <TouchableOpacity
               style={{
 

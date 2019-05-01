@@ -47,6 +47,7 @@ import AlumniSuccess from "./src/Secondary4/AlumniSuccess"
 import ECG from "./src/Secondary4/ECG"
 import DiscoverCamp from "./src/Secondary4/DiscoverCamp"
 import AS_Computing from "./src/Secondary4/AS_Computing"
+import Astronomy from "./src/Secondary4/Astronomy"
 
 
 import QuestionButton from "./src/Components/QuestionButton"
@@ -101,6 +102,7 @@ const MainStack = createStackNavigator({
   ECG: { screen: ECG},
   DiscoverCamp: { screen: DiscoverCamp},
   AS_Computing: { screen: AS_Computing},
+  Astronomy: { screen: Astronomy},
 
   QuestionButton: { screen: QuestionButton},
 });

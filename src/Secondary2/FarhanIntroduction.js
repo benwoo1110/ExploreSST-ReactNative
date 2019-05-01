@@ -193,8 +193,7 @@ class FarhanIntroduction extends Component {
                       height: "100%",
                     }}
                   >
-
-<CloseIcon/>
+                    <CloseIcon/>
                   </LinearGradient>
                 </TouchableOpacity>
               </View>
@@ -255,6 +254,7 @@ class FarhanIntroduction extends Component {
                 source={FarhanCoding}
               />
             </View>
+            {/*
             <View style={{
               backgroundColor: "white",
               position: "absolute",
@@ -267,6 +267,7 @@ class FarhanIntroduction extends Component {
             }}>
               <Text style={{ fontFamily: "Avenir Next" }}>So many new people and experiences to talk about. Where would you like me to start?</Text>
             </View>
+          */}
             <TouchableOpacity
               style={{
 
@@ -297,7 +298,7 @@ class FarhanIntroduction extends Component {
                 }}
               >
 
-<ChatIcon />
+                <ChatIcon />
               </LinearGradient>
             </TouchableOpacity>
            

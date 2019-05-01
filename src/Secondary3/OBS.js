@@ -163,6 +163,7 @@ class OBS extends Component {
 									right: 16,
 								}}>
 									
+									{this.prompts("", "I want to see some photos of OBS!", 2, "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1420186097991644")}
 									{this.prompts("", "Tell me more about the Outdoor Education Expedition!", 1, "https://www.facebook.com/ssts.1technologydrive/photos/a.1736284946381756/1736297996380451/?type=3&theater")}
 									{this.prompts("CCA_S2", "Do you have any Sports CCA?", 2, "")}
 

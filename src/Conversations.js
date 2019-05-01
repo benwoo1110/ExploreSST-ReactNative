@@ -205,9 +205,9 @@ export const conversationsSec2 = {
   ],
 
   CCA_S2: [
-    [" Your CCA is Fencing? What other CCAs are there in SST?", ""]
+    [" Your CCA is Fencing? What other CCAs are there in SST?", ""],
     ["SST has an array of CCAs and is incredibly open to new ideas for CCA groups as long as there is enough demand for an area if interest.", ""],
-    ["For example, Scout was introduced as a Uniformed Group some years into the school's establishment, and although Basketball was only catered for male students, the female students grouped together and joined Basketball as a second CCA!", ""]
+    ["For example, Scout was introduced as a Uniformed Group some years into the school's establishment, and although Basketball was only catered for male students, the female students grouped together and joined Basketball as a second CCA!", ""],
     ["Here are the list of CCAs in SST!", ""],
     ["We have Sports and Games which includes: \n  -  Athletics \n  -  Badminton \n  -  Basketball \n  -  Fencing \n  -  Floorball \n  -  Taekwondo \n  -  Wushu", ""],
     ["We also have the Performing Arts CCAs: \n  -  English Drama Club \n  -  Guitar Ensemble \n  -  Showchoir", ""],
@@ -248,10 +248,10 @@ export const conversationsSec3 = {
   AS_Electronics: [
     ["Tell me more about the Electronics Applied Subject", ""],
     ["My applied subject is Electronics.", ""],
-    ["What we learn in Electronics is the branch of science, engineering and technology which deals with electrical circuits.", ""],
-    ["The Electronics course aims to equip students with a sound understanding of basic electronics and provides ample opportunities for students to hone their creative and problem solving skills. Topics include fundamentals of physics and electricity, types of resistors, voltage and current sources, Network Theorem and analysis, capacitors, light emitting semiconductors, sensors, output devices, bipolar junction transistors and project management.", ""],
-    ["There are many hands-on classes which I enjoy, because I am able to tinker and learn from the projects given.", ""],
-    ["For example, we learn through practical application of electronics to the design of authentic gadgets and products, such as building of a transistor organ, rain detector, sound activated ballet dancer, universal electronic timer, heat sensor, line-follower robot, and many more! This has given me a deeper understanding of the subject and also improved my research skills.", ""]
+    ["Electronics is the branch of science, engineering and technology which deals with electrical circuits. The Electronics course aims to equip students with a sound understanding of basic electronics and provides ample opportunities for students to hone their creative and problem solving skills.", ""],
+    ["Topics include fundamentals of physics and electricity, types of resistors, voltage and current sources, Network Theorem and analysis, capacitors, light emitting semiconductors, sensors, output devices, bipolar junction transistors and project management.", ""],
+    ["Because I am able to tinker and learn from the projects given, I really enjoy the classes. We were also exposed to ractical application of electronics to the design of authentic gadgets and products.", ""],
+    ["This includes the building of a transistor organ, rain detector, sound activated ballet dancer, universal electronic timer, heat sensor, line-follower robot, and many more! All these experiences have given me a deeper understanding of the subject and also improved my research skills.", ""]
 
   ],
 
@@ -259,19 +259,21 @@ export const conversationsSec3 = {
     ["Tell me more about Robotics!",  ""],
     ["It's been almost 2 years since I joined Robotics@APEX, and I have enjoyed every session.", ""],
     ["As my friends and I always proclaim proudly to school visitors,\” Robotics is our PASSION!\” In Robotics, we are required to use our creativity, be self-directed in coming up with solutions and develop collaborative skills as we often work in groups.", ""],
-    ["The Robotics @APEX (formerly known as Robotics Club) was set up in 2010. I feel our story mirrors that of our school in some way. We made our name mainly by daring to be fearless against the established, pitting our freshness against experience. That was how we made a name for ourselves in competitions such as the VEX Robotics World Championship, IDE Robotics Competition", "https://www.facebook.com/ssts.1technologydrive/posts/1979151225428459?__xts__%5B0%5D=68.ARDWTRnznrmLEIB9oO0SIPur4cBSc3CtFPci-VNlzv6AJfF0aGNhKyiHxtjKeVCQSj5P1XUj6PSDM9yozyCx6StIqImrM3GMw1Zj_p9iMTp7v3gXxsYQ9kntfPFAMzeLhif4tjwhSqH8MryzuTUO_6DG2aOS2bfQThU2Bj9tb2X83jQwVJKuv9Nb1C1bg9C79qAY-A&__tn__=-R", "https://www.facebook.com/ssts.1technologydrive/photos/a.335885459755052/1928681870475395/?type=3&__xts__%5B0%5D=68.ARBezaHmR3sEJ-QQQvz1ASfmaIXjv1nqT3KhceMx5yp4RPyAWeVVqrZH9V-CovLM_JXMFZBWBvBOjlkhJNGOEAgXKw16t0mYB35itbUusNFvK41zNUt3ADgGjkjMnxTIX66pEniWnB5SwAdGRu7gLMdbWb3wMaS4dX_8JTdnIulBio0GkB6DRJt69G4y0FqsuWLuXg&__tn__=-R"],
-    ["While we are given ample opportunities to apply their skills and knowledge across a vast array of competitions, we also test our potential through research projects. One of our alumni, Choy Rui Zhi, a graduate from SP's Architecture (Singapore Institute of Architect Gold Medal) took an interest in his course because of Robotics. Click here to watch his video!", "https://www.facebook.com/sstrobotics/"],
+    ["The Robotics @APEX (formerly known as Robotics Club) was set up in 2010. I feel our story mirrors that of our school in some way. We made our name mainly by daring to be fearless against the established, pitting our freshness against experience. That was how we made a name for ourselves in competitions such as the VEX Robotics World Championship, IDE Robotics Competition", ""],
+    ["While we are given ample opportunities to apply their skills and knowledge across a vast array of competitions, we also test our potential through research projects. One of our alumni, Choy Rui Zhi, a graduate from SP's Architecture (Singapore Institute of Architect Gold Medal) took an interest in his course because of Robotics.", ""],
     ["Passion requires commitment. Amidst the long hours spent at the club, we learn time management and discipline to ensure we stay on track with our academic work. Acquiring various life skills as we hone technological expertise = WIN!", ""]
+    ["2018 World VEX Robotics Championship", "https://www.facebook.com/ssts.1technologydrive/posts/1979151225428459?__xts__%5B0%5D=68.ARDWTRnznrmLEIB9oO0SIPur4cBSc3CtFPci-VNlzv6AJfF0aGNhKyiHxtjKeVCQSj5P1XUj6PSDM9yozyCx6StIqImrM3GMw1Zj_p9iMTp7v3gXxsYQ9kntfPFAMzeLhif4tjwhSqH8MryzuTUO_6DG2aOS2bfQThU2Bj9tb2X83jQwVJKuv9Nb1C1bg9C79qAY-A&__tn__=-R"],
+    ["IDE Robotics Competitions", "https://www.facebook.com/ssts.1technologydrive/photos/a.335885459755052/1928681870475395/?type=3&__xts__%5B0%5D=68.ARBezaHmR3sEJ-QQQvz1ASfmaIXjv1nqT3KhceMx5yp4RPyAWeVVqrZH9V-CovLM_JXMFZBWBvBOjlkhJNGOEAgXKw16t0mYB35itbUusNFvK41zNUt3ADgGjkjMnxTIX66pEniWnB5SwAdGRu7gLMdbWb3wMaS4dX_8JTdnIulBio0GkB6DRJt69G4y0FqsuWLuXg&__tn__=-R"]
   ],
 
   IRAP: [
     ["What is the Industrial Research Attachment Program(IRAP)?", ""],
-    ["In Secondary 3, students have the choice of participating in IRAP. What does IRAP stand for? It stands for Industrial and Research Attachment Programme. In SST, IRAP is open to SST students who are keen on the practical application of their skills and competencies. They will utilise interpersonal skills and experience first hand the functions, operations and challenges of the various organisations in their respective industries.", "https://www.facebook.com/ssts.1technologydrive/posts/1823371601006423?__xts__%5B0%5D=68.ARBD-DuVmdlNyNUsfHEHVM9vVp1QTvz7CBnAHZ7dPyWVSnDPy-LpT40yquUqnlwmLKVPALizyL1z7xMls7UAipMoBGi7CiD7RtFQJiLb2KGUCuvW_3-xHqNqQwH5Yyfr20Qunx6u9T5q-f-7vibPwzEEhNJKF7JHOCJ6j5xD2cMwjBtDt5WhLJDHuDs_k5L2ia-ttA&__tn__=-R"],
-    ["Some companies that students have interned with include; A*STAR’s Genome Institute of Singapore, KK Hospital Women’s and Children’s Hospital, Ngee Ann Polytechnic Centre of Innovation, WorldSkills Foundation, National Library Board (NLB), Volunex Pte Ltd, N&N Agriculture Pte Ltd and Home-fix.", ""],
-    ["I heard from a senior about the insightful experience they had while interning at N&N Agriculture. Before I go on, let me explain to you what they worked on during their ISS project in Secondary 2. They found that there was inadequate research that investigated the strength of an eggshell. They then proceeded to carry out an experiment to determine the strength of an eggshell at different points.", ""],
-    ["When they reached Secondary 3, they had a chance to experience their IRAP at N&N Agriculture. Coincidentally, N&N Agriculture is one of the only three-layer farms licensed by the Agri-Food & Veterinary Authority of Singapore to produce fresh chicken eggs in Singapore. There, my seniors were able to gain greater insight into how science and technology is applied in industries to increase productivity.", "https://www.facebook.com/ssts.1technologydrive/videos/1437990226211231/?__xts__%5B0%5D=68.ARAZ4mqbfzCC56I-x98G6qymJrSsR9HFTq3xuLToUURFpyL_Q7d6DW8MzBxPX-PtHKNH_h2UEuCwQNi6m6id4f-h_asMG4xq9AvHRXOgGJBaBccOtCdUqszctOOKkxWoi7ZjtbTWTT2_01jyyHgJWNtkQeME_x0MakifmvPRGK0uGJmnol7pXQ&__tn__=-R"],
-    ["The ISS and IRAP helped kindled their interest in biology and it was nice to hear how they were able to build upon their learning.", ""],
-    ["Often, our seniors' experiences will inspire later cohorts to investigate certain topics from other perspectives. In this case, another group of students researched how washing of eggs encouraged bacterial growth. Following through with a stint at N&N Agriculture, they had to challenge their original conclusions since the eggs at the farm were washed and waxed!", ""]
+    ["In Secondary 3, students have the choice of participating in IRAP. What does IRAP stand for? It stands for Industrial and Research Attachment Programme. In SST, IRAP is open to SST students who are keen on the practical application of their skills and competencies. They will utilise interpersonal skills and experience first hand the functions, operations and challenges of the various organisations in their respective industries.", ""],
+    ["Some companies that students have interned with include; A*STAR’s Genome Institute of Singapore, KK Women’s and Children’s Hospital, Ngee Ann Polytechnic Centre of Innovation, WorldSkills Foundation, National Library Board (NLB), Volunex Pte Ltd, N&N Agriculture Pte Ltd and Home-fix.", ""],
+    ["A senior told me about trhe insightful experience they had while interning at N&N Agriculture. Before I go on, let me explain to you what they worked on for their ISS project in Secondary 2. They found that there was inadequate research that investigated the strength of an eggshell. With the intent of helping engineers design cages that would minimise breakage of eggs, they carried out an experiment to determine the strength of an eggshell at different points.", ""],
+    ["When they reached Secondary 3, they had a chance to experience their IRAP at N&N Agriculture,one of the only three-layer farms licensed to produce fresh chicken eggs in Singapore. There, my seniors were able to gain greater insight into how science and technology is applied in industries to increase productivity. The ISS and IRAP helped kindled their interest in biology and it was nice to hear how they were able to build upon their learning.", ""],
+    ["Often, our seniors\' experiences will inspire later cohorts to investigate certain topics from other perspectives. In this case, another group of students researched how washing of eggs encouraged bacterial growth. Following through with a stint at N&N Agriculture, they had to challenge their original conclusions since the eggs at the farm were washed and waxed!", ""]
+
   ],
 
   SCITDP: [
@@ -282,17 +284,19 @@ export const conversationsSec3 = {
     ["In Science TDP, I often get to go for Olympiads, such as the Chemistry Olympiad, which has allowed me to develop my curiosity in this discipline.", ""],
     ["Did you hear about how Matthew Liang attained the Grand Prize, the top award for The International Student Science Fair 2018?", ""],
     ["He was in Secondary 3 when he represented SST as part of the Science TDP Programme. His research project was based on Investigating the Skin Effect on Alternating Currents, and he was mentored by our senior teacher in science, Mr Tan Hoe Teck. We are all incredibly proud of him!", ""],
+    ["Find out more on Matthew Liang!", "https://www.facebook.com/ssts.1technologydrive/posts/2038928002784114?__tn__=-R"],
     ["Japan Hyper-Interdisciplinary Conference in Toyko", "https://www.facebook.com/ssts.1technologydrive/posts/1939068892770026?__tn__=-R"],
     ["International Science Youth Forum", "https://www.facebook.com/ssts.1technologydrive/posts/1848248521852064?__xts__%5B0%5D=68.ARDbCiwH8TKww1_NQups8fZ1lSSAimylHwWSeq3iE8IBMLoaSbh9wwK5OxyoTJepFh7KW3BapPA0Jic8FXpQwNJOzTF0-0CGPshF1eSfaVwGkAQo0NmZjYZ5v6ogkx9AgQ2h4Y4gSznLVz2pgGptBn2JIDTosRy_PnMH28zzhEIiSp677sy513Ld_jyRTJW7pTL0IA&__tn__=-R"]
   ],
 
   OBS: [
-    ["Could you tell me more about OBS?", ""],
-    ["Since SST's establishment, all Secondary 3 students in SST will undergo a three days two night Outward Bound School Camp. There, we learnt how to recognise and manage emotions, develop care and concern for others, make responsible decisions, establish positive relationships and handle challenging situations effectively.", ""],
-    ["There were many activities and challenges we faced as a team, such as high elements, team-based challenges and expeditions around outdoor spaces that helped foster our collaborative skills and built courage in us.", ""],
-    ["I had a lot of fun during the OBS camp and gained many friends along the way. It was a great experience! It also reminded me of the times where we got to spend time together during our Outdoor Education Expedition in Secondary 2.", "https://www.facebook.com/ssts.1technologydrive/photos/a.1736284946381756/1736297996380451/?type=3&theater"],
-    ["I remember the outdoor life skills such as risk assessment, first aid, outdoor cooking, tent pitching, map reading and navigation. Those were great memories with my classmates!", ""],
-    ["Thinking back. I realised that it has helped to toughen us gradually and prepared us for the gruelling OBS camp!", "https://www.facebook.com/pg/ssts.1technologydrive/photos/?tab=album&album_id=1420186097991644"]
+    ["tell me more about OBS!", ""],  
+    ["Since SST's establishment, all Secondary 3 students in SST have participated in a three days two night camp at Outward Bound School.", ""],
+    ["At the camp, students learn how to recognise and manage emotions, develop care and concern for others, make responsible decisions, establish positive relationships and handle challenging situations effectively. ", ""],
+    ["There were many activities and challenges we faced as a team, such as high elements, team-based challenges and expeditions around outdoor spaces that helped foster our collaborative skills and built courage in us. ", ""],
+    ["I had a lot of fun during the OBS camp and forged lasting bonds along the way. It was a great experience! It also reminded me of the times where we got to spend time together during our Outdoor Education Expedition in Secondary 2.", ""],
+    ["I remember the outdoor life skills such as risk assessment, first aid, outdoor cooking, tent pitching, map reading and navigation. Those were great memories with my classmates! ", ""],
+    ["Thinking back. I realised that it has helped to toughen us gradually and prepare us for the gruelling OBS camp!", ""]
   ]
 };
 
@@ -317,6 +321,7 @@ export const conversationsSec4 = {
     ["It is an activity whereby participants use radio direction finding techniques to locate one or more radio transmitters hidden within a desginated search area. These games make for great bonding activities.", ""],
     ["SST Astronomy Club takes part in various competitions as well! We participate in competitions such as Raffles AstroNite, AstroChallenge, 21st NYP-IPS Astronomy Competition and more!", ""],
     ["One of our SSTAlumni, Chiu Chen Ning participated in the Cassini Scientist for a Day Contest and his award winning essay about the Solar System Exploration was featured on NASA's website. So exciting!", ""],
+    ["Click here find out more about Chiu Chen Ning!", "https://www.facebook.com/ssts.1technologydrive/videos/1866063946737188/?__xts__[0]=68.ARA081pTAOwKhsCShqkhLvU-zkXxtoDBZncWeOv0ldPOh_cHXf1K6qAH2YmUOzDW9_RLLvUmGrmLL4Wdbz4cU1gH54p2EjKHoRN62skL1nPuxdR7JAJRhe_MtokSFwbjLtZb5JRBu3hYCdQQ7p4GpE4RN445otbTlkLqaqAEjN0P0cMJsiIPC_UYVmJfGEN9DBk-o6YzQHvPH7kz3w&__tn__=-R"],
     ["Click here to read Chen Ning's essay!", "http://sstastro.blogspot.com/2015/04/cassini-essay-writing-competition.html"]
 
   ],

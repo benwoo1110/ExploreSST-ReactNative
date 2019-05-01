@@ -1,28 +1,26 @@
 import React, { Component } from "react";
 import {
-    View,
-    Text,
-    TouchableOpacity,
-    ImageBackground,
-    SafeAreaView,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Modal,
-		Alert,
-		Animated,
-		Linking
+	View,
+	Text,
+	TouchableOpacity,
+	ImageBackground,
+	SafeAreaView,
+	Image,
+	ScrollView,
+	StyleSheet,
+	Modal,
+	Alert,
+	Animated,
+	Linking
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import GeneralOffice from "../../assets/images/go.png";
+import { conversationsSec4 } from "../Conversations";
 import LinearGradient from "react-native-linear-gradient";
-import { conversations, conversationsSec3 } from "../Conversations";
 import Background from "../../assets/images/background.png";
-import PriyaProfile from "../../assets/images/Priya_profile.png";
+import WeiJieFace from "../../assets/images/WeiJie_profile.png";
 import {ChatIcon, CloseIcon, SendIcon} from "../Components/IconSet"
 
-
-class Robotics extends Component {
+class Astronomy extends Component {
 	static navigationOptions = {
 		header: null
 	};
@@ -32,11 +30,11 @@ class Robotics extends Component {
 		this.fadeAnimation = new Animated.Value(0);
 	}
 	state = {
-    modalVisible: false
-  }
-  setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
-  }
+		modalVisible: false
+	}
+	setModalVisible(visible) {
+		this.setState({ modalVisible: visible });
+	}
 
 	componentDidMount() {
 		Animated.timing(this.fadeAnimation, {
@@ -47,61 +45,61 @@ class Robotics extends Component {
 	}
 
 	// THIS IS THE NEW FUNCTION
-  openURL(url) {
+	openURL(url) {
 		if (url != "") {
-      Linking.openURL(url);
-      return true;
+			Linking.openURL(url);
+			return true;
 		} return false;
-  }
-  
-  // THIS IS THE NEW FUNCTION
-  prompts(name, prompt_text, sequence, url) {
-    const position = 22 + 78*sequence;
-    return (
-      <TouchableOpacity
-        style={[styles.buttonStyle,{bottom: position}]}
-        onPress={() => {
-          const { navigation } = this.props;
-          if (!this.openURL(url)) {
-            navigation.navigate(name);
-            this.setModalVisible(false);
-          }
+	}
 
-        }}
-      >
-        <LinearGradient
-          start={{ x: 0, y: 1 }}
-          end={{ x: 1, y: 0 }}
-          colors={["#84C7C3", "#0084C2"]}
-          style={styles.linGrad}
-        >
-          <View style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            flex: 1,
-          }}>
-            <Text style={{
-              color: "white",
-              fontFamily: "Avenir Next",
-              alignSelf: "center",
-              marginLeft: 20,
-              flex: 1,
-              fontSize: 16,
-            }}>{prompt_text}</Text>
-
+	// THIS IS THE NEW FUNCTION
+	prompts(name, prompt_text, sequence, url) {
+		const position = 22 + 78 * sequence;
+		return (
+			<TouchableOpacity
+				style={[styles.buttonStyle, { bottom: position }]}
+				onPress={() => {
+					const { navigation } = this.props;
+					if (!this.openURL(url)) {
+						navigation.navigate(name);
+						this.setModalVisible(false);
+					}
+				}}
+			>
+				<LinearGradient
+					start={{ x: 0, y: 1 }}
+					end={{ x: 1, y: 0 }}
+					colors={["#84C7C3", "#0084C2"]}
+					style={styles.linGrad}
+				>
+					<View style={{
+						flexDirection: "row",
+						justifyContent: "center",
+						flex: 1,
+					}}>
+						<Text style={{
+							color: "white",
+							fontFamily: "Avenir Next",
+							alignSelf: "center",
+							marginLeft: 20,
+							marginRight: 12,
+							flex: 1,
+							fontSize: 16,
+						}}>{prompt_text}</Text>
 <SendIcon />
-          </View>
-        </LinearGradient>
-      </TouchableOpacity>
-    );
-  }
+					</View>
+				</LinearGradient>
+			</TouchableOpacity>
+		);
+	}
 
 	render() {
 		const { navigation } = this.props;
 		const conversationBubbles = [];
+		var TextStyle = styles.ChatViewStyle;
 
 		// CHANGE HERE
-		const content = conversationsSec3.Robotics;
+		const content = conversationsSec4.Astronomy;
 
 		for (let i = 0; i < content.length; i += 1) {
 			if (i == 0) {
@@ -113,11 +111,18 @@ class Robotics extends Component {
 					</Animated.View>
 				);
 			} else {
+				if (content[i][1] == "") {
+					TextStyle = styles.ChatTextStyle;
+				} else {
+					TextStyle = styles.ChatTextStyle_url;
+				}
 				conversationBubbles.push(
 					<Animated.View style={{ opacity: this.fadeAnimation }}>
 						<View style={[styles.ChatViewStyle]}>
-							<Text style={styles.ChatTextStyle}
-								onPress={this.openURL.bind(this, content[i][1])}>{content[i][0]}</Text>
+							<Text style={TextStyle}
+								onPress={this.openURL.bind(this, content[i][1])}>
+								{content[i][0]}
+							</Text>
 						</View>
 					</Animated.View>
 				);
@@ -163,15 +168,12 @@ class Robotics extends Component {
 									left: 16,
 									right: 16,
 								}}>
-									
-									{this.prompts("CCA_S2", "What other CCA are you interested in?", 1, "")}
-									{this.prompts("", "What do most of our alumni do after SST?", 2, "https://www.facebook.com/pg/ssts.1technologydrive/posts/?ref=page_internal")}
-									{this.prompts("", "I want to read up more about SST alumni!", 3, "https://www.sst.edu.sg/alumni/")}
 
-									{/* //TODO:1.1.1 */}
-									{/* <QuestionButton converseText="How did you get to know SST?" tOffset="70%"  navigation={this.props.navigation} conversation="KnowingSST" onPress={}/>
-                  <QuestionButton converseText=" I hear that students come from different primary schools here - how do you make friends?" tOffset="80%" navigation={this.props.navigation} conversation="MakingFriends" action={()=>{this.onNavigate}}/>
-                  <QuestionButton converseText="Ask my own question" tOffset="80%"/> */}
+									{/* CHANGE HERE*/}
+									{this.prompts("", "Where can I read the Today Online article on “blood moon”?", 1, "https://www.todayonline.com/singapore/shooting-breeze-while-waiting-catch-mars-and-blood-moon-double-bill?fbclid=IwAR0nVW11gCxGN4uiixE5DkW09L9CYS9A1hLQGaFg32jCXUJQu8Ijw-UDD3I")}
+									{this.prompts("", "Where can I read the Straits Times article on “blood moon”?", 2, "https://www.straitstimes.com/singapore/stargazers-hoping-to-catch-cosmic-event-of-the-century?fbclid=IwAR0cqRoBsJM5N4TYonDa-A3bZeiWdNk87Hw0-eWKGP3EAafpQhuJLLpamHs")}
+									{this.prompts("", "Where can I read the Zao Bao article on “blood moon”? (Chinese)", 3, "https://www.zaobao.com.sg/znews/singapore/story20180729-878902?fbclid=IwAR0OFu9gKfFNOExzSfP60W93n0Kbre0VdcCLrXCgkPF5jUdVxoDAq2_Ddog")}
+
 								</View>
 								<TouchableOpacity
 									style={{
@@ -188,9 +190,7 @@ class Robotics extends Component {
 										borderRadius: 30,
 										margin: 16
 									}}
-									onPress={() => {
-										this.setModalVisible(!this.state.modalVisible);
-									}}
+									onPress={() => { this.setModalVisible(!this.state.modalVisible); }}
 								>
 									<LinearGradient
 										start={{ x: 0, y: 1 }}
@@ -204,6 +204,7 @@ class Robotics extends Component {
 											height: "100%",
 										}}
 									>
+
 <CloseIcon/>
 									</LinearGradient>
 								</TouchableOpacity>
@@ -225,7 +226,7 @@ class Robotics extends Component {
 									resizeMode: "cover",
 									alignItems: "flex-start"
 								}}
-								source={PriyaProfile}
+								source={WeiJieFace}
 							/>
 							<Text
 								style={{
@@ -237,7 +238,7 @@ class Robotics extends Component {
 									paddingLeft: 16
 								}}
 							>
-								Priya
+								Wei Jie
 								</Text>
 						</View>
 						<ScrollView>
@@ -256,9 +257,7 @@ class Robotics extends Component {
 								justifyContent: "center",
 								borderRadius: 30,
 							}}
-							onPress={() => {
-								this.setModalVisible(!this.state.modalVisible);
-							}}
+							onPress={() => { this.setModalVisible(!this.state.modalVisible); }}
 						>
 							<LinearGradient
 								start={{ x: 0, y: 1 }}
@@ -272,7 +271,6 @@ class Robotics extends Component {
 									height: "100%",
 								}}
 							>
-
 <ChatIcon />
 							</LinearGradient>
 						</TouchableOpacity>
@@ -327,6 +325,13 @@ const styles = StyleSheet.create({
 		fontSize: 18,
 		fontFamily: "Avenir Next"
 	},
+	ChatTextStyle_url: {
+		padding: 8,
+		fontSize: 18,
+		fontFamily: "Avenir Next",
+		textDecorationLine: 'underline',
+		fontStyle: 'italic'
+	},
 	ChatViewStyle: {
 		width: "75%",
 		backgroundColor: "white",
@@ -359,4 +364,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default Robotics
+export default Astronomy
